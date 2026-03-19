@@ -1,0 +1,46 @@
+{
+  "name": "homeschool-curriculum",
+  "version": "1.0.0",
+  "description": "Homeschool Curriculum App — Grades 4 through 10: Math, English, Biology",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BABAISABIGFATPOOP/homeschool-curriculum.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/BABAISABIGFATPOOP/homeschool-curriculum/issues"
+  },
+  "homepage": "https://github.com/BABAISABIGFATPOOP/homeschool-curriculum#readme",
+  "devDependencies": {
+    "electron": "^41.0.3",
+    "electron-builder": "^26.8.1"
+  },
+  "dependencies": {
+    "marked": "^17.0.4"
+  },
+  "build": {
+    "appId": "com.homeschool.curriculum",
+    "productName": "Homeschool Curriculum",
+    "win": {
+      "target": "portable",
+      "signAndEditExecutable": false
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "curriculum/**/*",
+      "placement-tests/**/*",
+      "yearly-plans/**/*",
+      "schedule.md"
+    ]
+  }
+}
