@@ -1092,9 +1092,10 @@
 
     let testQuestions = [];
     let testIndex = 0;
-    let testAnswers = []; // { id, subject, grade, correct }
+    let testAnswers = []; // { id, subject, grade, selectedOption, correct }
     let testSelectedOption = null;
-    let testAnswered = false;
+    const testSubjects = ['Math', 'English', 'Biology'];
+    let currentSubjectIndex = 0;
 
     function startPlacementTest() {
       document.getElementById('test-screen').style.display = 'flex';
@@ -1102,7 +1103,7 @@
       testIndex = 0;
       testAnswers = [];
       testSelectedOption = null;
-      testAnswered = false;
+      currentSubjectIndex = 0;
       updateTestProgress();
       showTestRules();
     }
@@ -1121,10 +1122,10 @@
           <ul>
             <li>There are <strong>45 questions</strong> — 15 Math, 15 English, 15 Biology</li>
             <li>Questions start easy and get harder as you go</li>
-            <li>Pick the best answer for each question</li>
+            <li>Pick the best answer for each question — you can <strong>change your answer</strong> before moving on</li>
             <li><strong>No calculator</strong> allowed for math questions</li>
             <li>It's okay to not know the answer — just pick your best guess</li>
-            <li>Don't worry about getting everything right. The test finds <strong>where you should start</strong>, not what you already know perfectly</li>
+            <li>After each section (15 questions), you'll see your <strong>answers and corrections</strong></li>
             <li>Take your time — there is <strong>no time limit</strong></li>
             <li>Your results will show a recommended grade level for each subject</li>
           </ul>
@@ -1140,39 +1141,61 @@
       document.getElementById('test-progress-fill').style.width = pct + '%';
     }
 
+    function getCurrentSubjectQuestions() {
+      const subject = testSubjects[currentSubjectIndex];
+      return testQuestions.filter(q => q.subject === subject);
+    }
+
+    function getSubjectQuestionIndex() {
+      // How far into the current subject are we
+      const subject = testSubjects[currentSubjectIndex];
+      return testAnswers.filter(a => a.subject === subject).length;
+    }
+
     function showTestQuestion() {
-      if (testIndex >= testQuestions.length) {
+      const subjectQs = getCurrentSubjectQuestions();
+      const sqIndex = getSubjectQuestionIndex();
+
+      // If we've answered all questions in this subject, show the review
+      if (sqIndex >= subjectQs.length) {
+        showSegmentReview();
+        return;
+      }
+
+      // If all subjects done
+      if (currentSubjectIndex >= testSubjects.length) {
         showTestResults();
         return;
       }
 
       testSelectedOption = null;
-      testAnswered = false;
       updateTestProgress();
 
-      const q = testQuestions[testIndex];
+      const q = subjectQs[sqIndex];
       const subjectClass = q.subject.toLowerCase();
       const body = document.getElementById('test-body');
+      const questionNum = sqIndex + 1;
+      const totalInSubject = subjectQs.length;
 
       body.innerHTML = `
-        <span class="test-subject-badge ${subjectClass}">${q.subject}</span>
+        <span class="test-subject-badge ${subjectClass}">${q.subject} — Question ${questionNum} of ${totalInSubject}</span>
         <div class="test-question">${q.question}</div>
         <div class="test-options">
           ${q.options.map((opt, i) => `
             <button class="test-option" id="test-opt-${i}" onclick="selectTestOption(${i})">${opt}</button>
           `).join('')}
         </div>
-        <button class="test-next-btn" id="test-submit" onclick="submitTestAnswer()" disabled>Submit</button>
-        <button class="test-next-btn" id="test-next" onclick="nextTestQuestion()" style="display:none;">Next</button>
+        <button class="test-next-btn" id="test-next" onclick="nextTestQuestion()" disabled>Next</button>
       `;
     }
 
     function selectTestOption(index) {
-      if (testAnswered) return;
       testSelectedOption = index;
 
-      const q = testQuestions[testIndex];
-      // Highlight selected, unhighlight others
+      const subjectQs = getCurrentSubjectQuestions();
+      const sqIndex = getSubjectQuestionIndex();
+      const q = subjectQs[sqIndex];
+
       for (let i = 0; i < q.options.length; i++) {
         const btn = document.getElementById(`test-opt-${i}`);
         if (i === index) {
@@ -1182,44 +1205,94 @@
         }
       }
 
-      document.getElementById('test-submit').disabled = false;
+      document.getElementById('test-next').disabled = false;
     }
 
-    function submitTestAnswer() {
-      if (testAnswered || testSelectedOption === null) return;
-      testAnswered = true;
+    function nextTestQuestion() {
+      if (testSelectedOption === null) return;
 
-      const q = testQuestions[testIndex];
-      const correct = q.answer;
+      const subjectQs = getCurrentSubjectQuestions();
+      const sqIndex = getSubjectQuestionIndex();
+      const q = subjectQs[sqIndex];
 
-      // Highlight correct and wrong
-      for (let i = 0; i < q.options.length; i++) {
-        const btn = document.getElementById(`test-opt-${i}`);
-        btn.style.pointerEvents = 'none';
-        btn.classList.remove('selected');
-        if (i === correct) {
-          btn.classList.add('correct');
-        } else if (i === testSelectedOption && i !== correct) {
-          btn.classList.add('wrong');
-        }
-      }
-
-      // Record answer
+      // Record answer (no reveal yet)
       testAnswers.push({
         id: q.id,
         subject: q.subject,
         grade: q.grade,
-        correct: testSelectedOption === correct
+        selectedOption: testSelectedOption,
+        correct: testSelectedOption === q.answer
       });
 
-      // Hide submit, show next
-      document.getElementById('test-submit').style.display = 'none';
-      document.getElementById('test-next').style.display = '';
-    }
-
-    function nextTestQuestion() {
       testIndex++;
       showTestQuestion();
+    }
+
+    function showSegmentReview() {
+      const subject = testSubjects[currentSubjectIndex];
+      const subjectClass = subject.toLowerCase();
+      const subjectQs = getCurrentSubjectQuestions();
+      const subjectAnswers = testAnswers.filter(a => a.subject === subject);
+      const correctCount = subjectAnswers.filter(a => a.correct).length;
+
+      const body = document.getElementById('test-body');
+
+      let reviewHTML = `
+        <div style="max-width:700px;width:100%;overflow-y:auto;max-height:calc(100vh - 150px);">
+          <h1 style="font-size:1.8rem;color:#f8fafc;text-align:center;margin-bottom:8px;">
+            <span class="test-subject-badge ${subjectClass}" style="font-size:0.9rem;vertical-align:middle;margin-right:8px;">${subject}</span>
+            Section Complete
+          </h1>
+          <p style="text-align:center;color:#94a3b8;margin-bottom:24px;">You got <strong style="color:#f8fafc;">${correctCount} out of ${subjectQs.length}</strong> correct</p>
+      `;
+
+      subjectQs.forEach((q, i) => {
+        const answer = subjectAnswers[i];
+        const isCorrect = answer.correct;
+        const borderColor = isCorrect ? '#10b981' : '#ef4444';
+        const icon = isCorrect ? '&#10003;' : '&#10007;';
+        const iconColor = isCorrect ? '#10b981' : '#ef4444';
+
+        reviewHTML += `
+          <div style="background:#1e293b;border:1px solid ${borderColor};border-radius:10px;padding:16px;margin-bottom:12px;">
+            <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:8px;">
+              <strong style="color:#f8fafc;font-size:0.95rem;">Q${i + 1}: ${q.question}</strong>
+              <span style="color:${iconColor};font-size:1.2rem;min-width:24px;text-align:right;">${icon}</span>
+            </div>
+            <div style="color:#94a3b8;font-size:0.85rem;">
+              Your answer: <span style="color:${isCorrect ? '#10b981' : '#ef4444'};font-weight:600;">${q.options[answer.selectedOption]}</span>
+        `;
+
+        if (!isCorrect) {
+          reviewHTML += `
+              <br>Correct answer: <span style="color:#10b981;font-weight:600;">${q.options[q.answer]}</span>
+          `;
+        }
+
+        reviewHTML += `
+            </div>
+          </div>
+        `;
+      });
+
+      const nextSubject = currentSubjectIndex < testSubjects.length - 1 ? testSubjects[currentSubjectIndex + 1] : null;
+      const btnText = nextSubject ? `Continue to ${nextSubject}` : 'See Final Results';
+
+      reviewHTML += `
+        </div>
+        <button class="test-next-btn" onclick="continueToNextSubject()" style="margin-top:16px;">${btnText}</button>
+      `;
+
+      body.innerHTML = reviewHTML;
+    }
+
+    function continueToNextSubject() {
+      currentSubjectIndex++;
+      if (currentSubjectIndex >= testSubjects.length) {
+        showTestResults();
+      } else {
+        showTestQuestion();
+      }
     }
 
     function showTestResults() {
