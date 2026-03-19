@@ -323,59 +323,6 @@
       background: #1e293b;
     }
 
-    /* ── Student Grade Picker ── */
-    #grade-picker {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      gap: 30px;
-    }
-
-    #grade-picker h1 {
-      font-size: 2.2rem;
-      color: #f8fafc;
-    }
-
-    #grade-picker p {
-      color: #94a3b8;
-      margin-top: -16px;
-    }
-
-    .grade-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-      max-width: 600px;
-    }
-
-    .grade-btn {
-      width: 120px;
-      height: 90px;
-      border: 2px solid #334155;
-      border-radius: 12px;
-      background: #1e293b;
-      color: #f8fafc;
-      font-size: 1.2rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    .grade-btn:hover {
-      border-color: #10b981;
-      background: #1e3b33;
-      transform: translateY(-3px);
-      box-shadow: 0 6px 20px rgba(16, 185, 129, 0.15);
-    }
-
-    .grade-btn .label {
-      font-size: 0.75rem;
-      color: #94a3b8;
-      font-weight: 400;
-    }
-
     /* ── Home cards (parent dashboard) ── */
     .home-cards {
       display: grid;
@@ -754,10 +701,11 @@
     </div>
   </div>
 
-  <!-- Firebase Compat SDK -->
+  <!-- ── Firebase SDK ── -->
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
-  <!-- Marked.js for Markdown -->
+
+  <!-- ── Marked.js ── -->
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
   <script>
@@ -774,7 +722,7 @@
     firebase.initializeApp(firebaseConfig);
     const auth = firebase.auth();
 
-    // ── Placement Test Questions (all 45) ──
+    // ── All 45 Placement Questions ──
     const placementQuestions = [
       // ═══════════════════════════════════════
       // MATH (15 questions, ~2 per grade level)
@@ -1043,23 +991,35 @@
     let isSignUpMode = false;
 
     // ── AUTO-LOGIN ON LAUNCH ──
-    window.addEventListener('DOMContentLoaded', () => {
+    window.addEventListener('DOMContentLoaded', async () => {
       // Allow Enter key to submit
       document.querySelectorAll('#signin-screen input').forEach(input => {
         input.addEventListener('keydown', (e) => { if (e.key === 'Enter') handleAuth(); });
       });
 
       // Check if already logged in via Firebase
-      auth.onAuthStateChanged(user => {
-        if (user && user.displayName) {
-          const parts = user.displayName.split('|');
-          userName = parts[0] || '';
-          userDob = parts[1] || '';
+      try {
+        const user = await new Promise((resolve) => {
+          const unsubscribe = auth.onAuthStateChanged((u) => {
+            unsubscribe();
+            if (u && u.displayName) {
+              const parts = u.displayName.split('|');
+              resolve({ name: parts[0] || '', dob: parts[1] || '' });
+            } else {
+              resolve(null);
+            }
+          });
+        });
+        if (user) {
+          userName = user.name;
+          userDob = user.dob;
           document.getElementById('signin-screen').style.display = 'none';
           document.getElementById('role-screen').style.display = 'flex';
           updateRoleScreenTitle();
         }
-      });
+      } catch (e) {
+        // Not logged in, stay on sign-in screen
+      }
     });
 
     // ── TOGGLE SIGN IN / SIGN UP ──
@@ -1132,9 +1092,7 @@
       } catch (e) {
         btn.disabled = false;
         btn.textContent = isSignUpMode ? 'Sign Up' : 'Sign In';
-
-        // Clean up Firebase error messages
-        let msg = e.message || e.code || 'An error occurred.';
+        let msg = e.message || 'An error occurred.';
         if (msg.includes('auth/email-already-in-use')) msg = 'An account with this email already exists.';
         else if (msg.includes('auth/invalid-email')) msg = 'Please enter a valid email address.';
         else if (msg.includes('auth/invalid-credential')) msg = 'Incorrect email or password.';
@@ -1188,7 +1146,6 @@
 
     function selectGrade(grade) {
       currentGrade = grade;
-      document.getElementById('grade-picker').style.display = 'none';
       showApp();
     }
 
@@ -1299,11 +1256,12 @@
     // ── LOAD MARKDOWN ──
     async function loadMarkdown(filePath) {
       try {
-        const res = await fetch('https://raw.githubusercontent.com/BABAISABIGFATPOOP/homeschool-curriculum/master/' + filePath);
-        const md = await res.text();
+        const response = await fetch('https://raw.githubusercontent.com/BABAISABIGFATPOOP/homeschool-curriculum/master/' + filePath);
+        if (!response.ok) throw new Error('Failed to fetch');
+        const md = await response.text();
         document.getElementById('content').innerHTML = marked.parse(md);
       } catch (e) {
-        document.getElementById('content').innerHTML = '<h1>Error</h1><p>Could not load ' + filePath + '</p>';
+        document.getElementById('content').innerHTML = `<h1>Error</h1><p>Could not load ${filePath}</p>`;
       }
     }
 
@@ -1342,14 +1300,14 @@
             <li><strong>Give the placement tests</strong> \u2014 have your student work through each subject's test until the questions get too hard.</li>
             <li><strong>Check the scoring guide</strong> \u2014 it tells you what grade level to start at based on results.</li>
             <li><strong>Open the yearly plan</strong> for the right grade and start at Week 1.</li>
-            <li>It's totally normal to be at different grade levels for different subjects!</li>
+            <li>It\u2019s totally normal to be at different grade levels for different subjects!</li>
           </ol>
         `;
       } else {
         const g = currentGrade;
         content.innerHTML = `
           <h1>Welcome${userName ? ', ' + userName : ''} \u2014 Grade ${g}!</h1>
-          <p>Here's everything you need for your school year.</p>
+          <p>Here\u2019s everything you need for your school year.</p>
           <div class="home-cards">
             <div class="home-card" onclick="document.querySelectorAll('.sidebar-section')[1].querySelector('.sidebar-item').click()">
               <h3>What You'll Learn</h3>
@@ -1361,7 +1319,7 @@
             </div>
             <div class="home-card" onclick="document.querySelectorAll('.sidebar-section')[2].querySelector('.sidebar-item').click()">
               <h3>Placement Tests</h3>
-              <p>Take a test to make sure you're starting at the right level.</p>
+              <p>Take a test to make sure you\u2019re starting at the right level.</p>
             </div>
             <div class="home-card" onclick="document.querySelectorAll('.sidebar-section')[3].querySelector('.sidebar-item').click()">
               <h3>Weekly Schedule</h3>
@@ -1377,9 +1335,10 @@
 
     let testQuestions = [];
     let testIndex = 0;
-    let testAnswers = []; // { id, subject, grade, correct }
+    let testAnswers = []; // { id, subject, grade, selectedOption, correct }
     let testSelectedOption = null;
-    let testAnswered = false;
+    const testSubjects = ['Math', 'English', 'Biology'];
+    let currentSubjectIndex = 0;
 
     function startPlacementTest() {
       document.getElementById('test-screen').style.display = 'flex';
@@ -1387,7 +1346,7 @@
       testIndex = 0;
       testAnswers = [];
       testSelectedOption = null;
-      testAnswered = false;
+      currentSubjectIndex = 0;
       updateTestProgress();
       showTestRules();
     }
@@ -1406,10 +1365,10 @@
           <ul>
             <li>There are <strong>45 questions</strong> \u2014 15 Math, 15 English, 15 Biology</li>
             <li>Questions start easy and get harder as you go</li>
-            <li>Pick the best answer for each question</li>
+            <li>Pick the best answer for each question \u2014 you can <strong>change your answer</strong> before moving on</li>
             <li><strong>No calculator</strong> allowed for math questions</li>
-            <li>It's okay to not know the answer \u2014 just pick your best guess</li>
-            <li>Don't worry about getting everything right. The test finds <strong>where you should start</strong>, not what you already know perfectly</li>
+            <li>It\u2019s okay to not know the answer \u2014 just pick your best guess</li>
+            <li>After each section (15 questions), you\u2019ll see your <strong>answers and corrections</strong></li>
             <li>Take your time \u2014 there is <strong>no time limit</strong></li>
             <li>Your results will show a recommended grade level for each subject</li>
           </ul>
@@ -1425,39 +1384,61 @@
       document.getElementById('test-progress-fill').style.width = pct + '%';
     }
 
+    function getCurrentSubjectQuestions() {
+      const subject = testSubjects[currentSubjectIndex];
+      return testQuestions.filter(q => q.subject === subject);
+    }
+
+    function getSubjectQuestionIndex() {
+      // How far into the current subject are we
+      const subject = testSubjects[currentSubjectIndex];
+      return testAnswers.filter(a => a.subject === subject).length;
+    }
+
     function showTestQuestion() {
-      if (testIndex >= testQuestions.length) {
+      const subjectQs = getCurrentSubjectQuestions();
+      const sqIndex = getSubjectQuestionIndex();
+
+      // If we've answered all questions in this subject, show the review
+      if (sqIndex >= subjectQs.length) {
+        showSegmentReview();
+        return;
+      }
+
+      // If all subjects done
+      if (currentSubjectIndex >= testSubjects.length) {
         showTestResults();
         return;
       }
 
       testSelectedOption = null;
-      testAnswered = false;
       updateTestProgress();
 
-      const q = testQuestions[testIndex];
+      const q = subjectQs[sqIndex];
       const subjectClass = q.subject.toLowerCase();
       const body = document.getElementById('test-body');
+      const questionNum = sqIndex + 1;
+      const totalInSubject = subjectQs.length;
 
       body.innerHTML = `
-        <span class="test-subject-badge ${subjectClass}">${q.subject}</span>
+        <span class="test-subject-badge ${subjectClass}">${q.subject} \u2014 Question ${questionNum} of ${totalInSubject}</span>
         <div class="test-question">${q.question}</div>
         <div class="test-options">
           ${q.options.map((opt, i) => `
             <button class="test-option" id="test-opt-${i}" onclick="selectTestOption(${i})">${opt}</button>
           `).join('')}
         </div>
-        <button class="test-next-btn" id="test-submit" onclick="submitTestAnswer()" disabled>Submit</button>
-        <button class="test-next-btn" id="test-next" onclick="nextTestQuestion()" style="display:none;">Next</button>
+        <button class="test-next-btn" id="test-next" onclick="nextTestQuestion()" disabled>Next</button>
       `;
     }
 
     function selectTestOption(index) {
-      if (testAnswered) return;
       testSelectedOption = index;
 
-      const q = testQuestions[testIndex];
-      // Highlight selected, unhighlight others
+      const subjectQs = getCurrentSubjectQuestions();
+      const sqIndex = getSubjectQuestionIndex();
+      const q = subjectQs[sqIndex];
+
       for (let i = 0; i < q.options.length; i++) {
         const btn = document.getElementById(`test-opt-${i}`);
         if (i === index) {
@@ -1467,44 +1448,94 @@
         }
       }
 
-      document.getElementById('test-submit').disabled = false;
+      document.getElementById('test-next').disabled = false;
     }
 
-    function submitTestAnswer() {
-      if (testAnswered || testSelectedOption === null) return;
-      testAnswered = true;
+    function nextTestQuestion() {
+      if (testSelectedOption === null) return;
 
-      const q = testQuestions[testIndex];
-      const correct = q.answer;
+      const subjectQs = getCurrentSubjectQuestions();
+      const sqIndex = getSubjectQuestionIndex();
+      const q = subjectQs[sqIndex];
 
-      // Highlight correct and wrong
-      for (let i = 0; i < q.options.length; i++) {
-        const btn = document.getElementById(`test-opt-${i}`);
-        btn.style.pointerEvents = 'none';
-        btn.classList.remove('selected');
-        if (i === correct) {
-          btn.classList.add('correct');
-        } else if (i === testSelectedOption && i !== correct) {
-          btn.classList.add('wrong');
-        }
-      }
-
-      // Record answer
+      // Record answer (no reveal yet)
       testAnswers.push({
         id: q.id,
         subject: q.subject,
         grade: q.grade,
-        correct: testSelectedOption === correct
+        selectedOption: testSelectedOption,
+        correct: testSelectedOption === q.answer
       });
 
-      // Hide submit, show next
-      document.getElementById('test-submit').style.display = 'none';
-      document.getElementById('test-next').style.display = '';
-    }
-
-    function nextTestQuestion() {
       testIndex++;
       showTestQuestion();
+    }
+
+    function showSegmentReview() {
+      const subject = testSubjects[currentSubjectIndex];
+      const subjectClass = subject.toLowerCase();
+      const subjectQs = getCurrentSubjectQuestions();
+      const subjectAnswers = testAnswers.filter(a => a.subject === subject);
+      const correctCount = subjectAnswers.filter(a => a.correct).length;
+
+      const body = document.getElementById('test-body');
+
+      let reviewHTML = `
+        <div style="max-width:700px;width:100%;overflow-y:auto;max-height:calc(100vh - 150px);">
+          <h1 style="font-size:1.8rem;color:#f8fafc;text-align:center;margin-bottom:8px;">
+            <span class="test-subject-badge ${subjectClass}" style="font-size:0.9rem;vertical-align:middle;margin-right:8px;">${subject}</span>
+            Section Complete
+          </h1>
+          <p style="text-align:center;color:#94a3b8;margin-bottom:24px;">You got <strong style="color:#f8fafc;">${correctCount} out of ${subjectQs.length}</strong> correct</p>
+      `;
+
+      subjectQs.forEach((q, i) => {
+        const answer = subjectAnswers[i];
+        const isCorrect = answer.correct;
+        const borderColor = isCorrect ? '#10b981' : '#ef4444';
+        const icon = isCorrect ? '&#10003;' : '&#10007;';
+        const iconColor = isCorrect ? '#10b981' : '#ef4444';
+
+        reviewHTML += `
+          <div style="background:#1e293b;border:1px solid ${borderColor};border-radius:10px;padding:16px;margin-bottom:12px;">
+            <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:8px;">
+              <strong style="color:#f8fafc;font-size:0.95rem;">Q${i + 1}: ${q.question}</strong>
+              <span style="color:${iconColor};font-size:1.2rem;min-width:24px;text-align:right;">${icon}</span>
+            </div>
+            <div style="color:#94a3b8;font-size:0.85rem;">
+              Your answer: <span style="color:${isCorrect ? '#10b981' : '#ef4444'};font-weight:600;">${q.options[answer.selectedOption]}</span>
+        `;
+
+        if (!isCorrect) {
+          reviewHTML += `
+              <br>Correct answer: <span style="color:#10b981;font-weight:600;">${q.options[q.answer]}</span>
+          `;
+        }
+
+        reviewHTML += `
+            </div>
+          </div>
+        `;
+      });
+
+      const nextSubject = currentSubjectIndex < testSubjects.length - 1 ? testSubjects[currentSubjectIndex + 1] : null;
+      const btnText = nextSubject ? `Continue to ${nextSubject}` : 'See Final Results';
+
+      reviewHTML += `
+        </div>
+        <button class="test-next-btn" onclick="continueToNextSubject()" style="margin-top:16px;">${btnText}</button>
+      `;
+
+      body.innerHTML = reviewHTML;
+    }
+
+    function continueToNextSubject() {
+      currentSubjectIndex++;
+      if (currentSubjectIndex >= testSubjects.length) {
+        showTestResults();
+      } else {
+        showTestQuestion();
+      }
     }
 
     function showTestResults() {
