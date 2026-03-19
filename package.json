@@ -1,11 +1,12 @@
 {
   "name": "homeschool-curriculum",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Homeschool Curriculum App — Grades 4 through 10: Math, English, Biology",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder --win portable"
+    "build": "electron-builder --win portable",
+    "release": "node bump-and-build.js"
   },
   "repository": {
     "type": "git",

@@ -372,10 +372,13 @@
   </div>
 
   <script>
-    const { marked } = require('marked');
-
     let currentRole = null;
     let currentGrade = null;
+
+    // ── CHECK FOR UPDATES ON LAUNCH ──
+    window.addEventListener('DOMContentLoaded', () => {
+      window.api.checkForUpdate();
+    });
 
     // ── ROLE SELECTION ──
     function selectRole(role) {
@@ -498,7 +501,7 @@
     function loadMarkdown(filePath) {
       try {
         const md = window.api.readFile(filePath);
-        document.getElementById('content').innerHTML = marked.parse(md);
+        document.getElementById('content').innerHTML = window.api.parseMarkdown(md);
       } catch (e) {
         document.getElementById('content').innerHTML = `<h1>Error</h1><p>Could not load ${filePath}</p>`;
       }
