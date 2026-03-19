@@ -165,3 +165,59 @@
 | 34 | Ecology: Human Impact | Climate change, biodiversity loss, conservation |
 | 35 | Review | Full year review, focus on weak areas |
 | 36 | Final Assessment | End-of-year test, cumulative lab practical |
+
+---
+
+## Science (Physical Science)
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Intro to Physics & Measurement | SI units, significant figures, dimensional analysis |
+| 2 | Kinematics: Distance & Displacement | Scalar vs. vector quantities, position, reference frames |
+| 3 | Kinematics: Speed & Velocity | Average speed, instantaneous speed, velocity as a vector |
+| 4 | Kinematics: Acceleration | Defining acceleration, positive/negative acceleration, deceleration |
+| 5 | Kinematics: Graphing Motion | Position-time graphs, velocity-time graphs, interpreting slope & area |
+| 6 | Kinematics: Equations of Motion | d = vt, v = v₀ + at, d = v₀t + ½at², problem solving |
+| 7 | Free Fall | Acceleration due to gravity, dropping & throwing objects, air resistance |
+| 8 | Kinematics Lab | Ticker tape timers or motion sensors, graphing real data |
+| 9 | Review & Assessment | Quarter 1 test, kinematics problem set |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Forces: Newton's First Law | Inertia, net force, equilibrium revisited |
+| 11 | Forces: Newton's Second Law | F = ma, calculating force, mass, acceleration |
+| 12 | Forces: Newton's Third Law | Action-reaction pairs, identifying forces in systems |
+| 13 | Free-Body Diagrams | Drawing and interpreting FBDs, resolving forces |
+| 14 | Friction | Static vs. kinetic friction, coefficient of friction, calculating friction force |
+| 15 | Weight, Mass & Gravity | W = mg, gravitational field strength, apparent weightlessness |
+| 16 | Forces Lab | Pulleys, spring scales, friction experiments, verifying F = ma |
+| 17 | Work & Energy: Defining Work | W = Fd, force & displacement must be parallel, units (joules) |
+| 18 | Review & Assessment | Quarter 2 test, forces lab report |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Kinetic Energy | KE = ½mv², calculating, factors affecting KE |
+| 20 | Potential Energy | Gravitational PE = mgh, elastic PE, reference points |
+| 21 | Conservation of Energy | Energy transformations, total mechanical energy, solving problems |
+| 22 | Power | P = W/t, watts, calculating power in real scenarios |
+| 23 | Energy Lab | Roller coaster or pendulum lab, measuring energy conversions |
+| 24 | Intro to Chemistry: Atomic Structure | Protons, neutrons, electrons, atomic number, mass number |
+| 25 | Isotopes & Atomic Mass | What isotopes are, calculating average atomic mass |
+| 26 | Electron Configuration | Energy levels, orbitals, filling order (Aufbau principle), notation |
+| 27 | Review & Assessment | Quarter 3 test, energy problem set |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | The Periodic Table | Organization, groups & periods, periodic trends (electronegativity, radius, ionization energy) |
+| 29 | Periodic Trends Lab | Graphing trends, predicting properties of elements |
+| 30 | Chemical Equations | Writing & balancing chemical equations, conservation of mass |
+| 31 | Types of Chemical Reactions | Synthesis, decomposition, single/double replacement, combustion |
+| 32 | Stoichiometry Intro | Mole concept, molar mass, using mole ratios |
+| 33 | Stoichiometry Practice | Solving stoichiometry problems, limiting reagents intro |
+| 34 | Chemistry Lab | Performing reactions, balancing equations from lab observations |
+| 35 | Review | Full year review, focus on weak areas |
+| 36 | Final Assessment | End-of-year test, cumulative lab practical |

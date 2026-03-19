@@ -165,3 +165,59 @@
 | 34 | Independent Research Project | Create presentation or paper |
 | 35 | Review | Full year review |
 | 36 | Final Assessment | End-of-year test, project presentations |
+
+---
+
+## Science
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Waves: Introduction | What waves are, medium, energy transfer, transverse vs. longitudinal |
+| 2 | Wave Properties | Wavelength, frequency, amplitude, wave speed (v = fλ) |
+| 3 | Sound Waves | How sound travels, speed of sound in different mediums |
+| 4 | Sound: Pitch, Volume & Resonance | Frequency & pitch, amplitude & volume, resonance, harmonics |
+| 5 | Sound Lab | Experiments with tuning forks, string instruments, measuring frequency |
+| 6 | Light Waves | Light as an electromagnetic wave, speed of light, transparent/opaque |
+| 7 | Reflection & Refraction | Law of reflection, Snell's law (conceptual), lenses & mirrors |
+| 8 | The Electromagnetic Spectrum | Radio, microwave, infrared, visible, UV, X-ray, gamma — properties & uses |
+| 9 | Review & Assessment | Quarter 1 test, waves lab report |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Chemical Bonding: Review of Atoms | Atomic structure, valence electrons, electron shells |
+| 11 | Ionic Bonds | Electron transfer, ions, ionic compound properties (NaCl, MgO) |
+| 12 | Covalent Bonds | Electron sharing, molecules, covalent compound properties (H₂O, CO₂) |
+| 13 | Comparing Bond Types | Ionic vs. covalent, properties (melting point, conductivity, solubility) |
+| 14 | Writing Chemical Formulas | Using valence to write formulas, naming compounds |
+| 15 | Chemical Equations | Word equations → chemical equations, balancing simple equations |
+| 16 | Balancing Equations Practice | Hands-on practice with balancing, conservation of mass verification |
+| 17 | Chemistry Lab | Combining elements, observing bond types, testing conductivity |
+| 18 | Review & Assessment | Quarter 2 test, bonding model project |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Rock Cycle: Overview | Three rock types, processes that transform rocks |
+| 20 | Igneous Rocks | Formation (cooling magma/lava), intrusive vs. extrusive, examples |
+| 21 | Sedimentary Rocks | Formation (compaction & cementation), layers, fossils, examples |
+| 22 | Metamorphic Rocks | Formation (heat & pressure), foliated vs. nonfoliated, examples |
+| 23 | Rock Cycle Lab | Identifying rock samples, modeling the rock cycle with crayons or chocolate |
+| 24 | Climate vs. Weather | Defining each, time scale, what determines climate |
+| 25 | Climate Factors | Latitude, altitude, ocean currents, topography, greenhouse effect |
+| 26 | Climate Change: Evidence & Impact | Temperature data, ice cores, sea level rise, ecosystem effects |
+| 27 | Review & Assessment | Quarter 3 test, rock identification quiz |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Forces Review | Contact vs. non-contact forces, net force, free-body diagrams |
+| 29 | Balanced & Unbalanced Forces | Equilibrium, acceleration from unbalanced forces |
+| 30 | Acceleration | Calculating acceleration (a = Δv/Δt), acceleration due to gravity |
+| 31 | Momentum | What momentum is (p = mv), conservation of momentum intro |
+| 32 | Momentum Lab | Collisions with carts or marbles, measuring momentum before & after |
+| 33 | Forces & Motion in Real Life | Car safety (crumple zones, seatbelts), sports physics, roller coasters |
+| 34 | Independent Science Project | Choose a topic from the year, design an experiment or research |
+| 35 | Review | Full year review |
+| 36 | Final Assessment | End-of-year test, project presentations |

@@ -165,3 +165,59 @@
 | 34 | Independent Project | Create presentation (poster, slides, or report) |
 | 35 | Review | Full year review |
 | 36 | Final Assessment | End-of-year test, project presentations |
+
+---
+
+## Science
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Energy: What is Energy? | Defining energy, forms of energy overview |
+| 2 | Kinetic Energy | Energy of motion, factors affecting KE (mass, speed) |
+| 3 | Potential Energy | Gravitational PE, elastic PE, height & mass factors |
+| 4 | Energy Transformations | Converting between forms (PE ↔ KE), examples in daily life |
+| 5 | Thermal Energy & Heat | Temperature vs. heat, conduction, convection, radiation |
+| 6 | Heat Transfer Lab | Experiments with conduction, convection, and radiation |
+| 7 | Conservation of Energy | Energy is not created or destroyed, energy in systems |
+| 8 | Energy Sources | Fossil fuels, solar, wind, hydroelectric — pros & cons |
+| 9 | Review & Assessment | Quarter 1 test, energy transformation poster |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Intro to Chemistry: Matter | What matter is, mass & volume, physical properties |
+| 11 | Atoms | What atoms are, protons, neutrons, electrons |
+| 12 | Elements | What elements are, symbols, common elements |
+| 13 | The Periodic Table Intro | How the table is organized, rows & columns, reading an entry |
+| 14 | Compounds & Molecules | Atoms combining, chemical formulas (H₂O, CO₂, NaCl) |
+| 15 | Mixtures & Solutions | Mixtures vs. compounds, dissolving, separating mixtures |
+| 16 | Physical vs. Chemical Changes | Identifying each, signs of chemical change |
+| 17 | Chemistry Lab | Mixing substances, observing reactions, recording results |
+| 18 | Review & Assessment | Quarter 2 test, element research project |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Earth's Layers | Crust, mantle, outer core, inner core — composition & properties |
+| 20 | Plate Tectonics: Continental Drift | Wegener's hypothesis, evidence (fossils, rock, coastlines) |
+| 21 | Plate Tectonics: Plate Boundaries | Divergent, convergent, transform boundaries |
+| 22 | Earthquakes | How they happen, fault lines, seismic waves, measurement |
+| 23 | Volcanoes | How they form, types (shield, composite, cinder cone), eruption |
+| 24 | Mountains & Landforms | How plate tectonics creates mountains, trenches, rift valleys |
+| 25 | Earth's Changing Surface | Slow changes (erosion, weathering) vs. fast changes (earthquakes, volcanoes) |
+| 26 | Plate Tectonics Lab | Modeling plate boundaries, plotting earthquake data |
+| 27 | Review & Assessment | Quarter 3 test |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Weather: Atmosphere | Layers of the atmosphere, composition, air pressure |
+| 29 | Weather: Air Masses & Fronts | Warm fronts, cold fronts, stationary fronts |
+| 30 | Weather: Severe Weather | Thunderstorms, tornadoes, hurricanes — how they form |
+| 31 | Weather: Forecasting | Reading weather maps, symbols, making predictions |
+| 32 | Climate Zones | Tropical, temperate, polar; factors affecting climate |
+| 33 | Weather Station Project | Build simple weather instruments, collect data for a week |
+| 34 | Weather Station Project | Analyze data, create a weather report presentation |
+| 35 | Review | Full year review |
+| 36 | Final Assessment | End-of-year test, project presentations |

@@ -165,3 +165,59 @@
 | 34 | Independent Research Project | Design experiment or research paper on chosen topic |
 | 35 | Independent Research Project | Present findings, peer review |
 | 36 | Final Assessment | End-of-year test, cumulative lab practical |
+
+---
+
+## Science (Chemistry)
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Atomic Theory: History | Democritus, Dalton, Thomson, Rutherford, Bohr, quantum model |
+| 2 | Modern Atomic Model | Protons, neutrons, electrons, atomic number, mass number, isotopes |
+| 3 | Electron Configuration | Energy levels, sublevels (s, p, d, f), orbital diagrams |
+| 4 | Electron Configuration Practice | Writing configurations, noble gas shorthand, exceptions |
+| 5 | The Periodic Table: Organization | Periods, groups, blocks (s, p, d, f), element categories |
+| 6 | Periodic Trends | Atomic radius, ionization energy, electronegativity, electron affinity |
+| 7 | Periodic Trends Lab | Graphing & analyzing trends, predicting element properties |
+| 8 | Valence Electrons & Lewis Dot Structures | Drawing Lewis dots for elements, octet rule |
+| 9 | Review & Assessment | Quarter 1 test, periodic trends analysis |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Ionic Bonding | Electron transfer, cation/anion formation, lattice energy |
+| 11 | Ionic Compounds | Naming, writing formulas, properties (melting point, conductivity) |
+| 12 | Covalent Bonding | Electron sharing, single/double/triple bonds, bond energy |
+| 13 | Lewis Structures for Molecules | Drawing molecular Lewis structures, lone pairs, resonance |
+| 14 | Molecular Geometry | VSEPR theory, shapes (linear, trigonal planar, tetrahedral, bent) |
+| 15 | Polarity | Polar vs. nonpolar bonds, polar vs. nonpolar molecules, electronegativity difference |
+| 16 | Metallic Bonding | Sea of electrons model, properties of metals |
+| 17 | Bonding Lab | Testing conductivity, solubility, melting point to determine bond type |
+| 18 | Review & Assessment | Quarter 2 test, bonding model project |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | The Mole Concept | Avogadro's number, molar mass, converting between grams/moles/particles |
+| 20 | Mole Calculations Practice | Multi-step conversions, molar mass of compounds |
+| 21 | Chemical Equations | Writing & balancing equations, interpreting coefficients as mole ratios |
+| 22 | Stoichiometry: Mole-to-Mole | Using balanced equations to find mole ratios |
+| 23 | Stoichiometry: Mass-to-Mass | Converting grams → moles → moles → grams |
+| 24 | Limiting Reagents & Excess | Identifying the limiting reagent, calculating theoretical yield |
+| 25 | Percent Yield | Actual vs. theoretical yield, calculating percent yield |
+| 26 | Stoichiometry Lab | Performing a reaction, calculating theoretical & actual yield |
+| 27 | Review & Assessment | Quarter 3 test, stoichiometry problem set |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | States of Matter | Kinetic molecular theory, properties of solids, liquids, gases |
+| 29 | Gas Laws: Boyle's & Charles's | Pressure-volume, temperature-volume relationships, calculations |
+| 30 | Gas Laws: Combined & Ideal | Combined gas law, ideal gas law (PV = nRT), problem solving |
+| 31 | Gas Laws Lab | Verifying Boyle's or Charles's law experimentally |
+| 32 | Acids & Bases | Definitions (Arrhenius, Bronsted-Lowry), pH scale, indicators |
+| 33 | Acids & Bases: Neutralization | Acid + base → salt + water, titration intro |
+| 34 | Reaction Types | Synthesis, decomposition, single replacement, double replacement, combustion, redox intro |
+| 35 | Review | Full year review, focus on weak areas |
+| 36 | Final Assessment | End-of-year comprehensive exam |

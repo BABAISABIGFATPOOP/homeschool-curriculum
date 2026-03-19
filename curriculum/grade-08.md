@@ -24,3 +24,27 @@
 - Human anatomy review & integration of systems
 - Ecology: energy flow, nutrient cycles, conservation
 - Lab: dissection intro, controlled experiments
+
+## Science
+- Waves (sound waves, light waves, electromagnetic spectrum, wave properties)
+- Chemical bonding & formulas (ionic vs. covalent bonds, writing chemical formulas)
+- Rock cycle (igneous, sedimentary, metamorphic; processes connecting them)
+- Climate vs. weather (climate zones, factors affecting climate, climate change intro)
+- Forces & motion deeper (balanced/unbalanced forces, acceleration, momentum, gravity)
+
+## Spanish
+- Preterite vs. imperfect tense (when to use each)
+- Commands (tú & usted, affirmative & negative)
+- Object pronouns (direct & indirect)
+- Subjunctive mood introduction (quiero que..., es importante que...)
+- Travel vocabulary (airport, hotel, transportation)
+- Reading & discussing short stories in Spanish
+
+## Chinese (Mandarin)
+- Complements of degree with 得 (他跑得很快)
+- Complex sentences: 因为...所以... (because...so...), 虽然...但是... (although...but...)
+- Additional connectors: 如果...就..., 不但...而且...
+- Formal vs. informal speech: 您 vs. 你, polite requests
+- Reading stories and short narratives
+- Writing short paragraphs on familiar topics
+- ~500 characters by end of year

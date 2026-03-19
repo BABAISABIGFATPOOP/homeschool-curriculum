@@ -1162,14 +1162,32 @@
             <button class="test-option" id="test-opt-${i}" onclick="selectTestOption(${i})">${opt}</button>
           `).join('')}
         </div>
-        <button class="test-next-btn" id="test-next" onclick="nextTestQuestion()" disabled>Next</button>
+        <button class="test-next-btn" id="test-submit" onclick="submitTestAnswer()" disabled>Submit</button>
+        <button class="test-next-btn" id="test-next" onclick="nextTestQuestion()" style="display:none;">Next</button>
       `;
     }
 
     function selectTestOption(index) {
       if (testAnswered) return;
-      testAnswered = true;
       testSelectedOption = index;
+
+      const q = testQuestions[testIndex];
+      // Highlight selected, unhighlight others
+      for (let i = 0; i < q.options.length; i++) {
+        const btn = document.getElementById(`test-opt-${i}`);
+        if (i === index) {
+          btn.classList.add('selected');
+        } else {
+          btn.classList.remove('selected');
+        }
+      }
+
+      document.getElementById('test-submit').disabled = false;
+    }
+
+    function submitTestAnswer() {
+      if (testAnswered || testSelectedOption === null) return;
+      testAnswered = true;
 
       const q = testQuestions[testIndex];
       const correct = q.answer;
@@ -1178,9 +1196,10 @@
       for (let i = 0; i < q.options.length; i++) {
         const btn = document.getElementById(`test-opt-${i}`);
         btn.style.pointerEvents = 'none';
+        btn.classList.remove('selected');
         if (i === correct) {
           btn.classList.add('correct');
-        } else if (i === index && i !== correct) {
+        } else if (i === testSelectedOption && i !== correct) {
           btn.classList.add('wrong');
         }
       }
@@ -1190,10 +1209,12 @@
         id: q.id,
         subject: q.subject,
         grade: q.grade,
-        correct: index === correct
+        correct: testSelectedOption === correct
       });
 
-      document.getElementById('test-next').disabled = false;
+      // Hide submit, show next
+      document.getElementById('test-submit').style.display = 'none';
+      document.getElementById('test-next').style.display = '';
     }
 
     function nextTestQuestion() {

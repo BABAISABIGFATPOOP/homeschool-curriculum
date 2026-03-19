@@ -165,3 +165,59 @@
 | 34 | Lab: Analyze & Present | Analyze data, draw conclusions, create presentation |
 | 35 | Review | Full year review |
 | 36 | Final Assessment | End-of-year test, experiment presentations |
+
+---
+
+## Science
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Newton's First Law | Inertia, objects at rest & in motion, demos |
+| 2 | Newton's Second Law | Force = mass × acceleration, calculating force |
+| 3 | Newton's Second Law Lab | Experiments with different masses and forces, measuring acceleration |
+| 4 | Newton's Third Law | Action-reaction pairs, examples (rockets, swimming, walking) |
+| 5 | Newton's Laws Applications | Combining all three laws, real-world problem solving |
+| 6 | Balanced & Unbalanced Forces | Net force, equilibrium, free-body diagrams intro |
+| 7 | Gravity & Weight | Universal gravitation (conceptual), weight vs. mass, g = 9.8 m/s² |
+| 8 | Friction | Static & kinetic friction, factors affecting friction, lab |
+| 9 | Review & Assessment | Quarter 1 test, Newton's laws lab report |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Chemical Reactions: Signs & Evidence | Color change, gas production, temperature change, precipitate |
+| 11 | Reactants & Products | Reading chemical equations, arrow notation, word equations |
+| 12 | Conservation of Mass | Matter is not created or destroyed, balancing demos |
+| 13 | Types of Reactions Intro | Synthesis, decomposition — simple examples |
+| 14 | Chemical Reactions Lab | Baking soda & vinegar, steel wool oxidation, elephant toothpaste |
+| 15 | Periodic Table: Organization | Atomic number, groups, periods, reading element squares |
+| 16 | Periodic Table: Metals, Nonmetals, Metalloids | Properties and locations on the table |
+| 17 | Elements & Their Uses | Common elements (carbon, oxygen, iron, gold, etc.), everyday applications |
+| 18 | Review & Assessment | Quarter 2 test, periodic table quiz |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Earth's Atmosphere: Composition | Nitrogen, oxygen, other gases, importance of the atmosphere |
+| 20 | Atmosphere: Layers | Troposphere, stratosphere, mesosphere, thermosphere — characteristics |
+| 21 | Air Pressure & Wind | How temperature differences create pressure differences and wind |
+| 22 | Global Wind Patterns | Trade winds, westerlies, polar easterlies, Coriolis effect |
+| 23 | Weather vs. Climate Review | Short-term vs. long-term, factors influencing each |
+| 24 | Greenhouse Effect | How it works, greenhouse gases, natural vs. enhanced |
+| 25 | Climate Change | Evidence, causes, effects on ecosystems and weather patterns |
+| 26 | Atmosphere & Climate Lab | Modeling the greenhouse effect, analyzing climate data |
+| 27 | Review & Assessment | Quarter 3 test |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Space: The Sun | Structure, energy source (fusion), solar wind, sunspots |
+| 29 | Stars | Types of stars, brightness, color & temperature, Hertzsprung-Russell diagram intro |
+| 30 | Life Cycle of Stars | Nebula, main sequence, red giant, supernova, white dwarf, neutron star, black hole |
+| 31 | Galaxies | Milky Way, types of galaxies (spiral, elliptical, irregular), scale of the universe |
+| 32 | The Big Bang | Evidence for the Big Bang, expanding universe, cosmic background radiation |
+| 33 | Telescopes & Space Technology | Optical, radio, space telescopes; satellites, rovers, probes |
+| 34 | Space Exploration Project | Research a planet, moon, or space mission; create a presentation |
+| 35 | Review | Full year review |
+| 36 | Final Assessment | End-of-year test, project presentations |

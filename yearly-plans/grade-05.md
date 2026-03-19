@@ -165,3 +165,115 @@
 | 34 | Science Fair Project | Conduct experiment, collect data |
 | 35 | Science Fair Project | Create display, present findings |
 | 36 | Final Assessment | End-of-year test, science fair presentations |
+
+---
+
+## Science
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Force & Motion: What is Force? | Push, pull, gravity, applied force, contact vs. non-contact |
+| 2 | Gravity | What gravity is, weight vs. mass, falling objects |
+| 3 | Friction & Air Resistance | Types of friction, how air resistance slows things down |
+| 4 | Speed, Velocity & Acceleration | Defining each, calculating speed (distance ÷ time) |
+| 5 | Motion Experiments | Ramp experiments, toy car races, measuring speed |
+| 6 | Light: Properties | Light travels in straight lines, reflection, shadows |
+| 7 | Light: Reflection & Refraction | Mirrors, bending of light in water, prisms & rainbows |
+| 8 | Sound: Properties | Vibrations, pitch, volume, how sound travels through mediums |
+| 9 | Review & Assessment | Quarter 1 test, force & motion lab report |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Sound Experiments | Tuning forks, rubber band guitars, sound in different materials |
+| 11 | Earth's Surface: Weathering | Mechanical & chemical weathering, examples |
+| 12 | Earth's Surface: Erosion | Water, wind, ice, gravity erosion; real-world examples |
+| 13 | Earth's Surface: Deposition | How sediment is deposited, landforms (deltas, sand dunes) |
+| 14 | Weathering & Erosion Lab | Stream table or model erosion experiment |
+| 15 | Landforms | Mountains, valleys, plateaus, plains — how they form |
+| 16 | Maps & Topography | Reading simple topographic maps, elevation, map symbols |
+| 17 | Earth's Resources | Renewable & nonrenewable, conservation, human impact |
+| 18 | Review & Assessment | Quarter 2 test, erosion project |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | The Water Cycle: Deep Dive | Evaporation, condensation, precipitation, transpiration, runoff |
+| 20 | Water Cycle Experiment | Building a mini water cycle in a bag or container |
+| 21 | Weather Patterns | How the water cycle connects to weather, humidity, dew point |
+| 22 | Oceans & Currents | Ocean layers, currents, how oceans affect weather |
+| 23 | Fresh Water | Rivers, lakes, groundwater, water table, aquifers |
+| 24 | Water Conservation | Why fresh water is limited, pollution, conservation strategies |
+| 25 | Solar System: The Sun & Inner Planets | Mercury, Venus, Earth, Mars — characteristics |
+| 26 | Solar System: Outer Planets & Beyond | Jupiter, Saturn, Uranus, Neptune, dwarf planets, asteroids |
+| 27 | Review & Assessment | Quarter 3 test, water cycle model |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Earth, Moon & Sun | Rotation, revolution, day/night, seasons |
+| 29 | Moon Phases | Waxing, waning, new moon, full moon; moon journal |
+| 30 | Eclipses & Tides | Solar & lunar eclipses, how the moon causes tides |
+| 31 | Stars & Constellations | What stars are, brightness, constellations, North Star |
+| 32 | Space Exploration | Telescopes, space probes, astronauts, ISS |
+| 33 | Science Fair Project | Choose a science question, plan experiment |
+| 34 | Science Fair Project | Conduct experiment, collect data |
+| 35 | Science Fair Project | Create display, present findings |
+| 36 | Final Assessment | End-of-year test, science fair presentations |
+
+---
+
+## Chinese (Mandarin)
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Review: Pinyin & Tones | Pinyin drills, tone practice, review greetings |
+| 2 | Classroom Phrases | 请打开书, 请坐, 请站起来, 老师好 |
+| 3 | Classroom Phrases Continued | 我不懂, 请再说一次, 可以去洗手间吗？ |
+| 4 | Days & Months | 星期一–星期日 review, 一月–十二月 |
+| 5 | Dates | 今天几月几号？年/月/日 format, birthdays |
+| 6 | Weather | 天气怎么样？晴天, 阴天, 下雨, 下雪, 刮风 |
+| 7 | Weather Sentences | 今天天气很好, 明天会下雨; daily weather report practice |
+| 8 | Character Writing | Review strokes, learn 10 new characters related to dates/weather |
+| 9 | Review & Assessment | Quarter 1 test: classroom phrases, dates, weather |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Animals | 狗, 猫, 鸟, 鱼, 马, 兔子, 猴子, 蛇 |
+| 11 | Animals in Sentences | 我有一只猫, 他喜欢狗; counting animals |
+| 12 | Food: Meals | 早饭, 午饭, 晚饭; 你吃了什么？ |
+| 13 | Food: Dishes | 米饭, 面条, 饺子, 包子, 炒饭 |
+| 14 | Food: Fruits & Vegetables | 苹果, 香蕉, 西瓜, 白菜, 土豆, 番茄 |
+| 15 | Ordering Food | 我要..., 请给我..., 好吃, 不好吃 |
+| 16 | Subject + Verb + Object | 我吃饭, 她看书, 他们踢足球; sentence building |
+| 17 | Character Writing | 15 new characters related to food and animals |
+| 18 | Review & Assessment | Quarter 2 test: animals, food, sentence patterns |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Family Review & Expansion | Review family words, add 叔叔, 阿姨, 表哥/表姐 |
+| 20 | Home & Rooms | 家, 房间, 厨房, 卧室, 客厅, 卫生间 |
+| 21 | Furniture & Objects | 床, 桌子, 椅子, 电视, 电脑, 冰箱 |
+| 22 | Location Words | 在, 上面, 下面, 里面, 旁边, 前面, 后面 |
+| 23 | Describing Where Things Are | 书在桌子上面, 猫在椅子下面 |
+| 24 | Clothing | 衣服, 裤子, 鞋子, 帽子, 裙子; colors + clothing |
+| 25 | Describing People | 高, 矮, 胖, 瘦, 长头发, 短头发 |
+| 26 | Character Writing | 15 new characters for home and clothing vocabulary |
+| 27 | Review & Assessment | Quarter 3 test: home, location, clothing, descriptions |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Transportation | 车, 公共汽车, 自行车, 飞机, 火车, 走路 |
+| 29 | Going Places | 去学校, 去商店, 去公园; 我坐公共汽车去... |
+| 30 | Hobbies Intro | 画画, 唱歌, 跳舞, 游泳, 踢足球, 看书 |
+| 31 | Expressing Likes | 我喜欢画画, 你喜欢什么？conversational practice |
+| 32 | Telling Time | 几点了？一点, 两点半, 三点十五分 |
+| 33 | Daily Schedule with Time | 我七点起床, 八点上学; combining time + activities |
+| 34 | Chinese Culture | Chinese zodiac animals, chopstick practice, cultural fun |
+| 35 | Review | Full year review: all vocabulary, characters (~100), sentences |
+| 36 | Final Assessment | End-of-year test: listening, speaking, reading, writing |
