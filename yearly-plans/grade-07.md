@@ -221,3 +221,115 @@
 | 34 | Space Exploration Project | Research a planet, moon, or space mission; create a presentation |
 | 35 | Review | Full year review |
 | 36 | Final Assessment | End-of-year test, project presentations |
+
+---
+
+## Spanish
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Review: Regular Verbs & Ser/Estar | Diagnostic assessment, refresher activities |
+| 2 | Irregular Verbs: Ir & Tener | Conjugation, common expressions (ir a, tener que) |
+| 3 | Irregular Verbs: Querer & Poder | Conjugation, using in context (quiero ir, puedo ayudar) |
+| 4 | Irregular Verbs: Hacer & Decir | Conjugation, everyday usage |
+| 5 | Stem-Changing Verbs | E→ie (pensar, preferir), o→ue (dormir, almorzar) |
+| 6 | Stem-Changing Verbs Practice | E→i (pedir, servir), mixed practice |
+| 7 | Preterite Tense: -AR Verbs | Regular preterite endings, forming past tense |
+| 8 | Preterite Tense: -ER/-IR Verbs | Regular preterite endings, practice sentences |
+| 9 | Review & Assessment | Quarter 1 quiz, verb conjugation test |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Preterite: Practice & Storytelling | Narrating past events, writing about last weekend |
+| 11 | Reflexive Verbs Intro | What reflexive means, se + infinitive, reflexive pronouns |
+| 12 | Reflexive Verbs: Daily Routine | Levantarse, ducharse, vestirse, acostarse, cepillarse |
+| 13 | Reflexive Verbs: Practice | Describing your morning/evening routine in writing |
+| 14 | Por vs. Para Part 1 | Para: purpose, destination, deadline, recipient |
+| 15 | Por vs. Para Part 2 | Por: duration, exchange, cause, through; contrast with para |
+| 16 | Por vs. Para Practice | Mixed exercises, choosing correctly in context |
+| 17 | House Vocabulary | La casa, habitaciones: cocina, baño, dormitorio, sala, comedor |
+| 18 | Review & Assessment | Quarter 2 quiz, daily routine presentation |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | House: Furniture & Items | Cama, mesa, silla, sofá, espejo, estufa, nevera |
+| 20 | Describing Your House | Mi casa tiene..., en mi dormitorio hay..., writing descriptions |
+| 21 | City Vocabulary Part 1 | Calle, parque, iglesia, hospital, supermercado, restaurante |
+| 22 | City Vocabulary Part 2 | Banco, correo, biblioteca, estación, farmacia, cine |
+| 23 | Giving Directions Part 1 | Derecha, izquierda, recto, dobla, sigue, cruza |
+| 24 | Giving Directions Part 2 | Está cerca de, lejos de, al lado de, enfrente de, detrás de |
+| 25 | Following & Giving Directions Practice | Map activities, partner direction exercises |
+| 26 | Prepositions of Place | En, sobre, debajo de, entre, dentro de, fuera de |
+| 27 | Review & Assessment | Quarter 3 quiz, city map project |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Reading: Short Dialogues | Reading conversations about directions, house, routines |
+| 29 | Writing: About My Neighborhood | Paragraph writing about where you live |
+| 30 | Listening Practice | Audio clips: following directions, understanding descriptions |
+| 31 | Culture: Spain | Geography, regions, food, flamenco, La Tomatina |
+| 32 | Culture: Caribbean Spanish-Speaking Countries | Cuba, Dominican Republic, Puerto Rico — traditions |
+| 33 | Conversation Practice | Role-play: asking for directions, describing your house |
+| 34 | Review Games & Activities | Spanish Jeopardy, verb races, vocabulary challenges |
+| 35 | Review | Full year review of vocabulary, grammar, and culture |
+| 36 | Final Assessment | End-of-year written & oral exam |
+
+---
+
+## Chinese (Mandarin)
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Review: Grade 6 Grammar | 了/会/要, measure words, question patterns review |
+| 2 | Comparison with 比 | A 比 B + adjective: 他比我高, 今天比昨天冷 |
+| 3 | 比 Sentences Extended | A 比 B + adj + 多了/一点; degree of comparison |
+| 4 | Comparison with 没有 | A 没有 B + adjective: negative comparisons |
+| 5 | Superlatives with 最 | 最大, 最好吃, 最喜欢; expressing the most/best |
+| 6 | Directions: Left & Right | 左, 右, 前, 后, 对面, 旁边; location vocabulary |
+| 7 | Directions: Cardinal | 东, 南, 西, 北; compass directions, map reading |
+| 8 | Giving Directions | 往左走, 一直走, 在右边; direction dialogues |
+| 9 | Review & Assessment | Quarter 1 test: comparisons, directions |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Shopping: Vocabulary | 商店, 超市, 东西, 买, 卖, 贵, 便宜 |
+| 11 | Money & Prices | 多少钱？块/元, 毛/角, 分; reading price tags |
+| 12 | Shopping Dialogues | 我要买..., 太贵了, 便宜一点, 可以; bargaining |
+| 13 | Hobbies: Sports | 打篮球, 踢足球, 游泳, 跑步, 打乒乓球 |
+| 14 | Hobbies: Arts & Leisure | 画画, 唱歌, 弹钢琴, 看电影, 玩游戏 |
+| 15 | Expressing Hobbies | 我的爱好是..., 我每天都..., frequency words |
+| 16 | Clock Time | 几点？差...分, 半, 刻; telling time precisely |
+| 17 | Duration with 了 | 我学了两年中文, 他等了三个小时; duration expressions |
+| 18 | Review & Assessment | Quarter 2 test: shopping, hobbies, time |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | 从...到... | From...to... for time and place: 从家到学校, 从一点到三点 |
+| 20 | Sequence Words | 先...然后...最后...; narrating steps in order |
+| 21 | Travel Vocabulary | 旅行, 飞机, 火车, 酒店, 地图, 护照 |
+| 22 | At the Restaurant | 菜单, 点菜, 服务员, 买单; restaurant dialogues |
+| 23 | Reading: Short Passages | Read 2–3 short passages (~100 characters each), answer questions |
+| 24 | Reading Comprehension Strategies | Context clues, guessing character meaning from radicals |
+| 25 | Character Study: Radicals | Common radicals and their meanings (氵, 木, 口, 心, 女, 日) |
+| 26 | Writing: Short Paragraph | Write 5–8 sentences about a familiar topic |
+| 27 | Review & Assessment | Quarter 3 test: travel, reading comprehension, writing |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Phone & Internet Vocabulary | 手机, 电话, 上网, 发短信, 电子邮件 |
+| 29 | Making Plans by Phone | 你有空吗？我们什么时候见面？在哪里？ |
+| 30 | Emotions & Feelings | 高兴, 难过, 生气, 害怕, 紧张, 无聊 |
+| 31 | Describing Experiences | 我去过中国, 我没吃过饺子; 过 for experience |
+| 32 | Chinese Culture: Holidays | 春节, 中秋节, 端午节; traditions and customs |
+| 33 | Listening Practice | Audio dialogues, dictation, comprehension exercises |
+| 34 | Cumulative Speaking Practice | Role-plays: shopping, directions, restaurant, phone calls |
+| 35 | Review | Full year review: grammar, ~350 characters, all topics |
+| 36 | Final Assessment | End-of-year test: listening, speaking, reading, writing |

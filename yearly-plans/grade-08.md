@@ -221,3 +221,115 @@
 | 34 | Independent Science Project | Choose a topic from the year, design an experiment or research |
 | 35 | Review | Full year review |
 | 36 | Final Assessment | End-of-year test, project presentations |
+
+---
+
+## Spanish
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Review: Present & Preterite | Diagnostic assessment, verb tense refresher |
+| 2 | Preterite: Irregular Verbs | Ir/ser (fui), hacer (hice), tener (tuve), estar (estuve) |
+| 3 | Preterite: More Irregulars | Poder (pude), poner (puse), saber (supe), venir (vine) |
+| 4 | Imperfect Tense: -AR Verbs | Endings (-aba), describing habitual past actions |
+| 5 | Imperfect Tense: -ER/-IR Verbs | Endings (-ía), describing ongoing past states |
+| 6 | Imperfect: Irregular Verbs | Ser (era), ir (iba), ver (veía) |
+| 7 | Preterite vs. Imperfect Part 1 | When to use each: completed vs. ongoing/habitual |
+| 8 | Preterite vs. Imperfect Part 2 | Narrating stories: background (imperfect) vs. events (preterite) |
+| 9 | Review & Assessment | Quarter 1 quiz, past tense narrative writing |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Preterite vs. Imperfect Practice | Reading & writing stories using both tenses |
+| 11 | Commands: Tú Affirmative | Regular forms, common commands (habla, come, escribe) |
+| 12 | Commands: Tú Negative | No + subjunctive form (no hables, no comas) |
+| 13 | Commands: Usted/Ustedes | Formal commands, affirmative & negative |
+| 14 | Commands: Irregular | Ven, haz, di, sal, pon, sé, ten, ve |
+| 15 | Direct Object Pronouns | Lo, la, los, las — placement with verbs |
+| 16 | Indirect Object Pronouns | Me, te, le, nos, les — placement with verbs |
+| 17 | Combining Object Pronouns | Double object pronouns, se lo/se la |
+| 18 | Review & Assessment | Quarter 2 quiz, commands & pronouns practice test |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Subjunctive: Introduction | What the subjunctive is, when it's used |
+| 20 | Subjunctive: Formation | Regular subjunctive endings, forming from yo present |
+| 21 | Subjunctive: Desire & Requests | Quiero que..., necesito que..., pido que... |
+| 22 | Subjunctive: Emotions & Opinions | Es importante que..., me alegra que..., ojalá que... |
+| 23 | Subjunctive Practice | Distinguishing indicative vs. subjunctive in context |
+| 24 | Travel Vocabulary Part 1 | Aeropuerto, pasaporte, boleto, vuelo, equipaje, aduana |
+| 25 | Travel Vocabulary Part 2 | Hotel, habitación, reservación, transporte, autobús, tren |
+| 26 | Travel Conversations | Checking in, asking for information, solving travel problems |
+| 27 | Review & Assessment | Quarter 3 quiz, travel role-play |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Reading: Short Story Part 1 | Read an adapted Spanish short story, vocabulary work |
+| 29 | Reading: Short Story Part 2 | Comprehension questions, discussing themes |
+| 30 | Reading: Short Story Part 3 | Writing a response, summarizing in Spanish |
+| 31 | Writing: Narrative in Spanish | Writing a short story using preterite & imperfect |
+| 32 | Culture: Andean Countries | Peru, Bolivia, Ecuador — history, Machu Picchu, traditions |
+| 33 | Culture: Southern Cone | Argentina, Chile, Uruguay — tango, gauchos, Patagonia |
+| 34 | Conversation & Listening Practice | Extended dialogues, listening comprehension activities |
+| 35 | Review | Full year review of grammar, vocabulary, and reading |
+| 36 | Final Assessment | End-of-year written & oral exam |
+
+---
+
+## Chinese (Mandarin)
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Review: Grade 7 Grammar | Comparisons, directions, shopping, time expressions review |
+| 2 | Complements of Degree: 得 | 他跑得很快, 她唱得很好听; structure and usage |
+| 3 | 得 Complements Practice | Describing how actions are performed, positive and negative |
+| 4 | 得 with Negation | 他写得不好, 我说得不流利; negative complements |
+| 5 | Result Complements | 看见, 听懂, 做完, 学会; verb + result |
+| 6 | Direction Complements | 走进来, 拿出去, 跑上去; verb + direction |
+| 7 | Complex Sentences: 因为...所以... | Because...therefore...; expressing cause and effect |
+| 8 | 因为...所以... Practice | Writing cause-effect sentences, paragraph building |
+| 9 | Review & Assessment | Quarter 1 test: complements, cause-effect sentences |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | 虽然...但是... | Although...but...; expressing contrast |
+| 11 | 如果...就... | If...then...; expressing conditions |
+| 12 | 不但...而且... | Not only...but also...; expressing addition |
+| 13 | Connector Practice | Mixed exercises using all four sentence connectors |
+| 14 | Formal vs. Informal: 您 vs. 你 | When to use formal address, polite language |
+| 15 | Polite Requests | 请您..., 麻烦您..., 能不能..., 可以...吗 |
+| 16 | Formal Situations | At a bank, meeting elders, writing a polite email |
+| 17 | Writing: Formal vs. Informal | Compare a text message to a formal letter |
+| 18 | Review & Assessment | Quarter 2 test: complex sentences, formal speech |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Reading: Story 1 | Read a short story (~200 characters), vocabulary and comprehension |
+| 20 | Reading: Story 1 Analysis | Retelling, summarizing, discussing themes |
+| 21 | Reading: Story 2 | Second short story, new vocabulary, comprehension questions |
+| 22 | Reading: Story 2 Analysis | Character analysis, cultural context |
+| 23 | Writing: My Daily Life | Write a paragraph (8–10 sentences) about daily routine |
+| 24 | Writing: A Special Day | Write a paragraph about a holiday or birthday |
+| 25 | Environment Vocabulary | 环境, 空气, 污染, 垃圾, 节约, 保护 |
+| 26 | Talking About the Environment | 我们应该保护环境, expressing opinions |
+| 27 | Review & Assessment | Quarter 3 test: reading comprehension, writing, vocabulary |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Health & Wellness | 健康, 锻炼, 休息, 压力, 习惯; healthy lifestyle vocabulary |
+| 29 | Giving Advice | 你应该..., 你最好..., 不要...; advice expressions |
+| 30 | Technology Vocabulary | 电脑, 网络, 软件, 搜索, 下载; modern life |
+| 31 | Describing Changes | 越来越... intro, 变化, 以前...现在...; then vs. now |
+| 32 | Chinese Culture: Arts | Chinese painting, music, martial arts; cultural appreciation |
+| 33 | Listening & Dictation | Audio stories, fill-in-the-blank, listening comprehension |
+| 34 | Cumulative Speaking Practice | Debates, storytelling, presentations in Chinese |
+| 35 | Review | Full year review: grammar, ~500 characters, reading, writing |
+| 36 | Final Assessment | End-of-year test: listening, speaking, reading, writing |

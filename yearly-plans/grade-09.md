@@ -221,3 +221,115 @@
 | 34 | Chemistry Lab | Performing reactions, balancing equations from lab observations |
 | 35 | Review | Full year review, focus on weak areas |
 | 36 | Final Assessment | End-of-year test, cumulative lab practical |
+
+---
+
+## Spanish
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Review: Preterite, Imperfect, Commands | Diagnostic assessment, warm-up activities |
+| 2 | Subjunctive Review | Revisiting subjunctive triggers and formation |
+| 3 | Subjunctive: Doubt & Uncertainty | Dudar que, no creer que, es posible que, quizás |
+| 4 | Subjunctive: Emotion | Temer que, esperar que, sentir que, sorprender que |
+| 5 | Subjunctive: Adjective Clauses | Busco alguien que..., no hay nada que... |
+| 6 | Subjunctive: Adverbial Clauses | Antes de que, para que, sin que, a menos que |
+| 7 | Subjunctive vs. Indicative | Choosing the correct mood in complex sentences |
+| 8 | Subjunctive Practice | Extended writing and conversation using subjunctive |
+| 9 | Review & Assessment | Quarter 1 quiz, subjunctive essay |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Conditional Tense: Formation | Regular endings (-ía), all verb types |
+| 11 | Conditional: Irregular Stems | Haría, diría, podría, saldría, tendría, vendría |
+| 12 | Conditional: Usage | Hypothetical situations, polite requests, advice |
+| 13 | Future Tense: Formation | Regular endings (-é, -ás, -á...), all verb types |
+| 14 | Future: Irregular Stems | Haré, diré, podré, saldré, tendré, vendré |
+| 15 | Future: Usage | Predictions, plans, probability in the present |
+| 16 | Future vs. Ir + a + Infinitive | Comparing two ways to express future, when to use each |
+| 17 | Conditional & Future Practice | Writing about plans, dreams, and hypothetical scenarios |
+| 18 | Review & Assessment | Quarter 2 quiz, future/conditional writing assignment |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Relative Pronouns: Que | Most common relative pronoun, connecting clauses |
+| 20 | Relative Pronouns: Quien & Lo que | Referring to people, abstract ideas |
+| 21 | Relative Pronouns: El cual & Cuyo | Formal usage, possessive relative pronoun |
+| 22 | Formal Writing: Letter Format | Estimado/a, atentamente, formal register in Spanish |
+| 23 | Formal Writing: Structured Paragraphs | Topic sentences, transitions, conclusions in Spanish |
+| 24 | Reading Literature: Short Excerpt 1 | Read an excerpt from a Spanish-language author, vocabulary |
+| 25 | Reading Literature: Short Excerpt 2 | Second excerpt, compare themes and styles |
+| 26 | Reading Literature: Discussion | Analyzing literary elements in Spanish |
+| 27 | Review & Assessment | Quarter 3 quiz, formal letter writing assignment |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Debate Skills in Spanish | Forming arguments, expressing opinions, agreeing/disagreeing |
+| 29 | Debate: Topic 1 | Prepared debate on a current topic in Spanish |
+| 30 | Debate: Topic 2 | Second debate, peer feedback |
+| 31 | Writing: Opinion Essay in Spanish | Thesis, supporting arguments, conclusion in Spanish |
+| 32 | Culture: Spain Deep Dive | Regions, art (Goya, Picasso, Dalí), history, modern Spain |
+| 33 | Culture: Mexico Deep Dive | History, art (Rivera, Kahlo), cuisine, traditions |
+| 34 | Listening & Conversation | Extended listening exercises, spontaneous conversation |
+| 35 | Review | Full year review of grammar, writing, and literature |
+| 36 | Final Assessment | End-of-year written, oral, and reading comprehension exam |
+
+---
+
+## Chinese (Mandarin)
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Review: Grade 8 Grammar | Complements, complex sentences, formal/informal review |
+| 2 | 把 Construction Intro | 把 + object + verb + complement: 把书放在桌子上 |
+| 3 | 把 Construction Practice | 把门关上, 把作业做完, 把房间打扫干净 |
+| 4 | 把 with Results | 把衣服洗干净, 把饭吃完; combining 把 with result complements |
+| 5 | 把 Negative & Question Forms | 别把..., 你把...了吗？ |
+| 6 | Passive Voice: 被 | 被字句: 书被他拿走了, 蛋糕被吃完了 |
+| 7 | 被 Practice | Negative events, news-style sentences, 被 vs. active voice |
+| 8 | 把 and 被 Comparison | When to use each, converting between active/passive |
+| 9 | Review & Assessment | Quarter 1 test: 把 and 被 constructions |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Chengyu Introduction | What are 成语, why they matter, structure (4 characters) |
+| 11 | Chengyu Set 1 | 一举两得, 半途而废, 自言自语; stories and usage |
+| 12 | Chengyu Set 2 | 画蛇添足, 守株待兔, 亡羊补牢; stories and usage |
+| 13 | Chengyu Set 3 | 对牛弹琴, 马到成功, 入乡随俗; stories and usage |
+| 14 | Using Chengyu in Writing | Incorporating idioms into sentences and paragraphs |
+| 15 | Writing: Structured Paragraphs | Topic sentence, supporting details, conclusion in Chinese |
+| 16 | Writing: My Hometown | Describe your city/town, what you like about it |
+| 17 | Writing: A Person I Admire | Describe someone, their qualities, why you admire them |
+| 18 | Review & Assessment | Quarter 2 test: chengyu, paragraph writing |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Reading: News Article 1 | Simplified news article (~250 characters), vocabulary, comprehension |
+| 20 | Reading: News Article 2 | Second article, different topic, identifying main idea |
+| 21 | Reading: Blog Post | Informal writing style, internet vocabulary, slang intro |
+| 22 | Reading Strategies | Skimming, scanning, identifying key information in longer texts |
+| 23 | School & Future Plans | 大学, 专业, 工作, 梦想; talking about future goals |
+| 24 | Expressing Opinions | 我觉得..., 我认为..., 同意/不同意; discussion skills |
+| 25 | Debate Practice | Simple debates on familiar topics (e.g., city vs. countryside) |
+| 26 | Travel Vocabulary Expansion | 签证, 行李, 登机, 海关; travel planning in Chinese |
+| 27 | Review & Assessment | Quarter 3 test: reading comprehension, opinions, vocabulary |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | History & Geography Vocab | 历史, 朝代, 长城, 黄河, 长江; China basics |
+| 29 | Chinese Culture: Philosophy | 孔子, 老子 intro; basic concepts of 仁, 道 |
+| 30 | Listening: Dialogues | Extended dialogues, note-taking in Chinese |
+| 31 | Listening: Short Talks | Monologues about daily life, travel, school; comprehension |
+| 32 | Writing: Opinion Paragraph | Write a structured opinion piece (10–15 sentences) |
+| 33 | Cumulative Reading Practice | Read a longer passage (~400 characters), full analysis |
+| 34 | Speaking: Presentation | Give a 2-minute presentation in Chinese on a chosen topic |
+| 35 | Review | Full year review: grammar, ~700 characters, all skills |
+| 36 | Final Assessment | End-of-year test: listening, speaking, reading, writing |

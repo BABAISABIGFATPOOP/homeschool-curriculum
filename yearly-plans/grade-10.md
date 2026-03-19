@@ -221,3 +221,115 @@
 | 34 | Reaction Types | Synthesis, decomposition, single replacement, double replacement, combustion, redox intro |
 | 35 | Review | Full year review, focus on weak areas |
 | 36 | Final Assessment | End-of-year comprehensive exam |
+
+---
+
+## Spanish
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Review: Subjunctive, Conditional, Future | Diagnostic assessment, integrated review |
+| 2 | Imperfect Subjunctive: Formation | -ra and -se endings, forming from preterite stem |
+| 3 | Imperfect Subjunctive: Usage | Past desires, emotions, hypothetical past situations |
+| 4 | Si Clauses Part 1 | Present real conditions: Si + present indicative, + future/present |
+| 5 | Si Clauses Part 2 | Hypothetical: Si + imperfect subjunctive, + conditional |
+| 6 | Si Clauses Part 3 | Past contrary-to-fact: Si + pluperfect subjunctive, + conditional perfect |
+| 7 | Advanced Subjunctive Practice | Mixed subjunctive (present & imperfect) in complex sentences |
+| 8 | Subjunctive in Independent Clauses | Ojalá, quizás, tal vez with imperfect subjunctive |
+| 9 | Review & Assessment | Quarter 1 quiz, si clause essay |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Present Perfect | He hablado, has comido, ha vivido; past participles |
+| 11 | Present Perfect: Irregular Participles | Hecho, dicho, escrito, visto, puesto, roto, abierto |
+| 12 | Past Perfect (Pluperfect) | Había hablado; describing what had happened before another event |
+| 13 | Future Perfect | Habré terminado; speculating about completed future actions |
+| 14 | Conditional Perfect | Habría ido; what would have happened |
+| 15 | Passive Voice: Ser + Past Participle | El libro fue escrito por..., agreement rules |
+| 16 | Passive Voice: Se Constructions | Se habla español, se venden libros; impersonal se |
+| 17 | Perfect Tenses & Passive Review | Integrated practice with all perfect tenses and passive |
+| 18 | Review & Assessment | Quarter 2 quiz, grammar-focused essay |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Literary Analysis: Intro | Literary terms in Spanish (tema, personaje, símbolo, metáfora) |
+| 20 | Reading: Spanish-Language Literature 1 | Short story or poem by a Latin American author |
+| 21 | Literary Analysis: Theme & Character | Analyzing theme and character development in Spanish |
+| 22 | Reading: Spanish-Language Literature 2 | Short story or poem by a Spanish author |
+| 23 | Literary Analysis: Symbolism & Style | Identifying literary devices, analyzing author's craft |
+| 24 | Essay Writing: Argumentative | Structuring an argumentative essay entirely in Spanish |
+| 25 | Essay Writing: Analytical | Writing a literary analysis essay in Spanish |
+| 26 | Peer Review & Revision | Workshopping essays, giving feedback in Spanish |
+| 27 | Review & Assessment | Quarter 3 quiz, literary analysis essay due |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Cultural Studies: Latin America Overview | Pre-Columbian civilizations, colonization, independence movements |
+| 29 | Cultural Studies: Modern Latin America | Politics, music, literature, film, current events |
+| 30 | Cultural Studies: Spain | Moorish influence, Golden Age, Civil War, modern Spain |
+| 31 | Cultural Studies: Art & Music | Muralism, nueva canción, reggaetón, flamenco, literary movements |
+| 32 | Presentation: Cultural Topic | Research and present on a cultural topic entirely in Spanish |
+| 33 | Advanced Conversation | Spontaneous discussion on current events, cultural topics |
+| 34 | Writing: Reflective Essay | Essay reflecting on language learning journey, goals, in Spanish |
+| 35 | Review | Full year review of grammar, literature, and culture |
+| 36 | Final Assessment | End-of-year comprehensive written, oral, and reading exam |
+
+---
+
+## Chinese (Mandarin)
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Review: Grade 9 Grammar | 把/被 constructions, chengyu, writing review |
+| 2 | Advanced Grammar: 越来越 | 越来越好, 越来越难; expressing gradual change |
+| 3 | Advanced Grammar: 一边...一边... | Simultaneous actions: 一边吃饭一边看电视 |
+| 4 | Advanced Grammar: 除了...以外 | Besides/except: 除了中文以外，我还学英语 |
+| 5 | Advanced Grammar: 连...都/也 | Even...: 连他都不知道, 连水都没喝 |
+| 6 | Grammar Practice: Mixed | Exercises combining all new patterns in context |
+| 7 | Classical Chinese Intro | What is 文言文, how it differs from modern Chinese |
+| 8 | Classical Chinese: Basic Particles | 之, 乎, 者, 也; simple classical sentences |
+| 9 | Review & Assessment | Quarter 1 test: advanced grammar, classical Chinese intro |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Classical Chinese: Short Passages | Read 2–3 very short classical passages with annotations |
+| 11 | Classical Chinese: Fables | 刻舟求剑, 掩耳盗铃; classical fables with modern translation |
+| 12 | Formal Essay Writing: Structure | Introduction, body, conclusion format in Chinese |
+| 13 | Opinion Essay | 我认为..., 首先...其次...最后...; writing a formal opinion |
+| 14 | Opinion Essay: Drafting | Write a full opinion essay (200+ characters) on a given topic |
+| 15 | Descriptive Essay | Describing a place, person, or experience in detail |
+| 16 | Descriptive Essay: Drafting | Write a descriptive essay using vivid vocabulary |
+| 17 | Peer Review & Revision | Review classmate's/parent's feedback, revise essays |
+| 18 | Review & Assessment | Quarter 2 test: classical Chinese, essay writing |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Literary Excerpts: Poetry | Tang dynasty poetry intro: 李白, 杜甫; read 2–3 short poems |
+| 20 | Literary Excerpts: Poetry Analysis | Imagery, emotion, cultural context in classical poems |
+| 21 | Literary Excerpts: Prose | Simplified excerpt from a classic text (e.g., 西游记, 三国演义) |
+| 22 | Literary Discussion | Discussing themes, characters, cultural significance |
+| 23 | Chinese Culture: Festivals Deep Dive | 春节, 元宵节, 清明节, 中秋节; traditions, food, history |
+| 24 | Chinese Culture: History | Major dynasties overview (秦, 汉, 唐, 宋, 明, 清) |
+| 25 | Chinese Culture: Philosophy & Values | 儒家, 道家, 佛教; core concepts and influence |
+| 26 | Chinese Culture: Arts | 书法, 国画, 京剧, 中国音乐; appreciation and discussion |
+| 27 | Review & Assessment | Quarter 3 test: literature, culture, reading comprehension |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Current Events in Chinese | Reading Chinese news summaries, discussing current topics |
+| 29 | Formal Speaking | Giving a structured speech in Chinese, debate format |
+| 30 | Advanced Reading | Longer passage (~500 characters), analysis and discussion |
+| 31 | Writing: Narrative Essay | Tell a story with beginning, middle, end (250+ characters) |
+| 32 | Writing: Compare & Contrast | Compare two cultures, places, or ideas in Chinese |
+| 33 | Comprehensive Listening | Extended audio, note-taking, summarizing in Chinese |
+| 34 | Presentation: Cultural Topic | 5-minute presentation on a Chinese cultural topic |
+| 35 | Review | Full year review: grammar, ~1000 characters, all skills |
+| 36 | Final Assessment | End-of-year test: listening, speaking, reading, writing |

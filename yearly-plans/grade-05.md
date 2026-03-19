@@ -224,6 +224,62 @@
 
 ---
 
+## Spanish
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Review: Greetings & Numbers | Refresher from Grade 4, warm-up conversations |
+| 2 | Days of the Week | Lunes–domingo, using days in sentences |
+| 3 | Months of the Year | Enero–diciembre, birthdays (¿Cuándo es tu cumpleaños?) |
+| 4 | Seasons | Primavera, verano, otoño, invierno; seasonal activities |
+| 5 | Weather Part 1 | Hace calor, hace frío, hace viento, hace sol |
+| 6 | Weather Part 2 | Llueve, nieva, está nublado; weather reports |
+| 7 | Weather Conversations | ¿Qué tiempo hace?, describing weather and seasons together |
+| 8 | Animals: Pets & Farm | Perro, gato, caballo, vaca, cerdo, gallina; review & expand |
+| 9 | Review & Assessment | Quarter 1 quiz, weather oral presentation |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Animals: Wild Animals | León, elefante, mono, serpiente, oso, tigre |
+| 11 | Animals: Ocean & Insects | Ballena, delfín, tiburón, mariposa, abeja, hormiga |
+| 12 | Food: Fruits | Manzana, plátano, naranja, fresa, uva, sandía |
+| 13 | Food: Vegetables | Zanahoria, tomate, lechuga, papa, cebolla, maíz |
+| 14 | Food: Meals | Desayuno, almuerzo, cena; common meal items |
+| 15 | Ordering Food | Quiero..., me gustaría..., la cuenta por favor |
+| 16 | -AR Verbs: Introduction | What conjugation means, hablar (hablo, hablas, habla...) |
+| 17 | -AR Verbs: Practice | Caminar, estudiar, escuchar, mirar — conjugating & using |
+| 18 | Review & Assessment | Quarter 2 quiz, food vocabulary skit |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | -AR Verbs: More Practice | Bailar, cantar, cocinar, dibujar, nadar |
+| 20 | -AR Verbs in Sentences | Building full sentences: Yo camino a la escuela |
+| 21 | Asking Questions: ¿Qué? & ¿Dónde? | Question words, forming questions |
+| 22 | Asking Questions: ¿Cuándo? & ¿Por qué? | More question words, answering in full sentences |
+| 23 | Asking Questions: ¿Quién? & ¿Cómo? | Practicing all question words together |
+| 24 | Numbers 100–1000 | Cien, doscientos..., mil; using large numbers |
+| 25 | Age & Birthday | ¿Cuántos años tienes?, Tengo ___ años, months review |
+| 26 | Descriptions with Adjectives | Grande/pequeño, bonito/feo, nuevo/viejo, bueno/malo |
+| 27 | Review & Assessment | Quarter 3 quiz, conversation assessment |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Clothing Vocabulary | Camisa, pantalones, zapatos, sombrero, vestido |
+| 29 | Describing Clothing | Colors + clothing (la camisa roja, los zapatos negros) |
+| 30 | Places in School | Biblioteca, gimnasio, cafetería, baño, oficina |
+| 31 | Daily Routine Phrases | Me despierto, desayuno, voy a la escuela, estudio |
+| 32 | Culture: Spanish-Speaking Countries | Map study, major countries, capital cities |
+| 33 | Culture: Celebrations | Festivals and traditions across Spanish-speaking world |
+| 34 | Conversation Practice | Role-play: introductions, at a restaurant, at school |
+| 35 | Review | Full year review of vocabulary, verbs, and questions |
+| 36 | Final Assessment | End-of-year oral & written test |
+
+---
+
 ## Chinese (Mandarin)
 
 ### Quarter 1 (Weeks 1–9)

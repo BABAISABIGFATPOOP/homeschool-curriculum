@@ -221,3 +221,115 @@
 | 34 | Weather Station Project | Analyze data, create a weather report presentation |
 | 35 | Review | Full year review |
 | 36 | Final Assessment | End-of-year test, project presentations |
+
+---
+
+## Spanish
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Review: Vocabulary & -AR Verbs | Refresher from Grade 5, diagnostic quiz |
+| 2 | -ER Verbs | Comer, beber, leer, correr, aprender — conjugation |
+| 3 | -IR Verbs | Vivir, escribir, abrir, recibir, compartir — conjugation |
+| 4 | -AR/-ER/-IR Practice | Mixed conjugation practice, choosing correct endings |
+| 5 | Subject Pronouns Review | Yo, tú, él/ella, nosotros, ellos/ellas, usted/ustedes |
+| 6 | Ser: Conjugation & Uses | Identity, origin, profession, characteristics |
+| 7 | Estar: Conjugation & Uses | Location, feelings, temporary conditions |
+| 8 | Ser vs. Estar Practice | Distinguishing when to use each, practice sentences |
+| 9 | Review & Assessment | Quarter 1 quiz, verb conjugation test |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Adjective Agreement: Gender | Masculine/feminine endings (-o/-a, -e, consonant) |
+| 11 | Adjective Agreement: Number | Singular/plural, adjective placement |
+| 12 | Describing People | Alto, bajo, delgado, fuerte; hair & eye color |
+| 13 | Personality Adjectives | Simpático, inteligente, divertido, tímido, amable |
+| 14 | Describing Places | Grande, pequeño, bonito, moderno, antiguo, tranquilo |
+| 15 | Telling Time Part 1 | ¿Qué hora es?, Es la una, Son las dos, en punto, y media |
+| 16 | Telling Time Part 2 | Y cuarto, menos cuarto, de la mañana/tarde/noche |
+| 17 | Daily Schedule with Time | A las ocho estudio, a las doce como; writing a schedule |
+| 18 | Review & Assessment | Quarter 2 quiz, descriptive writing piece |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Conversation Building | Combining verbs, adjectives, and time in conversations |
+| 20 | Question Formation | Turning statements into questions, intonation |
+| 21 | Negation | No + verb, nunca, nada, nadie, tampoco |
+| 22 | Gustar & Similar Verbs | Me gusta, te gusta; encantar, interesar, importar |
+| 23 | Hobbies & Activities | Deportes, música, leer, cocinar, viajar |
+| 24 | School Subjects | Matemáticas, ciencias, inglés, historia, arte, educación física |
+| 25 | Writing Simple Paragraphs | Describing yourself, your family, your school |
+| 26 | Reading Simple Texts | Short passages about daily life, comprehension questions |
+| 27 | Review & Assessment | Quarter 3 quiz, paragraph writing assignment |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Numbers Review & Ordinals | Primero, segundo, tercero... décimo |
+| 29 | Shopping Vocabulary | Tienda, mercado, precio, barato, caro, comprar, vender |
+| 30 | At the Store | Role-play: asking prices, sizes, making purchases |
+| 31 | Weather & Seasons Review | Expanded weather discussions, seasonal activities |
+| 32 | Culture: Mexico & Central America | Geography, traditions, food, famous landmarks |
+| 33 | Culture: South America | Geography, traditions, food, famous landmarks |
+| 34 | Conversation Assessment | Role-play scenarios: meeting someone, describing, scheduling |
+| 35 | Review | Full year review of grammar and vocabulary |
+| 36 | Final Assessment | End-of-year written & oral exam |
+
+---
+
+## Chinese (Mandarin)
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Review: Grade 5 Vocabulary | Cumulative review of ~100 characters, pinyin, basic sentences |
+| 2 | 了 for Completed Actions | 我吃了饭, 他去了学校; past tense marker |
+| 3 | 了 Practice | Dialogue practice, converting present to past |
+| 4 | 会 for Future/Ability | 我会说中文, 明天会下雨; future and ability |
+| 5 | 要 for Intention | 我要去商店, 她要吃饭; expressing plans |
+| 6 | Tense Practice Combined | Exercises mixing 了, 会, 要 in context |
+| 7 | Measure Words: 个, 只, 本 | 一个人, 两只猫, 三本书; when to use each |
+| 8 | Measure Words: 条, 张, 杯, 块 | 一条鱼, 一张纸, 一杯水, 一块钱 |
+| 9 | Review & Assessment | Quarter 1 test: tense markers, measure words |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Question Words: 吗 | Yes/no questions: 你是学生吗？他来了吗？ |
+| 11 | Question Words: 什么, 谁 | 你叫什么名字？谁是你的老师？ |
+| 12 | Question Words: 哪里, 哪个 | 你住在哪里？你要哪个？ |
+| 13 | Question Words: 怎么, 为什么 | 怎么去学校？为什么不来？ |
+| 14 | Question Words: 几, 多少 | 几个人？多少钱？differences in usage |
+| 15 | Adjectives with 很 | 她很漂亮, 今天很冷; adjective sentences without 是 |
+| 16 | Descriptions: People & Things | 大的, 小的, 新的, 旧的, 好看的 |
+| 17 | Dialogue Writing | Writing short dialogues using questions and descriptions |
+| 18 | Review & Assessment | Quarter 2 test: questions, adjectives, dialogues |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Time Expressions: 今天, 昨天, 明天 | Review and expand: 前天, 后天, 上个星期, 下个星期 |
+| 20 | Time Expressions: Months & Seasons | 春天, 夏天, 秋天, 冬天; seasonal activities |
+| 21 | 在 + Verb for Ongoing Actions | 我在看书, 他在吃饭; present progressive |
+| 22 | Negation: 不 vs. 没 | 我不去 vs. 我没去; when to use each |
+| 23 | School Subjects | 数学, 英语, 中文, 科学, 音乐, 体育 |
+| 24 | Talking About School | 我喜欢数学课, 今天有三节课 |
+| 25 | Reading Practice | Short dialogues and passages, comprehension questions |
+| 26 | Character Writing | 20 new characters, radical recognition (人, 口, 木, 水, 火) |
+| 27 | Review & Assessment | Quarter 3 test: time expressions, negation, school vocab |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Health & Body | 身体, 头疼, 肚子疼, 生病, 医生, 医院 |
+| 29 | At the Doctor | 你哪里不舒服？我头疼; simple medical dialogues |
+| 30 | Sports & Exercise | 运动, 跑步, 游泳, 打篮球, 踢足球 |
+| 31 | Making Plans | 你想做什么？我们一起去..., 好的/不行 |
+| 32 | Chinese Culture: Traditions | Calligraphy basics, Chinese tea culture, family values |
+| 33 | Reading & Writing Practice | Read a short story, write a short paragraph about your day |
+| 34 | Cumulative Dialogue Practice | Role-plays: at school, at a restaurant, with friends |
+| 35 | Review | Full year review: grammar, ~200 characters, reading, writing |
+| 36 | Final Assessment | End-of-year test: listening, reading, writing, speaking |
