@@ -1,5 +1,6 @@
 const { contextBridge, ipcRenderer } = require('electron');
 const { marked } = require('marked');
+const { placementQuestions } = require('./questions');
 
 contextBridge.exposeInMainWorld('api', {
   readFile: (relativePath) => ipcRenderer.invoke('read-file', relativePath),
@@ -9,5 +10,6 @@ contextBridge.exposeInMainWorld('api', {
   authSignUp: (email, password, name, dob) => ipcRenderer.invoke('auth-signup', email, password, name, dob),
   authLogIn: (email, password) => ipcRenderer.invoke('auth-login', email, password),
   authLogOut: () => ipcRenderer.invoke('auth-logout'),
-  authCurrentUser: () => ipcRenderer.invoke('auth-current-user')
+  authCurrentUser: () => ipcRenderer.invoke('auth-current-user'),
+  getQuestions: () => placementQuestions
 });

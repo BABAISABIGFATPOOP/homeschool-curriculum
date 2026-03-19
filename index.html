@@ -411,6 +411,255 @@
       line-height: 1.5;
     }
 
+    /* ── Placement Test ── */
+    #test-screen {
+      display: none;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    .test-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 24px;
+      background: #1e293b;
+      border-bottom: 1px solid #334155;
+    }
+
+    .test-topbar h2 { font-size: 1.1rem; color: #f8fafc; }
+
+    .test-progress {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .test-progress-bar {
+      width: 200px;
+      height: 8px;
+      background: #334155;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+
+    .test-progress-fill {
+      height: 100%;
+      background: #3b82f6;
+      border-radius: 4px;
+      transition: width 0.3s ease;
+    }
+
+    .test-progress-text {
+      font-size: 0.85rem;
+      color: #94a3b8;
+      min-width: 60px;
+    }
+
+    .test-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      gap: 30px;
+    }
+
+    .test-subject-badge {
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .test-subject-badge.math { background: #3b82f6; color: white; }
+    .test-subject-badge.english { background: #8b5cf6; color: white; }
+    .test-subject-badge.biology { background: #10b981; color: white; }
+
+    .test-question {
+      font-size: 1.3rem;
+      color: #f8fafc;
+      text-align: center;
+      max-width: 700px;
+      line-height: 1.6;
+    }
+
+    .test-options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .test-option {
+      padding: 14px 20px;
+      border: 2px solid #334155;
+      border-radius: 10px;
+      background: #1e293b;
+      color: #e2e8f0;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.15s;
+      text-align: left;
+    }
+
+    .test-option:hover {
+      border-color: #3b82f6;
+      background: #1e3a5f;
+    }
+
+    .test-option.selected {
+      border-color: #3b82f6;
+      background: #1e3a5f;
+    }
+
+    .test-option.correct {
+      border-color: #10b981;
+      background: #064e3b;
+    }
+
+    .test-option.wrong {
+      border-color: #ef4444;
+      background: #450a0a;
+    }
+
+    .test-next-btn {
+      padding: 12px 40px;
+      border: none;
+      border-radius: 10px;
+      background: #3b82f6;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .test-next-btn:hover {
+      background: #2563eb;
+    }
+
+    .test-next-btn:disabled {
+      background: #334155;
+      color: #64748b;
+      cursor: not-allowed;
+    }
+
+    /* ── Test Rules Screen ── */
+    .test-rules {
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .test-rules h1 {
+      font-size: 2rem;
+      color: #f8fafc;
+      margin-bottom: 24px;
+    }
+
+    .test-rules ul {
+      text-align: left;
+      margin: 20px 0 30px 20px;
+      list-style: none;
+    }
+
+    .test-rules ul li {
+      padding: 8px 0;
+      color: #cbd5e1;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .test-rules ul li::before {
+      content: '\2022';
+      color: #3b82f6;
+      font-weight: bold;
+      display: inline-block;
+      width: 1.2em;
+    }
+
+    /* ── Results Screen ── */
+    #results-screen {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .results-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 32px;
+      max-width: 550px;
+      width: 100%;
+    }
+
+    .results-card h1 {
+      font-size: 1.8rem;
+      color: #f8fafc;
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    .result-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+      border-bottom: 1px solid #334155;
+    }
+
+    .result-row:last-child { border-bottom: none; }
+
+    .result-subject {
+      font-size: 1rem;
+      color: #cbd5e1;
+      font-weight: 600;
+    }
+
+    .result-grade {
+      font-size: 1.1rem;
+      font-weight: 700;
+      padding: 4px 16px;
+      border-radius: 20px;
+    }
+
+    .result-grade.math { background: #1e3a5f; color: #60a5fa; }
+    .result-grade.english { background: #2e1065; color: #a78bfa; }
+    .result-grade.biology { background: #064e3b; color: #34d399; }
+
+    .result-overall {
+      text-align: center;
+      margin-top: 20px;
+      padding-top: 20px;
+      border-top: 2px solid #334155;
+    }
+
+    .result-overall-grade {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #f8fafc;
+    }
+
+    .result-overall-label {
+      font-size: 0.9rem;
+      color: #94a3b8;
+      margin-top: 4px;
+    }
+
+    .result-score {
+      font-size: 0.85rem;
+      color: #64748b;
+    }
+
     /* Scrollbar */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #0f172a; }
@@ -468,21 +717,23 @@
     </div>
   </div>
 
-  <!-- ── STUDENT GRADE PICKER ── -->
-  <div id="grade-picker">
-    <h1>What grade are you in?</h1>
-    <p>Pick your grade to see your curriculum</p>
-    <div class="grade-grid">
-      <button class="grade-btn" onclick="selectGrade(4)">4th<br><span class="label">Grade</span></button>
-      <button class="grade-btn" onclick="selectGrade(5)">5th<br><span class="label">Grade</span></button>
-      <button class="grade-btn" onclick="selectGrade(6)">6th<br><span class="label">Grade</span></button>
-      <button class="grade-btn" onclick="selectGrade(7)">7th<br><span class="label">Grade</span></button>
-      <button class="grade-btn" onclick="selectGrade(8)">8th<br><span class="label">Grade</span></button>
-      <button class="grade-btn" onclick="selectGrade(9)">9th<br><span class="label">Grade</span></button>
-      <button class="grade-btn" onclick="selectGrade(10)">10th<br><span class="label">Grade</span></button>
+  <!-- ── PLACEMENT TEST ── -->
+  <div id="test-screen">
+    <div class="test-topbar">
+      <h2>Placement Test</h2>
+      <div class="test-progress">
+        <span class="test-progress-text" id="test-progress-text">0 / 45</span>
+        <div class="test-progress-bar">
+          <div class="test-progress-fill" id="test-progress-fill" style="width: 0%"></div>
+        </div>
+        <button class="back-btn" onclick="quitTest()">Quit</button>
+      </div>
     </div>
-    <button class="back-btn" onclick="goHome()" style="margin-top: 10px;">Back</button>
+    <div class="test-body" id="test-body"></div>
   </div>
+
+  <!-- ── TEST RESULTS ── -->
+  <div id="results-screen"></div>
 
   <!-- ── MAIN APP ── -->
   <div id="app-screen">
@@ -634,7 +885,7 @@
       currentRole = role;
       if (role === 'student') {
         document.getElementById('role-screen').style.display = 'none';
-        document.getElementById('grade-picker').style.display = 'flex';
+        startPlacementTest();
       } else {
         showApp();
       }
@@ -660,7 +911,8 @@
       currentRole = null;
       currentGrade = null;
       document.getElementById('app-screen').style.display = 'none';
-      document.getElementById('grade-picker').style.display = 'none';
+      document.getElementById('test-screen').style.display = 'none';
+      document.getElementById('results-screen').style.display = 'none';
       document.getElementById('signin-screen').style.display = 'none';
       document.getElementById('role-screen').style.display = 'flex';
       updateRoleScreenTitle();
@@ -833,6 +1085,211 @@
           </div>
         `;
       }
+    }
+    // ═══════════════════════════════════════
+    // PLACEMENT TEST
+    // ═══════════════════════════════════════
+
+    let testQuestions = [];
+    let testIndex = 0;
+    let testAnswers = []; // { id, subject, grade, correct }
+    let testSelectedOption = null;
+    let testAnswered = false;
+
+    function startPlacementTest() {
+      document.getElementById('test-screen').style.display = 'flex';
+      testQuestions = window.api.getQuestions();
+      testIndex = 0;
+      testAnswers = [];
+      testSelectedOption = null;
+      testAnswered = false;
+      updateTestProgress();
+      showTestRules();
+    }
+
+    function quitTest() {
+      document.getElementById('test-screen').style.display = 'none';
+      goHome();
+    }
+
+    function showTestRules() {
+      const body = document.getElementById('test-body');
+      body.innerHTML = `
+        <div class="test-rules">
+          <h1>Placement Test</h1>
+          <p style="color:#94a3b8;font-size:1.05rem;margin-bottom:8px;">This test will determine your grade level for each subject.</p>
+          <ul>
+            <li>There are <strong>45 questions</strong> — 15 Math, 15 English, 15 Biology</li>
+            <li>Questions start easy and get harder as you go</li>
+            <li>Pick the best answer for each question</li>
+            <li><strong>No calculator</strong> allowed for math questions</li>
+            <li>It's okay to not know the answer — just pick your best guess</li>
+            <li>Don't worry about getting everything right. The test finds <strong>where you should start</strong>, not what you already know perfectly</li>
+            <li>Take your time — there is <strong>no time limit</strong></li>
+            <li>Your results will show a recommended grade level for each subject</li>
+          </ul>
+          <button class="test-next-btn" onclick="showTestQuestion()">Start Test</button>
+        </div>
+      `;
+    }
+
+    function updateTestProgress() {
+      const total = 45;
+      const pct = (testIndex / total) * 100;
+      document.getElementById('test-progress-text').textContent = `${testIndex} / ${total}`;
+      document.getElementById('test-progress-fill').style.width = pct + '%';
+    }
+
+    function showTestQuestion() {
+      if (testIndex >= testQuestions.length) {
+        showTestResults();
+        return;
+      }
+
+      testSelectedOption = null;
+      testAnswered = false;
+      updateTestProgress();
+
+      const q = testQuestions[testIndex];
+      const subjectClass = q.subject.toLowerCase();
+      const body = document.getElementById('test-body');
+
+      body.innerHTML = `
+        <span class="test-subject-badge ${subjectClass}">${q.subject}</span>
+        <div class="test-question">${q.question}</div>
+        <div class="test-options">
+          ${q.options.map((opt, i) => `
+            <button class="test-option" id="test-opt-${i}" onclick="selectTestOption(${i})">${opt}</button>
+          `).join('')}
+        </div>
+        <button class="test-next-btn" id="test-next" onclick="nextTestQuestion()" disabled>Next</button>
+      `;
+    }
+
+    function selectTestOption(index) {
+      if (testAnswered) return;
+      testAnswered = true;
+      testSelectedOption = index;
+
+      const q = testQuestions[testIndex];
+      const correct = q.answer;
+
+      // Highlight correct and wrong
+      for (let i = 0; i < q.options.length; i++) {
+        const btn = document.getElementById(`test-opt-${i}`);
+        btn.style.pointerEvents = 'none';
+        if (i === correct) {
+          btn.classList.add('correct');
+        } else if (i === index && i !== correct) {
+          btn.classList.add('wrong');
+        }
+      }
+
+      // Record answer
+      testAnswers.push({
+        id: q.id,
+        subject: q.subject,
+        grade: q.grade,
+        correct: index === correct
+      });
+
+      document.getElementById('test-next').disabled = false;
+    }
+
+    function nextTestQuestion() {
+      testIndex++;
+      showTestQuestion();
+    }
+
+    function showTestResults() {
+      document.getElementById('test-screen').style.display = 'none';
+
+      // Calculate grade level per subject
+      const subjects = ['Math', 'English', 'Biology'];
+      const results = {};
+
+      subjects.forEach(subject => {
+        const subjectAnswers = testAnswers.filter(a => a.subject === subject);
+        const totalCorrect = subjectAnswers.filter(a => a.correct).length;
+
+        // Find the highest grade where the student got at least 1 out of 2 correct
+        // Questions are ordered by grade, ~2 per grade level
+        let placementGrade = 4; // minimum
+
+        // Group by grade
+        const byGrade = {};
+        subjectAnswers.forEach(a => {
+          if (!byGrade[a.grade]) byGrade[a.grade] = { total: 0, correct: 0 };
+          byGrade[a.grade].total++;
+          if (a.correct) byGrade[a.grade].correct++;
+        });
+
+        // Walk up from grade 4, stop when they get less than half right
+        for (let g = 4; g <= 10; g++) {
+          if (byGrade[g]) {
+            const pct = byGrade[g].correct / byGrade[g].total;
+            if (pct >= 0.5) {
+              placementGrade = g;
+            } else {
+              break;
+            }
+          }
+        }
+
+        results[subject] = { grade: placementGrade, correct: totalCorrect, total: subjectAnswers.length };
+      });
+
+      // Overall grade = most common or average, rounded
+      const avgGrade = Math.round((results.Math.grade + results.English.grade + results.Biology.grade) / 3);
+      const overallGrade = Math.max(4, Math.min(10, avgGrade));
+
+      // Show results
+      const screen = document.getElementById('results-screen');
+      screen.style.display = 'flex';
+      screen.innerHTML = `
+        <div class="results-card">
+          <h1>Your Results</h1>
+          <div class="result-row">
+            <span class="result-subject">Math</span>
+            <div>
+              <span class="result-grade math">Grade ${results.Math.grade}</span>
+              <span class="result-score">${results.Math.correct}/${results.Math.total} correct</span>
+            </div>
+          </div>
+          <div class="result-row">
+            <span class="result-subject">English</span>
+            <div>
+              <span class="result-grade english">Grade ${results.English.grade}</span>
+              <span class="result-score">${results.English.correct}/${results.English.total} correct</span>
+            </div>
+          </div>
+          <div class="result-row">
+            <span class="result-subject">Biology</span>
+            <div>
+              <span class="result-grade biology">Grade ${results.Biology.grade}</span>
+              <span class="result-score">${results.Biology.correct}/${results.Biology.total} correct</span>
+            </div>
+          </div>
+          <div class="result-overall">
+            <div class="result-overall-label">Overall Placement</div>
+            <div class="result-overall-grade">Grade ${overallGrade}</div>
+            <p style="color:#94a3b8;font-size:0.9rem;margin-top:8px;">You'll start at Grade ${overallGrade} for all subjects.<br>Your teachers can adjust individual subjects if needed.</p>
+          </div>
+        </div>
+        <button class="test-next-btn" onclick="acceptResults(${overallGrade})">Continue to My Curriculum</button>
+        <button class="back-btn" onclick="retakeTest()">Retake Test</button>
+      `;
+    }
+
+    function acceptResults(grade) {
+      currentGrade = grade;
+      document.getElementById('results-screen').style.display = 'none';
+      showApp();
+    }
+
+    function retakeTest() {
+      document.getElementById('results-screen').style.display = 'none';
+      startPlacementTest();
     }
   </script>
 

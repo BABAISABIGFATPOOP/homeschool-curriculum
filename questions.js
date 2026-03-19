@@ -1,0 +1,265 @@
+// 45 placement test questions: 15 Math, 15 English, 15 Biology
+// Each question has a grade level (4-10), and they progress in difficulty
+// Questions are multiple choice with 4 options
+
+const placementQuestions = [
+  // ═══════════════════════════════════════
+  // MATH (15 questions, ~2 per grade level)
+  // ═══════════════════════════════════════
+
+  // Grade 4
+  { id: 1, subject: 'Math', grade: 4,
+    question: 'What is 4,208 + 3,975?',
+    options: ['7,183', '8,183', '8,173', '7,283'],
+    answer: 1 },
+
+  { id: 2, subject: 'Math', grade: 4,
+    question: 'What is the area of a rectangle that is 9 inches long and 4 inches wide?',
+    options: ['26 square inches', '36 square inches', '13 square inches', '32 square inches'],
+    answer: 1 },
+
+  // Grade 5
+  { id: 3, subject: 'Math', grade: 5,
+    question: 'What is 2/5 + 1/3?',
+    options: ['3/8', '3/15', '11/15', '7/15'],
+    answer: 2 },
+
+  { id: 4, subject: 'Math', grade: 5,
+    question: 'What is the value of 4 + 3 × 2² − 1?',
+    options: ['15', '27', '19', '23'],
+    answer: 0 },
+
+  // Grade 6
+  { id: 5, subject: 'Math', grade: 6,
+    question: 'What is 40% of 250?',
+    options: ['80', '90', '100', '120'],
+    answer: 2 },
+
+  { id: 6, subject: 'Math', grade: 6,
+    question: 'Simplify: −8 + 3 − (−5)',
+    options: ['−10', '0', '−6', '6'],
+    answer: 1 },
+
+  // Grade 7
+  { id: 7, subject: 'Math', grade: 7,
+    question: 'Solve for x: 3x + 5 = 20',
+    options: ['x = 3', 'x = 5', 'x = 7', 'x = 8'],
+    answer: 1 },
+
+  { id: 8, subject: 'Math', grade: 7,
+    question: 'What is the area of a triangle with base 10 and height 6?',
+    options: ['60', '30', '16', '36'],
+    answer: 1 },
+
+  // Grade 8
+  { id: 9, subject: 'Math', grade: 8,
+    question: 'What is the slope of the line passing through (2, 5) and (6, 13)?',
+    options: ['1', '2', '3', '4'],
+    answer: 1 },
+
+  { id: 10, subject: 'Math', grade: 8,
+    question: 'A right triangle has legs of 6 and 8. What is the hypotenuse?',
+    options: ['12', '14', '10', '9'],
+    answer: 2 },
+
+  // Grade 9
+  { id: 11, subject: 'Math', grade: 9,
+    question: 'Factor: x² + 5x + 6',
+    options: ['(x + 1)(x + 6)', '(x + 2)(x + 3)', '(x + 3)(x + 3)', '(x − 2)(x − 3)'],
+    answer: 1 },
+
+  { id: 12, subject: 'Math', grade: 9,
+    question: 'Solve: x² − 9 = 0',
+    options: ['x = 3 only', 'x = −3 only', 'x = 3 or x = −3', 'x = 9'],
+    answer: 2 },
+
+  // Grade 10
+  { id: 13, subject: 'Math', grade: 10,
+    question: 'Two angles of a triangle are 45° and 70°. What is the third angle?',
+    options: ['55°', '65°', '75°', '85°'],
+    answer: 1 },
+
+  { id: 14, subject: 'Math', grade: 10,
+    question: 'What is the area of a circle with radius 6? (in terms of π)',
+    options: ['12π', '24π', '36π', '48π'],
+    answer: 2 },
+
+  { id: 15, subject: 'Math', grade: 10,
+    question: 'Find the distance between points (1, 2) and (7, 10).',
+    options: ['8', '10', '12', '14'],
+    answer: 1 },
+
+  // ═══════════════════════════════════════
+  // ENGLISH (15 questions)
+  // ═══════════════════════════════════════
+
+  // Grade 4
+  { id: 16, subject: 'English', grade: 4,
+    question: 'In the sentence "The small dog chased the red ball," which word is an adjective?',
+    options: ['dog', 'chased', 'small', 'ball'],
+    answer: 2 },
+
+  { id: 17, subject: 'English', grade: 4,
+    question: 'Which of these is a complete sentence?',
+    options: ['Running quickly through the park.', 'The cat sat on the mat.', 'Because it was raining.', 'Very tall and green.'],
+    answer: 1 },
+
+  // Grade 5
+  { id: 18, subject: 'English', grade: 5,
+    question: 'What is the past tense of "swim"?',
+    options: ['swimmed', 'swum', 'swam', 'swimming'],
+    answer: 2 },
+
+  { id: 19, subject: 'English', grade: 5,
+    question: 'What does a prefix do to a word?',
+    options: ['Changes its spelling', 'Adds to the end', 'Changes or adds meaning at the beginning', 'Makes it plural'],
+    answer: 2 },
+
+  // Grade 6
+  { id: 20, subject: 'English', grade: 6,
+    question: '"The wind whispered through the trees" is an example of:',
+    options: ['Simile', 'Metaphor', 'Personification', 'Alliteration'],
+    answer: 2 },
+
+  { id: 21, subject: 'English', grade: 6,
+    question: 'What is a thesis statement?',
+    options: ['The first sentence of any essay', 'A question you ask the reader', 'The main argument or point of an essay', 'A summary of the conclusion'],
+    answer: 2 },
+
+  // Grade 7
+  { id: 22, subject: 'English', grade: 7,
+    question: 'Which sentence uses the correct form?',
+    options: ['Me and my friend went to the store.', 'My friend and I went to the store.', 'My friend and me went to the store.', 'I and my friend went to the store.'],
+    answer: 1 },
+
+  { id: 23, subject: 'English', grade: 7,
+    question: '"Life is a highway" is an example of:',
+    options: ['Simile', 'Metaphor', 'Hyperbole', 'Onomatopoeia'],
+    answer: 1 },
+
+  // Grade 8
+  { id: 24, subject: 'English', grade: 8,
+    question: 'What is parallel structure?',
+    options: ['Using the same font throughout', 'Using the same grammatical form for similar ideas', 'Writing two paragraphs that are the same length', 'Using parallel lines in diagrams'],
+    answer: 1 },
+
+  { id: 25, subject: 'English', grade: 8,
+    question: '"The homework was completed by the students." This sentence is written in:',
+    options: ['Active voice', 'Passive voice', 'Future tense', 'Imperative mood'],
+    answer: 1 },
+
+  // Grade 9
+  { id: 26, subject: 'English', grade: 9,
+    question: '"Everyone in my class has a phone, so phones must be essential for learning." This is an example of what logical fallacy?',
+    options: ['Ad hominem', 'Straw man', 'Bandwagon / appeal to popularity', 'Red herring'],
+    answer: 2 },
+
+  { id: 27, subject: 'English', grade: 9,
+    question: 'Ethos, pathos, and logos are:',
+    options: ['Types of poetry', 'Greek gods', 'Modes of persuasion (credibility, emotion, logic)', 'Parts of a sentence'],
+    answer: 2 },
+
+  // Grade 10
+  { id: 28, subject: 'English', grade: 10,
+    question: 'In "Pride and Prejudice," Austen writes: "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife." This is an example of:',
+    options: ['Foreshadowing', 'Irony / satire', 'Flashback', 'Allegory'],
+    answer: 1 },
+
+  { id: 29, subject: 'English', grade: 10,
+    question: 'What does it mean to analyze a text through a "critical lens"?',
+    options: ['To criticize the author', 'To read it with a magnifying glass', 'To examine it from a specific theoretical perspective', 'To find all the grammar errors'],
+    answer: 2 },
+
+  { id: 30, subject: 'English', grade: 10,
+    question: 'In Robert Frost\'s "The Road Not Taken," the two roads most likely symbolize:',
+    options: ['Actual hiking trails', 'Choices in life', 'The difference between city and country', 'Two different poems'],
+    answer: 1 },
+
+  // ═══════════════════════════════════════
+  // BIOLOGY (15 questions)
+  // ═══════════════════════════════════════
+
+  // Grade 4
+  { id: 31, subject: 'Biology', grade: 4,
+    question: 'Which of these is NOT something all living things need to survive?',
+    options: ['Water', 'Food/energy', 'Electricity', 'Air'],
+    answer: 2 },
+
+  { id: 32, subject: 'Biology', grade: 4,
+    question: 'What is the job of a plant\'s roots?',
+    options: ['Make food from sunlight', 'Absorb water and nutrients from soil', 'Attract pollinators', 'Produce seeds'],
+    answer: 1 },
+
+  // Grade 5
+  { id: 33, subject: 'Biology', grade: 5,
+    question: 'What is photosynthesis?',
+    options: ['How animals breathe', 'How plants make food using sunlight', 'How rocks are formed', 'How water evaporates'],
+    answer: 1 },
+
+  { id: 34, subject: 'Biology', grade: 5,
+    question: 'In a food chain, what is a producer?',
+    options: ['An animal that hunts other animals', 'An organism that makes its own food (like plants)', 'An animal that eats only plants', 'A decomposer like a mushroom'],
+    answer: 1 },
+
+  // Grade 6
+  { id: 35, subject: 'Biology', grade: 6,
+    question: 'What is the main difference between a plant cell and an animal cell?',
+    options: ['Plant cells have a nucleus, animal cells don\'t', 'Plant cells have a cell wall and chloroplasts, animal cells don\'t', 'Animal cells are bigger', 'Animal cells have DNA, plant cells don\'t'],
+    answer: 1 },
+
+  { id: 36, subject: 'Biology', grade: 6,
+    question: 'The six kingdoms of life are used to:',
+    options: ['Describe the six continents', 'Classify all living organisms', 'Name the six oceans', 'Describe six types of rocks'],
+    answer: 1 },
+
+  // Grade 7
+  { id: 37, subject: 'Biology', grade: 7,
+    question: 'If both parents carry a recessive gene (Bb × Bb), what percentage of offspring will show the recessive trait?',
+    options: ['0%', '25%', '50%', '75%'],
+    answer: 1 },
+
+  { id: 38, subject: 'Biology', grade: 7,
+    question: 'What is natural selection?',
+    options: ['Animals choosing their mates', 'Organisms with traits better suited to their environment survive and reproduce more', 'Scientists selecting which animals to study', 'Plants growing toward sunlight'],
+    answer: 1 },
+
+  // Grade 8
+  { id: 39, subject: 'Biology', grade: 8,
+    question: 'What is the main purpose of mitosis?',
+    options: ['To create sex cells', 'To produce energy', 'To grow and repair body cells', 'To digest food'],
+    answer: 2 },
+
+  { id: 40, subject: 'Biology', grade: 8,
+    question: 'The equation 6CO₂ + 6H₂O → C₆H₁₂O₆ + 6O₂ represents:',
+    options: ['Cellular respiration', 'Photosynthesis', 'Fermentation', 'Decomposition'],
+    answer: 1 },
+
+  // Grade 9
+  { id: 41, subject: 'Biology', grade: 9,
+    question: 'Which macromolecule is made of amino acids?',
+    options: ['Carbohydrates', 'Lipids', 'Proteins', 'Nucleic acids'],
+    answer: 2 },
+
+  { id: 42, subject: 'Biology', grade: 9,
+    question: 'During transcription, DNA is used as a template to make:',
+    options: ['More DNA', 'mRNA', 'Protein', 'Lipids'],
+    answer: 1 },
+
+  // Grade 10
+  { id: 43, subject: 'Biology', grade: 10,
+    question: 'What is the difference between mitosis and meiosis?',
+    options: ['Mitosis makes 4 cells, meiosis makes 2', 'Mitosis is for growth (2 identical cells), meiosis is for sex cells (4 unique cells)', 'They are the same thing', 'Meiosis only happens in plants'],
+    answer: 1 },
+
+  { id: 44, subject: 'Biology', grade: 10,
+    question: 'In the lock-and-key model, what happens when an enzyme is denatured?',
+    options: ['It works faster', 'Its shape changes and it can no longer bind to its substrate', 'It duplicates itself', 'It becomes a different enzyme'],
+    answer: 1 },
+
+  { id: 45, subject: 'Biology', grade: 10,
+    question: 'A mutation in a gamete (sex cell) vs. a somatic (body) cell — which can be inherited?',
+    options: ['Somatic cell mutation', 'Gamete mutation', 'Both equally', 'Neither'],
+    answer: 1 }
+];
+
+module.exports = { placementQuestions };
