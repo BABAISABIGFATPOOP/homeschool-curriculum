@@ -24,12 +24,7 @@ pkg.version = parts.join('.');
 fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2) + '\n');
 
 console.log(`Version bumped to ${pkg.version}`);
-console.log('Building...');
-
-execSync('npx electron-builder --win portable', { stdio: 'inherit', cwd: __dirname });
-
-console.log(`\nBuild complete: Homeschool Curriculum ${pkg.version}.exe`);
-console.log('To release, run:');
-console.log(`  cd ${__dirname}`);
+console.log('\nTo release (builds Win + Mac automatically via GitHub Actions):');
 console.log(`  git add -A && git commit -m "v${pkg.version}" && git push`);
-console.log(`  gh release create v${pkg.version} "dist/Homeschool Curriculum ${pkg.version}.exe" --title "v${pkg.version}"`);
+console.log(`  git tag v${pkg.version} && git push origin v${pkg.version}`);
+console.log('\nGitHub Actions will build both .exe and .zip and attach them to the release.');
