@@ -420,21 +420,33 @@
 </head>
 <body>
 
-  <!-- ── SIGN IN ── -->
+  <!-- ── AUTH SCREEN ── -->
   <div id="signin-screen">
     <h1>Homeschool Curriculum</h1>
-    <p>Sign in to get started</p>
+    <p id="auth-subtitle">Sign in to get started</p>
     <div class="signin-form">
-      <div class="form-group">
+      <div class="form-group" id="name-group" style="display:none;">
         <label>Name</label>
         <input type="text" id="signin-name" placeholder="Enter your name" autocomplete="off">
       </div>
       <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="signin-email" placeholder="Enter your email" autocomplete="off">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" id="signin-password" placeholder="Enter your password">
+      </div>
+      <div class="form-group" id="dob-group" style="display:none;">
         <label>Date of Birth</label>
         <input type="date" id="signin-dob">
       </div>
       <div class="signin-error" id="signin-error"></div>
-      <button class="signin-btn" id="signin-btn" onclick="signIn()" disabled>Sign In</button>
+      <button class="signin-btn" id="signin-btn" onclick="handleAuth()">Sign In</button>
+      <p style="text-align:center;color:#94a3b8;font-size:0.9rem;">
+        <span id="auth-toggle-text">Don't have an account?</span>
+        <a href="#" id="auth-toggle-link" onclick="toggleAuthMode(event)" style="color:#3b82f6;text-decoration:none;font-weight:600;">Sign Up</a>
+      </p>
     </div>
   </div>
 
@@ -496,60 +508,110 @@
     let currentGrade = null;
     let userName = '';
     let userDob = '';
+    let isSignUpMode = false;
 
-    // ── CHECK FOR UPDATES ON LAUNCH ──
-    window.addEventListener('DOMContentLoaded', () => {
+    // ── CHECK FOR UPDATES & AUTO-LOGIN ON LAUNCH ──
+    window.addEventListener('DOMContentLoaded', async () => {
       window.api.checkForUpdate();
 
-      // Enable sign-in button when both fields are filled
-      const nameInput = document.getElementById('signin-name');
-      const dobInput = document.getElementById('signin-dob');
-      const btn = document.getElementById('signin-btn');
+      // Allow Enter key to submit
+      document.querySelectorAll('#signin-screen input').forEach(input => {
+        input.addEventListener('keydown', (e) => { if (e.key === 'Enter') handleAuth(); });
+      });
 
-      function checkForm() {
-        btn.disabled = !(nameInput.value.trim() && dobInput.value);
-      }
-      nameInput.addEventListener('input', checkForm);
-      dobInput.addEventListener('input', checkForm);
-
-      // Allow Enter key to sign in
-      nameInput.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !btn.disabled) signIn(); });
-      dobInput.addEventListener('keydown', (e) => { if (e.key === 'Enter' && !btn.disabled) signIn(); });
-
-      // Check if user already signed in before (saved in localStorage)
-      const saved = localStorage.getItem('homeschool-user');
-      if (saved) {
-        const data = JSON.parse(saved);
-        userName = data.name;
-        userDob = data.dob;
+      // Check if already logged in via Firebase
+      const user = await window.api.authCurrentUser();
+      if (user) {
+        userName = user.name;
+        userDob = user.dob;
         document.getElementById('signin-screen').style.display = 'none';
         document.getElementById('role-screen').style.display = 'flex';
         updateRoleScreenTitle();
       }
     });
 
-    // ── SIGN IN ──
-    function signIn() {
-      const name = document.getElementById('signin-name').value.trim();
-      const dob = document.getElementById('signin-dob').value;
+    // ── TOGGLE SIGN IN / SIGN UP ──
+    function toggleAuthMode(e) {
+      e.preventDefault();
+      isSignUpMode = !isSignUpMode;
+      const nameGroup = document.getElementById('name-group');
+      const dobGroup = document.getElementById('dob-group');
+      const btn = document.getElementById('signin-btn');
+      const subtitle = document.getElementById('auth-subtitle');
+      const toggleText = document.getElementById('auth-toggle-text');
+      const toggleLink = document.getElementById('auth-toggle-link');
       const error = document.getElementById('signin-error');
-
-      if (!name) { error.textContent = 'Please enter your name.'; return; }
-      if (!dob) { error.textContent = 'Please enter your date of birth.'; return; }
-
-      userName = name;
-      userDob = dob;
-      localStorage.setItem('homeschool-user', JSON.stringify({ name, dob }));
-
       error.textContent = '';
-      document.getElementById('signin-screen').style.display = 'none';
-      document.getElementById('role-screen').style.display = 'flex';
-      updateRoleScreenTitle();
+
+      if (isSignUpMode) {
+        nameGroup.style.display = 'flex';
+        dobGroup.style.display = 'flex';
+        btn.textContent = 'Sign Up';
+        subtitle.textContent = 'Create your account';
+        toggleText.textContent = 'Already have an account?';
+        toggleLink.textContent = 'Sign In';
+      } else {
+        nameGroup.style.display = 'none';
+        dobGroup.style.display = 'none';
+        btn.textContent = 'Sign In';
+        subtitle.textContent = 'Sign in to get started';
+        toggleText.textContent = "Don't have an account?";
+        toggleLink.textContent = 'Sign Up';
+      }
+    }
+
+    // ── HANDLE AUTH (SIGN IN OR SIGN UP) ──
+    async function handleAuth() {
+      const email = document.getElementById('signin-email').value.trim();
+      const password = document.getElementById('signin-password').value;
+      const error = document.getElementById('signin-error');
+      const btn = document.getElementById('signin-btn');
+
+      if (!email) { error.textContent = 'Please enter your email.'; return; }
+      if (!password) { error.textContent = 'Please enter your password.'; return; }
+      if (password.length < 6) { error.textContent = 'Password must be at least 6 characters.'; return; }
+
+      btn.disabled = true;
+      btn.textContent = isSignUpMode ? 'Signing up...' : 'Signing in...';
+      error.textContent = '';
+
+      let result;
+      if (isSignUpMode) {
+        const name = document.getElementById('signin-name').value.trim();
+        const dob = document.getElementById('signin-dob').value;
+        if (!name) { error.textContent = 'Please enter your name.'; btn.disabled = false; btn.textContent = 'Sign Up'; return; }
+        if (!dob) { error.textContent = 'Please enter your date of birth.'; btn.disabled = false; btn.textContent = 'Sign Up'; return; }
+        result = await window.api.authSignUp(email, password, name, dob);
+      } else {
+        result = await window.api.authLogIn(email, password);
+      }
+
+      btn.disabled = false;
+      btn.textContent = isSignUpMode ? 'Sign Up' : 'Sign In';
+
+      if (result.success) {
+        userName = result.user.name;
+        userDob = result.user.dob;
+        document.getElementById('signin-screen').style.display = 'none';
+        document.getElementById('role-screen').style.display = 'flex';
+        updateRoleScreenTitle();
+      } else {
+        // Clean up Firebase error messages
+        let msg = result.error;
+        if (msg.includes('auth/email-already-in-use')) msg = 'An account with this email already exists.';
+        else if (msg.includes('auth/invalid-email')) msg = 'Please enter a valid email address.';
+        else if (msg.includes('auth/invalid-credential')) msg = 'Incorrect email or password.';
+        else if (msg.includes('auth/user-not-found')) msg = 'No account found with this email.';
+        else if (msg.includes('auth/wrong-password')) msg = 'Incorrect password.';
+        else if (msg.includes('auth/weak-password')) msg = 'Password must be at least 6 characters.';
+        else if (msg.includes('auth/too-many-requests')) msg = 'Too many attempts. Please try again later.';
+        error.textContent = msg;
+      }
     }
 
     // ── SIGN OUT ──
-    function signOut() {
-      localStorage.removeItem('homeschool-user');
+    async function signOut() {
+      await window.api.authLogOut();
       userName = '';
       userDob = '';
       currentRole = null;
@@ -558,9 +620,13 @@
       document.getElementById('grade-picker').style.display = 'none';
       document.getElementById('role-screen').style.display = 'none';
       document.getElementById('signin-screen').style.display = 'flex';
+      document.getElementById('signin-email').value = '';
+      document.getElementById('signin-password').value = '';
       document.getElementById('signin-name').value = '';
       document.getElementById('signin-dob').value = '';
-      document.getElementById('signin-btn').disabled = true;
+      document.getElementById('signin-error').textContent = '';
+      // Reset to sign-in mode
+      if (isSignUpMode) toggleAuthMode({ preventDefault: () => {} });
     }
 
     // ── ROLE SELECTION ──

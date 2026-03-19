@@ -2,6 +2,7 @@ const { app, BrowserWindow, ipcMain, dialog, shell } = require('electron');
 const path = require('path');
 const fs = require('fs');
 const https = require('https');
+const auth = require('./auth');
 
 // Get the base path for content files — works in both dev and packaged mode
 function getBasePath() {
@@ -99,6 +100,35 @@ ipcMain.handle('check-for-update', async () => {
     }
   }
   return result;
+});
+
+// Auth handlers
+ipcMain.handle('auth-signup', async (event, email, password, name, dob) => {
+  try {
+    const user = await auth.signUp(email, password, name, dob);
+    return { success: true, user };
+  } catch (e) {
+    return { success: false, error: e.message };
+  }
+});
+
+ipcMain.handle('auth-login', async (event, email, password) => {
+  try {
+    const user = await auth.logIn(email, password);
+    return { success: true, user };
+  } catch (e) {
+    return { success: false, error: e.message };
+  }
+});
+
+ipcMain.handle('auth-logout', async () => {
+  await auth.logOut();
+  return { success: true };
+});
+
+ipcMain.handle('auth-current-user', async () => {
+  const user = await auth.getCurrentUser();
+  return user;
 });
 
 app.whenReady().then(createWindow);

@@ -1,6 +1,6 @@
 {
   "name": "homeschool-curriculum",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Homeschool Curriculum App — Grades 4 through 10: Math, English, Biology",
   "main": "main.js",
   "scripts": {
@@ -25,6 +25,7 @@
     "electron-builder": "^26.8.1"
   },
   "dependencies": {
+    "firebase": "^12.10.0",
     "marked": "^17.0.4"
   },
   "build": {
@@ -41,6 +42,7 @@
     "files": [
       "main.js",
       "preload.js",
+      "auth.js",
       "index.html",
       "curriculum/**/*",
       "placement-tests/**/*",
