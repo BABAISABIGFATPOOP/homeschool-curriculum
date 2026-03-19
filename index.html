@@ -498,9 +498,9 @@
     }
 
     // ── LOAD MARKDOWN ──
-    function loadMarkdown(filePath) {
+    async function loadMarkdown(filePath) {
       try {
-        const md = window.api.readFile(filePath);
+        const md = await window.api.readFile(filePath);
         document.getElementById('content').innerHTML = window.api.parseMarkdown(md);
       } catch (e) {
         document.getElementById('content').innerHTML = `<h1>Error</h1><p>Could not load ${filePath}</p>`;

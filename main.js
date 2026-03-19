@@ -1,6 +1,12 @@
 const { app, BrowserWindow, ipcMain, dialog, shell } = require('electron');
 const path = require('path');
+const fs = require('fs');
 const https = require('https');
+
+// Get the base path for content files — works in both dev and packaged mode
+function getBasePath() {
+  return app.getAppPath();
+}
 
 function createWindow() {
   const win = new BrowserWindow({
@@ -20,9 +26,23 @@ function createWindow() {
   win.setMenuBarVisibility(false);
 }
 
+// Read a content file
+ipcMain.handle('read-file', (event, relativePath) => {
+  const fullPath = path.join(getBasePath(), relativePath);
+  return fs.readFileSync(fullPath, 'utf-8');
+});
+
+// Get app version
+ipcMain.handle('get-version', () => {
+  const pkgPath = path.join(getBasePath(), 'package.json');
+  const pkg = JSON.parse(fs.readFileSync(pkgPath, 'utf-8'));
+  return pkg.version;
+});
+
 // Check GitHub releases for a newer version
 function checkForUpdate() {
-  const currentVersion = require('./package.json').version;
+  const pkgPath = path.join(getBasePath(), 'package.json');
+  const currentVersion = JSON.parse(fs.readFileSync(pkgPath, 'utf-8')).version;
 
   return new Promise((resolve) => {
     const options = {
