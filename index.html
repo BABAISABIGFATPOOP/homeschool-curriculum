@@ -2020,8 +2020,7 @@
 
     function continueToNextSubject() {
       currentSubjectIndex++;
-      // Keep current difficulty — if you proved you're at grade 9 in Math,
-      // English starts at grade 9 too instead of resetting to 7
+      currentDifficulty = 7; // Each subject starts fresh at grade 7
       questionsAskedThisSubject = 0;
       if (currentSubjectIndex >= activeTestSubjects.length) {
         showTestResults();
