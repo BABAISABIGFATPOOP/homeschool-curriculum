@@ -939,6 +939,25 @@
         </label>
       </div>
     </div>
+    <button class="back-btn" onclick="showClepBrowser()" style="margin-top:4px;font-size:0.9rem;padding:8px 20px;">CLEP Practice Tests</button>
+  </div>
+
+  <!-- ── CLEP BROWSER ── -->
+  <div id="clep-browser" style="display:none;height:100vh;flex-direction:column;">
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <button class="back-btn" onclick="closeClepBrowser()">Back</button>
+        <h2>CLEP Practice Tests</h2>
+      </div>
+    </div>
+    <div class="main-area">
+      <div class="sidebar" id="clep-browser-sidebar" style="overflow-y:auto;"></div>
+      <div class="content" id="clep-browser-content">
+        <h1>CLEP Practice Tests</h1>
+        <p>Pick a practice test from the sidebar to get started. Each test simulates the real CLEP exam with the same number of questions and time limit.</p>
+        <p>Your answers are checked against the answer key at the bottom of each test.</p>
+      </div>
+    </div>
   </div>
 
   <!-- ── PLACEMENT TEST ── -->
@@ -1165,6 +1184,7 @@
       document.getElementById('test-screen').style.display = 'none';
       document.getElementById('results-screen').style.display = 'none';
       document.getElementById('language-screen').style.display = 'none';
+      document.getElementById('clep-browser').style.display = 'none';
       document.getElementById('signin-screen').style.display = 'none';
       document.getElementById('role-screen').style.display = 'flex';
       updateRoleScreenTitle();
@@ -1834,6 +1854,110 @@
       document.getElementById('role-check-spanish').checked = selectedLanguages.includes('spanish');
       document.getElementById('role-check-chinese').checked = selectedLanguages.includes('chinese');
       document.getElementById('role-check-clep').checked = showClep;
+    }
+
+    // ── CLEP BROWSER (pre-login) ──
+    function showClepBrowser() {
+      document.getElementById('role-screen').style.display = 'none';
+      document.getElementById('clep-browser').style.display = 'flex';
+      buildClepBrowserSidebar();
+    }
+
+    function closeClepBrowser() {
+      document.getElementById('clep-browser').style.display = 'none';
+      document.getElementById('role-screen').style.display = 'flex';
+      updateRoleScreenTitle();
+      syncRoleCheckboxes();
+    }
+
+    function buildClepBrowserSidebar() {
+      const sidebar = document.getElementById('clep-browser-sidebar');
+      sidebar.innerHTML = '';
+
+      const addClepSection = (title, items) => {
+        const section = document.createElement('div');
+        section.className = 'sidebar-section';
+        section.innerHTML = '<div class="sidebar-section-title">' + title + '</div>';
+        items.forEach(item => {
+          const btn = document.createElement('button');
+          btn.className = 'sidebar-item';
+          btn.textContent = item.label;
+          btn.onclick = () => {
+            sidebar.querySelectorAll('.sidebar-item').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            loadClepContent(item.file);
+          };
+          section.appendChild(btn);
+        });
+        sidebar.appendChild(section);
+      };
+
+      addClepSection('Study Guides', [
+        { label: 'Overview & Tips', file: 'clep-prep/overview.md' },
+        { label: 'College Mathematics', file: 'clep-prep/college-mathematics.md' },
+        { label: 'College Algebra', file: 'clep-prep/college-algebra.md' },
+        { label: 'College Composition', file: 'clep-prep/college-composition.md' },
+        { label: 'Literature', file: 'clep-prep/analyzing-literature.md' },
+        { label: 'Biology', file: 'clep-prep/biology.md' },
+        { label: 'Chemistry', file: 'clep-prep/chemistry.md' },
+        { label: 'US History I', file: 'clep-prep/us-history-1.md' },
+        { label: 'US History II', file: 'clep-prep/us-history-2.md' },
+        { label: 'Western Civ I', file: 'clep-prep/western-civ-1.md' },
+        { label: 'Western Civ II', file: 'clep-prep/western-civ-2.md' },
+        { label: 'Spanish', file: 'clep-prep/spanish.md' }
+      ]);
+
+      addClepSection('Practice Exams 1', [
+        { label: 'College Math', file: 'clep-prep/practice-exams/college-mathematics-exam.md' },
+        { label: 'College Algebra', file: 'clep-prep/practice-exams/college-algebra-exam.md' },
+        { label: 'Composition', file: 'clep-prep/practice-exams/college-composition-exam.md' },
+        { label: 'Literature', file: 'clep-prep/practice-exams/analyzing-literature-exam.md' },
+        { label: 'Biology', file: 'clep-prep/practice-exams/biology-exam.md' },
+        { label: 'Chemistry', file: 'clep-prep/practice-exams/chemistry-exam.md' },
+        { label: 'US History I', file: 'clep-prep/practice-exams/us-history-1-exam.md' },
+        { label: 'US History II', file: 'clep-prep/practice-exams/us-history-2-exam.md' },
+        { label: 'Western Civ I', file: 'clep-prep/practice-exams/western-civ-1-exam.md' },
+        { label: 'Western Civ II', file: 'clep-prep/practice-exams/western-civ-2-exam.md' },
+        { label: 'Spanish', file: 'clep-prep/practice-exams/spanish-exam.md' }
+      ]);
+
+      addClepSection('Practice Exams 2', [
+        { label: 'College Math', file: 'clep-prep/practice-exams/college-mathematics-exam-2.md' },
+        { label: 'College Algebra', file: 'clep-prep/practice-exams/college-algebra-exam-2.md' },
+        { label: 'Composition', file: 'clep-prep/practice-exams/college-composition-exam-2.md' },
+        { label: 'Literature', file: 'clep-prep/practice-exams/analyzing-literature-exam-2.md' },
+        { label: 'Biology', file: 'clep-prep/practice-exams/biology-exam-2.md' },
+        { label: 'Chemistry', file: 'clep-prep/practice-exams/chemistry-exam-2.md' },
+        { label: 'US History I', file: 'clep-prep/practice-exams/us-history-1-exam-2.md' },
+        { label: 'US History II', file: 'clep-prep/practice-exams/us-history-2-exam-2.md' },
+        { label: 'Western Civ I', file: 'clep-prep/practice-exams/western-civ-1-exam-2.md' },
+        { label: 'Western Civ II', file: 'clep-prep/practice-exams/western-civ-2-exam-2.md' },
+        { label: 'Spanish', file: 'clep-prep/practice-exams/spanish-exam-2.md' }
+      ]);
+
+      addClepSection('Practice Exams 3', [
+        { label: 'College Math', file: 'clep-prep/practice-exams/college-mathematics-exam-3.md' },
+        { label: 'College Algebra', file: 'clep-prep/practice-exams/college-algebra-exam-3.md' },
+        { label: 'Composition', file: 'clep-prep/practice-exams/college-composition-exam-3.md' },
+        { label: 'Literature', file: 'clep-prep/practice-exams/analyzing-literature-exam-3.md' },
+        { label: 'Biology', file: 'clep-prep/practice-exams/biology-exam-3.md' },
+        { label: 'Chemistry', file: 'clep-prep/practice-exams/chemistry-exam-3.md' },
+        { label: 'US History I', file: 'clep-prep/practice-exams/us-history-1-exam-3.md' },
+        { label: 'US History II', file: 'clep-prep/practice-exams/us-history-2-exam-3.md' },
+        { label: 'Western Civ I', file: 'clep-prep/practice-exams/western-civ-1-exam-3.md' },
+        { label: 'Western Civ II', file: 'clep-prep/practice-exams/western-civ-2-exam-3.md' },
+        { label: 'Spanish', file: 'clep-prep/practice-exams/spanish-exam-3.md' }
+      ]);
+    }
+
+    async function loadClepContent(filePath) {
+      const content = document.getElementById('clep-browser-content');
+      try {
+        const md = await window.api.readFile(filePath);
+        content.innerHTML = window.api.parseMarkdown(md);
+      } catch (e) {
+        content.innerHTML = '<h1>Error</h1><p>Could not load ' + filePath + '</p>';
+      }
     }
   </script>
 
