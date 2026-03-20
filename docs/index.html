@@ -1773,61 +1773,73 @@
       return arr;
     }
 
+    // Adaptive test: question pool per subject, grouped by grade
+    let subjectPools = {}; // { Math: { 4: [...], 5: [...], ... }, ... }
+    let currentDifficulty = 7; // Start at grade 7 (middle)
+    let questionsAskedThisSubject = 0;
+    const QUESTIONS_PER_SUBJECT = 15;
+
     function startPlacementTest(subjects) {
       activeTestSubjects = subjects || ['Math', 'English', 'Biology', 'Science', 'History', 'Geography'];
       document.getElementById('test-screen').style.display = 'flex';
       showScratchButton();
 
-      // Pull from the full 4,500 question pool (750 per subject)
+      // Build question pools per subject per grade from the 4,500 question bank
       const allBanks = allQuestionsBySubject;
-      testQuestions = [];
+      subjectPools = {};
 
       activeTestSubjects.forEach(subject => {
-        // Get all 750 questions for this subject from the test banks
         let pool = allBanks[subject] ? [...allBanks[subject]] : [];
-
-        // If no test bank for this subject, fall back to base questions
         if (pool.length === 0) {
           pool = placementQuestions.filter(q => q.subject === subject);
         }
 
-        // Shuffle the entire pool
-        shuffle(pool);
-
-        // Group by grade and pick ~2 per grade to get 15 total
-        const byGrade = {};
+        subjectPools[subject] = {};
         pool.forEach(q => {
-          if (!byGrade[q.grade]) byGrade[q.grade] = [];
-          byGrade[q.grade].push(q);
+          if (!subjectPools[subject][q.grade]) subjectPools[subject][q.grade] = [];
+          subjectPools[subject][q.grade].push(q);
         });
-
-        const picked = [];
-        // Pick 2 per grade (4-10 = 7 grades × 2 = 14, plus 1 extra)
-        for (let g = 4; g <= 10; g++) {
-          if (byGrade[g]) {
-            const count = g === 10 ? 3 : 2; // 3 for grade 10 to hit 15
-            picked.push(...byGrade[g].slice(0, count));
-          }
+        // Shuffle each grade's pool
+        for (const g in subjectPools[subject]) {
+          shuffle(subjectPools[subject][g]);
         }
-
-        // Shuffle options for each picked question
-        picked.forEach(q => {
-          const correctAnswer = q.options[q.answer];
-          const shuffledOpts = shuffle([...q.options]);
-          testQuestions.push({
-            ...q,
-            options: shuffledOpts,
-            answer: shuffledOpts.indexOf(correctAnswer)
-          });
-        });
       });
 
+      testQuestions = []; // Will be built dynamically
       testIndex = 0;
       testAnswers = [];
       testSelectedOption = null;
       currentSubjectIndex = 0;
+      currentDifficulty = 7;
+      questionsAskedThisSubject = 0;
       updateTestProgress();
       showTestRules();
+    }
+
+    function pickNextQuestion() {
+      const subject = activeTestSubjects[currentSubjectIndex];
+      const pool = subjectPools[subject];
+      if (!pool) return null;
+
+      // Try current difficulty, then search nearby grades
+      for (let offset = 0; offset <= 6; offset++) {
+        for (const dir of [0, 1, -1]) {
+          const g = currentDifficulty + (dir * offset);
+          if (g < 4 || g > 10) continue;
+          if (pool[g] && pool[g].length > 0) {
+            const q = pool[g].shift(); // Take and remove from pool
+            // Shuffle options
+            const correctAnswer = q.options[q.answer];
+            const shuffledOpts = shuffle([...q.options]);
+            return {
+              ...q,
+              options: shuffledOpts,
+              answer: shuffledOpts.indexOf(correctAnswer)
+            };
+          }
+        }
+      }
+      return null;
     }
 
     function quitTest() {
@@ -1844,7 +1856,7 @@
           <p style="color:#94a3b8;font-size:1.05rem;margin-bottom:8px;">This test will determine your grade level for each subject.</p>
           <ul>
             <li>There are <strong>${activeTestSubjects.length * 15} questions</strong> — 15 each for ${activeTestSubjects.join(', ')}</li>
-            <li>Questions start easy and get harder as you go</li>
+            <li>Questions <strong>adapt to your level</strong> — get one right, the next gets harder. Get one wrong, the next gets easier</li>
             <li>Pick the best answer for each question — you can <strong>change your answer</strong> before moving on</li>
             <li><strong>No calculator</strong> allowed for math questions</li>
             <li>It's okay to not know the answer — just pick your best guess</li>
@@ -1864,23 +1876,11 @@
       document.getElementById('test-progress-fill').style.width = pct + '%';
     }
 
-    function getCurrentSubjectQuestions() {
-      const subject = activeTestSubjects[currentSubjectIndex];
-      return testQuestions.filter(q => q.subject === subject);
-    }
-
-    function getSubjectQuestionIndex() {
-      // How far into the current subject are we
-      const subject = activeTestSubjects[currentSubjectIndex];
-      return testAnswers.filter(a => a.subject === subject).length;
-    }
+    let currentAdaptiveQuestion = null;
 
     function showTestQuestion() {
-      const subjectQs = getCurrentSubjectQuestions();
-      const sqIndex = getSubjectQuestionIndex();
-
-      // If we've answered all questions in this subject, show the review
-      if (sqIndex >= subjectQs.length) {
+      // If done with this subject's questions
+      if (questionsAskedThisSubject >= QUESTIONS_PER_SUBJECT) {
         showSegmentReview();
         return;
       }
@@ -1894,14 +1894,25 @@
       testSelectedOption = null;
       updateTestProgress();
 
-      const q = subjectQs[sqIndex];
+      // Pick next question adaptively
+      const q = pickNextQuestion();
+      if (!q) {
+        showSegmentReview();
+        return;
+      }
+      currentAdaptiveQuestion = q;
+
       const subjectClass = q.subject.toLowerCase();
       const body = document.getElementById('test-body');
-      const questionNum = sqIndex + 1;
-      const totalInSubject = subjectQs.length;
+      const questionNum = questionsAskedThisSubject + 1;
+
+      // Show difficulty indicator
+      const diffLabel = currentDifficulty <= 5 ? 'Easier' : currentDifficulty <= 7 ? 'Medium' : 'Harder';
+      const diffColor = currentDifficulty <= 5 ? '#10b981' : currentDifficulty <= 7 ? '#f59e0b' : '#ef4444';
 
       body.innerHTML = `
-        <span class="test-subject-badge ${subjectClass}">${q.subject} — Question ${questionNum} of ${totalInSubject}</span>
+        <span class="test-subject-badge ${subjectClass}">${q.subject} — Question ${questionNum} of ${QUESTIONS_PER_SUBJECT}</span>
+        <span style="font-size:0.7rem;color:${diffColor};background:${diffColor}22;padding:2px 10px;border-radius:10px;margin-top:-16px;">Grade ${q.grade} Level — ${diffLabel}</span>
         <div class="test-question">${q.question}</div>
         ${q.diagram ? '<div style="margin:8px 0;text-align:center;">' + q.diagram + '</div>' : ''}
         <div class="test-options">
@@ -1915,10 +1926,7 @@
 
     function selectTestOption(index) {
       testSelectedOption = index;
-
-      const subjectQs = getCurrentSubjectQuestions();
-      const sqIndex = getSubjectQuestionIndex();
-      const q = subjectQs[sqIndex];
+      const q = currentAdaptiveQuestion;
 
       for (let i = 0; i < q.options.length; i++) {
         const btn = document.getElementById(`test-opt-${i}`);
@@ -1935,19 +1943,29 @@
     function nextTestQuestion() {
       if (testSelectedOption === null) return;
 
-      const subjectQs = getCurrentSubjectQuestions();
-      const sqIndex = getSubjectQuestionIndex();
-      const q = subjectQs[sqIndex];
+      const q = currentAdaptiveQuestion;
+      const isCorrect = testSelectedOption === q.answer;
 
-      // Record answer (no reveal yet)
+      // Record answer
       testAnswers.push({
         id: q.id,
         subject: q.subject,
         grade: q.grade,
+        question: q.question,
+        options: q.options,
         selectedOption: testSelectedOption,
-        correct: testSelectedOption === q.answer
+        correctIndex: q.answer,
+        correct: isCorrect
       });
 
+      // Adapt difficulty
+      if (isCorrect) {
+        currentDifficulty = Math.min(10, currentDifficulty + 1); // Go harder
+      } else {
+        currentDifficulty = Math.max(4, currentDifficulty - 1); // Go easier
+      }
+
+      questionsAskedThisSubject++;
       testIndex++;
       showTestQuestion();
     }
@@ -1955,7 +1973,6 @@
     function showSegmentReview() {
       const subject = activeTestSubjects[currentSubjectIndex];
       const subjectClass = subject.toLowerCase();
-      const subjectQs = getCurrentSubjectQuestions();
       const subjectAnswers = testAnswers.filter(a => a.subject === subject);
       const correctCount = subjectAnswers.filter(a => a.correct).length;
 
@@ -1967,29 +1984,30 @@
             <span class="test-subject-badge ${subjectClass}" style="font-size:0.9rem;vertical-align:middle;margin-right:8px;">${subject}</span>
             Section Complete
           </h1>
-          <p style="text-align:center;color:#94a3b8;margin-bottom:24px;">You got <strong style="color:#f8fafc;">${correctCount} out of ${subjectQs.length}</strong> correct</p>
+          <p style="text-align:center;color:#94a3b8;margin-bottom:24px;">You got <strong style="color:#f8fafc;">${correctCount} out of ${subjectAnswers.length}</strong> correct</p>
       `;
 
-      subjectQs.forEach((q, i) => {
-        const answer = subjectAnswers[i];
+      subjectAnswers.forEach((answer, i) => {
         const isCorrect = answer.correct;
         const borderColor = isCorrect ? '#10b981' : '#ef4444';
         const icon = isCorrect ? '&#10003;' : '&#10007;';
         const iconColor = isCorrect ? '#10b981' : '#ef4444';
+        const gradeColor = answer.grade <= 5 ? '#10b981' : answer.grade <= 7 ? '#f59e0b' : '#ef4444';
 
         reviewHTML += `
           <div style="background:#1e293b;border:1px solid ${borderColor};border-radius:10px;padding:16px;margin-bottom:12px;">
             <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:8px;">
-              <strong style="color:#f8fafc;font-size:0.95rem;">Q${i + 1}: ${q.question}</strong>
+              <strong style="color:#f8fafc;font-size:0.95rem;">Q${i + 1}: ${answer.question}</strong>
               <span style="color:${iconColor};font-size:1.2rem;min-width:24px;text-align:right;">${icon}</span>
             </div>
-            <div style="color:#94a3b8;font-size:0.85rem;">
-              Your answer: <span style="color:${isCorrect ? '#10b981' : '#ef4444'};font-weight:600;">${q.options[answer.selectedOption]}</span>
+            <span style="font-size:0.7rem;color:${gradeColor};background:${gradeColor}22;padding:1px 8px;border-radius:8px;">Grade ${answer.grade}</span>
+            <div style="color:#94a3b8;font-size:0.85rem;margin-top:6px;">
+              Your answer: <span style="color:${isCorrect ? '#10b981' : '#ef4444'};font-weight:600;">${answer.options[answer.selectedOption]}</span>
         `;
 
         if (!isCorrect) {
           reviewHTML += `
-              <br>Correct answer: <span style="color:#10b981;font-weight:600;">${q.options[q.answer]}</span>
+              <br>Correct answer: <span style="color:#10b981;font-weight:600;">${answer.options[answer.correctIndex]}</span>
           `;
         }
 
@@ -2012,6 +2030,8 @@
 
     function continueToNextSubject() {
       currentSubjectIndex++;
+      currentDifficulty = 7; // Reset to middle for next subject
+      questionsAskedThisSubject = 0;
       if (currentSubjectIndex >= activeTestSubjects.length) {
         showTestResults();
       } else {
