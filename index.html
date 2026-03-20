@@ -728,6 +728,48 @@
       color: #64748b;
     }
 
+    /* ── Language Menu Dropdown ── */
+    .lang-dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      margin-top: 6px;
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 8px;
+      padding: 8px 0;
+      min-width: 150px;
+      z-index: 100;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    }
+
+    .lang-dropdown.open {
+      display: block;
+    }
+
+    .lang-check {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 16px;
+      color: #cbd5e1;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: background 0.1s;
+    }
+
+    .lang-check:hover {
+      background: #334155;
+    }
+
+    .lang-check input[type="checkbox"] {
+      accent-color: #3b82f6;
+      width: 16px;
+      height: 16px;
+      cursor: pointer;
+    }
+
     /* Scrollbar */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #0f172a; }
@@ -833,6 +875,13 @@
       <div style="display:flex;align-items:center;gap:12px;">
         <span style="color:#94a3b8;font-size:0.85rem;" id="user-greeting"></span>
         <span class="role-badge" id="role-badge">PARENT</span>
+        <div class="lang-menu-wrapper" id="lang-menu-wrapper" style="display:none;position:relative;">
+          <button class="back-btn" onclick="toggleLangMenu()">Languages ▾</button>
+          <div class="lang-dropdown" id="lang-dropdown">
+            <label class="lang-check"><input type="checkbox" id="check-spanish" onchange="updateLanguages()"> Spanish</label>
+            <label class="lang-check"><input type="checkbox" id="check-chinese" onchange="updateLanguages()"> Chinese</label>
+          </div>
+        </div>
         <button class="back-btn" onclick="signOut()">Sign Out</button>
       </div>
     </div>
@@ -1016,12 +1065,16 @@
       document.getElementById('user-greeting').textContent = userName ? `Hi, ${userName}` : '';
 
       const badge = document.getElementById('role-badge');
+      const langMenuWrapper = document.getElementById('lang-menu-wrapper');
       if (currentRole === 'student') {
         badge.textContent = `STUDENT — GRADE ${currentGrade}`;
         badge.className = 'role-badge student';
+        langMenuWrapper.style.display = '';
+        syncLangCheckboxes();
       } else {
         badge.textContent = 'PARENT';
         badge.className = 'role-badge';
+        langMenuWrapper.style.display = 'none';
       }
 
       buildSidebar();
@@ -1515,6 +1568,35 @@
     function confirmLanguages() {
       document.getElementById('language-screen').style.display = 'none';
       showApp();
+    }
+
+    // ── LANGUAGE MENU (TOPBAR DROPDOWN) ──
+    function toggleLangMenu() {
+      document.getElementById('lang-dropdown').classList.toggle('open');
+    }
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', (e) => {
+      const wrapper = document.getElementById('lang-menu-wrapper');
+      if (wrapper && !wrapper.contains(e.target)) {
+        document.getElementById('lang-dropdown').classList.remove('open');
+      }
+    });
+
+    function updateLanguages() {
+      const spanishChecked = document.getElementById('check-spanish').checked;
+      const chineseChecked = document.getElementById('check-chinese').checked;
+      selectedLanguages = [];
+      if (spanishChecked) selectedLanguages.push('spanish');
+      if (chineseChecked) selectedLanguages.push('chinese');
+      // Rebuild sidebar with updated languages
+      buildSidebar();
+      showHomePage();
+    }
+
+    function syncLangCheckboxes() {
+      document.getElementById('check-spanish').checked = selectedLanguages.includes('spanish');
+      document.getElementById('check-chinese').checked = selectedLanguages.includes('chinese');
     }
   </script>
 
