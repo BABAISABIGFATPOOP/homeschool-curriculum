@@ -1038,21 +1038,24 @@
         <span class="subtitle">Take placement test</span>
       </button>
     </div>
-    <div id="role-options" style="display:flex;flex-direction:column;align-items:center;gap:16px;margin-top:-10px;">
-      <p style="color:#64748b;font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;font-weight:700;">Options</p>
-      <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
-        <label class="lang-check" style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:8px 16px;">
-          <input type="checkbox" id="role-check-spanish" onchange="toggleRoleLang('spanish')"> Spanish
-        </label>
-        <label class="lang-check" style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:8px 16px;">
-          <input type="checkbox" id="role-check-chinese" onchange="toggleRoleLang('chinese')"> Chinese
-        </label>
-        <label class="lang-check" style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:8px 16px;">
-          <input type="checkbox" id="role-check-clep" onchange="toggleRoleClep()"> CLEP Test Prep
-        </label>
+    <div style="display:flex;gap:24px;margin-top:-10px;">
+      <div class="sign-wrapper" id="role-lang-sign">
+        <button class="sign-btn" onclick="toggleSign('role-lang-sign')">Languages</button>
+        <div class="sign-string"></div>
+        <div class="sign-panel">
+          <label class="lang-check"><input type="checkbox" id="role-check-spanish" onchange="toggleRoleLang('spanish')"> Spanish</label>
+          <label class="lang-check"><input type="checkbox" id="role-check-chinese" onchange="toggleRoleLang('chinese')"> Chinese</label>
+        </div>
+      </div>
+      <div class="sign-wrapper" id="role-clep-sign">
+        <button class="sign-btn" onclick="toggleSign('role-clep-sign')">CLEP</button>
+        <div class="sign-string"></div>
+        <div class="sign-panel">
+          <label class="lang-check"><input type="checkbox" id="role-check-clep" onchange="toggleRoleClep()"> Show CLEP Prep</label>
+          <button class="lang-check" onclick="showClepBrowser()" style="border:none;background:none;width:100%;cursor:pointer;">Practice Tests &rarr;</button>
+        </div>
       </div>
     </div>
-    <button class="back-btn" onclick="showClepBrowser()" style="margin-top:4px;font-size:0.9rem;padding:8px 20px;">CLEP Practice Tests</button>
   </div>
 
   <!-- ── CLEP BROWSER ── -->
@@ -1076,35 +1079,66 @@
   <!-- ── TEST PICKER ── -->
   <div id="test-picker" style="display:none;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;gap:24px;padding:40px;">
     <h1 style="font-size:2rem;color:#f8fafc;">Placement Tests</h1>
-    <p style="color:#94a3b8;margin-top:-12px;">Take one subject at a time or all at once</p>
-    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:500px;width:100%;">
-      <button class="role-btn" style="width:auto;height:auto;padding:20px;font-size:1rem;" onclick="startSingleTest('Math')">
-        <span class="test-subject-badge math" style="font-size:0.75rem;">Math</span>
-        15 Questions
-      </button>
-      <button class="role-btn" style="width:auto;height:auto;padding:20px;font-size:1rem;" onclick="startSingleTest('English')">
-        <span class="test-subject-badge english" style="font-size:0.75rem;">English</span>
-        15 Questions
-      </button>
-      <button class="role-btn" style="width:auto;height:auto;padding:20px;font-size:1rem;" onclick="startSingleTest('Biology')">
-        <span class="test-subject-badge biology" style="font-size:0.75rem;">Biology</span>
-        15 Questions
-      </button>
-      <button class="role-btn" style="width:auto;height:auto;padding:20px;font-size:1rem;" onclick="startSingleTest('Science')">
-        <span class="test-subject-badge science" style="font-size:0.75rem;">Science</span>
-        15 Questions
-      </button>
-      <button class="role-btn" style="width:auto;height:auto;padding:20px;font-size:1rem;" onclick="startSingleTest('History')">
-        <span class="test-subject-badge history" style="font-size:0.75rem;">History</span>
-        15 Questions
-      </button>
-      <button class="role-btn" style="width:auto;height:auto;padding:20px;font-size:1rem;" onclick="startSingleTest('Geography')">
-        <span class="test-subject-badge geography" style="font-size:0.75rem;">Geography</span>
-        15 Questions
-      </button>
+    <p style="color:#94a3b8;margin-top:-12px;">Pull a sign to take that subject's test</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap;justify-content:center;">
+      <div class="sign-wrapper" id="pick-math">
+        <button class="sign-btn" onclick="toggleSign('pick-math')">Math</button>
+        <div class="sign-string"></div>
+        <div class="sign-panel" style="text-align:center;padding:16px;">
+          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">15 Questions</p>
+          <button class="test-next-btn" style="font-size:0.85rem;padding:8px 20px;" onclick="startSingleTest('Math')">Start</button>
+        </div>
+      </div>
+      <div class="sign-wrapper" id="pick-english">
+        <button class="sign-btn" onclick="toggleSign('pick-english')">English</button>
+        <div class="sign-string"></div>
+        <div class="sign-panel" style="text-align:center;padding:16px;">
+          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">15 Questions</p>
+          <button class="test-next-btn" style="font-size:0.85rem;padding:8px 20px;" onclick="startSingleTest('English')">Start</button>
+        </div>
+      </div>
+      <div class="sign-wrapper" id="pick-biology">
+        <button class="sign-btn" onclick="toggleSign('pick-biology')">Biology</button>
+        <div class="sign-string"></div>
+        <div class="sign-panel" style="text-align:center;padding:16px;">
+          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">15 Questions</p>
+          <button class="test-next-btn" style="font-size:0.85rem;padding:8px 20px;" onclick="startSingleTest('Biology')">Start</button>
+        </div>
+      </div>
+      <div class="sign-wrapper" id="pick-science">
+        <button class="sign-btn" onclick="toggleSign('pick-science')">Science</button>
+        <div class="sign-string"></div>
+        <div class="sign-panel" style="text-align:center;padding:16px;">
+          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">15 Questions</p>
+          <button class="test-next-btn" style="font-size:0.85rem;padding:8px 20px;" onclick="startSingleTest('Science')">Start</button>
+        </div>
+      </div>
+      <div class="sign-wrapper" id="pick-history">
+        <button class="sign-btn" onclick="toggleSign('pick-history')">History</button>
+        <div class="sign-string"></div>
+        <div class="sign-panel" style="text-align:center;padding:16px;">
+          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">15 Questions</p>
+          <button class="test-next-btn" style="font-size:0.85rem;padding:8px 20px;" onclick="startSingleTest('History')">Start</button>
+        </div>
+      </div>
+      <div class="sign-wrapper" id="pick-geography">
+        <button class="sign-btn" onclick="toggleSign('pick-geography')">Geography</button>
+        <div class="sign-string"></div>
+        <div class="sign-panel" style="text-align:center;padding:16px;">
+          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">15 Questions</p>
+          <button class="test-next-btn" style="font-size:0.85rem;padding:8px 20px;" onclick="startSingleTest('Geography')">Start</button>
+        </div>
+      </div>
     </div>
-    <button class="test-next-btn" onclick="startAllTests()" style="margin-top:8px;">Take All Tests (90 Questions)</button>
-    <button class="back-btn" onclick="closeTestPicker()">Back</button>
+    <div class="sign-wrapper" id="pick-all" style="margin-top:4px;">
+      <button class="sign-btn" onclick="toggleSign('pick-all')" style="font-size:0.9rem;padding:8px 20px;">All Subjects</button>
+      <div class="sign-string"></div>
+      <div class="sign-panel" style="text-align:center;padding:16px;">
+        <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">90 Questions &mdash; All 6 Subjects</p>
+        <button class="test-next-btn" style="font-size:0.85rem;padding:8px 20px;" onclick="startAllTests()">Start</button>
+      </div>
+    </div>
+    <button class="back-btn" onclick="closeTestPicker()" style="margin-top:4px;">Back</button>
   </div>
 
   <!-- ── PLACEMENT TEST ── -->
