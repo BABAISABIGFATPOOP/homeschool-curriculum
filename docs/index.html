@@ -1346,6 +1346,9 @@
         document.getElementById('role-screen').style.display = 'flex';
         updateRoleScreenTitle();
         syncRoleCheckboxes();
+        const lc = parseInt(localStorage.getItem('login-count') || '0') + 1;
+        localStorage.setItem('login-count', lc);
+        checkAchievements();
       } else {
         document.getElementById('signin-screen').style.display = 'flex';
       }
@@ -1760,6 +1763,9 @@
 
     // ── LOAD MARKDOWN ──
     async function loadMarkdown(filePath) {
+      trackPageView(filePath);
+      if (filePath.includes('clep-prep/practice-exams/')) earnAchievement('clep-starter');
+      if (filePath.includes('sat-prep/') && filePath.includes('practice')) earnAchievement('sat-starter');
       try {
         const res = await fetch(CONTENT_BASE + filePath); const md = await res.text();
         document.getElementById('content').innerHTML = marked.parse(md);
@@ -2072,6 +2078,7 @@
     }
 
     function selectTestOption(index) {
+      trackQuestionTime();
       testSelectedOption = index;
       const q = currentAdaptiveQuestion;
 
@@ -2105,11 +2112,29 @@
         correct: isCorrect
       });
 
+      // Track streaks
+      if (!window._streak) window._streak = 0;
+      if (!window._wrongStreak) window._wrongStreak = 0;
+      if (isCorrect) {
+        window._streak++;
+        window._wrongStreak = 0;
+        if (window._streak >= 5) earnAchievement('streak-5');
+        if (window._streak >= 10) earnAchievement('streak-10');
+        if (window._streak >= 15) earnAchievement('streak-15');
+        if (window._streak >= 20) earnAchievement('streak-20');
+        if (window._streak >= 30) earnAchievement('no-wrong');
+        if (window._comebackWrong >= 3 && window._streak >= 5) earnAchievement('comeback');
+      } else {
+        window._wrongStreak++;
+        window._comebackWrong = window._wrongStreak;
+        window._streak = 0;
+      }
+
       // Adapt difficulty
       if (isCorrect) {
-        currentDifficulty = Math.min(10, currentDifficulty + 1); // Go harder
+        currentDifficulty = Math.min(10, currentDifficulty + 1);
       } else {
-        currentDifficulty = Math.max(4, currentDifficulty - 1); // Go easier
+        currentDifficulty = Math.max(4, currentDifficulty - 1);
       }
 
       questionsAskedThisSubject++;
@@ -2352,6 +2377,7 @@
     function toggleTheme() {
       document.body.classList.toggle('light-theme');
       localStorage.setItem('theme', document.body.classList.contains('light-theme') ? 'light' : 'dark');
+      earnAchievement('theme-switch');
     }
     // Load saved theme
     if (localStorage.getItem('theme') === 'light') document.body.classList.add('light-theme');
@@ -2467,18 +2493,80 @@
 
     // ── ACHIEVEMENTS ──
     const ACHIEVEMENTS = [
+      // ── Getting Started ──
       { id: 'first-test', name: 'First Steps', desc: 'Complete your first placement test', icon: '&#11088;' },
+      { id: 'signed-up', name: 'Welcome Aboard', desc: 'Create an account', icon: '&#128075;' },
+      { id: 'first-login', name: 'Returning Student', desc: 'Log in for the second time', icon: '&#128274;' },
+
+      // ── Test Milestones ──
       { id: 'perfect-section', name: 'Perfect Score', desc: 'Get 100% on a test section', icon: '&#127942;' },
       { id: '5-tests', name: 'Test Veteran', desc: 'Complete 5 tests', icon: '&#128170;' },
       { id: '10-tests', name: 'Test Master', desc: 'Complete 10 tests', icon: '&#9889;' },
+      { id: '25-tests', name: 'Test Legend', desc: 'Complete 25 tests', icon: '&#127775;' },
+      { id: '50-tests', name: 'Test God', desc: 'Complete 50 tests', icon: '&#128081;' },
+      { id: '100-tests', name: 'Centurion', desc: 'Complete 100 tests', icon: '&#9876;' },
+
+      // ── Subject Mastery ──
       { id: 'all-subjects', name: 'Well-Rounded', desc: 'Take a test in every subject', icon: '&#127775;' },
+      { id: 'math-master', name: 'Math Wizard', desc: 'Score 90%+ on Math', icon: '&#129518;' },
+      { id: 'english-master', name: 'Wordsmith', desc: 'Score 90%+ on English', icon: '&#128221;' },
+      { id: 'bio-master', name: 'Biologist', desc: 'Score 90%+ on Biology', icon: '&#129516;' },
+      { id: 'science-master', name: 'Scientist', desc: 'Score 90%+ on Science', icon: '&#128300;' },
+      { id: 'history-master', name: 'Historian', desc: 'Score 90%+ on History', icon: '&#127984;' },
+      { id: 'geo-master', name: 'Explorer', desc: 'Score 90%+ on Geography', icon: '&#127758;' },
+      { id: 'all-90', name: 'Genius', desc: 'Score 90%+ in ALL subjects', icon: '&#129504;' },
+
+      // ── Score Achievements ──
       { id: '90-percent', name: 'Honor Roll', desc: 'Score 90%+ on any test', icon: '&#128640;' },
+      { id: '80-percent', name: 'Good Job', desc: 'Score 80%+ on any test', icon: '&#128077;' },
+      { id: '70-percent', name: 'Passing Grade', desc: 'Score 70%+ on any test', icon: '&#9989;' },
+      { id: 'improve', name: 'Improvement', desc: 'Score higher than your previous attempt in the same subject', icon: '&#128200;' },
+      { id: 'no-wrong', name: 'Flawless', desc: 'Answer 30 questions without a single mistake', icon: '&#128142;' },
+
+      // ── Streak Achievements ──
+      { id: 'streak-5', name: 'On Fire', desc: 'Get 5 questions right in a row', icon: '&#128293;' },
+      { id: 'streak-10', name: 'Unstoppable', desc: 'Get 10 questions right in a row', icon: '&#9762;' },
+      { id: 'streak-15', name: 'Legendary Streak', desc: 'Get 15 questions right in a row', icon: '&#127382;' },
+      { id: 'streak-20', name: 'Inhuman', desc: 'Get 20 questions right in a row', icon: '&#128165;' },
+      { id: 'comeback', name: 'Comeback Kid', desc: 'Get 3 wrong then 5 right in a row', icon: '&#128171;' },
+
+      // ── Weekly Progress ──
+      { id: 'week-1', name: 'Day One', desc: 'Complete your first week', icon: '&#128214;' },
+      { id: 'week-4', name: 'One Month In', desc: 'Complete 4 weeks', icon: '&#128197;' },
       { id: 'week-9', name: 'Quarter Done', desc: 'Complete 9 weeks', icon: '&#128218;' },
       { id: 'week-18', name: 'Halfway There', desc: 'Complete 18 weeks', icon: '&#127941;' },
+      { id: 'week-27', name: 'Almost There', desc: 'Complete 27 weeks', icon: '&#127947;' },
       { id: 'week-36', name: 'Year Complete', desc: 'Complete all 36 weeks', icon: '&#127891;' },
-      { id: 'streak-5', name: 'On Fire', desc: 'Get 5 questions right in a row', icon: '&#128293;' },
+
+      // ── Time-Based ──
       { id: 'night-owl', name: 'Night Owl', desc: 'Study after 9 PM', icon: '&#129417;' },
-      { id: 'early-bird', name: 'Early Bird', desc: 'Study before 7 AM', icon: '&#127748;' }
+      { id: 'early-bird', name: 'Early Bird', desc: 'Study before 7 AM', icon: '&#127748;' },
+      { id: 'weekend-warrior', name: 'Weekend Warrior', desc: 'Study on a Saturday or Sunday', icon: '&#128170;' },
+      { id: 'monday-motivation', name: 'Monday Motivation', desc: 'Study on a Monday', icon: '&#9749;' },
+      { id: 'lunch-learner', name: 'Lunch Learner', desc: 'Study between 12-1 PM', icon: '&#127828;' },
+
+      // ── Multiplayer ──
+      { id: 'first-challenge', name: 'Challenger', desc: 'Create your first multiplayer challenge', icon: '&#9876;' },
+      { id: 'first-win', name: 'Winner', desc: 'Win a multiplayer challenge', icon: '&#127942;' },
+      { id: '5-wins', name: 'Champion', desc: 'Win 5 multiplayer challenges', icon: '&#127942;' },
+      { id: 'perfect-challenge', name: 'Domination', desc: 'Get 100% in a multiplayer challenge', icon: '&#128293;' },
+      { id: 'challenge-accepted', name: 'Challenge Accepted', desc: 'Join someone else\'s challenge', icon: '&#129309;' },
+
+      // ── CLEP & SAT ──
+      { id: 'clep-starter', name: 'College Bound', desc: 'Open your first CLEP practice exam', icon: '&#127979;' },
+      { id: 'clep-pass', name: 'CLEP Ready', desc: 'Score 50%+ on a CLEP practice exam', icon: '&#128218;' },
+      { id: 'sat-starter', name: 'SAT Prep', desc: 'Open your first SAT practice test', icon: '&#9999;' },
+
+      // ── GPA ──
+      { id: 'gpa-4', name: 'Straight A\'s', desc: 'Achieve a 4.0 GPA', icon: '&#127942;' },
+      { id: 'gpa-3', name: 'Dean\'s List', desc: 'Achieve a 3.0+ GPA', icon: '&#128220;' },
+
+      // ── Fun / Secret ──
+      { id: 'speed-demon', name: 'Speed Demon', desc: 'Answer a question in under 3 seconds', icon: '&#9889;' },
+      { id: 'persistent', name: 'Persistent', desc: 'Retake the same subject test 3 times', icon: '&#128170;' },
+      { id: 'theme-switch', name: 'Dark Side', desc: 'Switch to light theme (or back)', icon: '&#127763;' },
+      { id: 'planner-done', name: 'Productive Day', desc: 'Check off all blocks in the daily planner', icon: '&#9989;' },
+      { id: 'explorer', name: 'Curriculum Explorer', desc: 'View 10 different curriculum pages', icon: '&#128270;' }
     ];
 
     function showAchievements() {
@@ -2505,27 +2593,116 @@
       }
     }
 
+    let pagesViewed = JSON.parse(localStorage.getItem('pages-viewed') || '[]');
+    let challengeWins = parseInt(localStorage.getItem('challenge-wins') || '0');
+    let questionTimestamp = 0;
+
     function checkAchievements() {
       const history = JSON.parse(localStorage.getItem('test-history') || '[]');
       const progress = JSON.parse(localStorage.getItem('progress') || '{}');
+      const hour = new Date().getHours();
+      const day = new Date().getDay();
 
+      // Test milestones
       if (history.length >= 1) earnAchievement('first-test');
       if (history.length >= 5) earnAchievement('5-tests');
       if (history.length >= 10) earnAchievement('10-tests');
+      if (history.length >= 25) earnAchievement('25-tests');
+      if (history.length >= 50) earnAchievement('50-tests');
+      if (history.length >= 100) earnAchievement('100-tests');
+
+      // Score achievements
       if (history.some(t => t.score === t.total)) earnAchievement('perfect-section');
       if (history.some(t => t.score / t.total >= 0.9)) earnAchievement('90-percent');
+      if (history.some(t => t.score / t.total >= 0.8)) earnAchievement('80-percent');
+      if (history.some(t => t.score / t.total >= 0.7)) earnAchievement('70-percent');
 
+      // Subject mastery
       const subjectsTaken = [...new Set(history.map(t => t.subject))];
       if (subjectsTaken.length >= 6) earnAchievement('all-subjects');
 
+      const subjectMap = { Math: 'math-master', English: 'english-master', Biology: 'bio-master', Science: 'science-master', History: 'history-master', Geography: 'geo-master' };
+      Object.entries(subjectMap).forEach(([subj, achId]) => {
+        if (history.some(t => t.subject === subj && t.score / t.total >= 0.9)) earnAchievement(achId);
+      });
+      if (Object.values(subjectMap).every(id => JSON.parse(localStorage.getItem('achievements') || '[]').includes(id))) {
+        earnAchievement('all-90');
+      }
+
+      // Improvement check
+      const bySubject = {};
+      history.forEach(t => {
+        if (!bySubject[t.subject]) bySubject[t.subject] = [];
+        bySubject[t.subject].push(t.score / t.total);
+      });
+      Object.values(bySubject).forEach(scores => {
+        for (let i = 1; i < scores.length; i++) {
+          if (scores[i] > scores[i-1]) { earnAchievement('improve'); break; }
+        }
+      });
+
+      // Persistent - same subject 3+ times
+      Object.values(bySubject).forEach(scores => {
+        if (scores.length >= 3) earnAchievement('persistent');
+      });
+
+      // Weekly progress
       const weeksComplete = Object.values(progress).filter(v => v).length;
+      if (weeksComplete >= 1) earnAchievement('week-1');
+      if (weeksComplete >= 4) earnAchievement('week-4');
       if (weeksComplete >= 9) earnAchievement('week-9');
       if (weeksComplete >= 18) earnAchievement('week-18');
+      if (weeksComplete >= 27) earnAchievement('week-27');
       if (weeksComplete >= 36) earnAchievement('week-36');
 
-      const hour = new Date().getHours();
+      // Time-based
       if (hour >= 21) earnAchievement('night-owl');
       if (hour < 7) earnAchievement('early-bird');
+      if (day === 0 || day === 6) earnAchievement('weekend-warrior');
+      if (day === 1) earnAchievement('monday-motivation');
+      if (hour === 12) earnAchievement('lunch-learner');
+
+      // Multiplayer
+      if (challengeWins >= 1) earnAchievement('first-win');
+      if (challengeWins >= 5) earnAchievement('5-wins');
+
+      // GPA
+      const gpaGrades = JSON.parse(localStorage.getItem('gpa-grades') || '{}');
+      const gpaValues = Object.entries(gpaGrades).filter(([k,v]) => !k.startsWith('c_') && v).map(([k,v]) => parseFloat(v));
+      if (gpaValues.length > 0) {
+        const avg = gpaValues.reduce((a,b) => a+b, 0) / gpaValues.length;
+        if (avg >= 4.0) earnAchievement('gpa-4');
+        if (avg >= 3.0) earnAchievement('gpa-3');
+      }
+
+      // Pages viewed
+      if (pagesViewed.length >= 10) earnAchievement('explorer');
+
+      // Planner done
+      const todayKey = 'planner-' + new Date().toISOString().slice(0, 10);
+      const plannerData = JSON.parse(localStorage.getItem(todayKey) || '{}');
+      const plannerBlocks = Object.values(plannerData).filter(v => v).length;
+      if (plannerBlocks >= 8) earnAchievement('planner-done');
+
+      // Login count
+      const loginCount = parseInt(localStorage.getItem('login-count') || '0');
+      if (loginCount >= 2) earnAchievement('first-login');
+    }
+
+    function trackPageView(page) {
+      if (!pagesViewed.includes(page)) {
+        pagesViewed.push(page);
+        localStorage.setItem('pages-viewed', JSON.stringify(pagesViewed));
+      }
+      checkAchievements();
+    }
+
+    function trackQuestionTime() {
+      const now = Date.now();
+      if (questionTimestamp > 0 && (now - questionTimestamp) < 3000) {
+        earnAchievement('speed-demon');
+      }
+      questionTimestamp = now;
     }
 
     // ── DAILY PLANNER ──
@@ -2633,6 +2810,7 @@
     }
 
     function launchChallenge(subject) {
+      earnAchievement('first-challenge');
       challengeMode = true;
       challengeSeed = Math.floor(Math.random() * 999999) + 1;
       challengeSubject = subject;
@@ -2750,6 +2928,8 @@
       if (challengeOpponentScore >= 0) {
         const oppPct = Math.round(challengeOpponentScore / total * 100);
         const won = correctCount > challengeOpponentScore;
+        if (won) { challengeWins++; localStorage.setItem('challenge-wins', challengeWins); }
+        if (correctCount === total) earnAchievement('perfect-challenge');
         const tied = correctCount === challengeOpponentScore;
         const resultColor = won ? '#10b981' : tied ? '#f59e0b' : '#ef4444';
         const resultText = won ? 'YOU WIN!' : tied ? 'TIE!' : 'THEY WIN!';
@@ -2845,6 +3025,7 @@
         showScratchButton();
         updateTestProgress();
         showChallengeQuestion();
+        earnAchievement('challenge-accepted');
       } catch (e) {
         error.textContent = 'Invalid challenge code. Check and try again.';
       }
