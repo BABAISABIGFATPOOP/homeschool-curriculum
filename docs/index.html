@@ -8,9 +8,9 @@
   <meta name="theme-color" content="#0f172a">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link rel="apple-touch-icon" href="icon-192.svg">
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"><\/script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"><\/script>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"><\/script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -1109,27 +1109,28 @@
       btn.textContent = isSignUpMode ? 'Signing up...' : 'Signing in...';
       error.textContent = '';
 
-      let result;
-      if (isSignUpMode) {
-        const name = document.getElementById('signin-name').value.trim();
-        if (!name) { error.textContent = 'Please enter your name.'; btn.disabled = false; btn.textContent = 'Sign Up'; return; }
-        result = await fbAuth.createUserWithEmailAndPassword(email, password).then(async c => { await c.user.updateProfile({displayName:name}); return {success:true,user:{name}}; });
-      } else {
-        result = await fbAuth.signInWithEmailAndPassword(email, password).then(c => { const dn=c.user.displayName||''; return {success:true,user:{name:dn.includes('|')?dn.split('|')[0]:dn}}; });
-      }
-
-      btn.disabled = false;
-      btn.textContent = isSignUpMode ? 'Sign Up' : 'Sign In';
-
-      if (result.success) {
-        userName = result.user.name;
+      try {
+        if (isSignUpMode) {
+          const name = document.getElementById('signin-name').value.trim();
+          if (!name) { error.textContent = 'Please enter your name.'; btn.disabled = false; btn.textContent = 'Sign Up'; return; }
+          const cred = await fbAuth.createUserWithEmailAndPassword(email, password);
+          await cred.user.updateProfile({ displayName: name });
+          userName = name;
+        } else {
+          const cred = await fbAuth.signInWithEmailAndPassword(email, password);
+          const dn = cred.user.displayName || '';
+          userName = dn.includes('|') ? dn.split('|')[0] : dn;
+        }
+        btn.disabled = false;
+        btn.textContent = isSignUpMode ? 'Sign Up' : 'Sign In';
         document.getElementById('signin-screen').style.display = 'none';
         document.getElementById('role-screen').style.display = 'flex';
         updateRoleScreenTitle();
         syncRoleCheckboxes();
-      } else {
-        // Clean up Firebase error messages
-        let msg = result.error;
+      } catch (e) {
+        btn.disabled = false;
+        btn.textContent = isSignUpMode ? 'Sign Up' : 'Sign In';
+        let msg = e.message;
         if (msg.includes('auth/email-already-in-use')) msg = 'An account with this email already exists.';
         else if (msg.includes('auth/invalid-email')) msg = 'Please enter a valid email address.';
         else if (msg.includes('auth/invalid-credential')) msg = 'Incorrect email or password.';
