@@ -1155,6 +1155,18 @@
         </div>
       </div>
     </div>
+    <button class="back-btn" onclick="showSettingsFromWelcome()" style="margin-top:4px;font-size:0.9rem;padding:8px 20px;">&#9881; Settings</button>
+  </div>
+
+  <!-- ── SETTINGS SCREEN (pre-app) ── -->
+  <div id="settings-screen" style="display:none;height:100vh;flex-direction:column;">
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <button class="back-btn" onclick="closeSettingsScreen()">Back</button>
+        <h2>Settings</h2>
+      </div>
+    </div>
+    <div style="flex:1;overflow-y:auto;padding:32px 48px;" id="settings-content"></div>
   </div>
 
   <!-- ── CLEP BROWSER ── -->
@@ -1493,6 +1505,7 @@
       document.getElementById('results-screen').style.display = 'none';
       document.getElementById('language-screen').style.display = 'none';
       document.getElementById('clep-browser').style.display = 'none';
+      document.getElementById('settings-screen').style.display = 'none';
       document.getElementById('signin-screen').style.display = 'none';
       document.getElementById('role-screen').style.display = 'flex';
       updateRoleScreenTitle();
@@ -2366,7 +2379,24 @@
     // ── THEME TOGGLE ──
     // ── SETTINGS PAGE ──
     function showSettings() {
-      const content = document.getElementById('content');
+      renderSettingsContent('content');
+    }
+
+    function showSettingsFromWelcome() {
+      document.getElementById('role-screen').style.display = 'none';
+      document.getElementById('settings-screen').style.display = 'flex';
+      renderSettingsContent('settings-content');
+    }
+
+    function closeSettingsScreen() {
+      document.getElementById('settings-screen').style.display = 'none';
+      document.getElementById('role-screen').style.display = 'flex';
+      updateRoleScreenTitle();
+      syncRoleCheckboxes();
+    }
+
+    function renderSettingsContent(targetId) {
+      const el = document.getElementById(targetId);
       const theme = localStorage.getItem('theme') || 'dark';
       const history = JSON.parse(localStorage.getItem('test-history') || '[]');
       const progress = JSON.parse(localStorage.getItem('progress') || '{}');
@@ -2375,44 +2405,35 @@
       const weeksComplete = Object.values(progress).filter(v => v).length;
       const loginCount = localStorage.getItem('login-count') || '0';
       const challengeWinsCount = localStorage.getItem('challenge-wins') || '0';
-      const totalStorageKeys = Object.keys(localStorage).length;
 
-      content.innerHTML = `
-        <h1>Settings</h1>
+      el.innerHTML = `
+        <h1 style="font-size:2rem;color:#f8fafc;margin-bottom:24px;border-bottom:2px solid #334155;padding-bottom:12px;">Settings</h1>
 
-        <h2>Appearance</h2>
+        <h2 style="color:#93c5fd;margin-top:24px;">Appearance</h2>
         <div style="display:flex;gap:12px;margin-bottom:20px;">
-          <button class="test-next-btn" style="font-size:0.9rem;padding:8px 20px;${theme==='dark'?'opacity:0.5':''}" onclick="setTheme('light')">&#9728; Light Mode</button>
-          <button class="test-next-btn" style="font-size:0.9rem;padding:8px 20px;${theme==='light'?'opacity:0.5':''}" onclick="setTheme('dark')">&#127763; Dark Mode</button>
+          <button class="test-next-btn" style="font-size:0.9rem;padding:8px 20px;${theme==='dark'?'opacity:0.5':''}" onclick="setTheme('light');renderSettingsContent('${targetId}')">&#9728; Light Mode</button>
+          <button class="test-next-btn" style="font-size:0.9rem;padding:8px 20px;${theme==='light'?'opacity:0.5':''}" onclick="setTheme('dark');renderSettingsContent('${targetId}')">&#127763; Dark Mode</button>
         </div>
 
-        <h2>Account</h2>
-        <table style="max-width:400px;">
-          <tr><td style="color:#94a3b8;">Name</td><td><strong>${userName || 'Not set'}</strong></td></tr>
-          <tr><td style="color:#94a3b8;">Logins</td><td>${loginCount}</td></tr>
-          <tr><td style="color:#94a3b8;">Tests Taken</td><td>${history.length}</td></tr>
-          <tr><td style="color:#94a3b8;">Achievements</td><td>${achievements.length} / ${ACHIEVEMENTS.length}</td></tr>
-          <tr><td style="color:#94a3b8;">Weeks Completed</td><td>${weeksComplete} / 36</td></tr>
-          <tr><td style="color:#94a3b8;">Challenge Wins</td><td>${challengeWinsCount}</td></tr>
-          <tr><td style="color:#94a3b8;">GPA Subjects</td><td>${Object.keys(gpa).filter(k => !k.startsWith('c_') && gpa[k]).length}</td></tr>
-          <tr><td style="color:#94a3b8;">Storage Keys</td><td>${totalStorageKeys}</td></tr>
+        <h2 style="color:#93c5fd;">Account</h2>
+        <table style="max-width:400px;border-collapse:collapse;">
+          <tr><td style="color:#94a3b8;padding:6px 16px 6px 0;">Name</td><td><strong style="color:#f8fafc;">${userName || 'Not set'}</strong></td></tr>
+          <tr><td style="color:#94a3b8;padding:6px 16px 6px 0;">Logins</td><td style="color:#cbd5e1;">${loginCount}</td></tr>
+          <tr><td style="color:#94a3b8;padding:6px 16px 6px 0;">Tests Taken</td><td style="color:#cbd5e1;">${history.length}</td></tr>
+          <tr><td style="color:#94a3b8;padding:6px 16px 6px 0;">Achievements</td><td style="color:#cbd5e1;">${achievements.length} / ${ACHIEVEMENTS.length}</td></tr>
+          <tr><td style="color:#94a3b8;padding:6px 16px 6px 0;">Weeks Completed</td><td style="color:#cbd5e1;">${weeksComplete} / 36</td></tr>
+          <tr><td style="color:#94a3b8;padding:6px 16px 6px 0;">Challenge Wins</td><td style="color:#cbd5e1;">${challengeWinsCount}</td></tr>
         </table>
 
-        <h2>Print</h2>
-        <p>Print the current page (hides navigation and sidebar).</p>
-        <button class="test-next-btn" style="font-size:0.9rem;padding:8px 20px;" onclick="window.print()">&#128424; Print Page</button>
-
-        <h2>Export Data</h2>
-        <p>Download all your saved data (test scores, achievements, progress, GPA).</p>
-        <button class="test-next-btn" style="font-size:0.9rem;padding:8px 20px;" onclick="exportData()">&#128190; Export to JSON</button>
-
-        <h2>Import Data</h2>
-        <p>Restore from a previously exported file.</p>
-        <input type="file" id="import-file" accept=".json" style="margin-bottom:8px;color:#94a3b8;" onchange="importData(event)">
-
-        <h2 style="color:#ef4444;">Danger Zone</h2>
-        <p>Clear all saved data (test scores, achievements, progress, planner, GPA). This cannot be undone.</p>
-        <button class="test-next-btn" style="font-size:0.9rem;padding:8px 20px;background:#ef4444;" onclick="confirmResetData()">&#128465; Reset All Data</button>
+        <h2 style="color:#93c5fd;margin-top:24px;">Data</h2>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;">
+          <button class="test-next-btn" style="font-size:0.9rem;padding:8px 20px;" onclick="exportData()">&#128190; Export Data</button>
+          <label class="test-next-btn" style="font-size:0.9rem;padding:8px 20px;cursor:pointer;">
+            &#128194; Import Data
+            <input type="file" accept=".json" style="display:none;" onchange="importData(event);renderSettingsContent('${targetId}')">
+          </label>
+          <button class="test-next-btn" style="font-size:0.9rem;padding:8px 20px;background:#ef4444;" onclick="confirmResetData();renderSettingsContent('${targetId}')">&#128465; Reset All Data</button>
+        </div>
       `;
     }
 
