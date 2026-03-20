@@ -1073,6 +1073,40 @@
     </div>
   </div>
 
+  <!-- ── TEST PICKER ── -->
+  <div id="test-picker" style="display:none;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;gap:24px;padding:40px;">
+    <h1 style="font-size:2rem;color:#f8fafc;">Placement Tests</h1>
+    <p style="color:#94a3b8;margin-top:-12px;">Take one subject at a time or all at once</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:500px;width:100%;">
+      <button class="role-btn" style="width:auto;height:auto;padding:20px;font-size:1rem;" onclick="startSingleTest('Math')">
+        <span class="test-subject-badge math" style="font-size:0.75rem;">Math</span>
+        15 Questions
+      </button>
+      <button class="role-btn" style="width:auto;height:auto;padding:20px;font-size:1rem;" onclick="startSingleTest('English')">
+        <span class="test-subject-badge english" style="font-size:0.75rem;">English</span>
+        15 Questions
+      </button>
+      <button class="role-btn" style="width:auto;height:auto;padding:20px;font-size:1rem;" onclick="startSingleTest('Biology')">
+        <span class="test-subject-badge biology" style="font-size:0.75rem;">Biology</span>
+        15 Questions
+      </button>
+      <button class="role-btn" style="width:auto;height:auto;padding:20px;font-size:1rem;" onclick="startSingleTest('Science')">
+        <span class="test-subject-badge science" style="font-size:0.75rem;">Science</span>
+        15 Questions
+      </button>
+      <button class="role-btn" style="width:auto;height:auto;padding:20px;font-size:1rem;" onclick="startSingleTest('History')">
+        <span class="test-subject-badge history" style="font-size:0.75rem;">History</span>
+        15 Questions
+      </button>
+      <button class="role-btn" style="width:auto;height:auto;padding:20px;font-size:1rem;" onclick="startSingleTest('Geography')">
+        <span class="test-subject-badge geography" style="font-size:0.75rem;">Geography</span>
+        15 Questions
+      </button>
+    </div>
+    <button class="test-next-btn" onclick="startAllTests()" style="margin-top:8px;">Take All Tests (90 Questions)</button>
+    <button class="back-btn" onclick="closeTestPicker()">Back</button>
+  </div>
+
   <!-- ── PLACEMENT TEST ── -->
   <div id="test-screen">
     <div class="test-topbar">
@@ -1274,11 +1308,32 @@
       currentRole = role;
       if (role === 'student') {
         document.getElementById('role-screen').style.display = 'none';
-        startPlacementTest();
+        document.getElementById('test-picker').style.display = 'flex';
       } else {
         showApp();
       }
     }
+
+    function closeTestPicker() {
+      document.getElementById('test-picker').style.display = 'none';
+      document.getElementById('role-screen').style.display = 'flex';
+      updateRoleScreenTitle();
+      syncRoleCheckboxes();
+    }
+
+    function startSingleTest(subject) {
+      document.getElementById('test-picker').style.display = 'none';
+      singleTestSubject = subject;
+      startPlacementTest([subject]);
+    }
+
+    function startAllTests() {
+      document.getElementById('test-picker').style.display = 'none';
+      singleTestSubject = null;
+      startPlacementTest(['Math', 'English', 'Biology', 'Science', 'History', 'Geography']);
+    }
+
+    let singleTestSubject = null;
 
     // Update role screen title with name whenever it's shown
     function updateRoleScreenTitle() {
@@ -1299,6 +1354,7 @@
       currentRole = null;
       currentGrade = null;
       document.getElementById('app-screen').style.display = 'none';
+      document.getElementById('test-picker').style.display = 'none';
       document.getElementById('test-screen').style.display = 'none';
       document.getElementById('results-screen').style.display = 'none';
       document.getElementById('language-screen').style.display = 'none';
@@ -1612,16 +1668,54 @@
 
     let testQuestions = [];
     let testIndex = 0;
-    let testAnswers = []; // { id, subject, grade, selectedOption, correct }
+    let testAnswers = [];
     let testSelectedOption = null;
-    const testSubjects = ['Math', 'English', 'Biology', 'Science', 'History', 'Geography'];
+    let activeTestSubjects = ['Math', 'English', 'Biology', 'Science', 'History', 'Geography'];
     let currentSubjectIndex = 0;
-    let selectedLanguages = []; // 'spanish', 'chinese'
+    let selectedLanguages = [];
 
-    function startPlacementTest() {
+    // Shuffle array in place (Fisher-Yates)
+    function shuffle(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    function startPlacementTest(subjects) {
+      activeTestSubjects = subjects || ['Math', 'English', 'Biology', 'Science', 'History', 'Geography'];
       document.getElementById('test-screen').style.display = 'flex';
       showScratchButton();
-      testQuestions = placementQuestions;
+
+      // Get all questions and filter to selected subjects
+      const allQ = placementQuestions;
+      testQuestions = [];
+      activeTestSubjects.forEach(subject => {
+        // Get questions for this subject and randomize their order within each grade
+        const subjectQs = allQ.filter(q => q.subject === subject);
+        // Group by grade, shuffle within grade, then flatten
+        const byGrade = {};
+        subjectQs.forEach(q => {
+          if (!byGrade[q.grade]) byGrade[q.grade] = [];
+          byGrade[q.grade].push(q);
+        });
+        const shuffled = [];
+        for (let g = 4; g <= 12; g++) {
+          if (byGrade[g]) shuffled.push(...shuffle(byGrade[g]));
+        }
+        // Also shuffle the options for each question
+        shuffled.forEach(q => {
+          const correctAnswer = q.options[q.answer];
+          const shuffledOpts = shuffle([...q.options]);
+          testQuestions.push({
+            ...q,
+            options: shuffledOpts,
+            answer: shuffledOpts.indexOf(correctAnswer)
+          });
+        });
+      });
+
       testIndex = 0;
       testAnswers = [];
       testSelectedOption = null;
@@ -1643,7 +1737,7 @@
           <h1>Placement Test</h1>
           <p style="color:#94a3b8;font-size:1.05rem;margin-bottom:8px;">This test will determine your grade level for each subject.</p>
           <ul>
-            <li>There are <strong>90 questions</strong> — 15 each for Math, English, Biology, Science, History, and Geography</li>
+            <li>There are <strong>${activeTestSubjects.length * 15} questions</strong> — 15 each for ${activeTestSubjects.join(', ')}</li>
             <li>Questions start easy and get harder as you go</li>
             <li>Pick the best answer for each question — you can <strong>change your answer</strong> before moving on</li>
             <li><strong>No calculator</strong> allowed for math questions</li>
@@ -1658,20 +1752,20 @@
     }
 
     function updateTestProgress() {
-      const total = 90;
+      const total = activeTestSubjects.length * 15;
       const pct = (testIndex / total) * 100;
       document.getElementById('test-progress-text').textContent = `${testIndex} / ${total}`;
       document.getElementById('test-progress-fill').style.width = pct + '%';
     }
 
     function getCurrentSubjectQuestions() {
-      const subject = testSubjects[currentSubjectIndex];
+      const subject = activeTestSubjects[currentSubjectIndex];
       return testQuestions.filter(q => q.subject === subject);
     }
 
     function getSubjectQuestionIndex() {
       // How far into the current subject are we
-      const subject = testSubjects[currentSubjectIndex];
+      const subject = activeTestSubjects[currentSubjectIndex];
       return testAnswers.filter(a => a.subject === subject).length;
     }
 
@@ -1686,7 +1780,7 @@
       }
 
       // If all subjects done
-      if (currentSubjectIndex >= testSubjects.length) {
+      if (currentSubjectIndex >= activeTestSubjects.length) {
         showTestResults();
         return;
       }
@@ -1752,7 +1846,7 @@
     }
 
     function showSegmentReview() {
-      const subject = testSubjects[currentSubjectIndex];
+      const subject = activeTestSubjects[currentSubjectIndex];
       const subjectClass = subject.toLowerCase();
       const subjectQs = getCurrentSubjectQuestions();
       const subjectAnswers = testAnswers.filter(a => a.subject === subject);
@@ -1798,7 +1892,7 @@
         `;
       });
 
-      const nextSubject = currentSubjectIndex < testSubjects.length - 1 ? testSubjects[currentSubjectIndex + 1] : null;
+      const nextSubject = currentSubjectIndex < activeTestSubjects.length - 1 ? activeTestSubjects[currentSubjectIndex + 1] : null;
       const btnText = nextSubject ? `Continue to ${nextSubject}` : 'See Final Results';
 
       reviewHTML += `
@@ -1811,7 +1905,7 @@
 
     function continueToNextSubject() {
       currentSubjectIndex++;
-      if (currentSubjectIndex >= testSubjects.length) {
+      if (currentSubjectIndex >= activeTestSubjects.length) {
         showTestResults();
       } else {
         showTestQuestion();
@@ -1823,7 +1917,7 @@
       hideScratchButton();
 
       // Calculate grade level per subject
-      const subjects = ['Math', 'English', 'Biology', 'Science', 'History', 'Geography'];
+      const subjects = activeTestSubjects;
       const results = {};
 
       subjects.forEach(subject => {
@@ -1899,7 +1993,7 @@
 
     function retakeTest() {
       document.getElementById('results-screen').style.display = 'none';
-      startPlacementTest();
+      document.getElementById('test-picker').style.display = 'flex';
     }
 
     // ── LANGUAGE SELECTION ──
