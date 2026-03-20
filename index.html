@@ -1952,12 +1952,200 @@
 
     async function loadClepContent(filePath) {
       const content = document.getElementById('clep-browser-content');
+      // If it's a practice exam, run it interactively
+      if (filePath.includes('practice-exams/')) {
+        try {
+          const md = await window.api.readFile(filePath);
+          const parsed = parseClepExam(md);
+          if (parsed.questions.length > 0) {
+            startClepExam(parsed, filePath);
+            return;
+          }
+        } catch (e) {}
+      }
+      // Otherwise show as markdown (study guides, overview)
       try {
         const md = await window.api.readFile(filePath);
         content.innerHTML = window.api.parseMarkdown(md);
       } catch (e) {
         content.innerHTML = '<h1>Error</h1><p>Could not load ' + filePath + '</p>';
       }
+    }
+
+    // ── CLEP EXAM PARSER ──
+    function parseClepExam(md) {
+      const lines = md.split('\n');
+      const questions = [];
+      const answerMap = {};
+      let title = '';
+      let inAnswerKey = false;
+
+      // Extract title
+      for (const line of lines) {
+        if (line.startsWith('# ')) { title = line.replace('# ', ''); break; }
+      }
+
+      // Extract answer key first
+      for (const line of lines) {
+        if (line.includes('Answer Key') || line.includes('answer key')) { inAnswerKey = true; continue; }
+        if (inAnswerKey) {
+          const m = line.match(/^(\d+)\.\s*([A-D])/);
+          if (m) answerMap[parseInt(m[1])] = m[2];
+        }
+      }
+
+      // Extract questions
+      let currentQ = null;
+      inAnswerKey = false;
+      for (const line of lines) {
+        if (line.includes('Answer Key') || line.includes('answer key')) { inAnswerKey = true; }
+        if (inAnswerKey) continue;
+
+        const qMatch = line.match(/^\*\*(\d+)\.\*\*\s*(.+)/);
+        if (qMatch) {
+          if (currentQ && currentQ.options.length >= 2) questions.push(currentQ);
+          const num = parseInt(qMatch[1]);
+          currentQ = { num, question: qMatch[2].trim(), options: [], answer: -1 };
+          const correctLetter = answerMap[num];
+          if (correctLetter) currentQ.answerLetter = correctLetter;
+          continue;
+        }
+
+        if (currentQ) {
+          const optMatch = line.match(/^([A-D])\)\s*(.+)/);
+          if (optMatch) {
+            currentQ.options.push(optMatch[2].trim());
+            if (currentQ.answerLetter === optMatch[1]) {
+              currentQ.answer = currentQ.options.length - 1;
+            }
+          }
+        }
+      }
+      if (currentQ && currentQ.options.length >= 2) questions.push(currentQ);
+
+      return { title, questions };
+    }
+
+    // ── INTERACTIVE CLEP EXAM ──
+    let clepExamData = null;
+    let clepIndex = 0;
+    let clepAnswers = [];
+    let clepSelected = null;
+
+    function startClepExam(parsed, filePath) {
+      clepExamData = parsed;
+      clepIndex = 0;
+      clepAnswers = [];
+      clepSelected = null;
+
+      const content = document.getElementById('clep-browser-content');
+      content.innerHTML = `
+        <h1>${parsed.title}</h1>
+        <p style="color:#94a3b8;margin-bottom:16px;">${parsed.questions.length} questions</p>
+        <div class="test-rules" style="text-align:left;">
+          <ul>
+            <li>Answer each question — you can <strong>change your answer</strong> before moving on</li>
+            <li>After all questions, you'll see your <strong>score and corrections</strong></li>
+            <li>Take your time — no time limit in practice mode</li>
+          </ul>
+        </div>
+        <button class="test-next-btn" onclick="showClepQuestion()" style="margin-top:16px;">Start Exam</button>
+      `;
+    }
+
+    function showClepQuestion() {
+      if (clepIndex >= clepExamData.questions.length) {
+        showClepResults();
+        return;
+      }
+
+      clepSelected = null;
+      const q = clepExamData.questions[clepIndex];
+      const content = document.getElementById('clep-browser-content');
+      const pct = Math.round((clepIndex / clepExamData.questions.length) * 100);
+
+      content.innerHTML = `
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;">
+          <span style="color:#94a3b8;font-size:0.9rem;">Question ${clepIndex + 1} of ${clepExamData.questions.length}</span>
+          <div style="width:200px;height:8px;background:#334155;border-radius:4px;overflow:hidden;">
+            <div style="height:100%;width:${pct}%;background:#3b82f6;border-radius:4px;transition:width 0.3s;"></div>
+          </div>
+        </div>
+        <div class="test-question" style="text-align:left;margin-bottom:20px;">${q.question}</div>
+        <div class="test-options">
+          ${q.options.map((opt, i) => `
+            <button class="test-option" id="clep-opt-${i}" onclick="selectClepOption(${i})">${String.fromCharCode(65 + i)}) ${opt}</button>
+          `).join('')}
+        </div>
+        <button class="test-next-btn" id="clep-next" onclick="nextClepQuestion()" disabled style="margin-top:16px;">Next</button>
+      `;
+    }
+
+    function selectClepOption(index) {
+      clepSelected = index;
+      const q = clepExamData.questions[clepIndex];
+      for (let i = 0; i < q.options.length; i++) {
+        const btn = document.getElementById('clep-opt-' + i);
+        if (i === index) btn.classList.add('selected');
+        else btn.classList.remove('selected');
+      }
+      document.getElementById('clep-next').disabled = false;
+    }
+
+    function nextClepQuestion() {
+      if (clepSelected === null) return;
+      const q = clepExamData.questions[clepIndex];
+      clepAnswers.push({
+        num: q.num,
+        question: q.question,
+        options: q.options,
+        selected: clepSelected,
+        correct: q.answer,
+        isCorrect: clepSelected === q.answer
+      });
+      clepIndex++;
+      showClepQuestion();
+    }
+
+    function showClepResults() {
+      const content = document.getElementById('clep-browser-content');
+      const correctCount = clepAnswers.filter(a => a.isCorrect).length;
+      const total = clepAnswers.length;
+      const pct = Math.round((correctCount / total) * 100);
+      const passed = pct >= 50;
+
+      let html = `
+        <div style="text-align:center;margin-bottom:24px;">
+          <h1 style="border:none;">${clepExamData.title}</h1>
+          <div style="font-size:3rem;font-weight:800;color:${passed ? '#10b981' : '#ef4444'};margin:16px 0;">${pct}%</div>
+          <p style="font-size:1.1rem;color:${passed ? '#10b981' : '#ef4444'};font-weight:600;">${passed ? 'PASSING SCORE' : 'NOT YET PASSING'}</p>
+          <p style="color:#94a3b8;">${correctCount} out of ${total} correct</p>
+        </div>
+        <div style="max-height:calc(100vh - 300px);overflow-y:auto;">
+      `;
+
+      clepAnswers.forEach((a, i) => {
+        const borderColor = a.isCorrect ? '#10b981' : '#ef4444';
+        const icon = a.isCorrect ? '&#10003;' : '&#10007;';
+        const iconColor = a.isCorrect ? '#10b981' : '#ef4444';
+
+        html += `
+          <div style="background:#1e293b;border:1px solid ${borderColor};border-radius:10px;padding:16px;margin-bottom:12px;">
+            <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:8px;">
+              <strong style="color:#f8fafc;font-size:0.95rem;">Q${a.num}: ${a.question}</strong>
+              <span style="color:${iconColor};font-size:1.2rem;min-width:24px;text-align:right;">${icon}</span>
+            </div>
+            <div style="color:#94a3b8;font-size:0.85rem;">
+              Your answer: <span style="color:${a.isCorrect ? '#10b981' : '#ef4444'};font-weight:600;">${String.fromCharCode(65 + a.selected)}) ${a.options[a.selected]}</span>
+        `;
+        if (!a.isCorrect && a.correct >= 0) {
+          html += `<br>Correct answer: <span style="color:#10b981;font-weight:600;">${String.fromCharCode(65 + a.correct)}) ${a.options[a.correct]}</span>`;
+        }
+        html += '</div></div>';
+      });
+
+      html += '</div>';
+      content.innerHTML = html;
     }
   </script>
 
