@@ -8,7 +8,7 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: 'Times New Roman', Times, serif;
       background: #0f172a;
       color: #e2e8f0;
       min-height: 100vh;
@@ -1877,6 +1877,7 @@
       body.innerHTML = `
         <span class="test-subject-badge ${subjectClass}">${q.subject} — Question ${questionNum} of ${totalInSubject}</span>
         <div class="test-question">${q.question}</div>
+        ${q.diagram ? '<div style="margin:8px 0;text-align:center;">' + q.diagram + '</div>' : ''}
         <div class="test-options">
           ${q.options.map((opt, i) => `
             <button class="test-option" id="test-opt-${i}" onclick="selectTestOption(${i})">${opt}</button>

@@ -15,6 +15,7 @@ const placementQuestions = [
 
   { id: 2, subject: 'Math', grade: 4,
     question: 'What is the area of a rectangle that is 9 inches long and 4 inches wide?',
+    diagram: '<svg width="200" height="120" viewBox="0 0 200 120"><rect x="20" y="20" width="160" height="80" fill="none" stroke="#3b82f6" stroke-width="2"/><text x="100" y="115" text-anchor="middle" fill="#94a3b8" font-size="14">9 in</text><text x="190" y="65" text-anchor="start" fill="#94a3b8" font-size="14">4 in</text></svg>',
     options: ['26 square inches', '36 square inches', '13 square inches', '32 square inches'],
     answer: 1 },
 
@@ -48,17 +49,20 @@ const placementQuestions = [
 
   { id: 8, subject: 'Math', grade: 7,
     question: 'What is the area of a triangle with base 10 and height 6?',
+    diagram: '<svg width="200" height="140" viewBox="0 0 200 140"><polygon points="20,120 180,120 100,20" fill="none" stroke="#3b82f6" stroke-width="2"/><line x1="100" y1="20" x2="100" y2="120" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,4"/><text x="100" y="135" text-anchor="middle" fill="#94a3b8" font-size="14">10</text><text x="108" y="75" fill="#94a3b8" font-size="14">6</text></svg>',
     options: ['60', '30', '16', '36'],
     answer: 1 },
 
   // Grade 8
   { id: 9, subject: 'Math', grade: 8,
     question: 'What is the slope of the line passing through (2, 5) and (6, 13)?',
+    diagram: '<svg width="200" height="200" viewBox="0 0 200 200"><line x1="30" y1="180" x2="30" y2="10" stroke="#475569" stroke-width="1"/><line x1="20" y1="170" x2="190" y2="170" stroke="#475569" stroke-width="1"/><circle cx="60" cy="130" r="4" fill="#3b82f6"/><circle cx="140" cy="50" r="4" fill="#3b82f6"/><line x1="60" y1="130" x2="140" y2="50" stroke="#3b82f6" stroke-width="2"/><text x="50" y="148" fill="#94a3b8" font-size="12">(2,5)</text><text x="130" y="44" fill="#94a3b8" font-size="12">(6,13)</text></svg>',
     options: ['1', '2', '3', '4'],
     answer: 1 },
 
   { id: 10, subject: 'Math', grade: 8,
     question: 'A right triangle has legs of 6 and 8. What is the hypotenuse?',
+    diagram: '<svg width="200" height="160" viewBox="0 0 200 160"><polygon points="30,140 170,140 30,30" fill="none" stroke="#3b82f6" stroke-width="2"/><rect x="30" y="124" width="16" height="16" fill="none" stroke="#3b82f6" stroke-width="1"/><text x="100" y="155" text-anchor="middle" fill="#94a3b8" font-size="14">8</text><text x="18" y="90" fill="#94a3b8" font-size="14">6</text><text x="110" y="80" fill="#f59e0b" font-size="14">?</text></svg>',
     options: ['12', '14', '10', '9'],
     answer: 2 },
 
@@ -76,16 +80,19 @@ const placementQuestions = [
   // Grade 10
   { id: 13, subject: 'Math', grade: 10,
     question: 'Two angles of a triangle are 45° and 70°. What is the third angle?',
+    diagram: '<svg width="200" height="140" viewBox="0 0 200 140"><polygon points="20,120 180,120 120,20" fill="none" stroke="#3b82f6" stroke-width="2"/><text x="40" y="115" fill="#94a3b8" font-size="13">45°</text><text x="148" y="115" fill="#94a3b8" font-size="13">70°</text><text x="115" y="38" fill="#f59e0b" font-size="14">?°</text></svg>',
     options: ['55°', '65°', '75°', '85°'],
     answer: 1 },
 
   { id: 14, subject: 'Math', grade: 10,
     question: 'What is the area of a circle with radius 6? (in terms of π)',
+    diagram: '<svg width="160" height="160" viewBox="0 0 160 160"><circle cx="80" cy="80" r="60" fill="none" stroke="#3b82f6" stroke-width="2"/><line x1="80" y1="80" x2="140" y2="80" stroke="#94a3b8" stroke-width="1.5"/><circle cx="80" cy="80" r="3" fill="#3b82f6"/><text x="108" y="74" fill="#94a3b8" font-size="14">r = 6</text></svg>',
     options: ['12π', '24π', '36π', '48π'],
     answer: 2 },
 
   { id: 15, subject: 'Math', grade: 10,
     question: 'Find the distance between points (1, 2) and (7, 10).',
+    diagram: '<svg width="200" height="200" viewBox="0 0 200 200"><line x1="30" y1="180" x2="30" y2="10" stroke="#475569" stroke-width="1"/><line x1="20" y1="170" x2="190" y2="170" stroke="#475569" stroke-width="1"/><circle cx="50" cy="150" r="4" fill="#3b82f6"/><circle cx="150" cy="50" r="4" fill="#10b981"/><line x1="50" y1="150" x2="150" y2="50" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6,4"/><text x="35" y="165" fill="#3b82f6" font-size="12">(1,2)</text><text x="135" y="44" fill="#10b981" font-size="12">(7,10)</text><text x="105" y="112" fill="#f59e0b" font-size="13">d = ?</text></svg>',
     options: ['8', '10', '12', '14'],
     answer: 1 },
 
@@ -268,6 +275,7 @@ const placementQuestions = [
   // Grade 4
   { id: 46, subject: 'Science', grade: 4,
     question: 'What are the three states of matter?',
+    diagram: '<svg width="280" height="100" viewBox="0 0 280 100"><rect x="10" y="20" width="70" height="60" rx="2" fill="#3b82f6" opacity="0.3" stroke="#3b82f6" stroke-width="1.5"/><text x="45" y="90" text-anchor="middle" fill="#94a3b8" font-size="11">Solid</text><ellipse cx="140" cy="50" rx="40" ry="30" fill="#8b5cf6" opacity="0.2" stroke="#8b5cf6" stroke-width="1.5"/><path d="M110,60 Q120,40 130,55 Q140,35 150,50 Q160,40 170,60" fill="none" stroke="#8b5cf6" stroke-width="1.5"/><text x="140" y="90" text-anchor="middle" fill="#94a3b8" font-size="11">Liquid</text><circle cx="230" cy="35" r="5" fill="#10b981" opacity="0.4"/><circle cx="245" cy="50" r="5" fill="#10b981" opacity="0.4"/><circle cx="220" cy="55" r="5" fill="#10b981" opacity="0.4"/><circle cx="240" cy="30" r="5" fill="#10b981" opacity="0.4"/><circle cx="225" cy="42" r="5" fill="#10b981" opacity="0.4"/><text x="235" y="90" text-anchor="middle" fill="#94a3b8" font-size="11">Gas</text><text x="140" y="14" text-anchor="middle" fill="#64748b" font-size="11">?</text></svg>',
     options: ['Hot, cold, warm', 'Solid, liquid, gas', 'Heavy, light, medium', 'Big, small, tiny'],
     answer: 1 },
 
@@ -295,6 +303,7 @@ const placementQuestions = [
 
   { id: 51, subject: 'Science', grade: 6,
     question: 'What are the three main layers of the Earth?',
+    diagram: '<svg width="180" height="180" viewBox="0 0 180 180"><circle cx="90" cy="90" r="80" fill="#8b6914" stroke="#5c3d1e" stroke-width="2"/><circle cx="90" cy="90" r="55" fill="#ef4444" opacity="0.4" stroke="#ef4444" stroke-width="1.5"/><circle cx="90" cy="90" r="25" fill="#f59e0b" stroke="#f59e0b" stroke-width="1.5"/><text x="90" y="94" text-anchor="middle" fill="#fff" font-size="10">?</text><text x="90" y="65" text-anchor="middle" fill="#fca5a5" font-size="10">?</text><text x="90" y="40" text-anchor="middle" fill="#d4a76a" font-size="10">?</text></svg>',
     options: ['Atmosphere, hydrosphere, lithosphere', 'Crust, mantle, core', 'Sand, rock, magma', 'Surface, middle, bottom'],
     answer: 1 },
 
