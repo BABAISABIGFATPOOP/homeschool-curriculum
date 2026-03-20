@@ -546,6 +546,9 @@
     .test-subject-badge.math { background: #3b82f6; color: white; }
     .test-subject-badge.english { background: #8b5cf6; color: white; }
     .test-subject-badge.biology { background: #10b981; color: white; }
+    .test-subject-badge.science { background: #f59e0b; color: #1e293b; }
+    .test-subject-badge.history { background: #ef4444; color: white; }
+    .test-subject-badge.geography { background: #06b6d4; color: white; }
 
     .test-question {
       font-size: 1.3rem;
@@ -1296,7 +1299,7 @@
     let testIndex = 0;
     let testAnswers = []; // { id, subject, grade, selectedOption, correct }
     let testSelectedOption = null;
-    const testSubjects = ['Math', 'English', 'Biology'];
+    const testSubjects = ['Math', 'English', 'Biology', 'Science', 'History', 'Geography'];
     let currentSubjectIndex = 0;
     let selectedLanguages = []; // 'spanish', 'chinese'
 
@@ -1323,7 +1326,7 @@
           <h1>Placement Test</h1>
           <p style="color:#94a3b8;font-size:1.05rem;margin-bottom:8px;">This test will determine your grade level for each subject.</p>
           <ul>
-            <li>There are <strong>45 questions</strong> — 15 Math, 15 English, 15 Biology</li>
+            <li>There are <strong>90 questions</strong> — 15 each for Math, English, Biology, Science, History, and Geography</li>
             <li>Questions start easy and get harder as you go</li>
             <li>Pick the best answer for each question — you can <strong>change your answer</strong> before moving on</li>
             <li><strong>No calculator</strong> allowed for math questions</li>
@@ -1338,7 +1341,7 @@
     }
 
     function updateTestProgress() {
-      const total = 45;
+      const total = 90;
       const pct = (testIndex / total) * 100;
       document.getElementById('test-progress-text').textContent = `${testIndex} / ${total}`;
       document.getElementById('test-progress-fill').style.width = pct + '%';
@@ -1502,7 +1505,7 @@
       document.getElementById('test-screen').style.display = 'none';
 
       // Calculate grade level per subject
-      const subjects = ['Math', 'English', 'Biology'];
+      const subjects = ['Math', 'English', 'Biology', 'Science', 'History', 'Geography'];
       const results = {};
 
       subjects.forEach(subject => {
@@ -1537,36 +1540,28 @@
       });
 
       // Overall grade = most common or average, rounded
-      const avgGrade = Math.round((results.Math.grade + results.English.grade + results.Biology.grade) / 3);
+      const avgGrade = Math.round(subjects.reduce((sum, s) => sum + results[s].grade, 0) / subjects.length);
       const overallGrade = Math.max(4, Math.min(12, avgGrade));
 
       // Show results
       const screen = document.getElementById('results-screen');
       screen.style.display = 'flex';
+      const subjectColors = { Math: 'math', English: 'english', Biology: 'biology', Science: 'math', History: 'english', Geography: 'biology' };
+      let rowsHTML = '';
+      subjects.forEach(s => {
+        rowsHTML += `
+          <div class="result-row">
+            <span class="result-subject">${s}</span>
+            <div>
+              <span class="result-grade ${subjectColors[s]}">Grade ${results[s].grade}</span>
+              <span class="result-score">${results[s].correct}/${results[s].total} correct</span>
+            </div>
+          </div>`;
+      });
       screen.innerHTML = `
         <div class="results-card">
           <h1>Your Results</h1>
-          <div class="result-row">
-            <span class="result-subject">Math</span>
-            <div>
-              <span class="result-grade math">Grade ${results.Math.grade}</span>
-              <span class="result-score">${results.Math.correct}/${results.Math.total} correct</span>
-            </div>
-          </div>
-          <div class="result-row">
-            <span class="result-subject">English</span>
-            <div>
-              <span class="result-grade english">Grade ${results.English.grade}</span>
-              <span class="result-score">${results.English.correct}/${results.English.total} correct</span>
-            </div>
-          </div>
-          <div class="result-row">
-            <span class="result-subject">Biology</span>
-            <div>
-              <span class="result-grade biology">Grade ${results.Biology.grade}</span>
-              <span class="result-score">${results.Biology.correct}/${results.Biology.total} correct</span>
-            </div>
-          </div>
+          ${rowsHTML}
           <div class="result-overall">
             <div class="result-overall-label">Overall Placement</div>
             <div class="result-overall-grade">Grade ${overallGrade}</div>

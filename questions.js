@@ -259,6 +259,264 @@ const placementQuestions = [
   { id: 45, subject: 'Biology', grade: 10,
     question: 'A mutation in a gamete (sex cell) vs. a somatic (body) cell — which can be inherited?',
     options: ['Somatic cell mutation', 'Gamete mutation', 'Both equally', 'Neither'],
+    answer: 1 },
+
+  // ═══════════════════════════════════════
+  // SCIENCE (15 questions)
+  // ═══════════════════════════════════════
+
+  // Grade 4
+  { id: 46, subject: 'Science', grade: 4,
+    question: 'What are the three states of matter?',
+    options: ['Hot, cold, warm', 'Solid, liquid, gas', 'Heavy, light, medium', 'Big, small, tiny'],
+    answer: 1 },
+
+  { id: 47, subject: 'Science', grade: 4,
+    question: 'What type of simple machine is a ramp?',
+    options: ['Lever', 'Pulley', 'Inclined plane', 'Wheel and axle'],
+    answer: 2 },
+
+  // Grade 5
+  { id: 48, subject: 'Science', grade: 5,
+    question: 'What causes day and night on Earth?',
+    options: ['The moon blocking the sun', 'Earth rotating on its axis', 'Earth orbiting the sun', 'The sun moving around Earth'],
+    answer: 1 },
+
+  { id: 49, subject: 'Science', grade: 5,
+    question: 'What is friction?',
+    options: ['A force that speeds things up', 'A force that resists motion between surfaces', 'A type of energy', 'The pull of gravity'],
+    answer: 1 },
+
+  // Grade 6
+  { id: 50, subject: 'Science', grade: 6,
+    question: 'Energy that is stored due to an object\'s position or shape is called:',
+    options: ['Kinetic energy', 'Thermal energy', 'Potential energy', 'Chemical energy'],
+    answer: 2 },
+
+  { id: 51, subject: 'Science', grade: 6,
+    question: 'What are the three main layers of the Earth?',
+    options: ['Atmosphere, hydrosphere, lithosphere', 'Crust, mantle, core', 'Sand, rock, magma', 'Surface, middle, bottom'],
+    answer: 1 },
+
+  // Grade 7
+  { id: 52, subject: 'Science', grade: 7,
+    question: 'Newton\'s Third Law states that for every action there is:',
+    options: ['A bigger reaction', 'An equal and opposite reaction', 'No reaction', 'A delayed reaction'],
+    answer: 1 },
+
+  { id: 53, subject: 'Science', grade: 7,
+    question: 'On the periodic table, elements in the same column (group) have similar:',
+    options: ['Colors', 'Sizes', 'Chemical properties', 'Weights'],
+    answer: 2 },
+
+  // Grade 8
+  { id: 54, subject: 'Science', grade: 8,
+    question: 'What type of wave is sound?',
+    options: ['Transverse wave', 'Longitudinal wave', 'Electromagnetic wave', 'Surface wave'],
+    answer: 1 },
+
+  { id: 55, subject: 'Science', grade: 8,
+    question: 'In an ionic bond, atoms:',
+    options: ['Share electrons equally', 'Share electrons unequally', 'Transfer electrons from one to another', 'Repel each other'],
+    answer: 2 },
+
+  // Grade 9
+  { id: 56, subject: 'Science', grade: 9,
+    question: 'An object accelerates at 3 m/s². If its mass is 10 kg, what is the net force? (F = ma)',
+    options: ['3 N', '10 N', '13 N', '30 N'],
+    answer: 3 },
+
+  { id: 57, subject: 'Science', grade: 9,
+    question: 'What is the atomic number of an element?',
+    options: ['Number of neutrons', 'Number of protons', 'Total mass of the atom', 'Number of electrons in the outer shell'],
+    answer: 1 },
+
+  // Grade 10
+  { id: 58, subject: 'Science', grade: 10,
+    question: 'In the ideal gas law PV = nRT, what does "n" represent?',
+    options: ['Pressure', 'Number of moles', 'Temperature', 'Volume'],
+    answer: 1 },
+
+  { id: 59, subject: 'Science', grade: 10,
+    question: 'What is the pH of a neutral solution?',
+    options: ['0', '5', '7', '14'],
+    answer: 2 },
+
+  { id: 60, subject: 'Science', grade: 10,
+    question: 'In a Lewis structure, a covalent bond is represented by:',
+    options: ['A transferred electron', 'A shared pair of electrons', 'A positive charge', 'An empty orbital'],
+    answer: 1 },
+
+  // ═══════════════════════════════════════
+  // HISTORY (15 questions)
+  // ═══════════════════════════════════════
+
+  // Grade 4
+  { id: 61, subject: 'History', grade: 4,
+    question: 'Who were the first people to live in North America?',
+    options: ['The Pilgrims', 'The British', 'Native Americans', 'The Spanish'],
+    answer: 2 },
+
+  { id: 62, subject: 'History', grade: 4,
+    question: 'What is a colony?',
+    options: ['A type of animal', 'A settlement ruled by another country', 'A large city', 'A type of government'],
+    answer: 1 },
+
+  // Grade 5
+  { id: 63, subject: 'History', grade: 5,
+    question: 'The Declaration of Independence was signed in what year?',
+    options: ['1492', '1620', '1776', '1812'],
+    answer: 2 },
+
+  { id: 64, subject: 'History', grade: 5,
+    question: 'What did the Bill of Rights add to the Constitution?',
+    options: ['The power to tax', 'Protection of individual freedoms', 'The right to own land', 'Rules for elections'],
+    answer: 1 },
+
+  // Grade 6
+  { id: 65, subject: 'History', grade: 6,
+    question: 'Which ancient civilization built the pyramids?',
+    options: ['Greeks', 'Romans', 'Egyptians', 'Chinese'],
+    answer: 2 },
+
+  { id: 66, subject: 'History', grade: 6,
+    question: 'The Silk Road was primarily used for:',
+    options: ['Military conquest', 'Religious pilgrimages', 'Trade between Asia and Europe', 'Transporting slaves'],
+    answer: 2 },
+
+  // Grade 7
+  { id: 67, subject: 'History', grade: 7,
+    question: 'What was the feudal system?',
+    options: ['A banking system', 'A social hierarchy based on land ownership and loyalty', 'A type of democracy', 'A religious order'],
+    answer: 1 },
+
+  { id: 68, subject: 'History', grade: 7,
+    question: 'The Renaissance began in which country?',
+    options: ['England', 'France', 'Germany', 'Italy'],
+    answer: 3 },
+
+  // Grade 8
+  { id: 69, subject: 'History', grade: 8,
+    question: 'What was the main cause of the American Civil War?',
+    options: ['Taxation', 'Slavery and states\' rights', 'Foreign invasion', 'Religious differences'],
+    answer: 1 },
+
+  { id: 70, subject: 'History', grade: 8,
+    question: 'The Industrial Revolution began in which country?',
+    options: ['United States', 'France', 'Great Britain', 'Germany'],
+    answer: 2 },
+
+  // Grade 9
+  { id: 71, subject: 'History', grade: 9,
+    question: 'What event sparked the beginning of World War I?',
+    options: ['The invasion of Poland', 'The assassination of Archduke Franz Ferdinand', 'The bombing of Pearl Harbor', 'The Russian Revolution'],
+    answer: 1 },
+
+  { id: 72, subject: 'History', grade: 9,
+    question: 'The Cold War was primarily between:',
+    options: ['Britain and France', 'The US and Soviet Union', 'China and Japan', 'Germany and Russia'],
+    answer: 1 },
+
+  // Grade 10
+  { id: 73, subject: 'History', grade: 10,
+    question: 'Decolonization in Africa and Asia primarily occurred during which decades?',
+    options: ['1920s–1930s', '1940s–1960s', '1970s–1980s', '1990s–2000s'],
+    answer: 1 },
+
+  { id: 74, subject: 'History', grade: 10,
+    question: 'The concept of "nationalism" most directly refers to:',
+    options: ['Loyalty to a political party', 'Strong identification with one\'s own nation and its interests', 'Opposition to all forms of government', 'Support for international cooperation'],
+    answer: 1 },
+
+  { id: 75, subject: 'History', grade: 10,
+    question: 'Historiography is the study of:',
+    options: ['Ancient artifacts', 'How history is written and interpreted', 'Geography and maps', 'Future predictions'],
+    answer: 1 },
+
+  // ═══════════════════════════════════════
+  // GEOGRAPHY (15 questions)
+  // ═══════════════════════════════════════
+
+  // Grade 4
+  { id: 76, subject: 'Geography', grade: 4,
+    question: 'How many continents are there?',
+    options: ['5', '6', '7', '8'],
+    answer: 2 },
+
+  { id: 77, subject: 'Geography', grade: 4,
+    question: 'What does a compass rose show on a map?',
+    options: ['The weather', 'Distance between cities', 'Directions (N, S, E, W)', 'Population size'],
+    answer: 2 },
+
+  // Grade 5
+  { id: 78, subject: 'Geography', grade: 5,
+    question: 'Lines of latitude measure distance from the:',
+    options: ['Prime Meridian', 'Equator', 'North Pole', 'International Date Line'],
+    answer: 1 },
+
+  { id: 79, subject: 'Geography', grade: 5,
+    question: 'Which of these is a renewable natural resource?',
+    options: ['Coal', 'Oil', 'Solar energy', 'Natural gas'],
+    answer: 2 },
+
+  // Grade 6
+  { id: 80, subject: 'Geography', grade: 6,
+    question: 'What is the difference between a physical map and a political map?',
+    options: ['Physical maps show countries, political maps show landforms', 'Physical maps show landforms, political maps show borders and countries', 'They are the same thing', 'Physical maps show weather, political maps show population'],
+    answer: 1 },
+
+  { id: 81, subject: 'Geography', grade: 6,
+    question: 'Most of the world\'s population lives in:',
+    options: ['The Southern Hemisphere', 'The Northern Hemisphere', 'Near the South Pole', 'On islands'],
+    answer: 1 },
+
+  // Grade 7
+  { id: 82, subject: 'Geography', grade: 7,
+    question: 'The Sahara Desert is located on which continent?',
+    options: ['Asia', 'South America', 'Africa', 'Australia'],
+    answer: 2 },
+
+  { id: 83, subject: 'Geography', grade: 7,
+    question: 'Urbanization refers to:',
+    options: ['People moving from cities to farms', 'The growth of cities as people move from rural to urban areas', 'Building more parks', 'Reducing pollution'],
+    answer: 1 },
+
+  // Grade 8
+  { id: 84, subject: 'Geography', grade: 8,
+    question: 'Which of these is an effect of globalization?',
+    options: ['Countries becoming more isolated', 'Increased international trade and cultural exchange', 'Decreased use of technology', 'Fewer languages spoken worldwide'],
+    answer: 1 },
+
+  { id: 85, subject: 'Geography', grade: 8,
+    question: 'The legacy of European imperialism in Africa includes:',
+    options: ['Borders drawn without regard to ethnic groups', 'Complete economic independence', 'Unified languages across the continent', 'Equal distribution of resources'],
+    answer: 0 },
+
+  // Grade 9
+  { id: 86, subject: 'Geography', grade: 9,
+    question: 'The demographic transition model shows that as countries develop:',
+    options: ['Birth and death rates both increase', 'Birth and death rates both decrease', 'Birth rates increase and death rates decrease', 'Population always decreases'],
+    answer: 1 },
+
+  { id: 87, subject: 'Geography', grade: 9,
+    question: 'Cultural diffusion is best described as:',
+    options: ['The extinction of a culture', 'The spread of cultural traits from one society to another', 'A culture remaining completely isolated', 'Government-mandated cultural changes'],
+    answer: 1 },
+
+  // Grade 10
+  { id: 88, subject: 'Geography', grade: 10,
+    question: 'The Brandt Line divides the world into:',
+    options: ['East and West', 'Developed (Global North) and developing (Global South)', 'Democracies and dictatorships', 'Landlocked and coastal nations'],
+    answer: 1 },
+
+  { id: 89, subject: 'Geography', grade: 10,
+    question: 'GIS (Geographic Information Systems) is primarily used to:',
+    options: ['Predict earthquakes', 'Analyze and visualize spatial data', 'Control weather patterns', 'Translate languages'],
+    answer: 1 },
+
+  { id: 90, subject: 'Geography', grade: 10,
+    question: 'Von Thünen\'s model describes:',
+    options: ['Urban growth patterns', 'Agricultural land use around a central market', 'Population migration', 'Industrial development stages'],
     answer: 1 }
 ];
 
