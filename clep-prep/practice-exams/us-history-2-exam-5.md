@@ -1,432 +1,434 @@
-# U.S. History II CLEP Practice Exam 5
+# CLEP U.S. History II — Practice Exam 5
 
 **Time Limit:** 90 minutes
 **Number of Questions:** 60
-**Passing Score:** Approximately 50 (scaled score of 50 out of 80)
-
-**Instructions:** Choose the best answer (A, B, C, or D) for each question.
+**Format:** Multiple choice (A, B, C, D)
+**Passing Score:** Typically 50 (on CLEP's 20–80 scale); approximately 50% correct is a reasonable target, but check with your institution.
+**Covers:** 1865 to the present
 
 ---
 
-1. The Reconstruction Act of 1867 divided the former Confederate states into:
+## Questions
 
-A) Two administrative regions
-B) Five military districts governed by Union generals
-C) Thirteen independent territories
-D) Self-governing provinces
+**1.** The completion of the Transcontinental Railroad in 1869 was significant because it:
 
-2. The 14th Amendment to the Constitution is most significant for:
+A) Ended the Civil War
+B) Connected the East and West coasts, transforming trade and travel
+C) Was built entirely by the government
+D) Only carried passengers, not freight
 
-A) Abolishing slavery
-B) Granting citizenship to all persons born in the U.S. and guaranteeing equal protection under the law
-C) Giving women the right to vote
-D) Prohibiting the sale of alcohol
+**2.** John D. Rockefeller dominated which industry?
 
-3. Carpetbaggers was a derogatory term used to describe:
+A) Steel
+B) Oil (Standard Oil)
+C) Railroads
+D) Banking
 
-A) Southern Democrats who supported Reconstruction
-B) Northerners who moved to the South during Reconstruction, often for political or economic opportunity
-C) African Americans who ran for political office
-D) Federal soldiers stationed in the South
+**3.** The Populist Party of the 1890s primarily represented the interests of:
 
-4. The Credit Mobilier scandal of 1872 involved:
+A) Industrial workers
+B) Farmers and rural Americans
+C) Urban elites
+D) Immigrants
 
-A) Bribery of government officials related to railroad construction profits
-B) Election fraud in the presidential race
-C) Corruption in the Freedmen's Bureau
-D) Illegal arms sales to Native Americans
+**4.** "Yellow journalism" in the 1890s referred to:
 
-5. The Grange movement of the 1870s was organized primarily by:
+A) Investigative reporting
+B) Sensationalized news stories designed to increase readership
+C) Government propaganda
+D) Censored news
 
-A) Urban factory workers
-B) Farmers seeking to address issues like high railroad shipping rates and grain storage costs
-C) Mine workers in the West
-D) Southern plantation owners
+**5.** The Open Door Policy (1899) was aimed at:
 
-6. The Battle of Little Bighorn in 1876 resulted in:
+A) Opening U.S. borders to immigrants
+B) Ensuring equal trading rights for all nations in China
+C) Establishing free trade with Europe
+D) Ending tariffs
 
-A) A decisive U.S. Army victory
-B) The defeat of Lieutenant Colonel George Custer and his troops by Lakota and Cheyenne warriors
-C) A peace treaty between the U.S. government and the Sioux Nation
-D) The capture of Sitting Bull
+**6.** Theodore Roosevelt's "Square Deal" focused on:
 
-7. The Pendleton Civil Service Reform Act of 1883 was passed to:
+A) Military expansion
+B) Consumer protection, conservation, and controlling corporations
+C) Tax cuts for the wealthy
+D) Isolationism
 
-A) Increase the power of political party bosses
-B) Establish a merit-based system for federal employment, reducing patronage
-C) Create new government agencies
-D) Limit the terms of federal employees
+**7.** The Pure Food and Drug Act of 1906 was passed to:
 
-8. The American Federation of Labor (AFL), led by Samuel Gompers, focused on:
+A) Promote food exports
+B) Protect consumers from unsafe food and medicines
+C) Increase agricultural production
+D) Establish the Department of Agriculture
 
-A) Revolutionary overthrow of capitalism
-B) Practical goals like higher wages, shorter hours, and better conditions for skilled workers
-C) Organizing all workers regardless of skill level
-D) Political campaigns to elect labor candidates
+**8.** The Federal Reserve System, established in 1913, was created to:
 
-9. Jacob Riis's book *How the Other Half Lives* (1890) exposed:
+A) Print currency only
+B) Regulate the banking system and provide stability to the financial system
+C) Collect taxes
+D) Manage the stock market
 
-A) Corruption in the federal government
-B) Terrible living conditions in New York City tenements
-C) Unsafe practices in the meatpacking industry
-D) Child labor in Southern textile mills
+**9.** The Lusitania was:
 
-10. The settlement house movement, exemplified by Jane Addams's Hull House, aimed to:
+A) A German submarine
+B) A British passenger liner sunk by a German U-boat in 1915, killing 1,198 people including 128 Americans
+C) An American warship
+D) A trade vessel
 
-A) Provide luxury housing for the wealthy
-B) Offer social services, education, and cultural programs to urban immigrants and the poor
-C) Relocate immigrants to rural farming communities
-D) Establish orphanages for abandoned children
-
-11. The Pullman Strike of 1894 was broken when:
-
-A) Workers voluntarily returned to their jobs
-B) President Cleveland sent federal troops and obtained a court injunction
-C) The Pullman Company agreed to all worker demands
-D) State militias sided with the strikers
-
-12. The de Lome Letter of 1898 angered Americans because it:
-
-A) Threatened an invasion of the United States
-B) Contained insulting remarks about President McKinley from the Spanish ambassador
-C) Revealed a secret alliance between Spain and Germany
-D) Called for the reconquest of former Spanish colonies
-
-13. The Platt Amendment (1901) effectively made Cuba:
-
-A) A full state of the United States
-B) A protectorate of the United States with restrictions on its sovereignty
-C) An independent nation with no American involvement
-D) A colony of Spain once again
-
-14. The Roosevelt Corollary to the Monroe Doctrine asserted that:
-
-A) European nations could intervene in Latin America freely
-B) The United States had the right to intervene in Latin American countries to maintain stability
-C) The United States would not interfere in Latin American affairs
-D) Latin American nations should form their own defensive alliance
-
-15. The initiative, referendum, and recall were Progressive Era reforms designed to:
-
-A) Strengthen the power of political machines
-B) Give citizens more direct participation in government
-C) Limit voting to property owners
-D) Increase the power of the federal judiciary
-
-16. The Federal Reserve System, created in 1913, was established to:
-
-A) Eliminate all private banks
-B) Provide a more stable and flexible national banking and monetary system
-C) Fund the construction of the Panama Canal
-D) Regulate the stock market
-
-17. The sinking of the Lusitania in 1915 was significant because:
-
-A) It was the first use of submarine warfare
-B) It killed 1,198 people including 128 Americans, increasing anti-German sentiment
-C) It brought the United States immediately into World War I
-D) It was an attack on a military vessel
-
-18. The Selective Service Act of 1917 established:
-
-A) Voluntary enlistment in the armed forces
-B) A military draft requiring men to register for potential service in World War I
-C) Mandatory military service for all citizens over age 18
-D) A professional standing army to replace the militia system
-
-19. The Espionage Act of 1917 and the Sedition Act of 1918 were used to:
-
-A) Protect the rights of anti-war protesters
-B) Suppress dissent and criticism of the war effort
-C) Encourage open debate about American foreign policy
-D) Prosecute German spies exclusively
-
-20. The Treaty of Versailles was rejected by the U.S. Senate primarily because:
+**10.** The Treaty of Versailles (1919) was controversial in the U.S. because:
 
 A) It was too lenient on Germany
-B) Senators objected to Article X of the League of Nations covenant, which they feared would commit the U.S. to foreign wars
-C) President Wilson refused to negotiate any changes
-D) It required the U.S. to pay war reparations
+B) The Senate refused to ratify it, largely due to opposition to the League of Nations
+C) It required the U.S. to pay reparations
+D) It expanded U.S. territory
 
-21. The 18th Amendment, ratified in 1919, established:
+**11.** The "Roaring Twenties" were characterized by:
 
-A) Women's suffrage
-B) The prohibition of the manufacture, sale, and transportation of alcoholic beverages
-C) The federal income tax
-D) Direct election of senators
+A) Economic depression
+B) Cultural dynamism, economic prosperity, and social change
+C) Military conflict
+D) Government austerity
 
-22. The Teapot Dome scandal during the Harding administration involved:
+**12.** The Scopes Trial (1925) centered on:
 
-A) Illegal wiretapping of political opponents
-B) The secret leasing of naval oil reserves to private companies in exchange for bribes
-C) Vote rigging in the 1920 presidential election
-D) Embezzlement from the Veterans' Bureau
+A) Freedom of the press
+B) The teaching of evolution in public schools
+C) Voting rights
+D) Prohibition enforcement
 
-23. The trial of Sacco and Vanzetti in the 1920s highlighted tensions surrounding:
+**13.** What was the Bonus Army (1932)?
 
-A) Organized crime and Prohibition
-B) Immigration, anarchism, and concerns about fair treatment of radicals
-C) African American civil rights in the North
-D) Labor disputes in the automobile industry
+A) An elite military unit
+B) WWI veterans who marched on Washington demanding early payment of their service bonus
+C) A labor union
+D) A volunteer firefighting force
 
-24. The Nineteenth Amendment's passage in 1920 was the culmination of a movement led by figures including:
+**14.** The Social Security Act (1935) established:
 
-A) Harriet Tubman and Frederick Douglass
-B) Susan B. Anthony, Elizabeth Cady Stanton, and Alice Paul
-C) Jane Addams and Ida Tarbell exclusively
-D) Eleanor Roosevelt and Frances Perkins
+A) Universal healthcare
+B) Retirement benefits, unemployment insurance, and aid to dependent children
+C) Free education for all
+D) Military pensions only
 
-25. Henry Ford revolutionized American industry through:
+**15.** The Wagner Act (1935) protected:
 
-A) The invention of the automobile
-B) The use of the assembly line for mass production, making cars affordable
-C) The creation of the first automobile union
-D) The development of electric vehicles
+A) Consumer rights
+B) Workers' rights to organize and bargain collectively
+C) Property rights
+D) Voting rights
 
-26. The Bonus Army of 1932 consisted of:
+**16.** The "Arsenal of Democracy" referred to:
 
-A) Wealthy industrialists demanding tax relief
-B) World War I veterans who marched on Washington demanding early payment of service bonuses
-C) Unemployed factory workers protesting layoffs
-D) Farmers demanding higher crop prices
+A) A weapons factory
+B) America's role in producing war materials for the Allies before and during WWII
+C) A political slogan
+D) A military base
 
-27. Franklin Roosevelt's first action upon taking office was to declare:
+**17.** The Lend-Lease Act (1941) allowed the U.S. to:
 
-A) War on poverty
-B) A bank holiday to prevent further bank failures
-C) The creation of the United Nations
-D) An end to Prohibition
+A) Borrow money from Britain
+B) Supply military equipment to Allied nations fighting the Axis powers
+C) Declare war on Germany
+D) Annex British territories
 
-28. The Securities and Exchange Commission (SEC), created in 1934, was designed to:
+**18.** What was the significance of the Battle of Midway (1942)?
 
-A) Break up large banks
-B) Regulate the stock market and protect investors from fraud
-C) Control interest rates
-D) Manage the federal budget
+A) It was the final battle of WWII.
+B) It was a turning point in the Pacific Theater, crippling the Japanese navy.
+C) It was a German victory.
+D) It involved only land forces.
 
-29. The Neutrality Acts of the 1930s were designed to:
+**19.** The Yalta Conference (1945) involved:
 
-A) Prepare the United States for entry into World War II
-B) Keep the United States out of foreign wars by restricting arms sales and loans to belligerent nations
-C) Form military alliances with European democracies
-D) Expand the American navy
+A) Planning the invasion of Japan
+B) Allied leaders discussing post-war Europe and the creation of the United Nations
+C) Signing the Treaty of Versailles
+D) Ending the Korean War
 
-30. The Good Neighbor Policy under Franklin Roosevelt aimed to:
+**20.** The Nuremberg Trials (1945-1946) were:
 
-A) Improve relations with Canada
-B) Improve relations with Latin American countries by reducing U.S. interventionism
-C) Strengthen ties with European allies
-D) Open trade relations with the Soviet Union
+A) Trials of American war criminals
+B) Trials of Nazi leaders for war crimes and crimes against humanity
+C) Economic negotiations
+D) Diplomatic meetings
 
-31. Rosie the Riveter symbolized:
+**21.** The Berlin Airlift (1948-1949) was a response to:
 
-A) The anti-war movement during World War II
-B) Women who worked in factories and shipyards during World War II
-C) The nursing corps overseas
-D) Female resistance fighters in occupied Europe
+A) A natural disaster in Berlin
+B) The Soviet blockade of West Berlin
+C) A military invasion
+D) An economic crisis in Germany
 
-32. The G.I. Bill of Rights (1944) provided veterans with:
+**22.** The National Security Act of 1947 created:
 
-A) Free healthcare for life
-B) Education benefits, low-cost mortgages, and job training
-C) Guaranteed government employment
-D) Tax-free income for ten years
+A) The EPA
+B) The CIA, NSC, and reorganized the military under the Department of Defense
+C) Social Security
+D) Medicare
 
-33. The Yalta Conference of 1945 was significant because:
+**23.** The baby boom (1946-1964) refers to:
 
-A) It ended World War I
-B) Roosevelt, Churchill, and Stalin discussed the postwar reorganization of Europe
-C) It established the North Atlantic Treaty Organization
-D) The atomic bomb was first tested there
+A) A decline in birth rates
+B) A dramatic increase in birth rates following WWII
+C) An immigration surge
+D) A medical advancement
 
-34. The United Nations was established in 1945 primarily to:
+**24.** Senator Joseph McCarthy was censured by the Senate in 1954 for:
 
-A) Replace the League of Nations and promote international peace and cooperation
-B) Create a world government
-C) Enforce the terms of the Treaty of Versailles
-D) Provide military defense for Western Europe
+A) Treason
+B) His reckless and unsubstantiated accusations of communist infiltration
+C) Financial corruption
+D) Missing votes
 
-35. The Taft-Hartley Act of 1947 was designed to:
+**25.** The Little Rock Nine (1957) were:
 
-A) Strengthen labor union power
-B) Restrict certain union practices and balance the power between labor and management
-C) Abolish the minimum wage
-D) Create new government jobs programs
+A) A musical group
+B) Nine African American students who integrated Central High School in Little Rock, Arkansas
+C) A group of politicians
+D) Military officers
 
-36. The containment policy, articulated by George Kennan, advocated:
+**26.** Sputnik (1957) was significant because:
 
-A) Aggressive military confrontation with the Soviet Union
-B) Preventing the spread of Soviet influence through diplomatic, economic, and military means
-C) Isolationism and withdrawal from world affairs
-D) Negotiating the division of the world into spheres of influence
+A) It was the first nuclear weapon
+B) The Soviet launch of the first artificial satellite sparked the Space Race
+C) It was an American achievement
+D) It ended the Cold War
 
-37. NATO was formed in 1949 primarily as:
+**27.** The Peace Corps was established by President Kennedy in 1961 to:
 
-A) An economic trade organization
-B) A military alliance of Western nations to counter the Soviet threat
-C) A cultural exchange program
-D) A United Nations peacekeeping force
+A) Train military personnel
+B) Send American volunteers to developing countries to promote peace and development
+C) Negotiate treaties
+D) Fund defense projects
 
-38. The House Un-American Activities Committee (HUAC) is best known for:
+**28.** The Bay of Pigs invasion (1961) was:
 
-A) Investigating organized crime
-B) Investigating alleged communist influence in American institutions, especially Hollywood
-C) Promoting civil rights legislation
-D) Overseeing the Marshall Plan
+A) A successful operation
+B) A failed CIA-backed attempt to overthrow Fidel Castro in Cuba
+C) A Soviet military operation
+D) A naval battle
 
-39. The GI Bill's impact on American society included:
+**29.** Medicare and Medicaid were established in:
 
-A) A decline in college enrollment
-B) A massive expansion of the middle class through education and homeownership
-C) Increased unemployment among veterans
-D) A reduction in suburban development
+A) 1935
+B) 1955
+C) 1965
+D) 1975
 
-40. The baby boom refers to:
+**30.** The Black Power movement of the late 1960s emphasized:
 
-A) A decline in birth rates after World War II
-B) The dramatic increase in birth rates in the United States from 1946 to 1964
-C) The immigration wave of the 1950s
-D) The growth of the pediatric medicine industry
+A) Integration and nonviolence
+B) Racial pride, self-determination, and sometimes more militant approaches
+C) A return to Africa
+D) Economic conservatism
 
-41. Levittown is historically significant as:
+**31.** The My Lai Massacre (1968) involved:
 
-A) The site of a major Civil War battle
-B) One of the first mass-produced suburban housing developments
-C) The location of the first nuclear power plant
-D) The birthplace of the civil rights movement
+A) A battle between U.S. and North Vietnamese forces
+B) The killing of unarmed South Vietnamese civilians by U.S. soldiers
+C) A diplomatic incident
+D) A bombing mission
 
-42. President Eisenhower warned about the "military-industrial complex" in his:
+**32.** The Kent State shootings (1970) occurred when:
 
-A) Inaugural address
-B) Farewell address
-C) State of the Union address
-D) Campaign speeches
+A) Students attacked the National Guard
+B) National Guard troops fired on student anti-war protesters, killing four
+C) A building caught fire during a protest
+D) Students occupied a military base
 
-43. The sit-in movement of 1960 began when African American college students:
+**33.** Nixon's visit to China in 1972 was significant because it:
 
-A) Occupied the offices of the NAACP
-B) Sat at a whites-only lunch counter at Woolworth's in Greensboro, North Carolina
-C) Blocked the entrance to the University of Mississippi
-D) Refused to leave segregated buses
+A) Ended the Korean War
+B) Opened diplomatic relations between the U.S. and communist China
+C) Established a military alliance
+D) Resulted in a trade embargo
 
-44. The Bay of Pigs invasion of 1961 was:
+**34.** The OPEC oil embargo of 1973 caused:
 
-A) A successful operation to overthrow Fidel Castro
-B) A failed CIA-backed attempt to overthrow Castro's government in Cuba
-C) A Soviet attack on American naval bases
-D) A Cuban attack on the U.S. naval base at Guantanamo Bay
+A) Lower gas prices
+B) An energy crisis with long lines at gas stations and rising fuel costs
+C) Increased oil production in the U.S.
+D) A military conflict in the Middle East
 
-45. The Cuban Missile Crisis of 1962 was resolved when:
+**35.** The ERA (Equal Rights Amendment) was:
 
-A) The United States invaded Cuba
-B) The Soviet Union agreed to remove missiles from Cuba in exchange for a U.S. pledge not to invade Cuba
-C) Cuba voluntarily dismantled its missile sites
-D) The United Nations imposed sanctions on both superpowers
+A) Successfully ratified
+B) A proposed amendment guaranteeing equal rights regardless of sex that was never ratified
+C) A law passed by Congress
+D) A Supreme Court ruling
 
-46. The Civil Rights Act of 1964 prohibited:
+**36.** The Three Mile Island incident (1979) was:
 
-A) Only voting discrimination
-B) Discrimination based on race, color, religion, sex, or national origin in employment and public accommodations
-C) Segregation only in federal buildings
-D) Discrimination only in education
+A) A military exercise
+B) A partial nuclear meltdown at a power plant in Pennsylvania
+C) A chemical spill
+D) A natural disaster
 
-47. The Voting Rights Act of 1965 targeted:
+**37.** The Iran-Contra Affair during the Reagan administration involved:
 
-A) Gerrymandering in Northern states
-B) Discriminatory practices like literacy tests that prevented African Americans from voting
-C) Campaign finance reform
-D) The Electoral College system
+A) A peace treaty with Iran
+B) The secret sale of arms to Iran to fund Nicaraguan rebels, violating congressional restrictions
+C) An invasion of Iran
+D) A trade agreement with Nicaragua
 
-48. Medicare and Medicaid, established in 1965 as part of the Great Society, provided:
+**38.** Glasnost and perestroika were reforms introduced by:
 
-A) Universal healthcare for all Americans
-B) Health insurance for the elderly (Medicare) and low-income individuals (Medicaid)
-C) Free prescription drugs for veterans
-D) Subsidized private health insurance
+A) Ronald Reagan
+B) Mikhail Gorbachev in the Soviet Union
+C) George H.W. Bush
+D) Margaret Thatcher
 
-49. The Gulf of Tonkin Resolution (1964) gave President Johnson:
+**39.** The Tiananmen Square protests (1989) took place in:
 
-A) The authority to negotiate a peace settlement in Vietnam
-B) Broad authority to escalate American military involvement in Vietnam
-C) Permission to send humanitarian aid to South Vietnam
-D) The power to impose economic sanctions on North Vietnam
+A) The Soviet Union
+B) China
+C) Japan
+D) Vietnam
 
-50. The Tet Offensive of 1968 was significant because it:
+**40.** The dissolution of the Soviet Union occurred in:
 
-A) Was a decisive American military victory
-B) Shocked the American public and eroded support for the Vietnam War despite being a military setback for North Vietnam
-C) Led to the immediate withdrawal of American troops
-D) Resulted in the capture of Saigon
+A) 1985
+B) 1989
+C) 1991
+D) 1995
 
-51. The assassinations of Martin Luther King Jr. and Robert F. Kennedy in 1968 contributed to:
+**41.** The World Trade Organization (WTO) was established in:
 
-A) Increased national unity
-B) A sense of crisis and social upheaval in the United States
-C) The immediate passage of new civil rights laws
-D) The election of a Democratic president
+A) 1975
+B) 1985
+C) 1995
+D) 2005
 
-52. Richard Nixon's policy of Vietnamization involved:
+**42.** The Clinton impeachment (1998) was related to:
 
-A) Increasing the number of American troops in Vietnam
-B) Gradually transferring combat responsibilities to South Vietnamese forces while withdrawing American troops
-C) Bombing North Vietnam into surrender
-D) Negotiating directly with the Viet Cong
+A) Financial corruption
+B) Perjury and obstruction of justice related to personal conduct
+C) Foreign policy decisions
+D) Campaign finance violations
 
-53. The Environmental Protection Agency (EPA) was established in 1970 under President:
+**43.** The "Don't Ask, Don't Tell" policy (1994-2011) was related to:
 
-A) Johnson
-B) Nixon
-C) Ford
-D) Carter
+A) Nuclear weapons
+B) LGBTQ+ individuals serving in the U.S. military
+C) Immigration enforcement
+D) Corporate transparency
 
-54. The Pentagon Papers, published in 1971, revealed:
+**44.** The 2000 presidential election between Bush and Gore was notable for:
 
-A) Secret negotiations with China
-B) That the government had systematically misled the public about the Vietnam War
-C) Plans for a nuclear first strike against the Soviet Union
-D) CIA involvement in Latin American coups
+A) A landslide victory
+B) The disputed Florida recount and the Supreme Court decision in Bush v. Gore
+C) A third-party victory
+D) Record voter turnout
 
-55. The Watergate scandal led to:
+**45.** The Department of Homeland Security was created in:
 
-A) The impeachment and removal of President Nixon
-B) President Nixon's resignation to avoid impeachment
-C) A congressional pardon of President Nixon
-D) The dissolution of the Republican Party
+A) 1995
+B) 2002
+C) 2008
+D) 1990
 
-56. The Camp David Accords (1978) brokered by President Carter achieved:
+**46.** Hurricane Katrina (2005) exposed:
 
-A) A peace agreement between Israel and the Soviet Union
-B) A peace agreement between Egypt and Israel
-C) The end of the Iranian hostage crisis
-D) A nuclear arms reduction treaty
+A) The strength of federal emergency management
+B) Failures in government preparedness and response, disproportionately affecting low-income and minority communities
+C) The effectiveness of levee systems
+D) Minimal damage to New Orleans
 
-57. The Iran hostage crisis (1979-1981) involved:
+**47.** The Troubled Asset Relief Program (TARP) of 2008 was designed to:
 
-A) A U.S. military invasion of Iran
-B) The holding of American embassy personnel by Iranian revolutionaries for 444 days
-C) Iranian terrorists bombing an American embassy in Lebanon
-D) A hostage situation at an American military base in the Persian Gulf
+A) Reform healthcare
+B) Stabilize the financial system by purchasing toxic assets from banks
+C) Reduce the national debt
+D) Fund infrastructure
 
-58. Ronald Reagan's economic policy, known as Reaganomics, emphasized:
+**48.** The Tea Party movement (2009) was:
 
-A) Increased government spending on social programs
-B) Tax cuts, deregulation, and reduced government spending on domestic programs
-C) Nationalization of major industries
-D) Higher taxes on corporations to fund infrastructure
+A) A liberal political movement
+B) A conservative movement advocating for lower taxes, less government spending, and reduced national debt
+C) A foreign policy initiative
+D) A trade reform movement
 
-59. The fall of the Berlin Wall in 1989 symbolized:
+**49.** The Dodd-Frank Act (2010) was enacted to:
 
-A) The beginning of the Cold War
-B) The collapse of communist regimes in Eastern Europe and the approaching end of the Cold War
-C) Germany's reunification with Austria
-D) The formation of the European Union
+A) Deregulate the financial industry
+B) Reform Wall Street and provide greater financial regulation after the 2008 crisis
+C) Lower interest rates
+D) Create a new currency
 
-60. The Persian Gulf War of 1991 was initiated in response to:
+**50.** What landmark Supreme Court case legalized same-sex marriage nationwide in 2015?
 
-A) An Iranian attack on Saudi Arabia
-B) Iraq's invasion of Kuwait
-C) A terrorist attack on American forces in the region
-D) A civil war in Iraq
+A) Roe v. Wade
+B) Obergefell v. Hodges
+C) Citizens United v. FEC
+D) Loving v. Virginia
+
+**51.** The Homestead Strike of 1892 was a conflict between:
+
+A) Farmers and the government
+B) Workers and management at Andrew Carnegie's steel plant
+C) Railroad workers and the government
+D) Miners and mine owners
+
+**52.** The Pullman Strike of 1894 was significant because:
+
+A) It was the first successful strike
+B) The federal government used an injunction and troops to break the strike
+C) It resulted in higher wages for all workers
+D) It led to the creation of labor unions
+
+**53.** What was the "Gospel of Wealth"?
+
+A) A religious text
+B) Andrew Carnegie's idea that the wealthy had a responsibility to use their fortunes for the public good
+C) A government economic policy
+D) A labor union manifesto
+
+**54.** The Platt Amendment (1901) gave the U.S.:
+
+A) Control over the Philippines
+B) The right to intervene in Cuban affairs
+C) Ownership of the Panama Canal
+D) Trade rights with Japan
+
+**55.** The National Association for the Advancement of Colored People (NAACP) was founded in:
+
+A) 1865
+B) 1909
+C) 1920
+D) 1954
+
+**56.** Rosie the Riveter symbolized:
+
+A) The temperance movement
+B) Women who worked in factories during World War II
+C) The suffrage movement
+D) Women in the military
+
+**57.** The Taft-Hartley Act of 1947 was designed to:
+
+A) Strengthen labor unions
+B) Restrict the power of labor unions
+C) Create Social Security
+D) Establish minimum wage
+
+**58.** The domino theory suggested that:
+
+A) Nations would naturally become democratic
+B) If one country fell to communism, neighboring countries would follow
+C) Trade was the key to peace
+D) Military alliances prevented war
+
+**59.** Cesar Chavez was a leader in:
+
+A) The civil rights movement
+B) The farm workers' labor movement
+C) The environmental movement
+D) The anti-war movement
+
+**60.** The Immigration Reform and Control Act of 1986:
+
+A) Closed all borders
+B) Granted amnesty to certain undocumented immigrants while imposing penalties on employers who hired them
+C) Eliminated all immigration
+D) Created the visa lottery system only
 
 ---
 
@@ -435,7 +437,7 @@ D) A civil war in Iraq
 1. B
 2. B
 3. B
-4. A
+4. B
 5. B
 6. B
 7. B
@@ -460,19 +462,19 @@ D) A civil war in Iraq
 26. B
 27. B
 28. B
-29. B
+29. C
 30. B
 31. B
 32. B
 33. B
-34. A
+34. B
 35. B
 36. B
 37. B
 38. B
 39. B
-40. B
-41. B
+40. C
+41. C
 42. B
 43. B
 44. B

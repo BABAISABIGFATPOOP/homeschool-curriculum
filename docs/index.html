@@ -1765,6 +1765,67 @@
     let selectedLanguages = [];
 
     // Shuffle array in place (Fisher-Yates)
+    // ── AUTO DIAGRAM GENERATOR ──
+    function getDiagram(q) {
+      if (q.diagram) return '<div style="margin:8px 0;text-align:center;">' + q.diagram + '</div>';
+
+      const t = q.question.toLowerCase();
+      let svg = '';
+
+      // Math diagrams
+      if (t.includes('rectangle') && (t.includes('area') || t.includes('perimeter'))) {
+        const nums = q.question.match(/(\d+)/g) || [8, 5];
+        svg = `<svg width="180" height="110" viewBox="0 0 180 110"><rect x="15" y="15" width="150" height="70" fill="none" stroke="#3b82f6" stroke-width="2"/><text x="90" y="100" text-anchor="middle" fill="#94a3b8" font-size="13">${nums[0] || '?'}</text><text x="172" y="55" fill="#94a3b8" font-size="13">${nums[1] || '?'}</text></svg>`;
+      } else if (t.includes('triangle') && (t.includes('area') || t.includes('base'))) {
+        const nums = q.question.match(/(\d+)/g) || [10, 6];
+        svg = `<svg width="180" height="130" viewBox="0 0 180 130"><polygon points="15,110 165,110 90,15" fill="none" stroke="#3b82f6" stroke-width="2"/><line x1="90" y1="15" x2="90" y2="110" stroke="#94a3b8" stroke-width="1" stroke-dasharray="4,4"/><text x="90" y="125" text-anchor="middle" fill="#94a3b8" font-size="12">${nums[0] || '?'}</text><text x="97" y="68" fill="#94a3b8" font-size="12">${nums[1] || '?'}</text></svg>`;
+      } else if ((t.includes('right triangle') || t.includes('hypotenuse') || t.includes('pythagorean')) && !t.includes('angle')) {
+        const nums = q.question.match(/(\d+)/g) || [6, 8];
+        svg = `<svg width="180" height="140" viewBox="0 0 180 140"><polygon points="25,120 155,120 25,25" fill="none" stroke="#3b82f6" stroke-width="2"/><rect x="25" y="104" width="16" height="16" fill="none" stroke="#3b82f6" stroke-width="1"/><text x="90" y="136" text-anchor="middle" fill="#94a3b8" font-size="12">${nums[0] || '?'}</text><text x="14" y="78" fill="#94a3b8" font-size="12">${nums[1] || '?'}</text><text x="100" y="68" fill="#f59e0b" font-size="13">?</text></svg>`;
+      } else if (t.includes('circle') && (t.includes('area') || t.includes('circumference') || t.includes('radius'))) {
+        const nums = q.question.match(/(\d+)/g) || [6];
+        svg = `<svg width="140" height="140" viewBox="0 0 140 140"><circle cx="70" cy="70" r="55" fill="none" stroke="#3b82f6" stroke-width="2"/><line x1="70" y1="70" x2="125" y2="70" stroke="#94a3b8" stroke-width="1.5"/><circle cx="70" cy="70" r="3" fill="#3b82f6"/><text x="96" y="64" fill="#94a3b8" font-size="12">r=${nums[0] || '?'}</text></svg>`;
+      } else if (t.includes('slope') && (t.includes('passing through') || t.includes('points'))) {
+        svg = `<svg width="160" height="160" viewBox="0 0 160 160"><line x1="25" y1="140" x2="25" y2="10" stroke="#475569" stroke-width="1"/><line x1="15" y1="130" x2="150" y2="130" stroke="#475569" stroke-width="1"/><circle cx="50" cy="100" r="4" fill="#3b82f6"/><circle cx="120" cy="40" r="4" fill="#3b82f6"/><line x1="50" y1="100" x2="120" y2="40" stroke="#3b82f6" stroke-width="2"/></svg>`;
+      } else if (t.includes('angle') && t.includes('triangle')) {
+        svg = `<svg width="170" height="120" viewBox="0 0 170 120"><polygon points="15,100 155,100 110,15" fill="none" stroke="#3b82f6" stroke-width="2"/><text x="108" y="30" fill="#f59e0b" font-size="13">?°</text></svg>`;
+      } else if (t.includes('distance between') && t.includes('point')) {
+        svg = `<svg width="160" height="160" viewBox="0 0 160 160"><line x1="25" y1="140" x2="25" y2="10" stroke="#475569" stroke-width="1"/><line x1="15" y1="130" x2="150" y2="130" stroke="#475569" stroke-width="1"/><circle cx="45" cy="110" r="4" fill="#3b82f6"/><circle cx="130" cy="35" r="4" fill="#10b981"/><line x1="45" y1="110" x2="130" y2="35" stroke="#f59e0b" stroke-width="2" stroke-dasharray="5,4"/></svg>`;
+      } else if (t.includes('parallel') && t.includes('line')) {
+        svg = `<svg width="160" height="100" viewBox="0 0 160 100"><line x1="10" y1="30" x2="150" y2="30" stroke="#3b82f6" stroke-width="2"/><line x1="10" y1="70" x2="150" y2="70" stroke="#3b82f6" stroke-width="2"/><line x1="40" y1="10" x2="120" y2="90" stroke="#ef4444" stroke-width="1.5"/></svg>`;
+      } else if (t.includes('fraction') || t.includes('/5') || t.includes('/3') || t.includes('/4') || t.includes('/8')) {
+        svg = `<svg width="120" height="50" viewBox="0 0 120 50"><rect x="5" y="5" width="110" height="40" rx="5" fill="none" stroke="#3b82f6" stroke-width="1.5"/><line x1="5" y1="25" x2="115" y2="25" stroke="#3b82f6" stroke-width="1.5" stroke-dasharray="3,3"/></svg>`;
+      }
+
+      // Science diagrams
+      else if (t.includes('states of matter') || (t.includes('solid') && t.includes('liquid') && t.includes('gas'))) {
+        svg = `<svg width="240" height="80" viewBox="0 0 240 80"><rect x="10" y="10" width="50" height="50" rx="2" fill="#3b82f6" opacity="0.3" stroke="#3b82f6" stroke-width="1.5"/><text x="35" y="75" text-anchor="middle" fill="#94a3b8" font-size="10">Solid</text><ellipse cx="120" cy="35" rx="30" ry="25" fill="#8b5cf6" opacity="0.2" stroke="#8b5cf6" stroke-width="1.5"/><text x="120" y="75" text-anchor="middle" fill="#94a3b8" font-size="10">Liquid</text><circle cx="195" cy="22" r="5" fill="#10b981" opacity="0.4"/><circle cx="210" cy="35" r="5" fill="#10b981" opacity="0.4"/><circle cx="188" cy="40" r="5" fill="#10b981" opacity="0.4"/><circle cx="205" cy="20" r="5" fill="#10b981" opacity="0.4"/><text x="200" y="75" text-anchor="middle" fill="#94a3b8" font-size="10">Gas</text></svg>`;
+      } else if (t.includes('layer') && t.includes('earth')) {
+        svg = `<svg width="140" height="140" viewBox="0 0 140 140"><circle cx="70" cy="70" r="60" fill="#8b6914" stroke="#5c3d1e" stroke-width="2"/><circle cx="70" cy="70" r="40" fill="#ef4444" opacity="0.4" stroke="#ef4444" stroke-width="1"/><circle cx="70" cy="70" r="18" fill="#f59e0b" stroke="#f59e0b" stroke-width="1"/></svg>`;
+      } else if (t.includes('food chain') || t.includes('producer') || t.includes('consumer')) {
+        svg = `<svg width="220" height="60" viewBox="0 0 220 60"><rect x="5" y="15" width="45" height="30" rx="4" fill="#10b981" opacity="0.3" stroke="#10b981" stroke-width="1"/><text x="27" y="35" text-anchor="middle" fill="#10b981" font-size="9">Plant</text><text x="62" y="35" fill="#94a3b8" font-size="14">→</text><rect x="72" y="15" width="45" height="30" rx="4" fill="#3b82f6" opacity="0.3" stroke="#3b82f6" stroke-width="1"/><text x="95" y="35" text-anchor="middle" fill="#3b82f6" font-size="9">Herb.</text><text x="129" y="35" fill="#94a3b8" font-size="14">→</text><rect x="140" y="15" width="45" height="30" rx="4" fill="#ef4444" opacity="0.3" stroke="#ef4444" stroke-width="1"/><text x="163" y="35" text-anchor="middle" fill="#ef4444" font-size="9">Pred.</text></svg>`;
+      } else if (t.includes('cell') && (t.includes('plant') || t.includes('animal'))) {
+        svg = `<svg width="200" height="100" viewBox="0 0 200 100"><ellipse cx="55" cy="50" rx="45" ry="35" fill="none" stroke="#10b981" stroke-width="2"/><circle cx="55" cy="45" r="12" fill="#3b82f6" opacity="0.3" stroke="#3b82f6" stroke-width="1"/><rect x="100" y="15" width="90" height="70" rx="3" fill="none" stroke="#10b981" stroke-width="2"/><circle cx="145" cy="45" r="12" fill="#3b82f6" opacity="0.3" stroke="#3b82f6" stroke-width="1"/><text x="55" y="95" text-anchor="middle" fill="#94a3b8" font-size="10">Animal</text><text x="145" y="95" text-anchor="middle" fill="#94a3b8" font-size="10">Plant</text></svg>`;
+      } else if (t.includes('water cycle') || t.includes('evaporation') && t.includes('condensation')) {
+        svg = `<svg width="200" height="100" viewBox="0 0 200 100"><path d="M20,80 Q50,80 60,60 Q70,40 100,35 Q130,30 140,50 Q150,70 180,75" fill="none" stroke="#3b82f6" stroke-width="2"/><text x="40" y="75" fill="#3b82f6" font-size="9">↑</text><text x="100" y="25" fill="#94a3b8" font-size="9">☁</text><text x="155" y="65" fill="#3b82f6" font-size="9">↓</text></svg>`;
+      } else if (t.includes('newton') || t.includes('force') && t.includes('mass') && t.includes('acceleration')) {
+        svg = `<svg width="180" height="70" viewBox="0 0 180 70"><rect x="50" y="20" width="60" height="35" rx="4" fill="#334155" stroke="#3b82f6" stroke-width="2"/><text x="80" y="42" text-anchor="middle" fill="#f8fafc" font-size="11">mass</text><line x1="110" y1="37" x2="165" y2="37" stroke="#ef4444" stroke-width="2" marker-end="url(#arrowR)"/><text x="140" y="30" fill="#ef4444" font-size="10">F</text><defs><marker id="arrowR" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6" fill="#ef4444"/></marker></defs></svg>`;
+      } else if (t.includes('wave') && (t.includes('transverse') || t.includes('longitudinal') || t.includes('sound'))) {
+        svg = `<svg width="200" height="70" viewBox="0 0 200 70"><path d="M10,35 Q30,5 50,35 Q70,65 90,35 Q110,5 130,35 Q150,65 170,35 Q190,5 200,35" fill="none" stroke="#3b82f6" stroke-width="2"/><line x1="10" y1="35" x2="200" y2="35" stroke="#475569" stroke-width="0.5" stroke-dasharray="3,3"/></svg>`;
+      } else if (t.includes('continent')) {
+        svg = `<svg width="200" height="100" viewBox="0 0 200 100"><ellipse cx="100" cy="50" rx="90" ry="40" fill="none" stroke="#3b82f6" stroke-width="1.5"/><circle cx="55" cy="40" r="15" fill="#10b981" opacity="0.3"/><circle cx="95" cy="35" r="12" fill="#f59e0b" opacity="0.3"/><circle cx="130" cy="42" r="18" fill="#8b5cf6" opacity="0.3"/><circle cx="70" cy="60" r="10" fill="#ef4444" opacity="0.3"/><circle cx="150" cy="58" r="8" fill="#3b82f6" opacity="0.3"/></svg>`;
+      } else if (t.includes('periodic table')) {
+        svg = `<svg width="180" height="80" viewBox="0 0 180 80"><rect x="5" y="5" width="25" height="25" fill="#3b82f6" opacity="0.3" stroke="#3b82f6" stroke-width="1"/><rect x="35" y="5" width="25" height="25" fill="#3b82f6" opacity="0.3" stroke="#3b82f6" stroke-width="1"/><rect x="65" y="5" width="25" height="25" fill="#10b981" opacity="0.3" stroke="#10b981" stroke-width="1"/><rect x="95" y="5" width="25" height="25" fill="#10b981" opacity="0.3" stroke="#10b981" stroke-width="1"/><rect x="5" y="35" width="25" height="25" fill="#3b82f6" opacity="0.3" stroke="#3b82f6" stroke-width="1"/><rect x="35" y="35" width="25" height="25" fill="#f59e0b" opacity="0.3" stroke="#f59e0b" stroke-width="1"/><rect x="65" y="35" width="25" height="25" fill="#f59e0b" opacity="0.3" stroke="#f59e0b" stroke-width="1"/><rect x="95" y="35" width="25" height="25" fill="#10b981" opacity="0.3" stroke="#10b981" stroke-width="1"/><text x="90" y="75" fill="#64748b" font-size="9">Periodic Table</text></svg>`;
+      } else if (t.includes('dna') || t.includes('double helix')) {
+        svg = `<svg width="80" height="100" viewBox="0 0 80 100"><path d="M20,5 Q50,25 20,45 Q50,65 20,85" fill="none" stroke="#3b82f6" stroke-width="2"/><path d="M60,5 Q30,25 60,45 Q30,65 60,85" fill="none" stroke="#ef4444" stroke-width="2"/><line x1="28" y1="15" x2="52" y2="15" stroke="#94a3b8" stroke-width="1"/><line x1="22" y1="35" x2="58" y2="35" stroke="#94a3b8" stroke-width="1"/><line x1="28" y1="55" x2="52" y2="55" stroke="#94a3b8" stroke-width="1"/><line x1="22" y1="75" x2="58" y2="75" stroke="#94a3b8" stroke-width="1"/></svg>`;
+      } else if (t.includes('ph') && (t.includes('acid') || t.includes('base') || t.includes('neutral'))) {
+        svg = `<svg width="220" height="50" viewBox="0 0 220 50"><defs><linearGradient id="phG"><stop offset="0%" stop-color="#ef4444"/><stop offset="50%" stop-color="#10b981"/><stop offset="100%" stop-color="#3b82f6"/></linearGradient></defs><rect x="10" y="10" width="200" height="20" rx="4" fill="url(#phG)" opacity="0.6"/><text x="15" y="45" fill="#ef4444" font-size="10">0 Acid</text><text x="95" y="45" text-anchor="middle" fill="#10b981" font-size="10">7</text><text x="195" y="45" text-anchor="end" fill="#3b82f6" font-size="10">14 Base</text></svg>`;
+      }
+
+      if (svg) return '<div style="margin:8px 0;text-align:center;">' + svg + '</div>';
+      return '';
+    }
+
     function shuffle(arr) {
       for (let i = arr.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -1914,7 +1975,7 @@
         <span class="test-subject-badge ${subjectClass}">${q.subject} — Question ${questionNum} of ${QUESTIONS_PER_SUBJECT}</span>
         <span style="font-size:0.7rem;color:${diffColor};background:${diffColor}22;padding:2px 10px;border-radius:10px;margin-top:-16px;">Grade ${q.grade} Level — ${diffLabel}</span>
         <div class="test-question">${q.question}</div>
-        ${q.diagram ? '<div style="margin:8px 0;text-align:center;">' + q.diagram + '</div>' : ''}
+        ${getDiagram(q)}
         <div class="test-options">
           ${q.options.map((opt, i) => `
             <button class="test-option" id="test-opt-${i}" onclick="selectTestOption(${i})">${opt}</button>

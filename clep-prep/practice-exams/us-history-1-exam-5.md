@@ -1,4 +1,4 @@
-# CLEP U.S. History I — Practice Exam 4
+# CLEP U.S. History I — Practice Exam 5
 
 **Time Limit:** 90 minutes
 **Number of Questions:** 60
@@ -10,486 +10,486 @@
 
 ## Questions
 
-**1.** Which European country established the first permanent English settlement in North America at Jamestown in 1607?
+**1.** What was the primary motivation for Spanish exploration of the Americas?
 
-A) Spain
-B) France
-C) England
-D) Netherlands
+A) Religious freedom
+B) Gold, glory, and spreading Christianity
+C) Democratic government
+D) Escaping famine
 
-**2.** The Mayflower Compact (1620) was significant because it:
+**2.** William Penn founded Pennsylvania primarily as a haven for:
 
-A) Established religious freedom in all colonies
-B) Created a framework for self-government among the Pilgrims
-C) Declared independence from England
-D) Abolished slavery in Massachusetts
+A) Catholics
+B) Puritans
+C) Quakers
+D) Anglicans
 
-**3.** What was the primary cash crop that saved the Jamestown colony?
+**3.** The Middle Passage refers to:
 
-A) Cotton
-B) Rice
-C) Tobacco
-D) Indigo
+A) The route through the Appalachian Mountains
+B) The transatlantic voyage of enslaved Africans to the Americas
+C) A trade route between colonies
+D) A route through Central America
 
-**4.** The Great Awakening of the 1730s–1740s was primarily a:
+**4.** The French and Indian War (1754-1763) was fought primarily between:
 
-A) Political movement for colonial independence
-B) Religious revival movement
-C) Economic reform movement
-D) Military alliance
+A) France and Native Americans only
+B) Britain and France, along with their respective allies
+C) Spain and Portugal
+D) The colonies and Britain
 
-**5.** Which act imposed a direct tax on printed materials in the colonies?
+**5.** "Salutary neglect" refers to:
 
-A) Townshend Acts
-B) Intolerable Acts
-C) Stamp Act of 1765
-D) Navigation Acts
+A) Strict British enforcement of trade laws
+B) Britain loosely enforcing trade regulations in the colonies
+C) A colonial protest strategy
+D) A Native American diplomatic approach
 
-**6.** Who wrote "Common Sense" (1776), which argued for American independence?
+**6.** The Sons of Liberty were known for:
+
+A) Supporting British policies
+B) Organizing protests against British taxation
+C) Drafting the Constitution
+D) Leading the Continental Army
+
+**7.** The Quartering Act required colonists to:
+
+A) Pay new taxes on tea
+B) House and feed British soldiers
+C) Serve in the colonial militia
+D) Attend church services
+
+**8.** Who was appointed commander of the Continental Army?
 
 A) Benjamin Franklin
-B) Thomas Jefferson
-C) Thomas Paine
-D) John Adams
+B) John Adams
+C) George Washington
+D) Thomas Jefferson
 
-**7.** The Battle of Saratoga (1777) was a turning point in the Revolutionary War because:
+**9.** The winter at Valley Forge (1777-1778) was significant because:
 
-A) It was the last battle of the war.
-B) It convinced France to ally with the Americans.
-C) It ended British control of the South.
-D) George Washington was captured.
+A) The Declaration of Independence was signed there.
+B) The army endured hardship but emerged better trained and disciplined.
+C) It was the site of a major American victory.
+D) The British surrendered there.
 
-**8.** The Articles of Confederation were weak primarily because they:
+**10.** Which treaty ended the American Revolution?
 
-A) Gave the president too much power
-B) Lacked a national judiciary and gave Congress no power to tax
-C) Created a strong central government
-D) Abolished state governments
+A) Treaty of Ghent
+B) Treaty of Paris (1783)
+C) Treaty of Versailles
+D) Jay Treaty
 
-**9.** Which compromise at the Constitutional Convention resolved the dispute between large and small states over representation?
+**11.** The Three-Fifths Compromise determined that:
 
-A) Three-Fifths Compromise
-B) Missouri Compromise
-C) Great Compromise (Connecticut Compromise)
-D) Compromise of 1850
+A) Three-fifths of the states needed to ratify the Constitution
+B) Enslaved people counted as three-fifths of a person for representation and taxation
+C) Three-fifths of Congress needed to approve treaties
+D) Only three-fifths of the population could vote
 
-**10.** The Federalist Papers were written to:
+**12.** The Bill of Rights consists of the first how many amendments?
 
-A) Oppose the ratification of the Constitution
-B) Support the ratification of the Constitution
-C) Amend the Articles of Confederation
-D) Declare war on Britain
+A) Five
+B) Ten
+C) Fifteen
+D) Twenty
 
-**11.** Who served as the first Secretary of the Treasury and advocated for a national bank?
+**13.** Washington's Farewell Address warned against:
 
-A) Thomas Jefferson
-B) James Madison
-C) Alexander Hamilton
-D) John Jay
+A) Westward expansion
+B) Political parties and foreign entanglements
+C) Immigration
+D) Industrial growth
 
-**12.** The Louisiana Purchase of 1803 was significant because it:
+**14.** The XYZ Affair (1797-1798) involved:
 
-A) Ended the War of 1812
-B) Doubled the size of the United States
-C) Acquired Florida from Spain
-D) Settled the boundary with Canada
+A) Britain and the United States
+B) France demanding bribes from American diplomats
+C) Spain closing the Mississippi River
+D) A trade dispute with China
 
-**13.** What was the primary cause of the War of 1812?
+**15.** The "Era of Good Feelings" described:
 
-A) The acquisition of Louisiana
-B) British impressment of American sailors and interference with American trade
-C) The annexation of Texas
-D) Disputes over the Oregon Territory
+A) The period after the Civil War
+B) A period of national unity under James Monroe
+C) The colonial period
+D) Andrew Jackson's presidency
 
-**14.** The Monroe Doctrine (1823) stated that:
+**16.** The Tallmadge Amendment proposed:
 
-A) The U.S. would help European nations colonize the Americas
-B) The Western Hemisphere was closed to further European colonization
-C) The U.S. would remain neutral in all wars
-D) European nations could trade freely with the Americas
+A) Gradual abolition of slavery in Missouri
+B) Expanding voting rights
+C) Creating a national bank
+D) Tariff reform
 
-**15.** Which Supreme Court case established the principle of judicial review?
+**17.** The Tariff of Abominations (1828) was designed to:
 
-A) McCulloch v. Maryland
-B) Gibbons v. Ogden
-C) Marbury v. Madison (1803)
-D) Dred Scott v. Sandford
+A) Protect Northern manufacturing with high tariffs on imports
+B) Eliminate all tariffs
+C) Promote free trade with Britain
+D) Fund the Louisiana Purchase
 
-**16.** The Indian Removal Act of 1830 led to:
+**18.** The Force Bill (1833) authorized the president to:
 
-A) The Trail of Tears
-B) The establishment of reservations in the West
-C) Peace treaties with all Native American tribes
-D) The integration of Native Americans into colonial society
+A) Raise a militia
+B) Use military force to collect tariffs in South Carolina
+C) Declare war on Mexico
+D) Free enslaved people
 
-**17.** What was the significance of the Erie Canal, completed in 1825?
+**19.** Jacksonian democracy was a movement that:
 
-A) It connected the Mississippi River to the Gulf of Mexico.
-B) It connected the Great Lakes to the Atlantic Ocean, boosting trade.
-C) It served as a defensive fortification.
-D) It provided irrigation for Southern plantations.
+A) Expanded political participation to all white men regardless of property ownership
+B) Returned to Federalist principles
+C) Sought to abolish the presidency
+D) Extended voting rights to women
 
-**18.** Which reform movement in the early 19th century sought to ban the consumption of alcohol?
+**20.** The Second Great Awakening contributed to:
 
-A) Abolitionism
-B) Temperance movement
-C) Women's suffrage
-D) Transcendentalism
+A) A decline in church membership
+B) Various reform movements including abolitionism and temperance
+C) The end of religious freedom
+D) Separation of church and state
 
-**19.** The Seneca Falls Convention of 1848 was primarily focused on:
+**21.** Horace Mann is most associated with reform in:
+
+A) Prison conditions
+B) Public education
+C) Mental health care
+D) Womens suffrage
+
+**22.** Dorothea Dix advocated for:
 
 A) Abolition of slavery
-B) Women's rights
-C) Labor reform
+B) Better treatment of the mentally ill
+C) Womens right to vote
 D) Temperance
 
-**20.** What principle did the doctrine of "Manifest Destiny" promote?
+**23.** The Wilmot Proviso proposed:
 
-A) That the U.S. should remain within its original boundaries
-B) That the U.S. was destined to expand across the North American continent
-C) That European nations should control the Americas
-D) That slavery should be abolished
+A) Banning slavery in territory acquired from Mexico
+B) Extending slavery to all territories
+C) Annexing Canada
+D) A compromise on the tariff
 
-**21.** The Missouri Compromise of 1820 dealt with the issue of:
+**24.** "Popular sovereignty" meant:
 
-A) Trade tariffs
-B) The extension of slavery into new states
-C) Presidential term limits
-D) Native American land rights
+A) The president decides on slavery in territories
+B) People of a territory could vote on whether to allow slavery
+C) Congress determines the status of slavery
+D) The Supreme Court decides all slavery issues
 
-**22.** Who led the slave rebellion in Virginia in 1831?
+**25.** The Free-Soilers were:
 
-A) Frederick Douglass
-B) Nat Turner
-C) Harriet Tubman
-D) John Brown
+A) Supporters of unlimited slavery expansion
+B) Opponents of slavery expansion into new territories
+C) Proponents of free land for immigrants
+D) Advocates for womens suffrage
 
-**23.** The Mexican-American War (1846–1848) resulted in the U.S. acquiring:
+**26.** The Republican Party was founded in 1854 mainly opposing:
 
-A) The Louisiana Territory
-B) Alaska
-C) California and the Southwest (Mexican Cession)
-D) Oregon Country
+A) Democratic tariff policies
+B) The expansion of slavery into new territories
+C) Immigration
+D) Womens suffrage
 
-**24.** The Compromise of 1850 included which controversial provision?
+**27.** The Lincoln-Douglas debates of 1858 focused on:
 
-A) The abolition of slavery in all territories
-B) The Fugitive Slave Act
-C) The annexation of Cuba
-D) Women's right to vote
+A) Tariffs and trade
+B) Slavery in the territories
+C) Foreign policy
+D) Womens rights
 
-**25.** What did the Kansas-Nebraska Act of 1854 establish?
+**28.** Fort Sumter (April 1861) was significant because:
 
-A) A permanent boundary between free and slave states
-B) Popular sovereignty to determine slavery in new territories
-C) The immediate abolition of slavery in Kansas
-D) The admission of California as a slave state
+A) It was the last Civil War battle.
+B) The Confederate attack there began the Civil War.
+C) The Emancipation Proclamation was signed there.
+D) Lee surrendered there.
 
-**26.** The Dred Scott decision (1857) ruled that:
+**29.** The bloodiest single-day battle of the Civil War was:
 
-A) Enslaved people had the right to sue for freedom
-B) Enslaved people were not citizens and had no right to sue in federal court
-C) Slavery was illegal in all territories
-D) The Missouri Compromise was constitutional
+A) Gettysburg
+B) Antietam (1862)
+C) Shiloh
+D) Bull Run
 
-**27.** Who was the leader of the abolitionist newspaper "The Liberator"?
+**30.** The Union naval blockade aimed to:
 
-A) Frederick Douglass
-B) William Lloyd Garrison
-C) Harriet Beecher Stowe
-D) Sojourner Truth
+A) Prevent European involvement
+B) Cut off Confederate trade and supply lines
+C) Transport Union troops
+D) Protect Northern ports
 
-**28.** What novel by Harriet Beecher Stowe intensified the debate over slavery?
+**31.** The Homestead Act of 1862 provided:
 
-A) The Scarlet Letter
-B) Uncle Tom's Cabin
-C) Moby-Dick
-D) The Last of the Mohicans
+A) Free land to formerly enslaved people
+B) 160 acres of public land to settlers who farmed it for five years
+C) Land grants to railroads
+D) Tax breaks for plantation owners
 
-**29.** What event in 1859 involved John Brown's raid on a federal arsenal?
+**32.** The Morrill Land-Grant Act of 1862 provided:
 
-A) Fort Sumter
-B) Harpers Ferry
-C) Bleeding Kansas
-D) The Alamo
+A) Free land to settlers
+B) Federal land to states for establishing agricultural and mechanical colleges
+C) Military bases in the West
+D) Transcontinental railroad funding
 
-**30.** Which state was the first to secede from the Union in December 1860?
+**33.** African American soldiers in the Civil War:
 
-A) Virginia
-B) Texas
-C) South Carolina
-D) Georgia
+A) Were not allowed to serve
+B) Approximately 180,000 served in the Union Army with distinction
+C) Served only as cooks and laborers
+D) Fought only for the Confederacy
 
-**31.** The Emancipation Proclamation (1863) declared:
+**34.** The Wade-Davis Bill was:
 
-A) All enslaved people everywhere were free
-B) Enslaved people in Confederate states were free
-C) Slavery was permanently abolished
-D) The war was over
+A) A lenient Reconstruction plan
+B) A stricter alternative to Lincoln's plan, requiring a majority oath of loyalty
+C) A plan to divide the South into military districts
+D) A bill giving freed people the right to vote
 
-**32.** Which battle is considered the turning point of the Civil War?
+**35.** Lincoln's assassination was significant because:
 
-A) Battle of Antietam
-B) Battle of Gettysburg (1863)
-C) Battle of Bull Run
-D) Battle of Shiloh
+A) It ended the Civil War immediately
+B) Andrew Johnson became president, changing Reconstruction's course
+C) It led to a second Civil War
+D) It had no effect on Reconstruction
 
-**33.** What was the purpose of the Freedmen's Bureau, established in 1865?
+**36.** "Carpetbaggers" were:
 
-A) To help formerly enslaved people transition to freedom with education, food, and legal assistance
-B) To return freed people to Africa
-C) To provide land to Confederate veterans
-D) To establish new slave codes
+A) Southern Reconstruction supporters
+B) Northerners who moved South during Reconstruction
+C) Freed people seeking political office
+D) Confederate veterans
 
-**34.** The 13th Amendment to the Constitution:
+**37.** "Scalawags" were:
 
-A) Granted citizenship to all persons born in the U.S.
-B) Abolished slavery
-C) Gave African American men the right to vote
-D) Established equal protection under the law
+A) Northerners in the South during Reconstruction
+B) Southern whites who supported Reconstruction and the Republican Party
+C) African American politicians
+D) KKK members
 
-**35.** What were "Black Codes" in the post-Civil War South?
+**38.** The Enforcement Acts of 1870-1871 were designed to:
 
-A) Military regulations for African American soldiers
-B) Laws that restricted the rights and freedoms of formerly enslaved people
-C) Educational standards for Black schools
-D) Codes of conduct for Freedmen's Bureau agents
+A) Enforce tariff laws
+B) Combat the KKK and protect African American voting rights
+C) Enforce the Fugitive Slave Act
+D) Regulate interstate commerce
 
-**36.** The 14th Amendment (1868) primarily:
+**39.** The Panic of 1873 was:
 
-A) Abolished slavery
-B) Granted citizenship to all persons born in the U.S. and guaranteed equal protection
-C) Prohibited denying the vote based on race
-D) Established women's suffrage
+A) A military crisis
+B) A severe economic depression triggered by the collapse of a major banking firm
+C) A political scandal
+D) A natural disaster
 
-**37.** Which plan for Reconstruction required Southern states to ratify the 14th Amendment?
+**40.** The primary legacy of Reconstruction was:
 
-A) Lincoln's Ten Percent Plan
-B) Johnson's Restoration Plan
-C) Congressional (Radical) Reconstruction
-D) The Wade-Davis Bill
+A) The permanent end of racial discrimination
+B) The 13th, 14th, and 15th Amendments, though not fully realized for decades
+C) Complete integration of Southern society
+D) Restoring the planter class without changes
 
-**38.** The impeachment of President Andrew Johnson in 1868 was primarily related to:
+**41.** Roger Williams founded Rhode Island because he:
 
-A) His involvement in Lincoln's assassination
-B) His violation of the Tenure of Office Act
-C) Financial corruption
-D) His refusal to enforce the 13th Amendment
+A) Wanted a plantation colony
+B) Was banished from Massachusetts for advocating separation of church and state
+C) Was sent by the king
+D) Wanted to trade with the Dutch
 
-**39.** What was the primary purpose of the Ku Klux Klan during Reconstruction?
+**42.** The Halfway Covenant of 1662:
 
-A) To support Reconstruction policies
-B) To intimidate and terrorize African Americans and their allies
-C) To promote education for freed people
-D) To help integrate Southern society
+A) Banned all non-church members from the colony
+B) Allowed partial church membership for children of baptized but unconverted parents
+C) Established complete religious freedom
+D) Required full conversion for all residents
 
-**40.** The 15th Amendment (1870) stated that:
+**43.** Bacon's Rebellion (1676) was significant because it:
 
-A) Slavery was abolished
-B) All citizens had equal protection under the law
-C) The right to vote could not be denied based on race
-D) Women had the right to vote
+A) Led to the abolition of indentured servitude
+B) Exposed tensions between frontier settlers and the colonial elite
+C) Resulted in the founding of Virginia
+D) Led to peaceful relations with Native Americans
 
-**41.** What was the system of "sharecropping"?
+**44.** The Stono Rebellion (1739) was:
 
-A) A form of land ownership by freed people
-B) A system where workers farmed land in exchange for a share of the crop, often keeping them in poverty
-C) A government program to distribute land
-D) A Northern industrial practice
+A) A colonial revolt against British taxes
+B) One of the largest slave uprisings in colonial America
+C) A Native American attack on settlers
+D) A protest against religious persecution
 
-**42.** The Compromise of 1877 effectively ended Reconstruction by:
+**45.** Mercantilism was:
 
-A) Abolishing the 14th Amendment
-B) Removing federal troops from the South in exchange for Republican Rutherford B. Hayes becoming president
-C) Restoring the Confederacy
-D) Granting all freedmen 40 acres and a mule
+A) A system of free trade between nations
+B) An economic theory based on accumulating gold and maintaining a favorable balance of trade
+C) A system of shared ownership
+D) An economy based on agriculture only
 
-**43.** Which colonial region was known for its large plantations and cash-crop economy?
+**46.** The Intolerable Acts (1774) were passed in response to:
 
-A) New England colonies
-B) Middle colonies
-C) Southern colonies
-D) Frontier settlements
+A) The Declaration of Independence
+B) The Boston Tea Party
+C) The Battle of Lexington
+D) The signing of the Constitution
 
-**44.** The Proclamation of 1763 prohibited colonists from settling west of:
+**47.** "No taxation without representation" expressed the belief that:
 
-A) The Mississippi River
-B) The Appalachian Mountains
-C) The Ohio River
-D) The Rocky Mountains
+A) All taxes should be eliminated
+B) Colonists should not be taxed by a Parliament where they had no representatives
+C) Only local governments should collect taxes
+D) The king should pay all taxes
 
-**45.** The Boston Tea Party (1773) was a protest against:
+**48.** The Battle of Bunker Hill (1775) showed that:
 
-A) Taxation without representation, specifically the Tea Act
-B) The quartering of British soldiers
-C) The Stamp Act
-D) The ban on colonial manufacturing
+A) The Revolution was over.
+B) Colonial forces could stand against the British army.
+C) American independence was immediate.
+D) Naval power was decisive.
 
-**46.** Which document, drafted primarily by Thomas Jefferson, declared American independence?
+**49.** The Land Ordinance of 1785 established:
 
-A) The Constitution
-B) The Bill of Rights
-C) The Declaration of Independence
-D) The Federalist Papers
+A) A system for surveying and selling western lands
+B) The U.S.-Canada boundary
+C) Rules for Native American treaties
+D) The national capital
 
-**47.** What was the significance of the Battle of Yorktown (1781)?
+**50.** Shays' Rebellion (1786-1787) highlighted:
 
-A) It was the first battle of the Revolution.
-B) It was the decisive battle leading to British surrender.
-C) It was a major British victory.
-D) It established American naval dominance.
+A) The strength of the Articles of Confederation
+B) The weakness of the central government under the Articles
+C) The success of the national army
+D) The popularity of George Washington
 
-**48.** The Northwest Ordinance of 1787 was significant because it:
+**51.** The "corrupt bargain" of 1824 referred to:
 
-A) Established slavery in the Northwest Territory
-B) Provided a method for admitting new states and banned slavery in the territory
-C) Created the first national bank
-D) Established the Mississippi River as the western boundary
+A) A trade deal with Britain
+B) The accusation that John Quincy Adams won through a deal with Henry Clay
+C) A bribery scandal involving Andrew Jackson
+D) A banking scandal
 
-**49.** Which political party did Andrew Jackson help found?
+**52.** The spoils system under Jackson involved:
 
-A) Whig Party
-B) Republican Party
-C) Democratic Party
-D) Federalist Party
+A) Distributing land to veterans
+B) Appointing political supporters to government positions
+C) Reforming the banking system
+D) Expanding the Supreme Court
 
-**50.** The doctrine of nullification, championed by John C. Calhoun, argued that:
+**53.** The Transcendentalist movement emphasized:
 
-A) States could declare federal laws unconstitutional and refuse to enforce them
-B) The federal government could override state laws
-C) Only the Supreme Court could interpret the Constitution
-D) Territories could not become states
+A) Political party loyalty
+B) Individualism, nature, and self-reliance
+C) Military strategy
+D) Economic reform
 
-**51.** What was the significance of the California Gold Rush of 1849?
+**54.** Thoreau's "Civil Disobedience" argued for:
 
-A) It led to the discovery of oil in California.
-B) It brought a massive influx of settlers to California and accelerated its statehood.
-C) It resolved the slavery debate.
-D) It led to war with Mexico.
+A) Violent revolution
+B) The right to peacefully resist unjust government actions
+C) Absolute obedience to all laws
+D) Military expansion
 
-**52.** Which technology dramatically expanded westward migration in the mid-19th century?
+**55.** The Fugitive Slave Act of 1850 required:
 
-A) The cotton gin
-B) The telegraph
-C) The railroad
-D) The steamship
+A) All states to abolish slavery
+B) Citizens in all states to assist in capturing and returning escaped enslaved people
+C) Enslaved people to be freed after 10 years
+D) Slaveholders to educate enslaved people
 
-**53.** Abraham Lincoln won the presidential election of 1860 primarily because:
+**56.** "Bleeding Kansas" (1854-1858) referred to:
 
-A) He had strong Southern support.
-B) The opposition was divided among multiple candidates.
-C) He promised to abolish slavery immediately.
-D) He was the incumbent president.
+A) A disease epidemic
+B) Violent clashes between pro- and anti-slavery settlers in Kansas
+C) A natural disaster
+D) A military campaign against Native Americans
 
-**54.** What strategy did General Ulysses S. Grant employ against the Confederacy?
+**57.** The Crittenden Compromise was:
 
-A) Defensive warfare and avoiding major battles
-B) A war of attrition, using the Union's superior resources to wear down the South
-C) Naval blockade only
-D) Diplomacy and negotiation
+A) A successful pre-war peace agreement
+B) A failed attempt to prevent secession by permanently protecting slavery where it existed
+C) A trade agreement with Mexico
+D) A Reconstruction plan
 
-**55.** General William Tecumseh Sherman's "March to the Sea" (1864) was significant because:
+**58.** The Confederacy's main advantage at the start of the Civil War was:
 
-A) It was a retreat from Confederate forces.
-B) It demonstrated total war, destroying infrastructure across Georgia to break Southern morale.
-C) It was a diplomatic mission.
-D) It resulted in the capture of Richmond.
+A) A larger population
+B) Superior military leadership and defensive strategy on familiar territory
+C) Greater industrial capacity
+D) A stronger navy
 
-**56.** What was the primary economic system of the New England colonies?
+**59.** The Gettysburg Address was significant because Lincoln:
 
-A) Plantation agriculture
-B) Fur trading exclusively
-C) Fishing, shipbuilding, and small-scale farming
-D) Gold mining
+A) Declared the war over
+B) Redefined the war as a struggle for equality and democratic principles
+C) Announced the Emancipation Proclamation
+D) Accepted Lee's surrender
 
-**57.** The Alien and Sedition Acts of 1798 were controversial because they:
+**60.** "40 acres and a mule" represented:
 
-A) Promoted immigration
-B) Restricted free speech and allowed deportation of "dangerous" foreigners
-C) Expanded voting rights
-D) Created the national bank
-
-**58.** Who explored the Louisiana Territory after its purchase?
-
-A) Daniel Boone
-B) Lewis and Clark
-C) Kit Carson
-D) John C. Fremont
-
-**59.** The Whig Party was formed primarily in opposition to:
-
-A) Thomas Jefferson
-B) Andrew Jackson and his policies
-C) Abraham Lincoln
-D) James Buchanan
-
-**60.** What was the primary goal of the Underground Railroad?
-
-A) To build actual railroads in the South
-B) To help enslaved people escape to freedom in the North or Canada
-C) To transport goods during the Civil War
-D) To create underground fortifications
+A) A completed government program
+B) The unfulfilled promise of land redistribution to freed people
+C) A Southern plantation model
+D) A Northern farming technique
 
 ---
 
 ## Answer Key
 
-1. C
-2. B
-3. C
+1. B
+2. C
+3. B
 4. B
-5. C
-6. C
+5. B
+6. B
 7. B
-8. B
-9. C
+8. C
+9. B
 10. B
-11. C
+11. B
 12. B
 13. B
 14. B
-15. C
+15. B
 16. A
-17. B
+17. A
 18. B
-19. B
+19. A
 20. B
 21. B
 22. B
-23. C
+23. A
 24. B
 25. B
 26. B
 27. B
 28. B
 29. B
-30. C
+30. B
 31. B
 32. B
-33. A
+33. B
 34. B
 35. B
 36. B
-37. C
+37. B
 38. B
 39. B
-40. C
+40. B
 41. B
 42. B
-43. C
+43. B
 44. B
-45. A
-46. C
+45. B
+46. B
 47. B
 48. B
-49. C
-50. A
+49. A
+50. B
 51. B
-52. C
+52. B
 53. B
 54. B
 55. B
-56. C
+56. B
 57. B
 58. B
 59. B
