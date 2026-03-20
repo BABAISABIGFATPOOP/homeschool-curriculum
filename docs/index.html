@@ -1035,11 +1035,62 @@
       transform: scale(1.1);
     }
 
+    /* ── Theme Toggle ── */
+    body.light-theme { background: #f1f5f9; color: #1e293b; }
+    body.light-theme .topbar, body.light-theme .sidebar, body.light-theme #app-screen .topbar { background: #ffffff; border-color: #e2e8f0; }
+    body.light-theme .sidebar-item { color: #475569; }
+    body.light-theme .sidebar-item:hover { background: #f1f5f9; color: #1e293b; }
+    body.light-theme .sidebar-item.active { background: #3b82f6; color: white; }
+    body.light-theme .sidebar-section-title { color: #94a3b8; }
+    body.light-theme .content { color: #1e293b; }
+    body.light-theme .content h1 { color: #0f172a; border-color: #e2e8f0; }
+    body.light-theme .content h2 { color: #1d4ed8; }
+    body.light-theme .content h3 { color: #2563eb; }
+    body.light-theme .content p, body.light-theme .content li { color: #334155; }
+    body.light-theme .content strong { color: #0f172a; }
+    body.light-theme .content th { background: #e2e8f0; color: #0f172a; border-color: #cbd5e1; }
+    body.light-theme .content td { border-color: #e2e8f0; color: #334155; }
+    body.light-theme .home-card { background: #ffffff; border-color: #e2e8f0; }
+    body.light-theme .home-card h3 { color: #0f172a; }
+    body.light-theme .home-card p { color: #64748b; }
+    body.light-theme .back-btn { border-color: #cbd5e1; color: #64748b; }
+    body.light-theme .back-btn:hover { background: #f1f5f9; color: #1e293b; }
+    body.light-theme .role-badge { background: #3b82f6; }
+
+    .theme-toggle {
+      background: none; border: 1px solid #475569; color: #94a3b8;
+      padding: 4px 10px; border-radius: 6px; cursor: pointer; font-size: 0.8rem;
+    }
+    body.light-theme .theme-toggle { border-color: #cbd5e1; color: #64748b; }
+
+    /* ── GPA Calculator ── */
+    .gpa-input { background: #1e293b; border: 1px solid #334155; color: #f8fafc; padding: 6px 10px; border-radius: 6px; font-size: 0.9rem; width: 60px; font-family: inherit; }
+    body.light-theme .gpa-input { background: #ffffff; border-color: #cbd5e1; color: #1e293b; }
+    .gpa-select { background: #1e293b; border: 1px solid #334155; color: #f8fafc; padding: 6px 8px; border-radius: 6px; font-size: 0.9rem; font-family: inherit; }
+    body.light-theme .gpa-select { background: #ffffff; border-color: #cbd5e1; color: #1e293b; }
+
+    /* ── Achievement Badges ── */
+    .badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin: 4px; }
+    .badge.earned { background: #f59e0b22; border: 1px solid #f59e0b; color: #f59e0b; }
+    .badge.locked { background: #33415522; border: 1px solid #334155; color: #64748b; }
+    body.light-theme .badge.locked { background: #f1f5f922; border-color: #cbd5e1; }
+
+    /* ── Print Mode ── */
+    @media print {
+      .topbar, .sidebar, .scratch-open-btn, .sign-wrapper, .back-btn, .theme-toggle { display: none !important; }
+      .main-area { display: block !important; }
+      .content { padding: 20px !important; max-width: 100% !important; }
+      body { background: white !important; color: black !important; }
+      .content h1, .content h2, .content h3, .content p, .content li, .content td, .content th, .content strong { color: black !important; }
+    }
+
     /* Scrollbar */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #0f172a; }
     ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: #475569; }
+    body.light-theme ::-webkit-scrollbar-track { background: #f1f5f9; }
+    body.light-theme ::-webkit-scrollbar-thumb { background: #cbd5e1; }
   </style>
 </head>
 <body>
@@ -1260,6 +1311,8 @@
             <label class="lang-check"><input type="checkbox" id="check-clep" onchange="updateClep()"> Show CLEP Prep</label>
           </div>
         </div>
+        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark">&#9681;</button>
+        <button class="back-btn" onclick="window.print()" title="Print">&#128424;</button>
         <button class="back-btn" onclick="signOut()">Sign Out</button>
       </div>
     </div>
@@ -1587,7 +1640,23 @@
           { label: 'Spanish', action: () => loadMarkdown('clep-prep/practice-exams/spanish-exam-3.md') }
         ]);
 
-        addSection('Schedule', [
+        addSection('SAT Prep', [
+          { label: 'Overview & Tips', action: () => loadMarkdown('sat-prep/overview.md') },
+          { label: 'Math Study Guide', action: () => loadMarkdown('sat-prep/math-study-guide.md') },
+          { label: 'Reading & Writing Guide', action: () => loadMarkdown('sat-prep/reading-writing-study-guide.md') },
+          { label: 'Math Practice 1', action: () => loadMarkdown('sat-prep/math-practice-1.md') },
+          { label: 'Math Practice 2', action: () => loadMarkdown('sat-prep/math-practice-2.md') },
+          { label: 'Math Practice 3', action: () => loadMarkdown('sat-prep/math-practice-3.md') },
+          { label: 'R&W Practice 1', action: () => loadMarkdown('sat-prep/reading-writing-practice-1.md') },
+          { label: 'R&W Practice 2', action: () => loadMarkdown('sat-prep/reading-writing-practice-2.md') },
+          { label: 'R&W Practice 3', action: () => loadMarkdown('sat-prep/reading-writing-practice-3.md') }
+        ]);
+
+        addSection('Tools', [
+          { label: 'GPA Calculator', action: showGPACalculator },
+          { label: 'Progress Tracker', action: showProgressTracker },
+          { label: 'Achievements', action: showAchievements },
+          { label: 'Daily Planner', action: showDailyPlanner },
           { label: 'Weekly Schedule', action: () => loadMarkdown('schedule.md') }
         ]);
 
@@ -1665,7 +1734,23 @@
           ]);
         }
 
-        addSection('Schedule', [
+        // SAT prep for grades 9+
+        if (currentGrade >= 9) {
+          addSection('SAT Prep', [
+            { label: 'Overview & Tips', action: () => loadMarkdown('sat-prep/overview.md') },
+            { label: 'Math Study Guide', action: () => loadMarkdown('sat-prep/math-study-guide.md') },
+            { label: 'Math Practice 1', action: () => loadMarkdown('sat-prep/math-practice-1.md') },
+            { label: 'Math Practice 2', action: () => loadMarkdown('sat-prep/math-practice-2.md') },
+            { label: 'R&W Practice 1', action: () => loadMarkdown('sat-prep/reading-writing-practice-1.md') },
+            { label: 'R&W Practice 2', action: () => loadMarkdown('sat-prep/reading-writing-practice-2.md') }
+          ]);
+        }
+
+        addSection('Tools', [
+          { label: 'GPA Calculator', action: showGPACalculator },
+          { label: 'Progress Tracker', action: showProgressTracker },
+          { label: 'Achievements', action: showAchievements },
+          { label: 'Daily Planner', action: showDailyPlanner },
           { label: 'Weekly Schedule', action: () => loadMarkdown('schedule.md') }
         ]);
       }
@@ -2036,6 +2121,10 @@
       const subjectAnswers = testAnswers.filter(a => a.subject === subject);
       const correctCount = subjectAnswers.filter(a => a.correct).length;
 
+      // Save to progress tracker
+      saveTestResult(subject, correctCount, subjectAnswers.length, currentDifficulty);
+      checkAchievements();
+
       const body = document.getElementById('test-body');
 
       let reviewHTML = `
@@ -2255,6 +2344,235 @@
       document.getElementById('role-check-spanish').checked = selectedLanguages.includes('spanish');
       document.getElementById('role-check-chinese').checked = selectedLanguages.includes('chinese');
       document.getElementById('role-check-clep').checked = showClep;
+    }
+
+    // ── THEME TOGGLE ──
+    function toggleTheme() {
+      document.body.classList.toggle('light-theme');
+      localStorage.setItem('theme', document.body.classList.contains('light-theme') ? 'light' : 'dark');
+    }
+    // Load saved theme
+    if (localStorage.getItem('theme') === 'light') document.body.classList.add('light-theme');
+
+    // ── GPA CALCULATOR ──
+    function showGPACalculator() {
+      const content = document.getElementById('content');
+      const subjects = ['Math', 'English', 'Biology', 'Science', 'History', 'Geography', 'Spanish', 'Chinese'];
+      const saved = JSON.parse(localStorage.getItem('gpa-grades') || '{}');
+
+      let html = `<h1>GPA Calculator</h1>
+        <p>Enter your letter grade for each subject. GPA is calculated on a 4.0 scale.</p>
+        <table style="max-width:500px;">
+          <tr><th>Subject</th><th>Grade</th><th>Credits</th></tr>`;
+
+      subjects.forEach(s => {
+        html += `<tr>
+          <td>${s}</td>
+          <td><select class="gpa-select" id="gpa-${s}" onchange="calcGPA()">
+            <option value="">--</option>
+            <option value="4.0" ${saved[s]==='4.0'?'selected':''}>A</option>
+            <option value="3.7" ${saved[s]==='3.7'?'selected':''}>A-</option>
+            <option value="3.3" ${saved[s]==='3.3'?'selected':''}>B+</option>
+            <option value="3.0" ${saved[s]==='3.0'?'selected':''}>B</option>
+            <option value="2.7" ${saved[s]==='2.7'?'selected':''}>B-</option>
+            <option value="2.3" ${saved[s]==='2.3'?'selected':''}>C+</option>
+            <option value="2.0" ${saved[s]==='2.0'?'selected':''}>C</option>
+            <option value="1.7" ${saved[s]==='1.7'?'selected':''}>C-</option>
+            <option value="1.0" ${saved[s]==='1.0'?'selected':''}>D</option>
+            <option value="0.0" ${saved[s]==='0.0'?'selected':''}>F</option>
+          </select></td>
+          <td><input class="gpa-input" type="number" id="credits-${s}" value="${saved['c_'+s]||'1'}" min="0.5" max="5" step="0.5" onchange="calcGPA()"></td>
+        </tr>`;
+      });
+
+      html += `</table>
+        <div id="gpa-result" style="margin-top:20px;font-size:1.5rem;font-weight:800;color:#3b82f6;"></div>
+        <button class="test-next-btn" onclick="calcGPA()" style="margin-top:12px;font-size:0.9rem;padding:8px 20px;">Calculate</button>`;
+      content.innerHTML = html;
+      calcGPA();
+    }
+
+    function calcGPA() {
+      const subjects = ['Math', 'English', 'Biology', 'Science', 'History', 'Geography', 'Spanish', 'Chinese'];
+      let totalPoints = 0, totalCredits = 0;
+      const saved = {};
+      subjects.forEach(s => {
+        const grade = document.getElementById('gpa-' + s)?.value;
+        const credits = parseFloat(document.getElementById('credits-' + s)?.value || 1);
+        if (grade) {
+          totalPoints += parseFloat(grade) * credits;
+          totalCredits += credits;
+          saved[s] = grade;
+          saved['c_' + s] = credits;
+        }
+      });
+      localStorage.setItem('gpa-grades', JSON.stringify(saved));
+      const gpa = totalCredits > 0 ? (totalPoints / totalCredits).toFixed(2) : '0.00';
+      const el = document.getElementById('gpa-result');
+      if (el) el.textContent = 'GPA: ' + gpa + ' / 4.00';
+    }
+
+    // ── PROGRESS TRACKER ──
+    function showProgressTracker() {
+      const content = document.getElementById('content');
+      const progress = JSON.parse(localStorage.getItem('progress') || '{}');
+      const testHistory = JSON.parse(localStorage.getItem('test-history') || '[]');
+
+      let html = '<h1>Progress Tracker</h1>';
+
+      // Test history
+      html += '<h2>Test Scores</h2>';
+      if (testHistory.length === 0) {
+        html += '<p>No tests taken yet. Take a placement test to see your scores here.</p>';
+      } else {
+        html += '<table><tr><th>Date</th><th>Subject</th><th>Score</th><th>Grade Level</th></tr>';
+        testHistory.slice(-20).reverse().forEach(t => {
+          html += `<tr><td>${t.date}</td><td>${t.subject}</td><td>${t.score}/${t.total} (${Math.round(t.score/t.total*100)}%)</td><td>Grade ${t.grade}</td></tr>`;
+        });
+        html += '</table>';
+      }
+
+      // Weekly progress checkboxes
+      html += '<h2>Weekly Progress</h2><p>Check off weeks as you complete them.</p>';
+      const grade = currentGrade || 7;
+      for (let week = 1; week <= 36; week++) {
+        const key = 'week-' + grade + '-' + week;
+        const checked = progress[key] ? 'checked' : '';
+        html += `<label style="display:inline-flex;align-items:center;gap:6px;margin:4px 8px;cursor:pointer;">
+          <input type="checkbox" ${checked} onchange="toggleWeek('${key}',this.checked)" style="accent-color:#3b82f6;width:16px;height:16px;">
+          Week ${week}
+        </label>`;
+        if (week % 9 === 0) html += '<br><br>';
+      }
+
+      content.innerHTML = html;
+    }
+
+    function toggleWeek(key, checked) {
+      const progress = JSON.parse(localStorage.getItem('progress') || '{}');
+      progress[key] = checked;
+      localStorage.setItem('progress', JSON.stringify(progress));
+      checkAchievements();
+    }
+
+    // Save test results after placement test
+    function saveTestResult(subject, score, total, grade) {
+      const history = JSON.parse(localStorage.getItem('test-history') || '[]');
+      history.push({ date: new Date().toLocaleDateString(), subject, score, total, grade });
+      localStorage.setItem('test-history', JSON.stringify(history));
+      checkAchievements();
+    }
+
+    // ── ACHIEVEMENTS ──
+    const ACHIEVEMENTS = [
+      { id: 'first-test', name: 'First Steps', desc: 'Complete your first placement test', icon: '&#11088;' },
+      { id: 'perfect-section', name: 'Perfect Score', desc: 'Get 100% on a test section', icon: '&#127942;' },
+      { id: '5-tests', name: 'Test Veteran', desc: 'Complete 5 tests', icon: '&#128170;' },
+      { id: '10-tests', name: 'Test Master', desc: 'Complete 10 tests', icon: '&#9889;' },
+      { id: 'all-subjects', name: 'Well-Rounded', desc: 'Take a test in every subject', icon: '&#127775;' },
+      { id: '90-percent', name: 'Honor Roll', desc: 'Score 90%+ on any test', icon: '&#128640;' },
+      { id: 'week-9', name: 'Quarter Done', desc: 'Complete 9 weeks', icon: '&#128218;' },
+      { id: 'week-18', name: 'Halfway There', desc: 'Complete 18 weeks', icon: '&#127941;' },
+      { id: 'week-36', name: 'Year Complete', desc: 'Complete all 36 weeks', icon: '&#127891;' },
+      { id: 'streak-5', name: 'On Fire', desc: 'Get 5 questions right in a row', icon: '&#128293;' },
+      { id: 'night-owl', name: 'Night Owl', desc: 'Study after 9 PM', icon: '&#129417;' },
+      { id: 'early-bird', name: 'Early Bird', desc: 'Study before 7 AM', icon: '&#127748;' }
+    ];
+
+    function showAchievements() {
+      const content = document.getElementById('content');
+      const earned = JSON.parse(localStorage.getItem('achievements') || '[]');
+
+      let html = '<h1>Achievements</h1><p>Earn badges by studying and taking tests!</p><div style="margin-top:16px;">';
+      ACHIEVEMENTS.forEach(a => {
+        const isEarned = earned.includes(a.id);
+        html += `<span class="badge ${isEarned ? 'earned' : 'locked'}">${a.icon} ${a.name}${isEarned ? '' : ' — ' + a.desc}</span>`;
+      });
+      html += '</div>';
+
+      const earnedCount = earned.length;
+      html += `<p style="margin-top:20px;color:#f59e0b;font-weight:600;">${earnedCount} / ${ACHIEVEMENTS.length} earned</p>`;
+      content.innerHTML = html;
+    }
+
+    function earnAchievement(id) {
+      const earned = JSON.parse(localStorage.getItem('achievements') || '[]');
+      if (!earned.includes(id)) {
+        earned.push(id);
+        localStorage.setItem('achievements', JSON.stringify(earned));
+      }
+    }
+
+    function checkAchievements() {
+      const history = JSON.parse(localStorage.getItem('test-history') || '[]');
+      const progress = JSON.parse(localStorage.getItem('progress') || '{}');
+
+      if (history.length >= 1) earnAchievement('first-test');
+      if (history.length >= 5) earnAchievement('5-tests');
+      if (history.length >= 10) earnAchievement('10-tests');
+      if (history.some(t => t.score === t.total)) earnAchievement('perfect-section');
+      if (history.some(t => t.score / t.total >= 0.9)) earnAchievement('90-percent');
+
+      const subjectsTaken = [...new Set(history.map(t => t.subject))];
+      if (subjectsTaken.length >= 6) earnAchievement('all-subjects');
+
+      const weeksComplete = Object.values(progress).filter(v => v).length;
+      if (weeksComplete >= 9) earnAchievement('week-9');
+      if (weeksComplete >= 18) earnAchievement('week-18');
+      if (weeksComplete >= 36) earnAchievement('week-36');
+
+      const hour = new Date().getHours();
+      if (hour >= 21) earnAchievement('night-owl');
+      if (hour < 7) earnAchievement('early-bird');
+    }
+
+    // ── DAILY PLANNER ──
+    function showDailyPlanner() {
+      const content = document.getElementById('content');
+      const today = new Date();
+      const dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+      const dayName = dayNames[today.getDay()];
+      const dateStr = today.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+      const saved = JSON.parse(localStorage.getItem('planner-' + today.toISOString().slice(0, 10)) || '{}');
+
+      const blocks = [
+        { time: '8:00 - 9:30', subject: 'Math', color: '#3b82f6' },
+        { time: '9:30 - 11:00', subject: 'English', color: '#8b5cf6' },
+        { time: '11:00 - 11:45', subject: 'Biology', color: '#10b981' },
+        { time: '11:45 - 12:30', subject: 'Lunch Break', color: '#64748b' },
+        { time: '12:30 - 1:15', subject: 'Science', color: '#f59e0b' },
+        { time: '1:15 - 2:00', subject: 'History', color: '#ef4444' },
+        { time: '2:00 - 2:45', subject: 'Geography', color: '#06b6d4' },
+        { time: '2:45 - 3:30', subject: 'Language / CLEP / Free Study', color: '#8b5cf6' }
+      ];
+
+      let html = `<h1>Daily Planner</h1>
+        <h2>${dayName}, ${dateStr}</h2>`;
+
+      if (today.getDay() === 0 || today.getDay() === 6) {
+        html += '<p style="font-size:1.2rem;margin-top:20px;">Weekend — no classes scheduled. Enjoy your break!</p>';
+      } else {
+        blocks.forEach((b, i) => {
+          const key = 'block-' + i;
+          const done = saved[key] || false;
+          html += `<div style="display:flex;align-items:center;gap:12px;padding:12px;margin:8px 0;background:${done ? '#10b98122' : '#1e293b'};border:1px solid ${done ? '#10b981' : '#334155'};border-radius:8px;">
+            <input type="checkbox" ${done ? 'checked' : ''} onchange="togglePlannerBlock('${today.toISOString().slice(0,10)}','${key}',this.checked)" style="accent-color:#10b981;width:18px;height:18px;cursor:pointer;">
+            <span style="color:${b.color};font-weight:700;min-width:130px;">${b.time}</span>
+            <span style="color:#f8fafc;">${b.subject}</span>
+            ${done ? '<span style="color:#10b981;margin-left:auto;">&#10003; Done</span>' : ''}
+          </div>`;
+        });
+      }
+
+      html += `<p style="margin-top:16px;color:#94a3b8;font-size:0.85rem;">Check off each block as you complete it. Progress saves automatically.</p>`;
+      content.innerHTML = html;
+    }
+
+    function togglePlannerBlock(date, key, checked) {
+      const saved = JSON.parse(localStorage.getItem('planner-' + date) || '{}');
+      saved[key] = checked;
+      localStorage.setItem('planner-' + date, JSON.stringify(saved));
+      checkAchievements();
     }
 
     // ── CLEP BROWSER (pre-login) ──
