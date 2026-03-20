@@ -1768,24 +1768,40 @@
       document.getElementById('test-screen').style.display = 'flex';
       showScratchButton();
 
-      // Get all questions and filter to selected subjects
-      const allQ = window.api.getQuestions();
+      // Pull from the full 4,500 question pool (750 per subject)
+      const allBanks = window.api.getAllQuestions();
       testQuestions = [];
+
       activeTestSubjects.forEach(subject => {
-        // Get questions for this subject and randomize their order within each grade
-        const subjectQs = allQ.filter(q => q.subject === subject);
-        // Group by grade, shuffle within grade, then flatten
+        // Get all 750 questions for this subject from the test banks
+        let pool = allBanks[subject] ? [...allBanks[subject]] : [];
+
+        // If no test bank for this subject, fall back to base questions
+        if (pool.length === 0) {
+          pool = window.api.getQuestions().filter(q => q.subject === subject);
+        }
+
+        // Shuffle the entire pool
+        shuffle(pool);
+
+        // Group by grade and pick ~2 per grade to get 15 total
         const byGrade = {};
-        subjectQs.forEach(q => {
+        pool.forEach(q => {
           if (!byGrade[q.grade]) byGrade[q.grade] = [];
           byGrade[q.grade].push(q);
         });
-        const shuffled = [];
-        for (let g = 4; g <= 12; g++) {
-          if (byGrade[g]) shuffled.push(...shuffle(byGrade[g]));
+
+        const picked = [];
+        // Pick 2 per grade (4-10 = 7 grades × 2 = 14, plus 1 extra)
+        for (let g = 4; g <= 10; g++) {
+          if (byGrade[g]) {
+            const count = g === 10 ? 3 : 2; // 3 for grade 10 to hit 15
+            picked.push(...byGrade[g].slice(0, count));
+          }
         }
-        // Also shuffle the options for each question
-        shuffled.forEach(q => {
+
+        // Shuffle options for each picked question
+        picked.forEach(q => {
           const correctAnswer = q.options[q.answer];
           const shuffledOpts = shuffle([...q.options]);
           testQuestions.push({
