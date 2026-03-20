@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homeschool Curriculum</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="icon-192.svg">
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
@@ -426,6 +431,7 @@
         <a href="#" id="auth-toggle-link" onclick="toggleAuthMode(event)" style="color:#3b82f6;text-decoration:none;font-weight:600;">Sign Up</a>
       </p>
     </div>
+    <button id="install-btn" onclick="installApp()" style="display:none;margin-top:8px;padding:10px 24px;border:2px solid #10b981;border-radius:10px;background:none;color:#10b981;font-size:0.9rem;font-weight:600;cursor:pointer;transition:all 0.2s;">Install as App (removes browser bars)</button>
   </div>
   <div id="role-screen">
     <h1 id="role-screen-title">Homeschool Curriculum</h1>
@@ -1055,6 +1061,30 @@
     function confirmLanguages() {
       document.getElementById('language-screen').style.display = 'none';
       showApp();
+    }
+
+    // ── PWA INSTALL ──
+    let deferredPrompt;
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      document.getElementById('install-btn').style.display = '';
+    });
+
+    function installApp() {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      deferredPrompt.userChoice.then((result) => {
+        if (result.outcome === 'accepted') {
+          document.getElementById('install-btn').style.display = 'none';
+        }
+        deferredPrompt = null;
+      });
+    }
+
+    // Register service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
     }
   </script>
 </body>
