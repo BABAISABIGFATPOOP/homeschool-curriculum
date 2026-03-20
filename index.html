@@ -1133,7 +1133,7 @@
         <button class="sign-btn" onclick="toggleSign('pick-math')">Math</button>
         <div class="sign-string"></div>
         <div class="sign-panel" style="text-align:center;padding:16px;">
-          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">45 Questions</p>
+          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">30 Questions</p>
           <button class="test-next-btn" style="font-size:0.85rem;padding:8px 20px;" onclick="startSingleTest('Math')">Start</button>
         </div>
       </div>
@@ -1141,7 +1141,7 @@
         <button class="sign-btn" onclick="toggleSign('pick-english')">English</button>
         <div class="sign-string"></div>
         <div class="sign-panel" style="text-align:center;padding:16px;">
-          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">45 Questions</p>
+          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">30 Questions</p>
           <button class="test-next-btn" style="font-size:0.85rem;padding:8px 20px;" onclick="startSingleTest('English')">Start</button>
         </div>
       </div>
@@ -1149,7 +1149,7 @@
         <button class="sign-btn" onclick="toggleSign('pick-biology')">Biology</button>
         <div class="sign-string"></div>
         <div class="sign-panel" style="text-align:center;padding:16px;">
-          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">45 Questions</p>
+          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">30 Questions</p>
           <button class="test-next-btn" style="font-size:0.85rem;padding:8px 20px;" onclick="startSingleTest('Biology')">Start</button>
         </div>
       </div>
@@ -1157,7 +1157,7 @@
         <button class="sign-btn" onclick="toggleSign('pick-science')">Science</button>
         <div class="sign-string"></div>
         <div class="sign-panel" style="text-align:center;padding:16px;">
-          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">45 Questions</p>
+          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">30 Questions</p>
           <button class="test-next-btn" style="font-size:0.85rem;padding:8px 20px;" onclick="startSingleTest('Science')">Start</button>
         </div>
       </div>
@@ -1165,7 +1165,7 @@
         <button class="sign-btn" onclick="toggleSign('pick-history')">History</button>
         <div class="sign-string"></div>
         <div class="sign-panel" style="text-align:center;padding:16px;">
-          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">45 Questions</p>
+          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">30 Questions</p>
           <button class="test-next-btn" style="font-size:0.85rem;padding:8px 20px;" onclick="startSingleTest('History')">Start</button>
         </div>
       </div>
@@ -1173,7 +1173,7 @@
         <button class="sign-btn" onclick="toggleSign('pick-geography')">Geography</button>
         <div class="sign-string"></div>
         <div class="sign-panel" style="text-align:center;padding:16px;">
-          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">45 Questions</p>
+          <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">30 Questions</p>
           <button class="test-next-btn" style="font-size:0.85rem;padding:8px 20px;" onclick="startSingleTest('Geography')">Start</button>
         </div>
       </div>
@@ -1182,7 +1182,7 @@
       <button class="sign-btn" onclick="toggleSign('pick-all')" style="font-size:0.9rem;padding:8px 20px;">All Subjects</button>
       <div class="sign-string"></div>
       <div class="sign-panel" style="text-align:center;padding:16px;">
-        <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">270 Questions &mdash; All 6 Subjects</p>
+        <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">180 Questions &mdash; All 6 Subjects</p>
         <button class="test-next-btn" style="font-size:0.85rem;padding:8px 20px;" onclick="startAllTests()">Start</button>
       </div>
     </div>
@@ -1767,7 +1767,7 @@
     let subjectPools = {}; // { Math: { 4: [...], 5: [...], ... }, ... }
     let currentDifficulty = 7; // Start at grade 7 (middle)
     let questionsAskedThisSubject = 0;
-    const QUESTIONS_PER_SUBJECT = 45;
+    const QUESTIONS_PER_SUBJECT = 30;
 
     function startPlacementTest(subjects) {
       activeTestSubjects = subjects || ['Math', 'English', 'Biology', 'Science', 'History', 'Geography'];
