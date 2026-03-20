@@ -881,6 +881,12 @@
             <label class="lang-check"><input type="checkbox" id="check-chinese" onchange="updateLanguages()"> Chinese</label>
           </div>
         </div>
+        <div class="lang-menu-wrapper" id="clep-menu-wrapper" style="display:none;position:relative;">
+          <button class="back-btn" onclick="toggleClepMenu()">CLEP ▾</button>
+          <div class="lang-dropdown" id="clep-dropdown">
+            <label class="lang-check"><input type="checkbox" id="check-clep" onchange="updateClep()"> Show CLEP Prep</label>
+          </div>
+        </div>
         <button class="back-btn" onclick="signOut()">Sign Out</button>
       </div>
     </div>
@@ -1055,15 +1061,19 @@
 
       const badge = document.getElementById('role-badge');
       const langMenuWrapper = document.getElementById('lang-menu-wrapper');
+      const clepMenuWrapper = document.getElementById('clep-menu-wrapper');
       if (currentRole === 'student') {
         badge.textContent = `STUDENT — GRADE ${currentGrade}`;
         badge.className = 'role-badge student';
         langMenuWrapper.style.display = '';
         syncLangCheckboxes();
+        clepMenuWrapper.style.display = currentGrade >= 9 ? '' : 'none';
+        document.getElementById('check-clep').checked = showClep;
       } else {
         badge.textContent = 'PARENT';
         badge.className = 'role-badge';
         langMenuWrapper.style.display = 'none';
+        clepMenuWrapper.style.display = 'none';
       }
 
       buildSidebar();
@@ -1133,7 +1143,7 @@
           { label: 'Spanish', action: () => loadMarkdown('clep-prep/spanish.md') }
         ]);
 
-        addSection('CLEP Practice Exams', [
+        addSection('CLEP Practice Exams 1', [
           { label: 'College Mathematics', action: () => loadMarkdown('clep-prep/practice-exams/college-mathematics-exam.md') },
           { label: 'College Algebra', action: () => loadMarkdown('clep-prep/practice-exams/college-algebra-exam.md') },
           { label: 'College Composition', action: () => loadMarkdown('clep-prep/practice-exams/college-composition-exam.md') },
@@ -1145,6 +1155,34 @@
           { label: 'Western Civ I', action: () => loadMarkdown('clep-prep/practice-exams/western-civ-1-exam.md') },
           { label: 'Western Civ II', action: () => loadMarkdown('clep-prep/practice-exams/western-civ-2-exam.md') },
           { label: 'Spanish', action: () => loadMarkdown('clep-prep/practice-exams/spanish-exam.md') }
+        ]);
+
+        addSection('CLEP Practice Exams 2', [
+          { label: 'College Mathematics', action: () => loadMarkdown('clep-prep/practice-exams/college-mathematics-exam-2.md') },
+          { label: 'College Algebra', action: () => loadMarkdown('clep-prep/practice-exams/college-algebra-exam-2.md') },
+          { label: 'College Composition', action: () => loadMarkdown('clep-prep/practice-exams/college-composition-exam-2.md') },
+          { label: 'Literature', action: () => loadMarkdown('clep-prep/practice-exams/analyzing-literature-exam-2.md') },
+          { label: 'Biology', action: () => loadMarkdown('clep-prep/practice-exams/biology-exam-2.md') },
+          { label: 'Chemistry', action: () => loadMarkdown('clep-prep/practice-exams/chemistry-exam-2.md') },
+          { label: 'US History I', action: () => loadMarkdown('clep-prep/practice-exams/us-history-1-exam-2.md') },
+          { label: 'US History II', action: () => loadMarkdown('clep-prep/practice-exams/us-history-2-exam-2.md') },
+          { label: 'Western Civ I', action: () => loadMarkdown('clep-prep/practice-exams/western-civ-1-exam-2.md') },
+          { label: 'Western Civ II', action: () => loadMarkdown('clep-prep/practice-exams/western-civ-2-exam-2.md') },
+          { label: 'Spanish', action: () => loadMarkdown('clep-prep/practice-exams/spanish-exam-2.md') }
+        ]);
+
+        addSection('CLEP Practice Exams 3', [
+          { label: 'College Mathematics', action: () => loadMarkdown('clep-prep/practice-exams/college-mathematics-exam-3.md') },
+          { label: 'College Algebra', action: () => loadMarkdown('clep-prep/practice-exams/college-algebra-exam-3.md') },
+          { label: 'College Composition', action: () => loadMarkdown('clep-prep/practice-exams/college-composition-exam-3.md') },
+          { label: 'Literature', action: () => loadMarkdown('clep-prep/practice-exams/analyzing-literature-exam-3.md') },
+          { label: 'Biology', action: () => loadMarkdown('clep-prep/practice-exams/biology-exam-3.md') },
+          { label: 'Chemistry', action: () => loadMarkdown('clep-prep/practice-exams/chemistry-exam-3.md') },
+          { label: 'US History I', action: () => loadMarkdown('clep-prep/practice-exams/us-history-1-exam-3.md') },
+          { label: 'US History II', action: () => loadMarkdown('clep-prep/practice-exams/us-history-2-exam-3.md') },
+          { label: 'Western Civ I', action: () => loadMarkdown('clep-prep/practice-exams/western-civ-1-exam-3.md') },
+          { label: 'Western Civ II', action: () => loadMarkdown('clep-prep/practice-exams/western-civ-2-exam-3.md') },
+          { label: 'Spanish', action: () => loadMarkdown('clep-prep/practice-exams/spanish-exam-3.md') }
         ]);
 
         addSection('Schedule', [
@@ -1181,8 +1219,8 @@
           ], { lang: 'chinese' });
         }
 
-        // Show CLEP for grades 9-10
-        if (currentGrade >= 9) {
+        // Show CLEP for grades 9+ when toggled on
+        if (currentGrade >= 9 && showClep) {
           addSection('CLEP Test Prep', [
             { label: 'Overview & Tips', action: () => loadMarkdown('clep-prep/overview.md') },
             { label: 'College Mathematics', action: () => loadMarkdown('clep-prep/college-mathematics.md') },
@@ -1194,7 +1232,7 @@
             { label: 'US History II', action: () => loadMarkdown('clep-prep/us-history-2.md') }
           ]);
 
-          addSection('CLEP Practice Exams', [
+          addSection('CLEP Practice Exams 1', [
             { label: 'College Mathematics', action: () => loadMarkdown('clep-prep/practice-exams/college-mathematics-exam.md') },
             { label: 'College Algebra', action: () => loadMarkdown('clep-prep/practice-exams/college-algebra-exam.md') },
             { label: 'College Composition', action: () => loadMarkdown('clep-prep/practice-exams/college-composition-exam.md') },
@@ -1202,6 +1240,26 @@
             { label: 'Chemistry', action: () => loadMarkdown('clep-prep/practice-exams/chemistry-exam.md') },
             { label: 'US History I', action: () => loadMarkdown('clep-prep/practice-exams/us-history-1-exam.md') },
             { label: 'US History II', action: () => loadMarkdown('clep-prep/practice-exams/us-history-2-exam.md') }
+          ]);
+
+          addSection('CLEP Practice Exams 2', [
+            { label: 'College Mathematics', action: () => loadMarkdown('clep-prep/practice-exams/college-mathematics-exam-2.md') },
+            { label: 'College Algebra', action: () => loadMarkdown('clep-prep/practice-exams/college-algebra-exam-2.md') },
+            { label: 'College Composition', action: () => loadMarkdown('clep-prep/practice-exams/college-composition-exam-2.md') },
+            { label: 'Biology', action: () => loadMarkdown('clep-prep/practice-exams/biology-exam-2.md') },
+            { label: 'Chemistry', action: () => loadMarkdown('clep-prep/practice-exams/chemistry-exam-2.md') },
+            { label: 'US History I', action: () => loadMarkdown('clep-prep/practice-exams/us-history-1-exam-2.md') },
+            { label: 'US History II', action: () => loadMarkdown('clep-prep/practice-exams/us-history-2-exam-2.md') }
+          ]);
+
+          addSection('CLEP Practice Exams 3', [
+            { label: 'College Mathematics', action: () => loadMarkdown('clep-prep/practice-exams/college-mathematics-exam-3.md') },
+            { label: 'College Algebra', action: () => loadMarkdown('clep-prep/practice-exams/college-algebra-exam-3.md') },
+            { label: 'College Composition', action: () => loadMarkdown('clep-prep/practice-exams/college-composition-exam-3.md') },
+            { label: 'Biology', action: () => loadMarkdown('clep-prep/practice-exams/biology-exam-3.md') },
+            { label: 'Chemistry', action: () => loadMarkdown('clep-prep/practice-exams/chemistry-exam-3.md') },
+            { label: 'US History I', action: () => loadMarkdown('clep-prep/practice-exams/us-history-1-exam-3.md') },
+            { label: 'US History II', action: () => loadMarkdown('clep-prep/practice-exams/us-history-2-exam-3.md') }
           ]);
         }
 
@@ -1631,6 +1689,26 @@
     function syncLangCheckboxes() {
       document.getElementById('check-spanish').checked = selectedLanguages.includes('spanish');
       document.getElementById('check-chinese').checked = selectedLanguages.includes('chinese');
+    }
+
+    // ── CLEP TOGGLE ──
+    let showClep = false;
+
+    function toggleClepMenu() {
+      document.getElementById('clep-dropdown').classList.toggle('open');
+    }
+
+    document.addEventListener('click', (e) => {
+      const clepWrapper = document.getElementById('clep-menu-wrapper');
+      if (clepWrapper && !clepWrapper.contains(e.target)) {
+        document.getElementById('clep-dropdown').classList.remove('open');
+      }
+    });
+
+    function updateClep() {
+      showClep = document.getElementById('check-clep').checked;
+      buildSidebar();
+      showHomePage();
     }
   </script>
 
