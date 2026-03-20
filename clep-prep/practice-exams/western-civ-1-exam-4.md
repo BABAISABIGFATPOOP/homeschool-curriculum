@@ -1,438 +1,440 @@
-# Western Civilization I CLEP Practice Exam 4
+# CLEP Western Civilization I — Practice Exam 4
 
 **Time Limit:** 90 minutes
 **Number of Questions:** 60
-**Passing Score:** Approximately 50 (scaled score of 50 out of 80)
-
-**Instructions:** Choose the best answer (A, B, C, or D) for each question. This exam covers Western civilization from ancient times through the early modern period (approximately 1648).
+**Format:** Multiple choice (A, B, C, D)
+**Passing Score:** Typically 50 (on CLEP's 20–80 scale); approximately 50% correct is a reasonable target, but check with your institution.
+**Covers:** Ancient Near East to 1648
 
 ---
 
-**1.** The development of agriculture during the Neolithic Revolution led most directly to:
+## Questions
 
-A) The decline of human population
-B) The establishment of permanent settlements and complex societies
-C) The end of all warfare
-D) The abandonment of tool-making
+**1.** The earliest known civilization, Sumer, developed in which region?
 
-**2.** Cuneiform, one of the earliest writing systems, was developed by the:
+A) The Nile Valley
+B) The Indus Valley
+C) Mesopotamia (between the Tigris and Euphrates rivers)
+D) The Yellow River Valley
 
-A) Egyptians
-B) Sumerians
-C) Phoenicians
-D) Greeks
+**2.** Hammurabi is best known for:
 
-**3.** Hammurabi's Code is historically significant because it:
+A) Building the Great Pyramid
+B) Creating one of the earliest written legal codes
+C) Conquering Egypt
+D) Inventing the wheel
 
-A) Established the world's first democracy
-B) Was one of the earliest known written legal codes
-C) Abolished slavery in Mesopotamia
-D) Introduced monotheism
+**3.** Which writing system was developed by the Sumerians?
 
-**4.** The ancient Egyptians built pyramids primarily as:
+A) Hieroglyphics
+B) Cuneiform
+C) Alphabetic script
+D) Pictographs
 
-A) Astronomical observatories
-B) Tombs for pharaohs
-C) Temples for public worship
-D) Fortifications against invasion
+**4.** The Egyptian pharaoh Akhenaten is notable for:
 
-**5.** The Phoenicians made a lasting contribution to Western civilization by developing:
+A) Building the pyramids at Giza
+B) Introducing monotheistic worship of Aten
+C) Conquering Mesopotamia
+D) Creating the Rosetta Stone
 
-A) Iron weapons
-B) An alphabet that influenced Greek and Latin writing systems
-C) The first system of democracy
-D) Monumental stone architecture
+**5.** Greek city-states (poleis) were characterized by:
 
-**6.** The Hebrew Bible is significant in the history of Western civilization primarily for:
+A) Unified central government
+B) Independent self-governing communities
+C) Nomadic lifestyles
+D) Absence of warfare
 
-A) Its detailed maps of the ancient world
-B) Its development of ethical monotheism
-C) Its scientific explanations of natural phenomena
-D) Its promotion of polytheistic worship
+**6.** Athenian democracy under Pericles was:
 
-**7.** The Greek polis was:
+A) Representative democracy with elected officials
+B) A direct democracy where male citizens voted on laws
+C) A monarchy with an advisory council
+D) An oligarchy ruled by the wealthy
 
-A) A type of military formation
-B) An independent city-state that served as the fundamental political unit
-C) A religious temple
-D) A system of roads connecting Greek cities
+**7.** The Peloponnesian War (431-404 BCE) was fought between:
 
-**8.** Athenian democracy under Pericles differed from modern democracy in that:
+A) Greece and Persia
+B) Athens and Sparta
+C) Rome and Carthage
+D) Egypt and Babylon
 
-A) All residents could vote including women and slaves
-B) Only free adult male citizens could participate directly in government
-C) Leaders were chosen by hereditary succession
-D) There was no system of voting
+**8.** Socrates is known for:
 
-**9.** The Socratic method of teaching involves:
+A) Writing "The Republic"
+B) His method of questioning to stimulate critical thinking
+C) Conquering Persia
+D) Founding the Lyceum
 
-A) Lecturing students on moral philosophy
-B) Asking probing questions to stimulate critical thinking
-C) Memorizing religious texts
-D) Physical training combined with mental exercises
+**9.** Alexander the Great spread which culture throughout the Mediterranean and Near East?
 
-**10.** Plato's Republic describes:
+A) Roman
+B) Persian
+C) Hellenistic (Greek)
+D) Egyptian
 
-A) The history of the Peloponnesian War
-B) An ideal state governed by philosopher-kings
-C) The voyage of Odysseus
-D) The founding of Rome
+**10.** The Punic Wars were conflicts between:
 
-**11.** Aristotle's approach to knowledge differed from Plato's in that Aristotle emphasized:
+A) Greece and Persia
+B) Rome and Carthage
+C) Egypt and Assyria
+D) Athens and Sparta
 
-A) Abstract forms and ideals
-B) Empirical observation and classification of the natural world
-C) Mystical revelation
-D) Mathematical proof as the only valid knowledge
+**11.** Julius Caesar was assassinated in 44 BCE because:
 
-**12.** Alexander the Great's conquests resulted in:
+A) He lost a military campaign
+B) Senators feared he would end the Republic by becoming a tyrant
+C) He raised taxes
+D) He freed enslaved people
 
-A) The isolation of Greek culture from Eastern civilizations
-B) The spread of Greek culture across a vast empire, creating the Hellenistic world
-C) The permanent unification of Greece under a single ruler
-D) The end of the Persian Empire with no cultural exchange
+**12.** The Pax Romana refers to:
 
-**13.** Hellenistic culture is best described as:
+A) A Roman military strategy
+B) A period of relative peace and stability (27 BCE-180 CE)
+C) The Roman legal code
+D) The fall of Rome
 
-A) Purely Greek with no outside influences
-B) A blend of Greek, Egyptian, Persian, and other Eastern cultures
-C) A rejection of all Greek values
-D) Identical to Classical Greek culture
+**13.** Which emperor made Christianity the official state religion of Rome?
 
-**14.** The Roman Republic's government was characterized by:
+A) Constantine
+B) Augustus
+C) Nero
+D) Theodosius I
 
-A) Rule by a single king
-B) A system of checks and balances with elected officials including consuls and a senate
-C) Direct democracy identical to Athens
-D) Theocratic rule by priests
+**14.** The fall of the Western Roman Empire in 476 CE resulted from:
 
-**15.** The Punic Wars were fought between Rome and:
+A) A single event
+B) Barbarian invasions, economic decline, and political instability combined
+C) A natural disaster
+D) A democratic revolution
 
-A) Greece
-B) Carthage
-C) Egypt
-D) Persia
+**15.** Feudalism in medieval Europe was:
 
-**16.** Julius Caesar's assassination in 44 BCE was motivated by:
+A) Strong central government
+B) A system of mutual obligations between lords, vassals, and serfs
+C) Democratic elections
+D) Free-market capitalism
 
-A) His military failures in Gaul
-B) Fear among senators that he was destroying the Republic by concentrating too much power
-C) A foreign conspiracy against Rome
-D) His attempt to free enslaved people
+**16.** The Catholic Church in medieval Europe served as:
 
-**17.** The Pax Romana refers to:
+A) Only a spiritual institution
+B) A spiritual, political, educational, and cultural leader
+C) A military organization only
+D) An economic institution only
 
-A) The period of civil wars following Caesar's death
-B) Approximately 200 years of relative peace and stability in the Roman Empire
-C) The Roman peace treaty with Carthage
-D) The Roman policy of religious tolerance
+**17.** The Magna Carta (1215) was significant because it:
 
-**18.** Roman law's lasting contribution to Western civilization includes:
+A) Established democracy in England
+B) Limited royal power and established that no one is above the law
+C) Declared English independence from Rome
+D) Abolished feudalism
 
-A) The concept of trial by combat
-B) Principles of legal rights, evidence, and justice that influenced later legal systems
-C) The abolition of all forms of punishment
-D) The creation of religious courts
+**18.** The Crusades (1096-1291) were primarily:
 
-**19.** The spread of Christianity in the Roman Empire was facilitated by:
+A) Trade expeditions to Asia
+B) Military campaigns to recapture the Holy Land from Muslim control
+C) Diplomatic missions
+D) Exploration voyages
 
-A) Immediate acceptance by Roman emperors
-B) Roman roads, a common language, and the appeal of its message to the poor and marginalized
-C) A military conquest by Christian armies
-D) The destruction of all pagan temples
+**19.** The Black Death (1347-1351) caused:
 
-**20.** The Edict of Milan (313 CE) issued by Constantine:
+A) Minimal impact on Europe
+B) The death of roughly one-third of Europe's population and major upheaval
+C) The end of the Roman Empire
+D) The beginning of the Renaissance
 
-A) Banned Christianity throughout the empire
-B) Granted religious tolerance and ended the persecution of Christians
-C) Declared Christianity the only legal religion
-D) Established the pope as head of the Roman state
+**20.** The Renaissance began in:
 
-**21.** The fall of the Western Roman Empire in 476 CE is attributed to:
+A) France
+B) England
+C) Italy
+D) Germany
 
-A) A single decisive battle
-B) A combination of factors including barbarian invasions, economic decline, and military overextension
-C) A volcanic eruption that destroyed Rome
-D) A peaceful transition to democratic government
+**21.** Which Renaissance artist painted the Sistine Chapel ceiling?
 
-**22.** The Byzantine Empire preserved and transmitted:
+A) Leonardo da Vinci
+B) Michelangelo
+C) Raphael
+D) Donatello
 
-A) Only Roman military traditions
-B) Greek and Roman knowledge, culture, and law to later civilizations
-C) Exclusively religious texts
-D) Egyptian mathematical systems
+**22.** Machiavelli's "The Prince" argued that:
 
-**23.** Justinian's Code was significant because it:
+A) Rulers should always be moral
+B) Effective rulers may need cunning and force to maintain power
+C) Democracy is best
+D) The Church should control the state
 
-A) Established the feudal system
-B) Systematized and preserved Roman law, influencing European legal traditions for centuries
-C) Created the first parliament
-D) Abolished slavery in the Byzantine Empire
+**23.** Martin Luther's 95 Theses (1517) primarily criticized:
 
-**24.** The rise of Islam in the 7th century CE was significant for Western civilization because:
+A) The scientific method
+B) The sale of indulgences by the Catholic Church
+C) The feudal system
+D) The Renaissance
 
-A) It had no interaction with European cultures
-B) Islamic scholars preserved and transmitted Greek and Roman knowledge and made advances in science and mathematics
-C) It immediately conquered all of Europe
-D) It was confined to the Arabian Peninsula
+**24.** The Protestant Reformation led to:
 
-**25.** The feudal system in medieval Europe was primarily based on:
+A) Christian unity
+B) New Christian denominations and religious wars
+C) The end of Christianity in Europe
+D) Strengthened papal authority
 
-A) Democratic elections
-B) The exchange of land for military service and loyalty
-C) Free market capitalism
-D) Religious authority alone
+**25.** John Calvin's theology included:
 
-**26.** Charlemagne is significant in Western history because he:
+A) Belief in free will above all
+B) The doctrine of predestination
+C) Rejection of all Scripture
+D) Polytheism
 
-A) Discovered the Americas
-B) United much of Western Europe under a single rule and promoted learning and Christianity
-C) Invented the printing press
-D) Led the First Crusade
+**26.** Henry VIII broke with Rome primarily because:
 
-**27.** The investiture controversy between the papacy and the Holy Roman Empire was fundamentally a dispute over:
+A) Of theological disagreements
+B) He wanted an annulment from Catherine of Aragon
+C) He wanted to join the Protestant movement
+D) Of economic concerns
 
-A) The boundaries of the empire
-B) The power to appoint church officials
-C) The taxation of peasants
-D) The right to wage war
+**27.** The Council of Trent (1545-1563) was:
 
-**28.** The Crusades (1095-1291) had which of the following effects on Europe?
+A) A response to the Crusades
+B) The Catholic Counter-Reformation response to Protestantism
+C) A Renaissance council
+D) A response to the fall of Constantinople
 
-A) They had no lasting impact
-B) They increased trade and cultural exchange between Europe and the Middle East
-C) They permanently conquered the Holy Land for Christianity
-D) They ended all conflict between Christians and Muslims
+**28.** The Spanish Inquisition was established to:
 
-**29.** The Magna Carta of 1215 is significant because it:
+A) Promote religious tolerance
+B) Enforce Catholic orthodoxy and root out heresy
+C) Encourage science
+D) Reform the Church
 
-A) Established a republic in England
-B) Limited the power of the English king and established the principle that rulers were subject to law
-C) Granted independence to Scotland
-D) Created the English Parliament
+**29.** The Thirty Years' War (1618-1648) involved:
 
-**30.** Medieval universities, such as those in Paris and Bologna, were important because they:
+A) Trade disputes only
+B) Religious, political, and territorial conflicts in central Europe
+C) Colonial warfare only
+D) A French civil war
 
-A) Were open to all regardless of social class
-B) Became centers of learning that preserved and advanced knowledge in theology, law, and the liberal arts
-C) Focused exclusively on military training
-D) Were controlled entirely by monarchs
+**30.** The Peace of Westphalia (1648):
 
-**31.** Thomas Aquinas is best known for:
+A) Ended the Crusades
+B) Established modern state sovereignty and ended the Thirty Years' War
+C) Created the Holy Roman Empire
+D) Began the Renaissance
 
-A) Leading a religious crusade
+**31.** The Code of Justinian was:
+
+A) A military strategy
+B) A comprehensive compilation of Roman law
+C) A religious text
+D) An architectural plan
+
+**32.** The Vikings were known for:
+
+A) Building pyramids
+B) Seafaring, raiding, trading, and exploration across Europe
+C) Inventing democracy
+D) Establishing the Roman Empire
+
+**33.** Charlemagne's significance includes:
+
+A) Discovering America
+B) Unifying much of Western Europe and promoting education
+C) Founding the Byzantine Empire
+D) Starting the Crusades
+
+**34.** The Byzantine Empire preserved:
+
+A) Only military traditions
+B) Greek and Roman knowledge, culture, and Christianity
+C) Only religious texts
+D) Egyptian culture
+
+**35.** The Great Schism of 1054 divided Christianity into:
+
+A) Sunni and Shia Islam
+B) Roman Catholic and Eastern Orthodox churches
+C) Reform and Orthodox Judaism
+D) The Roman Empire
+
+**36.** Thomas Aquinas is known for:
+
+A) Painting the Sistine Chapel
 B) Synthesizing Aristotelian philosophy with Christian theology
-C) Painting the ceiling of the Sistine Chapel
-D) Writing the first European novel
+C) Leading the Crusades
+D) Writing the Magna Carta
 
-**32.** The Black Death (1347-1351) had which significant impact on European society?
+**37.** The Hundred Years' War (1337-1453) was between:
 
-A) It strengthened the feudal system
-B) It killed roughly one-third of Europe's population, leading to labor shortages and social upheaval
-C) It affected only the wealthy classes
-D) It was limited to Italy
+A) England and Spain
+B) England and France
+C) France and Germany
+D) England and Scotland
 
-**33.** The Hundred Years' War (1337-1453) between England and France contributed to:
+**38.** Joan of Arc helped:
 
-A) The unification of England and France
-B) The rise of national identity and the decline of feudalism
-C) The permanent English conquest of France
-D) The spread of the Black Death
+A) Negotiate a peace treaty
+B) Inspire French forces and turn the tide of the war
+C) Lead English forces
+D) Serve as a diplomat
 
-**34.** Joan of Arc's significance lies in her:
+**39.** Gutenberg's printing press (c. 1440) was revolutionary because it:
 
-A) Founding of a new religious order
-B) Leadership that helped turn the tide of the Hundred Years' War in France's favor
-C) Writing of influential philosophical works
-D) Discovery of a new sea route to Asia
+A) Replaced handwriting entirely
+B) Enabled mass production of books, spreading knowledge and literacy
+C) Was used only for religious texts
+D) Was immediately adopted worldwide
 
-**35.** The Italian Renaissance began in:
+**40.** The fall of Constantinople in 1453 marked:
 
-A) Rome in the 12th century
-B) Florence in the 14th century
-C) Venice in the 16th century
-D) Naples in the 11th century
+A) The end of the Western Roman Empire
+B) The end of the Byzantine Empire and rise of the Ottoman Empire
+C) The beginning of the Crusades
+D) The start of the Renaissance
 
-**36.** Renaissance humanism emphasized:
+**41.** The Hanseatic League was:
 
-A) The rejection of all classical learning
-B) The study of classical texts and the potential of human achievement
-C) Strict religious conformity
-D) The superiority of medieval scholasticism
+A) A military alliance
+B) A commercial confederation of merchant guilds and towns
+C) A religious order
+D) A university system
 
-**37.** Niccolò Machiavelli's *The Prince* is notable for:
+**42.** Renaissance humanism emphasized:
 
-A) Its defense of democratic government
-B) Its pragmatic and often ruthless advice on political power
-C) Its promotion of religious authority in government
-D) Its detailed history of the Roman Empire
+A) Religious devotion above all
+B) Study of classical texts and human potential
+C) Military conquest
+D) Rejection of ancient learning
 
-**38.** Leonardo da Vinci exemplified the Renaissance ideal because he:
+**43.** Leonardo da Vinci is a "Renaissance man" because:
 
-A) Focused exclusively on religious painting
-B) Was a polymath whose talents spanned art, science, engineering, and anatomy
-C) Was primarily a military leader
-D) Rejected classical influences in his work
+A) He lived during the Renaissance
+B) He excelled in art, science, engineering, and anatomy
+C) He was a political leader
+D) He founded a university
 
-**39.** The invention of the printing press by Johannes Gutenberg around 1440 was revolutionary because it:
-
-A) Was used only for printing Bibles
-B) Made books widely available, accelerating the spread of knowledge and ideas
-C) Replaced all handwritten manuscripts immediately
-D) Was immediately adopted throughout the world
-
-**40.** The Protestant Reformation was initiated by Martin Luther in 1517 when he:
-
-A) Translated the Bible into German
-B) Posted his Ninety-Five Theses criticizing the sale of indulgences
-C) Was excommunicated by the Pope
-D) Led an army against the Catholic Church
-
-**41.** John Calvin's theology emphasized:
-
-A) The authority of the Pope
-B) Predestination and the idea that God had already chosen those who would be saved
-C) Free will and human merit
-D) The rejection of all religious authority
-
-**42.** The English Reformation under Henry VIII was primarily motivated by:
-
-A) Deep theological disagreements with Catholic doctrine
-B) Henry's desire for an annulment of his marriage, which the Pope refused to grant
-C) Popular demand for religious reform
-D) A military alliance with Lutheran princes
-
-**43.** The Council of Trent (1545-1563) was the Catholic Church's response to the Reformation and resulted in:
-
-A) The acceptance of Protestant doctrines
-B) Reforms within the Catholic Church including clarification of doctrine and elimination of some abuses
-C) The dissolution of the papacy
-D) A permanent alliance with Protestant churches
-
-**44.** The Spanish Inquisition was primarily directed against:
-
-A) Protestants in Northern Europe
-B) Suspected heretics, conversos, and moriscos in Spain
-C) Scientists and philosophers
-D) The Ottoman Empire
-
-**45.** The voyages of Christopher Columbus in 1492 were funded by:
-
-A) The Portuguese crown
-B) Ferdinand and Isabella of Spain
-C) The Republic of Venice
-D) The Pope
-
-**46.** The Columbian Exchange refers to:
-
-A) A diplomatic agreement between Spain and Portugal
-B) The widespread transfer of plants, animals, diseases, and ideas between the Americas and the Old World
-C) A system of currency used in colonial trade
-D) The exchange of prisoners between European powers
-
-**47.** The Treaty of Tordesillas (1494) divided the newly discovered lands between:
-
-A) England and France
-B) Spain and Portugal
-C) The Ottoman Empire and Venice
-D) The Pope and the Holy Roman Emperor
-
-**48.** The encomienda system in Spanish America was:
-
-A) A form of representative government
-B) A system granting Spanish settlers the right to demand labor from indigenous peoples
-C) A trade agreement with indigenous nations
-D) A missionary organization
-
-**49.** The Scientific Revolution challenged existing knowledge by emphasizing:
-
-A) Religious authority over empirical evidence
-B) Observation, experimentation, and the use of reason to understand the natural world
-C) A return to ancient superstitions
-D) The infallibility of Aristotle's teachings
-
-**50.** Nicolaus Copernicus challenged the prevailing worldview by proposing:
-
-A) That the Earth was flat
-B) A heliocentric model in which the Earth and planets revolved around the Sun
-C) That the Moon was the center of the universe
-D) That the stars were fixed and unchanging
-
-**51.** Galileo Galilei's conflict with the Catholic Church arose primarily from:
-
-A) His invention of the telescope
-B) His support for Copernican heliocentrism, which contradicted Church teachings
-C) His rejection of mathematics
-D) His political opposition to the Pope
-
-**52.** The Thirty Years' War (1618-1648) began primarily as:
-
-A) A conflict between England and Spain
-B) A religious conflict between Catholics and Protestants in the Holy Roman Empire
-C) An economic trade war
-D) A colonial dispute in the Americas
-
-**53.** The Peace of Westphalia (1648) is significant because it:
-
-A) Unified Germany under one ruler
-B) Established the principle of state sovereignty and ended the Thirty Years' War
-C) Created the first European parliament
-D) Permanently ended religious conflict in Europe
-
-**54.** The development of perspective in Renaissance art was pioneered by:
-
-A) Michelangelo
-B) Brunelleschi and later refined by artists like Masaccio
-C) Leonardo da Vinci alone
-D) Medieval icon painters
-
-**55.** The Edict of Nantes (1598) issued by Henry IV of France:
+**44.** The Edict of Nantes (1598):
 
 A) Banned Protestantism in France
-B) Granted religious toleration to French Huguenots
-C) Declared France a Protestant nation
-D) Established the French Inquisition
+B) Granted religious tolerance to French Huguenots
+C) Established the French monarchy
+D) Ended the Hundred Years' War
 
-**56.** The Dutch Republic in the 17th century was notable for its:
+**45.** The Reconquista was:
 
-A) Absolute monarchy
-B) Religious tolerance, commercial prosperity, and cultural achievements
-C) Military aggression against all neighbors
-D) Rejection of international trade
+A) An art movement
+B) The campaign to recapture Iberia from Muslim rule
+C) A trade route
+D) A scientific revolution
 
-**57.** Sir Isaac Newton's *Principia Mathematica* (1687) is significant for:
+**46.** The rise of nation-states in late medieval Europe featured:
 
-A) Proving that the Sun revolves around the Earth
-B) Formulating the laws of motion and universal gravitation
-C) Disproving Copernican theory
-D) Establishing the theory of evolution
+A) Weakening central authority
+B) Consolidation of power under monarchs
+C) Rising Church political power
+D) The end of warfare
 
-**58.** The concept of "divine right of kings" asserted that:
+**47.** The Scientific Revolution was influenced by:
 
-A) Kings were elected by the people
-B) A monarch's authority came directly from God and could not be questioned
-C) Religious leaders were superior to kings
-D) All monarchs must be members of the clergy
+A) Rejection of all knowledge
+B) Renaissance emphasis on observation and experimentation
+C) Church encouragement of new ideas
+D) The feudal system
 
-**59.** The Ottoman capture of Constantinople in 1453 was significant because:
+**48.** Copernicus proposed:
 
-A) It strengthened the Byzantine Empire
-B) It marked the end of the Byzantine Empire and shifted trade routes, indirectly encouraging European exploration
-C) It had no effect on European history
-D) It led to the immediate collapse of the Ottoman Empire
+A) The earth was flat
+B) A heliocentric model of the solar system
+C) Geocentrism
+D) Multiple universes
 
-**60.** The Renaissance concept of the "universal man" (l'uomo universale) referred to:
+**49.** The Medici family was influential in:
 
-A) A religious leader who served all people
-B) An individual who excelled in multiple fields of knowledge and accomplishment
-C) A merchant who traded with all nations
-D) A soldier who fought in every European war
+A) Military conquest
+B) Patronizing arts and banking in Renaissance Florence
+C) The Protestant Reformation
+D) Founding the Ottoman Empire
+
+**50.** The English Civil War (1642-1651) was between:
+
+A) England and France
+B) Royalists and Parliamentarians
+C) Catholics and Protestants only
+D) England and Scotland
+
+**51.** The Persian Empire under Cyrus the Great was notable for:
+
+A) Brutality toward conquered peoples
+B) Relative tolerance of diverse cultures and religions
+C) Democratic government
+D) Maritime empire
+
+**52.** The Roman Republic's government included:
+
+A) Only a king
+B) Consuls, a senate, and popular assemblies
+C) Only an emperor
+D) Direct democracy for all
+
+**53.** The Phoenicians are best known for:
+
+A) Building pyramids
+B) Developing alphabetic writing and maritime trade
+C) Conquering Rome
+D) Inventing gunpowder
+
+**54.** Medieval monasticism served to:
+
+A) Undermine the Church
+B) Preserve learning, provide social services, and spread Christianity
+C) Promote warfare
+D) Establish trade routes
+
+**55.** The manorial system was:
+
+A) A form of government
+B) The economic system of medieval rural life centered on the lord's estate
+C) A military organization
+D) A religious practice
+
+**56.** The Investiture Controversy was between:
+
+A) Kings and subjects
+B) The papacy and secular rulers over Church appointments
+C) Christian sects
+D) Scholars and the Church
+
+**57.** The Fourth Crusade (1204) was notable for:
+
+A) Recapturing Jerusalem
+B) Crusaders sacking Constantinople instead of attacking Muslims
+C) Establishing peace
+D) Discovering trade routes
+
+**58.** The Avignon Papacy (1309-1377) was:
+
+A) A golden age
+B) When popes resided in Avignon, France, under French influence
+C) A military campaign
+D) A church council
+
+**59.** The Ottoman Empire was significant because it:
+
+A) Had no impact on Europe
+B) Conquered Constantinople and controlled key trade routes
+C) Promoted only peaceful trade
+D) Allied with all European nations
+
+**60.** The Treaty of Tordesillas (1494) divided:
+
+A) Europe between Catholics and Protestants
+B) Newly discovered lands between Spain and Portugal
+C) The Roman Empire
+D) France and England
 
 ---
 
 ## Answer Key
 
-1. B
+1. C
 2. B
 3. B
 4. B
@@ -440,18 +442,18 @@ D) A soldier who fought in every European war
 6. B
 7. B
 8. B
-9. B
+9. C
 10. B
 11. B
 12. B
-13. B
+13. D
 14. B
 15. B
 16. B
 17. B
 18. B
 19. B
-20. B
+20. C
 21. B
 22. B
 23. B
