@@ -1303,8 +1303,7 @@
             <label class="lang-check"><input type="checkbox" id="check-clep" onchange="updateClep()"> Show CLEP Prep</label>
           </div>
         </div>
-        <button class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark">&#9681;</button>
-        <button class="back-btn" onclick="window.print()" title="Print">&#128424;</button>
+        <button class="back-btn" onclick="showSettings()" title="Settings">&#9881;</button>
         <button class="back-btn" onclick="signOut()">Sign Out</button>
       </div>
     </div>
@@ -2365,6 +2364,109 @@
     }
 
     // ── THEME TOGGLE ──
+    // ── SETTINGS PAGE ──
+    function showSettings() {
+      const content = document.getElementById('content');
+      const theme = localStorage.getItem('theme') || 'dark';
+      const history = JSON.parse(localStorage.getItem('test-history') || '[]');
+      const progress = JSON.parse(localStorage.getItem('progress') || '{}');
+      const achievements = JSON.parse(localStorage.getItem('achievements') || '[]');
+      const gpa = JSON.parse(localStorage.getItem('gpa-grades') || '{}');
+      const weeksComplete = Object.values(progress).filter(v => v).length;
+      const loginCount = localStorage.getItem('login-count') || '0';
+      const challengeWinsCount = localStorage.getItem('challenge-wins') || '0';
+      const totalStorageKeys = Object.keys(localStorage).length;
+
+      content.innerHTML = `
+        <h1>Settings</h1>
+
+        <h2>Appearance</h2>
+        <div style="display:flex;gap:12px;margin-bottom:20px;">
+          <button class="test-next-btn" style="font-size:0.9rem;padding:8px 20px;${theme==='dark'?'opacity:0.5':''}" onclick="setTheme('light')">&#9728; Light Mode</button>
+          <button class="test-next-btn" style="font-size:0.9rem;padding:8px 20px;${theme==='light'?'opacity:0.5':''}" onclick="setTheme('dark')">&#127763; Dark Mode</button>
+        </div>
+
+        <h2>Account</h2>
+        <table style="max-width:400px;">
+          <tr><td style="color:#94a3b8;">Name</td><td><strong>${userName || 'Not set'}</strong></td></tr>
+          <tr><td style="color:#94a3b8;">Logins</td><td>${loginCount}</td></tr>
+          <tr><td style="color:#94a3b8;">Tests Taken</td><td>${history.length}</td></tr>
+          <tr><td style="color:#94a3b8;">Achievements</td><td>${achievements.length} / ${ACHIEVEMENTS.length}</td></tr>
+          <tr><td style="color:#94a3b8;">Weeks Completed</td><td>${weeksComplete} / 36</td></tr>
+          <tr><td style="color:#94a3b8;">Challenge Wins</td><td>${challengeWinsCount}</td></tr>
+          <tr><td style="color:#94a3b8;">GPA Subjects</td><td>${Object.keys(gpa).filter(k => !k.startsWith('c_') && gpa[k]).length}</td></tr>
+          <tr><td style="color:#94a3b8;">Storage Keys</td><td>${totalStorageKeys}</td></tr>
+        </table>
+
+        <h2>Print</h2>
+        <p>Print the current page (hides navigation and sidebar).</p>
+        <button class="test-next-btn" style="font-size:0.9rem;padding:8px 20px;" onclick="window.print()">&#128424; Print Page</button>
+
+        <h2>Export Data</h2>
+        <p>Download all your saved data (test scores, achievements, progress, GPA).</p>
+        <button class="test-next-btn" style="font-size:0.9rem;padding:8px 20px;" onclick="exportData()">&#128190; Export to JSON</button>
+
+        <h2>Import Data</h2>
+        <p>Restore from a previously exported file.</p>
+        <input type="file" id="import-file" accept=".json" style="margin-bottom:8px;color:#94a3b8;" onchange="importData(event)">
+
+        <h2 style="color:#ef4444;">Danger Zone</h2>
+        <p>Clear all saved data (test scores, achievements, progress, planner, GPA). This cannot be undone.</p>
+        <button class="test-next-btn" style="font-size:0.9rem;padding:8px 20px;background:#ef4444;" onclick="confirmResetData()">&#128465; Reset All Data</button>
+      `;
+    }
+
+    function setTheme(t) {
+      if (t === 'light') document.body.classList.add('light-theme');
+      else document.body.classList.remove('light-theme');
+      localStorage.setItem('theme', t);
+      earnAchievement('theme-switch');
+      showSettings();
+    }
+
+    function exportData() {
+      const data = {};
+      for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        data[key] = localStorage.getItem(key);
+      }
+      const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'homeschool-data-' + new Date().toISOString().slice(0, 10) + '.json';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+
+    function importData(event) {
+      const file = event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        try {
+          const data = JSON.parse(e.target.result);
+          Object.entries(data).forEach(([key, val]) => localStorage.setItem(key, val));
+          showSettings();
+          alert('Data imported successfully!');
+        } catch (err) {
+          alert('Invalid file format.');
+        }
+      };
+      reader.readAsText(file);
+    }
+
+    function confirmResetData() {
+      if (confirm('Are you sure? This will delete ALL your test scores, achievements, progress, and GPA data. This cannot be undone.')) {
+        const theme = localStorage.getItem('theme');
+        const loginCount = localStorage.getItem('login-count');
+        localStorage.clear();
+        if (theme) localStorage.setItem('theme', theme);
+        if (loginCount) localStorage.setItem('login-count', loginCount);
+        showSettings();
+      }
+    }
+
     function toggleTheme() {
       document.body.classList.toggle('light-theme');
       localStorage.setItem('theme', document.body.classList.contains('light-theme') ? 'light' : 'dark');
