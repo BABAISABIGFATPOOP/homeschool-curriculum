@@ -333,3 +333,115 @@
 | 34 | Chinese Culture | Chinese zodiac animals, chopstick practice, cultural fun |
 | 35 | Review | Full year review: all vocabulary, characters (~100), sentences |
 | 36 | Final Assessment | End-of-year test: listening, speaking, reading, writing |
+
+---
+
+## History
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Age of Exploration: Motives | Why Europeans explored: trade, wealth, religion, fame |
+| 2 | Age of Exploration: Key Explorers | Columbus, Magellan, da Gama, Drake; routes & discoveries |
+| 3 | Columbian Exchange | Plants, animals, diseases, ideas between Old & New Worlds |
+| 4 | Spanish Colonies in the Americas | Conquistadors, encomienda system, missions |
+| 5 | French & English Colonies | New France, Jamestown, Plymouth; comparing colonies |
+| 6 | 13 Colonies: New England | Economy, religion, education, daily life |
+| 7 | 13 Colonies: Middle | Diversity, trade, farming, Philadelphia |
+| 8 | 13 Colonies: Southern | Plantations, slavery, cash crops, Williamsburg |
+| 9 | Review & Assessment | Quarter 1 test, colony comparison chart |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Road to Revolution: Taxes & Acts | Stamp Act, Townshend Acts, Tea Act; taxation without representation |
+| 11 | Road to Revolution: Growing Tensions | Boston Massacre, Boston Tea Party, Intolerable Acts |
+| 12 | Declaration of Independence | Thomas Jefferson, key ideas, July 4, 1776 |
+| 13 | American Revolution: Key Battles | Lexington & Concord, Bunker Hill, Saratoga, Yorktown |
+| 14 | American Revolution: Key People | Washington, Franklin, Adams, Lafayette, Paul Revere |
+| 15 | American Revolution: Life During War | Soldiers, women, African Americans, loyalists vs. patriots |
+| 16 | Victory & Independence | Treaty of Paris 1783, challenges of a new nation |
+| 17 | Articles of Confederation | First government, weaknesses, Shays' Rebellion |
+| 18 | Review & Assessment | Quarter 2 test, Revolution timeline project |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Constitutional Convention | Philadelphia 1787, key delegates, Great Compromise |
+| 20 | The Constitution | Structure (3 branches), checks & balances, separation of powers |
+| 21 | Bill of Rights | First 10 amendments, why they matter, key freedoms |
+| 22 | Early Republic | Washington as president, Adams, political parties begin |
+| 23 | Westward Expansion: Louisiana Purchase | Jefferson, Lewis & Clark expedition, Sacagawea |
+| 24 | Westward Expansion: Manifest Destiny | Trails West, Oregon Trail, gold rush, pioneer life |
+| 25 | Westward Expansion: Impact | Native American removal, Trail of Tears, Indian Removal Act |
+| 26 | Texas & Mexican-American War | Alamo, annexation of Texas, Treaty of Guadalupe Hidalgo |
+| 27 | Review & Assessment | Quarter 3 test, westward expansion map project |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Causes of the Civil War | Slavery, states' rights, Missouri Compromise, abolitionism |
+| 29 | Key People of the Civil War Era | Lincoln, Douglass, Tubman, Lee, Grant |
+| 30 | Civil War: Major Battles | Fort Sumter, Gettysburg, Antietam, Sherman's March |
+| 31 | Emancipation Proclamation | What it said, its impact, steps toward ending slavery |
+| 32 | Civil War: Life During the War | Soldiers, home front, women's roles, African American soldiers |
+| 33 | End of the Civil War & Reconstruction | Surrender at Appomattox, 13th/14th/15th Amendments |
+| 34 | Reconstruction Challenges | Rebuilding the South, freedmen's experiences, Jim Crow begins |
+| 35 | Review | Full year review |
+| 36 | Final Assessment | End-of-year test, Civil War journal project |
+
+---
+
+## Geography
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Review: Maps & Globes | Map skills refresher, types of maps (physical, political, thematic) |
+| 2 | Latitude & Longitude | Grid system, equator, prime meridian, reading coordinates |
+| 3 | Latitude & Longitude Practice | Plotting and finding locations using coordinates |
+| 4 | US Regions: Northeast & Southeast | States, capitals, physical features, economy |
+| 5 | US Regions: Midwest | States, capitals, Great Plains, Great Lakes, agriculture |
+| 6 | US Regions: Southwest & West | States, capitals, deserts, mountains, coastline |
+| 7 | State Capitals Study | Memorizing all 50 state capitals, map practice |
+| 8 | State Capitals Study | Continued practice, games, quizzes |
+| 9 | Review & Assessment | Quarter 1 test, states & capitals quiz |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Physical Features of the US | Major mountains, rivers, lakes, plains, deserts |
+| 11 | US Waterways | Mississippi, Colorado, Columbia, Great Lakes — importance to communities |
+| 12 | Climate Zones: Tropical & Dry | Characteristics, where they're found, life in these zones |
+| 13 | Climate Zones: Temperate & Continental | Characteristics, seasons, where they're found |
+| 14 | Climate Zones: Polar & Highland | Characteristics, extreme conditions, adaptations |
+| 15 | Climate Zones of the US | How climate varies across US regions, why |
+| 16 | Natural Resources of the US | Minerals, oil, timber, water, farmland — where and why |
+| 17 | Natural Resources & the Economy | How resources shape jobs, trade, and communities |
+| 18 | Review & Assessment | Quarter 2 test, climate zones map |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | How Geography Shapes Communities | Why cities grow where they do — rivers, harbors, crossroads |
+| 20 | Geography & Transportation | Highways, railroads, waterways, airports — connecting places |
+| 21 | Geography & Agriculture | Farming regions, soil, climate, and what grows where |
+| 22 | Geography & Industry | How resources and location affect industry and jobs |
+| 23 | US Territories & Neighbors | Puerto Rico, Guam, US Virgin Islands; Canada & Mexico overview |
+| 24 | Indigenous Peoples & Geography | How Native American communities were shaped by geography |
+| 25 | Westward Expansion & Geography | How rivers, mountains, and plains influenced migration |
+| 26 | Geography in Daily Life | Weather, food, travel — how geography affects you every day |
+| 27 | Review & Assessment | Quarter 3 test |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Map Types Deep Dive | Road maps, topographic maps, climate maps, population maps |
+| 29 | Reading Thematic Maps | Interpreting data shown on maps, drawing conclusions |
+| 30 | Current Events & Geography | How geography relates to current events, natural disasters |
+| 31 | Environmental Issues | Pollution, deforestation, water shortages — geography connection |
+| 32 | Conservation & Stewardship | National parks, protecting resources, sustainability basics |
+| 33 | State Geography Project | Research your own state — landforms, climate, resources, cities |
+| 34 | State Geography Project | Create a poster or report, present findings |
+| 35 | Review | Full year review |
+| 36 | Final Assessment | End-of-year test, project presentations |

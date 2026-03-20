@@ -52,3 +52,15 @@
 - Advanced grammar patterns: 越来越, 一边...一边..., 除了...以外, 连...都/也
 - Cultural studies: festivals, history, philosophy, arts
 - ~1000 characters by end of year
+
+## Geography
+- AP-level topics (geopolitics, development & inequality, agriculture & food systems, industrialization, environmental sustainability, GIS & spatial analysis)
+
+## History
+- AP-level topics: political revolutions, nationalism & imperialism
+- Global conflicts
+- Post-WWII world order
+- Globalization
+- Human rights
+- Contemporary issues
+- Historiography

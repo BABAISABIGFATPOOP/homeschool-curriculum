@@ -333,3 +333,115 @@
 | 34 | Presentation: Cultural Topic | 5-minute presentation on a Chinese cultural topic |
 | 35 | Review | Full year review: grammar, ~1000 characters, all skills |
 | 36 | Final Assessment | End-of-year test: listening, speaking, reading, writing |
+
+---
+
+## History
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Historiography | What is historiography, primary vs. secondary sources, bias, perspective |
+| 2 | Enlightenment & Political Philosophy | Locke, Rousseau, Montesquieu; social contract, natural rights |
+| 3 | American Revolution (AP Depth) | Ideological foundations, Declaration, constitutional debates |
+| 4 | French Revolution | Causes, Estates-General, Reign of Terror, Napoleon |
+| 5 | Haitian & Latin American Revolutions | Toussaint L'Ouverture, Bolívar, San Martín; independence movements |
+| 6 | Nationalism in Europe | Unification of Italy & Germany, Bismarck, Garibaldi |
+| 7 | Imperialism: Motives & Methods | Economic, political, cultural justifications; Social Darwinism |
+| 8 | Imperialism: Africa & Asia | Scramble for Africa, British India, Opium Wars, Meiji Japan |
+| 9 | Review & Assessment | Quarter 1 test, document-based question (DBQ) practice |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | World War I: Causes (AP Depth) | MAIN causes, alliance entanglements, Balkan powder keg |
+| 11 | World War I: Total War | Industrialized warfare, propaganda, home front, global scope |
+| 12 | WWI: Aftermath & Treaty of Versailles | Mandate system, League of Nations, seeds of future conflict |
+| 13 | Interwar Period | Rise of fascism, Weimar Republic, Great Depression globally |
+| 14 | World War II: Global Conflict | European & Pacific theaters, turning points, total war |
+| 15 | The Holocaust (AP Depth) | Stages of persecution, resistance, liberation, legacy |
+| 16 | WWII: Aftermath & New World Order | Nuremberg, United Nations, Bretton Woods, Marshall Plan |
+| 17 | Cold War: Ideological Struggle | Capitalism vs. communism, containment, deterrence, NATO vs. Warsaw Pact |
+| 18 | Review & Assessment | Quarter 2 test, WWII analytical essay |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Cold War: Proxy Wars & Crises | Korea, Vietnam, Cuban Missile Crisis, Afghanistan |
+| 20 | Decolonization & Postcolonial Challenges | Nation-building, neocolonialism, Cold War interference |
+| 21 | Civil Rights & Liberation Movements | US civil rights, anti-apartheid, feminist movements, LGBTQ+ rights |
+| 22 | Post-WWII World Order | Superpowers, UN, international law, Bretton Woods institutions |
+| 23 | End of the Cold War | Arms control, Solidarity, Tiananmen, fall of Berlin Wall, USSR collapse |
+| 24 | Globalization: Economic | Free trade, WTO, outsourcing, economic inequality |
+| 25 | Globalization: Cultural & Technological | Internet, media, cultural homogenization vs. diversity |
+| 26 | Human Rights in the Modern Era | Genocide prevention, ICC, refugee crises, NGOs |
+| 27 | Review & Assessment | Quarter 3 test, globalization debate |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Contemporary Issues: Terrorism & Security | 9/11, global terrorism, balancing security & liberty |
+| 29 | Contemporary Issues: Environment | Climate agreements (Kyoto, Paris), sustainability, activism |
+| 30 | Contemporary Issues: Migration & Identity | Refugee crises, immigration debates, nationalism vs. globalism |
+| 31 | Contemporary Issues: Technology & Power | Cyber warfare, surveillance, AI, information warfare |
+| 32 | Regional Focus: Middle East | Arab-Israeli conflict, Arab Spring, ISIS, Iran |
+| 33 | Regional Focus: East Asia & the Pacific | Rise of China, North Korea, ASEAN, Pacific alliances |
+| 34 | AP Exam Prep: DBQ & Essay Writing | Document analysis, thesis construction, timed writing practice |
+| 35 | Review | Full year review, AP-style practice exam |
+| 36 | Final Assessment | End-of-year comprehensive exam, historiography reflection essay |
+
+---
+
+## Geography
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Intro to AP-Level Geography | Course themes, geographic thinking, spatial analysis overview |
+| 2 | Geopolitics: Power & Territory | Heartland theory, rimland theory, modern geopolitical frameworks |
+| 3 | Geopolitics: Superpowers & Alliances | US, China, Russia, EU; NATO, BRICS, geopolitical competition |
+| 4 | Geopolitics: Conflict & Cooperation | Territorial disputes, proxy wars, diplomacy, peacekeeping |
+| 5 | Development: Measuring Inequality | GDP, GNI, HDI, Gini coefficient, limitations of each |
+| 6 | Development: Theories | Modernization theory, dependency theory, world-systems theory |
+| 7 | Development: Case Studies | Comparing developed, emerging, and least-developed countries |
+| 8 | Development: Gender & Inequality | Gender Development Index, women's empowerment, spatial disparities |
+| 9 | Review & Assessment | Quarter 1 test, geopolitics analysis essay |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Agriculture: Origins & Diffusion | Neolithic Revolution, hearths of agriculture, crop diffusion |
+| 11 | Agriculture: Systems | Subsistence vs. commercial, intensive vs. extensive, plantation |
+| 12 | Agriculture: The Green Revolution | High-yield varieties, irrigation, fertilizers, impacts |
+| 13 | Food Systems: Production & Distribution | Global food supply chains, food deserts, food sovereignty |
+| 14 | Food Systems: Challenges | Hunger, obesity, GMO debate, sustainable agriculture |
+| 15 | Industrialization: History & Patterns | Industrial Revolution, diffusion of industry, Weber's model |
+| 16 | Industrialization: Global Shifts | Deindustrialization, outsourcing, new industrial countries |
+| 17 | Service Economies & the Digital Age | Tertiary/quaternary/quinary sectors, tech hubs, gig economy |
+| 18 | Review & Assessment | Quarter 2 test, food systems case study |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Environmental Sustainability: Frameworks | Sustainable development goals (SDGs), ecological footprint |
+| 20 | Climate Change: Geographic Impacts | Sea level rise, shifting biomes, climate refugees, vulnerable regions |
+| 21 | Energy Geography | Fossil fuels, renewables, energy poverty, geopolitics of energy |
+| 22 | Water Geography | Freshwater scarcity, transboundary water disputes, dam politics |
+| 23 | Deforestation & Land Degradation | Causes, consequences, reforestation, conservation strategies |
+| 24 | Biodiversity & Conservation | Hotspots, protected areas, species loss, ecosystem services |
+| 25 | GIS & Spatial Analysis: Introduction | What GIS is, layers, data types, real-world applications |
+| 26 | GIS & Spatial Analysis: Practice | Using GIS tools to analyze geographic data, mapping exercises |
+| 27 | Review & Assessment | Quarter 3 test, sustainability analysis project |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Remote Sensing & GPS | Satellite imagery, aerial photography, GPS technology, applications |
+| 29 | Spatial Analysis: Patterns & Models | Gravity model, distance decay, spatial interaction, Tobler's law |
+| 30 | Applying GIS to Real Problems | Urban planning, disaster response, environmental monitoring |
+| 31 | Current Global Issues: Geographic Lens | Analyzing a contemporary issue using geographic tools and concepts |
+| 32 | AP Exam Preparation | Review of key concepts, practice FRQs, multiple choice strategies |
+| 33 | AP Exam Preparation | Timed practice exams, feedback, targeted review |
+| 34 | Research Project | Independent research using AP-level geographic analysis |
+| 35 | Review | Full year review, presentation of research findings |
+| 36 | Final Assessment | End-of-year comprehensive exam |

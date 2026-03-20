@@ -47,3 +47,15 @@
 - Time expressions: 今天, 昨天, 明天, 现在, 以前, 以后
 - Reading and writing short dialogues
 - ~200 characters by end of year
+
+## Geography
+- World regions overview (Africa, Asia, Europe, Americas, Oceania)
+- Physical vs political maps
+- Population & settlement patterns
+
+## History
+- Ancient civilizations (Mesopotamia, Egypt, Greece, Rome, China, India)
+- Rise of empires
+- Trade routes (Silk Road)
+- World religions origins
+- Culture & geography connection

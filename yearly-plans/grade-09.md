@@ -333,3 +333,115 @@
 | 34 | Speaking: Presentation | Give a 2-minute presentation in Chinese on a chosen topic |
 | 35 | Review | Full year review: grammar, ~700 characters, all skills |
 | 36 | Final Assessment | End-of-year test: listening, speaking, reading, writing |
+
+---
+
+## History
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Imperialism & Nationalism | European empires, scramble for Africa, nationalist movements |
+| 2 | Causes of World War I | Alliance system, militarism, nationalism, assassination of Archduke Franz Ferdinand |
+| 3 | World War I: The War | Trench warfare, new technology, major battles, home front |
+| 4 | World War I: Aftermath | Treaty of Versailles, League of Nations, redrawing borders |
+| 5 | Russian Revolution | Causes, Bolsheviks, Lenin, rise of the Soviet Union |
+| 6 | Rise of Totalitarianism | Stalin, Mussolini, Hitler; propaganda, control of society |
+| 7 | Causes of World War II | Treaty of Versailles resentment, appeasement, invasion of Poland |
+| 8 | World War II: European Theater | Blitzkrieg, Battle of Britain, Stalingrad, D-Day |
+| 9 | Review & Assessment | Quarter 1 test, WWI/WWII comparison essay |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | World War II: Pacific Theater | Pearl Harbor, island hopping, Midway, atomic bombs |
+| 11 | The Holocaust | Anti-Semitism, ghettos, concentration camps, liberation, remembrance |
+| 12 | WWII: Home Front & Aftermath | Rationing, women in workforce, Nuremberg trials, United Nations |
+| 13 | Origins of the Cold War | US vs. USSR, iron curtain, containment, Truman Doctrine |
+| 14 | Cold War: Key Events | Berlin Blockade, Korean War, arms race, space race |
+| 15 | Cold War: Crises | Cuban Missile Crisis, Vietnam War, proxy wars |
+| 16 | Cold War: Culture & Society | McCarthyism, propaganda, life behind the Iron Curtain |
+| 17 | Fall of the Soviet Union | Gorbachev, glasnost, perestroika, fall of Berlin Wall, dissolution |
+| 18 | Review & Assessment | Quarter 2 test, Cold War research project |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Decolonization: Asia | India's independence (Gandhi, Nehru), partition, Southeast Asia |
+| 20 | Decolonization: Africa | Pan-Africanism, independence movements, Mandela, challenges |
+| 21 | Decolonization: Middle East | Creation of Israel, Arab-Israeli conflict, oil & geopolitics |
+| 22 | Civil Rights Movement: United States | Brown v. Board, Montgomery Bus Boycott, MLK, March on Washington |
+| 23 | Civil Rights: Legislation & Legacy | Civil Rights Act, Voting Rights Act, Malcolm X, Black Power |
+| 24 | Civil Rights Movements Globally | Anti-apartheid (South Africa), Indigenous rights, women's movements |
+| 25 | Human Rights | Universal Declaration of Human Rights, genocide awareness, international courts |
+| 26 | Modern Conflicts: Terrorism | 9/11, War on Terror, roots of extremism, impact on civil liberties |
+| 27 | Review & Assessment | Quarter 3 test, civil rights movement essay |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Modern Conflicts: Regional | Rwandan genocide, Balkan Wars, Syrian Civil War |
+| 29 | Globalization | Economic interdependence, multinational corporations, cultural exchange |
+| 30 | Technology & Society | Digital revolution, social media, information access, privacy |
+| 31 | Environmental Challenges | Climate change, resource depletion, international agreements |
+| 32 | 21st Century World | Rise of China, EU, shifting global power, populism |
+| 33 | Current Events Analysis | Analyzing a current global issue using historical context |
+| 34 | Historiography Introduction | How history is written, bias in sources, multiple perspectives |
+| 35 | Review | Full year review |
+| 36 | Final Assessment | End-of-year test, world history portfolio |
+
+---
+
+## Geography
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Intro to Human Geography | What human geography studies, key questions, themes |
+| 2 | Population Dynamics | Birth rate, death rate, natural increase, demographic transition model |
+| 3 | Population Distribution | Where people live and why, population density, dot maps |
+| 4 | Population Pyramids | Reading and interpreting age-sex structure, predicting trends |
+| 5 | Overpopulation & Underpopulation | Carrying capacity, resource strain, aging populations |
+| 6 | Migration: Push & Pull Factors | Economic, political, environmental, social drivers |
+| 7 | Migration: Patterns & Flows | Rural-to-urban, international, refugee crises, diaspora |
+| 8 | Migration: Case Studies | Syrian refugees, US-Mexico border, European migration crisis |
+| 9 | Review & Assessment | Quarter 1 test, population analysis project |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Cultural Diffusion | How culture spreads — expansion, relocation, hierarchical, contagious |
+| 11 | Language & Geography | Language families, lingua franca, dialects, language loss |
+| 12 | Religion & Geography | Origins, diffusion, sacred spaces, religion and conflict |
+| 13 | Ethnicity & Identity | Ethnic regions, nationalism, multi-ethnic states |
+| 14 | Cultural Landscapes | How culture shapes the physical environment, built environments |
+| 15 | Urbanization Models: Concentric Zone | Burgess model, CBD, zones of transition |
+| 16 | Urbanization Models: Sector & Multiple Nuclei | Hoyt model, Harris-Ullman model, comparing models |
+| 17 | World Cities & Megacities | Primate cities, rank-size rule, global urban hierarchy |
+| 18 | Review & Assessment | Quarter 2 test, cultural diffusion case study |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Urban Challenges | Sprawl, gentrification, slums, transportation, inequality |
+| 20 | Suburbanization & Edge Cities | Growth of suburbs, edge cities, commuting patterns |
+| 21 | Sustainable Urban Planning | Smart growth, green infrastructure, transit-oriented development |
+| 22 | Political Geography: States & Nations | Difference between state, nation, nation-state, stateless nations |
+| 23 | Borders & Boundaries | Natural vs. artificial boundaries, border disputes, demarcation |
+| 24 | Sovereignty & Self-Determination | What sovereignty means, separatist movements, devolution |
+| 25 | International Organizations | UN, NATO, EU, AU — roles in political geography |
+| 26 | Geopolitical Conflict | Territorial disputes, resource conflicts, case studies |
+| 27 | Review & Assessment | Quarter 3 test, political geography map analysis |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Electoral Geography | Voting patterns, gerrymandering, redistricting, spatial voting |
+| 29 | Colonialism & Postcolonialism | Legacy of colonialism on borders, governance, development |
+| 30 | Supranationalism vs. Nationalism | Globalization tensions, sovereignty debates, Brexit case study |
+| 31 | Human Geography & the Environment | Environmental justice, climate refugees, unequal impacts |
+| 32 | Applying Human Geography | Analyzing current events through a geographic lens |
+| 33 | Research Project | Choose a human geography topic for in-depth research |
+| 34 | Research Project | Create presentation, analyze using geographic frameworks |
+| 35 | Review | Full year review |
+| 36 | Final Assessment | End-of-year test, project presentations |

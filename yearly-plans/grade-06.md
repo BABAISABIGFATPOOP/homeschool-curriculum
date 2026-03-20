@@ -333,3 +333,115 @@
 | 34 | Cumulative Dialogue Practice | Role-plays: at school, at a restaurant, with friends |
 | 35 | Review | Full year review: grammar, ~200 characters, reading, writing |
 | 36 | Final Assessment | End-of-year test: listening, reading, writing, speaking |
+
+---
+
+## History
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | What is Ancient History? | Timelines, BCE/CE, archaeology, primary sources |
+| 2 | Early Humans | Hunter-gatherers, tools, cave paintings, migration |
+| 3 | Neolithic Revolution | Farming, domestication, first settlements |
+| 4 | Mesopotamia: Geography & Sumer | Fertile Crescent, city-states, cuneiform, ziggurats |
+| 5 | Mesopotamia: Empires | Babylonians (Hammurabi's Code), Assyrians, Persians |
+| 6 | Ancient Egypt: Geography & Society | Nile River, pharaohs, social hierarchy |
+| 7 | Ancient Egypt: Culture | Pyramids, hieroglyphics, mummification, gods & goddesses |
+| 8 | Ancient Egypt: Achievements | Medicine, engineering, papyrus, calendar |
+| 9 | Review & Assessment | Quarter 1 test, Mesopotamia or Egypt project |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Ancient India: Indus Valley | Harappa & Mohenjo-Daro, city planning, trade |
+| 11 | Ancient India: Hinduism & Buddhism | Origins, key beliefs, spread |
+| 12 | Ancient India: Maurya & Gupta Empires | Ashoka, Golden Age achievements (math, science, art) |
+| 13 | Ancient China: Shang & Zhou Dynasties | Oracle bones, Mandate of Heaven, feudalism |
+| 14 | Ancient China: Philosophy | Confucianism, Daoism, Legalism |
+| 15 | Ancient China: Qin & Han Dynasties | Great Wall, unification, Silk Road, inventions |
+| 16 | Silk Road | Routes, goods traded, cultural exchange, spread of ideas |
+| 17 | World Religions Origins | Judaism, Christianity, Islam — key figures, beliefs, sacred texts |
+| 18 | Review & Assessment | Quarter 2 test, Silk Road trade simulation |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Ancient Greece: Geography & City-States | Mountains & seas, Athens vs. Sparta |
+| 20 | Ancient Greece: Democracy & Government | Athenian democracy, citizenship, assembly |
+| 21 | Ancient Greece: Culture | Philosophy (Socrates, Plato, Aristotle), Olympics, theater |
+| 22 | Ancient Greece: Wars | Persian Wars, Peloponnesian War, Alexander the Great |
+| 23 | Hellenistic Period | Spread of Greek culture, Alexandria, blending of cultures |
+| 24 | Ancient Rome: Republic | Senate, consuls, patricians & plebeians, Roman law |
+| 25 | Ancient Rome: Empire | Augustus, Pax Romana, engineering (roads, aqueducts, Colosseum) |
+| 26 | Ancient Rome: Fall | Causes of decline, splitting of empire, barbarian invasions |
+| 27 | Review & Assessment | Quarter 3 test, Greece or Rome poster project |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Rise of Empires: Persia | Cyrus the Great, Darius, Royal Road, governance |
+| 29 | Rise of Empires: Kush & Axum | African kingdoms, trade, Christianity in Axum |
+| 30 | Rise of Empires: Maya | Mesoamerica, pyramids, calendar, writing, agriculture |
+| 31 | Rise of Empires: Olmec & Early Andes | Mother culture of Mesoamerica, Chavin, early Inca roots |
+| 32 | Comparing Ancient Civilizations | Government, religion, technology, trade across civilizations |
+| 33 | Legacy of the Ancient World | Ideas that influenced the modern world (law, democracy, religion, science) |
+| 34 | Map Skills & Geography Review | Mapping ancient civilizations, trade routes, empires |
+| 35 | Review | Full year review |
+| 36 | Final Assessment | End-of-year test, ancient civilizations portfolio |
+
+---
+
+## Geography
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Introduction to World Geography | Five themes of geography (location, place, HEI, movement, regions) |
+| 2 | Map Skills Review | Physical vs. political maps, thematic maps, map projections |
+| 3 | Africa: Physical Geography | Landforms, rivers (Nile, Congo), Sahara, Great Rift Valley |
+| 4 | Africa: Climate & Vegetation | Climate zones, rainforest, savanna, desert |
+| 5 | Africa: People & Culture | Population distribution, languages, traditions, diversity |
+| 6 | Asia: Physical Geography | Himalayas, major rivers (Yangtze, Ganges), plateaus, islands |
+| 7 | Asia: Climate & Vegetation | Monsoons, deserts, tropical regions, tundra |
+| 8 | Asia: People & Culture | Population centers, religions, cultural traditions, diversity |
+| 9 | Review & Assessment | Quarter 1 test, Africa & Asia map quiz |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Europe: Physical Geography | Mountains (Alps, Pyrenees), rivers (Danube, Rhine), peninsulas |
+| 11 | Europe: Climate & Vegetation | Maritime, Mediterranean, continental climates |
+| 12 | Europe: People & Culture | Languages, traditions, EU intro, population patterns |
+| 13 | The Americas: North America | Physical features, climate zones, major regions |
+| 14 | The Americas: Central & South America | Andes, Amazon, rainforest, diverse climates |
+| 15 | The Americas: People & Culture | Indigenous cultures, colonization legacy, modern diversity |
+| 16 | Oceania: Australia & Pacific Islands | Physical features, isolation, unique ecosystems |
+| 17 | Oceania: People & Culture | Aboriginal cultures, Pacific Islander traditions, modern life |
+| 18 | Review & Assessment | Quarter 2 test, world regions map project |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Physical vs. Political Maps | Comparing what each shows, when to use each |
+| 20 | Thematic Maps | Population density, climate, resources, economic activity maps |
+| 21 | Population & Settlement | Where people live and why, push/pull factors intro |
+| 22 | Urban vs. Rural Worldwide | Comparing cities and countryside across regions |
+| 23 | Settlement Patterns | Clustered, dispersed, linear settlements; geographic factors |
+| 24 | Culture & Geography Connection | How environment shapes culture (food, clothing, shelter, customs) |
+| 25 | Religion & Geography | Major world religions and where they originated and spread |
+| 26 | Language & Geography | Language families, how geography affects language spread |
+| 27 | Review & Assessment | Quarter 3 test, culture-geography project |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Resources Around the World | Where key resources are found, who controls them |
+| 29 | Trade & Connection | How regions trade with each other, imports and exports |
+| 30 | Environmental Challenges | Deforestation, desertification, water scarcity, pollution |
+| 31 | Natural Disasters & Geography | Earthquakes, volcanoes, hurricanes, floods — where and why |
+| 32 | Human Impact on the Environment | Climate change intro, urbanization, habitat loss |
+| 33 | World Geography Project | Choose a world region, research and create a presentation |
+| 34 | World Geography Project | Finalize presentation, peer sharing |
+| 35 | Review | Full year review |
+| 36 | Final Assessment | End-of-year test, project presentations |

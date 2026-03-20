@@ -47,3 +47,16 @@
 - Food vocabulary: 米饭, 面条, 水果, 蔬菜, 鸡蛋, 牛奶
 - Basic sentence patterns: subject + verb + object (我吃饭, 他喝水)
 - ~100 characters by end of year
+
+## Geography
+- US geography (regions, states, capitals)
+- Latitude & longitude
+- Climate zones
+
+## History
+- US History: Age of Exploration through American Revolution
+- Constitution & Bill of Rights
+- Westward expansion
+- Civil War overview
+- Natural resources
+- How geography shapes communities

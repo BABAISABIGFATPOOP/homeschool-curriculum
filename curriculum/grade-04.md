@@ -48,3 +48,17 @@
 - Colors: 红, 蓝, 绿, 黄, 白, 黑, 橙, 紫
 - Basic strokes and stroke order principles
 - Character writing: first simple characters (大, 小, 人, 口, 日, 月)
+
+## Geography
+- Continents & oceans
+- Map skills (compass rose, legend, scale)
+
+## History
+- Local & state history
+- Native Americans (regions, cultures, traditions)
+- Early explorers
+- Colonial life
+- American symbols & holidays
+- Landforms
+- Communities (urban/suburban/rural)
+- Intro to regions of the US

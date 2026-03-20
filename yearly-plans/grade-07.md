@@ -333,3 +333,115 @@
 | 34 | Cumulative Speaking Practice | Role-plays: shopping, directions, restaurant, phone calls |
 | 35 | Review | Full year review: grammar, ~350 characters, all topics |
 | 36 | Final Assessment | End-of-year test: listening, speaking, reading, writing |
+
+---
+
+## History
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Fall of Rome & Early Middle Ages | Collapse of Western Rome, Germanic kingdoms, Dark Ages |
+| 2 | Feudalism | Kings, lords, vassals, knights, serfs; manorial system |
+| 3 | Medieval Life | Castles, villages, farming, role of women and children |
+| 4 | The Catholic Church | Role in medieval life, monasteries, Pope's authority |
+| 5 | Byzantine Empire | Constantinople, Justinian, Eastern Orthodoxy, preservation of knowledge |
+| 6 | Byzantine Empire: Culture & Legacy | Hagia Sophia, mosaics, Roman law, fall of Constantinople |
+| 7 | Rise of Islam | Muhammad, Quran, Five Pillars, spread of Islam |
+| 8 | Islamic Golden Age | Advances in math, science, medicine, architecture, literature |
+| 9 | Review & Assessment | Quarter 1 test, medieval life project |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | African Kingdoms: Ghana & Mali | Gold-salt trade, Mansa Musa, Timbuktu |
+| 11 | African Kingdoms: Songhai & Great Zimbabwe | Trade networks, culture, architecture |
+| 12 | The Crusades | Causes, key crusades, effects on trade & cultural exchange |
+| 13 | Mongol Empire: Genghis Khan | Conquests, military tactics, uniting the steppe |
+| 14 | Mongol Empire: Pax Mongolica | Trade revival, cultural exchange, Kublai Khan |
+| 15 | Medieval Japan | Samurai, shogun, bushido, feudal structure |
+| 16 | Medieval China: Tang & Song Dynasties | Inventions (printing, gunpowder, compass), trade, culture |
+| 17 | The Black Death | Origins, spread, impact on Europe's population & society |
+| 18 | Review & Assessment | Quarter 2 test, Mongol Empire or African kingdoms report |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | The Renaissance: Origins | Italy, rebirth of classical learning, humanism |
+| 20 | Renaissance Art & Artists | Leonardo, Michelangelo, Raphael; new techniques (perspective) |
+| 21 | Renaissance Thinkers & Writers | Machiavelli, Erasmus, Shakespeare; printing press (Gutenberg) |
+| 22 | Renaissance Spreads | From Italy to Northern Europe, impact on society |
+| 23 | The Reformation: Martin Luther | 95 Theses, corruption in the Church, Protestant movement |
+| 24 | The Reformation: Spread | Calvin, Henry VIII, Council of Trent, Counter-Reformation |
+| 25 | Religious Wars & Effects | Wars of religion, Peace of Augsburg, lasting divisions |
+| 26 | Scientific Revolution Preview | Copernicus, Galileo; questioning old ideas, new methods |
+| 27 | Review & Assessment | Quarter 3 test, Renaissance art or Reformation essay |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Age of Exploration: Motives | Gold, glory, God; new technology (caravel, astrolabe) |
+| 29 | Portuguese Exploration | Henry the Navigator, da Gama, sea route to India |
+| 30 | Spanish Exploration & Conquest | Columbus, Cortés, Pizarro; impact on Aztec & Inca empires |
+| 31 | Other European Explorers | English, French, Dutch; competing for territory |
+| 32 | Columbian Exchange | Exchange of goods, crops, animals, diseases between hemispheres |
+| 33 | Impact of Exploration | Colonialism, slave trade, cultural destruction & exchange |
+| 34 | Comparing Medieval & Early Modern Worlds | How society changed from feudalism to exploration era |
+| 35 | Review | Full year review |
+| 36 | Final Assessment | End-of-year test, Age of Exploration portfolio |
+
+---
+
+## Geography
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Africa: Physical Features | Great Rift Valley, Sahara, Sahel, major rivers, lakes, coasts |
+| 2 | Africa: Climate & Biomes | Tropical, arid, Mediterranean; vegetation zones |
+| 3 | Africa: Natural Resources | Oil, diamonds, gold, minerals; distribution and access |
+| 4 | Africa: Cultures & Ethnic Groups | Diversity of languages, religions, traditions across regions |
+| 5 | Africa: Current Issues | Poverty, conflict, development, health challenges, opportunities |
+| 6 | Africa: Case Study | In-depth study of one African country (e.g., Nigeria, Kenya, South Africa) |
+| 7 | Asia: Physical Features | Himalayas, Gobi Desert, major rivers, islands, Ring of Fire |
+| 8 | Asia: Climate & Biomes | Monsoon systems, tundra, tropical, arid; seasonal patterns |
+| 9 | Review & Assessment | Quarter 1 test, Africa & Asia physical map quiz |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Asia: Natural Resources | Oil (Middle East), minerals, timber, water, agriculture |
+| 11 | Asia: Cultures & Religions | Hinduism, Buddhism, Islam, Confucianism; cultural diversity |
+| 12 | Asia: Current Issues | Population pressure, economic growth, environmental challenges |
+| 13 | Asia: Case Study | In-depth study of one Asian country (e.g., China, India, Japan) |
+| 14 | Migration Patterns: What is Migration? | Push and pull factors, types of migration (voluntary, forced) |
+| 15 | Historical Migration | Ancient and historical migration routes, Silk Road, slave trade |
+| 16 | Modern Migration | Refugees, economic migrants, immigration patterns today |
+| 17 | Migration & Culture | How migration spreads culture, food, language, traditions |
+| 18 | Review & Assessment | Quarter 2 test, migration case study |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Urbanization: What & Why | Rural-to-urban migration, reasons people move to cities |
+| 20 | Urbanization in Africa | Rapid growth of African cities, challenges and opportunities |
+| 21 | Urbanization in Asia | Megacities (Tokyo, Mumbai, Shanghai), infrastructure, growth |
+| 22 | Urban Challenges | Housing, transportation, pollution, sanitation, inequality |
+| 23 | Urban Planning | How cities are organized, land use, zoning, green spaces |
+| 24 | Comparing Urban & Rural Life | Quality of life, access to services, economic opportunities |
+| 25 | Map Skills: Population Density Maps | Reading and interpreting population data on maps |
+| 26 | Map Skills: Resource & Economic Maps | Understanding economic geography through maps |
+| 27 | Review & Assessment | Quarter 3 test, urbanization comparison project |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Africa & Asia: Environmental Issues | Deforestation, desertification, water scarcity, air pollution |
+| 29 | Water Resources | Access to clean water, rivers, dams, water conflict |
+| 30 | Food & Agriculture | Farming methods, food security, land use in Africa & Asia |
+| 31 | Economic Development | Developed vs. developing nations, GDP, quality of life indicators |
+| 32 | Connections Between Africa & Asia | Trade routes, cultural exchange, historical ties |
+| 33 | Geography Project | Choose an African or Asian country for in-depth research |
+| 34 | Geography Project | Create a presentation covering physical, cultural, and current topics |
+| 35 | Review | Full year review |
+| 36 | Final Assessment | End-of-year test, project presentations |

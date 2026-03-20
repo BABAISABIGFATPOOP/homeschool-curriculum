@@ -47,3 +47,14 @@
 - Time expressions: clock time, duration with 了, 从...到...
 - Reading short passages and answering comprehension questions
 - ~350 characters by end of year
+
+## Geography
+- Africa & Asia in depth (physical features, climate, resources, cultures, current issues)
+- Migration patterns
+- Urbanization
+
+## History
+- Medieval world (feudalism, Byzantine Empire, Islamic Golden Age, African kingdoms, Mongol Empire)
+- Renaissance
+- Reformation
+- Age of Exploration

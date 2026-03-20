@@ -333,3 +333,115 @@
 | 34 | Cumulative Practice | Dialogue practice, character review, listening exercises |
 | 35 | Review | Full year review: pinyin, vocabulary, characters, sentences |
 | 36 | Final Assessment | End-of-year test: pinyin, characters, listening, speaking |
+
+---
+
+## History
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | What is History? | What historians do, timelines, primary vs. secondary sources |
+| 2 | Our Community | Local landmarks, community history, who founded our town |
+| 3 | State History: Geography | State map, regions, landforms, bodies of water |
+| 4 | State History: Early People | First inhabitants of our state, how they lived |
+| 5 | State History: Key Events | Important events in our state's history |
+| 6 | State History: Symbols & Government | State flag, seal, motto, capital, branches of government |
+| 7 | Native Americans: Eastern Woodlands | Iroquois, Cherokee; housing, food, customs |
+| 8 | Native Americans: Plains | Lakota, Cheyenne; buffalo, nomadic life, traditions |
+| 9 | Review & Assessment | Quarter 1 test, state history project |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Native Americans: Southwest | Pueblo, Navajo; desert life, adobe homes, farming |
+| 11 | Native Americans: Pacific Northwest | Chinook, Tlingit; fishing, totem poles, potlatch |
+| 12 | Native Americans: Review & Comparison | Comparing regions, adaptations to environment |
+| 13 | Early Explorers: Vikings & Columbus | Leif Erikson, Christopher Columbus, motives for exploration |
+| 14 | Spanish Explorers | Cortés, Pizarro, de Soto; searching for gold, impact on natives |
+| 15 | French & English Explorers | Cartier, Hudson, Cabot; fur trade, new routes |
+| 16 | Why People Explored | Gold, glory, God; technology (compass, caravel) |
+| 17 | Impact of Exploration | Columbian Exchange, effects on Native Americans |
+| 18 | Review & Assessment | Quarter 2 test, explorer mini-report |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Colonial Life: Jamestown | First English settlement, John Smith, Pocahontas |
+| 20 | Colonial Life: Plymouth | Pilgrims, Mayflower, Thanksgiving, William Bradford |
+| 21 | Colonial Life: New England Colonies | Massachusetts, Connecticut; daily life, town meetings |
+| 22 | Colonial Life: Middle Colonies | New York, Pennsylvania; diversity, farming, trade |
+| 23 | Colonial Life: Southern Colonies | Virginia, Carolinas; plantations, cash crops |
+| 24 | Colonial Daily Life | Homes, schools, chores, food, clothing, games |
+| 25 | Colonial Trades & Crafts | Blacksmith, cooper, printer; apprenticeships |
+| 26 | Colonial Government | Self-government, House of Burgesses, town meetings |
+| 27 | Review & Assessment | Quarter 3 test, colonial life project |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | American Symbols: Flag & Eagle | History of the flag, bald eagle, what they represent |
+| 29 | American Symbols: Monuments | Statue of Liberty, Liberty Bell, Mount Rushmore |
+| 30 | American Symbols: Documents | Declaration of Independence, Constitution (simple overview) |
+| 31 | American Holidays: Presidents' Day & Independence Day | Why we celebrate, historical background |
+| 32 | American Holidays: Veterans Day & Memorial Day | Honoring service members, history of the holidays |
+| 33 | American Holidays: Thanksgiving & MLK Day | Origins and significance |
+| 34 | Map Skills | Compass rose, map key, reading historical maps |
+| 35 | Review | Full year review |
+| 36 | Final Assessment | End-of-year test, American symbols poster |
+
+---
+
+## Geography
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | What is Geography? | Introduction to geography, why we study it, geographer's tools |
+| 2 | Globes & Maps | Difference between globes and maps, how maps represent Earth |
+| 3 | Compass Rose & Cardinal Directions | North, south, east, west, intermediate directions |
+| 4 | Map Legend & Symbols | Reading a map legend, common map symbols |
+| 5 | Map Scale | Understanding scale, measuring distances on a map |
+| 6 | Continents: North America & South America | Location, basic features, key facts |
+| 7 | Continents: Europe & Africa | Location, basic features, key facts |
+| 8 | Continents: Asia, Australia & Antarctica | Location, basic features, key facts |
+| 9 | Review & Assessment | Quarter 1 test, label-the-map activity |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Oceans of the World | Pacific, Atlantic, Indian, Southern, Arctic — location & size |
+| 11 | Landforms: Mountains & Valleys | What they are, how they form, examples |
+| 12 | Landforms: Plains & Plateaus | Flat landforms, where they're found, how people use them |
+| 13 | Landforms: Rivers, Lakes & Islands | Water features, vocabulary, famous examples |
+| 14 | Landforms: Deserts & Forests | Dry and forested landscapes, where they occur |
+| 15 | Landform Review & Map Work | Identifying landforms on maps, drawing a landform map |
+| 16 | Communities: Urban | What cities are like, population, services, transportation |
+| 17 | Communities: Suburban | Life between city and country, neighborhoods, commuting |
+| 18 | Review & Assessment | Quarter 2 test, landforms poster |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Communities: Rural | Farm and country life, natural resources, open space |
+| 20 | Comparing Communities | Urban vs. suburban vs. rural — similarities and differences |
+| 21 | Intro to US Regions: Northeast | States, major cities, features, climate |
+| 22 | US Regions: Southeast | States, major cities, features, climate |
+| 23 | US Regions: Midwest | States, major cities, features, climate |
+| 24 | US Regions: Southwest | States, major cities, features, climate |
+| 25 | US Regions: West | States, major cities, features, climate |
+| 26 | Comparing US Regions | Similarities and differences across regions |
+| 27 | Review & Assessment | Quarter 3 test, US regions map project |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Natural Resources | What natural resources are, renewable vs. nonrenewable |
+| 29 | How People Use Land | Farming, cities, parks, industry — land use basics |
+| 30 | Weather & Geography | How geography affects weather, mountains and rain, coasts |
+| 31 | People & the Environment | How people change the environment, conservation intro |
+| 32 | Map Skills Practice | Reading road maps, using a map grid, finding locations |
+| 33 | Geography Around Us | Local geography — mapping your neighborhood and community |
+| 34 | Geography Project | Choose a continent or US region, create an illustrated report |
+| 35 | Review | Full year review |
+| 36 | Final Assessment | End-of-year test, project presentations |

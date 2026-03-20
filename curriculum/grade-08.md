@@ -48,3 +48,16 @@
 - Reading stories and short narratives
 - Writing short paragraphs on familiar topics
 - ~500 characters by end of year
+
+## Geography
+- Europe, Americas & Oceania in depth
+- Imperialism's geographic legacy
+
+## History
+- US History deep dive (Revolution through Reconstruction)
+- Industrial Revolution
+- Immigration
+- Reform movements
+- Early 20th century
+- Economic geography (trade routes, globalization)
+- Environmental challenges

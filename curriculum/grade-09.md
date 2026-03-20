@@ -52,3 +52,9 @@
 - Reading simplified news articles and blog posts
 - Expanding vocabulary for school, travel, and daily life topics
 - ~700 characters by end of year
+
+## Geography
+- Human geography (population dynamics, migration, cultural diffusion, urbanization models, political geography, borders & sovereignty)
+
+## History
+- World History (WWI, Russian Revolution, WWII, Holocaust, Cold War, decolonization, civil rights movements globally, modern conflicts)

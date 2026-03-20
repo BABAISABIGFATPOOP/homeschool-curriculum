@@ -1,6 +1,6 @@
 {
   "name": "homeschool-curriculum",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Homeschool Curriculum App — Grades 4 through 10: Math, English, Biology",
   "main": "main.js",
   "scripts": {

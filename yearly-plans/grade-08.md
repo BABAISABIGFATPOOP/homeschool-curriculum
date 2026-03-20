@@ -333,3 +333,115 @@
 | 34 | Cumulative Speaking Practice | Debates, storytelling, presentations in Chinese |
 | 35 | Review | Full year review: grammar, ~500 characters, reading, writing |
 | 36 | Final Assessment | End-of-year test: listening, speaking, reading, writing |
+
+---
+
+## History
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Causes of the American Revolution | Taxation, Enlightenment ideas, colonial grievances |
+| 2 | Declaration of Independence | Jefferson, natural rights, key arguments |
+| 3 | American Revolution: Key Battles & Turning Points | Saratoga, Valley Forge, Yorktown |
+| 4 | The Constitution | Constitutional Convention, compromises, ratification |
+| 5 | Bill of Rights & Federalism | Amendments 1–10, federal vs. state power |
+| 6 | Early Republic | Washington, Adams, Hamilton vs. Jefferson, political parties |
+| 7 | Jeffersonian Era | Louisiana Purchase, Lewis & Clark, War of 1812 |
+| 8 | Jacksonian Democracy | Expansion of voting, Indian Removal Act, Trail of Tears |
+| 9 | Review & Assessment | Quarter 1 test, Constitutional analysis project |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Manifest Destiny & Westward Expansion | Oregon Trail, California Gold Rush, Mexican-American War |
+| 11 | Slavery in America | Origins, plantation system, slave life, resistance |
+| 12 | Abolitionist Movement | Douglass, Tubman, Garrison, Underground Railroad |
+| 13 | Causes of the Civil War | Compromise of 1850, Kansas-Nebraska Act, Dred Scott, John Brown |
+| 14 | Civil War: Early Years | Fort Sumter, Bull Run, military strategies, key leaders |
+| 15 | Civil War: Turning Points | Emancipation Proclamation, Gettysburg, Vicksburg |
+| 16 | Civil War: End & Aftermath | Sherman's March, Appomattox, Lincoln's assassination |
+| 17 | Reconstruction | 13th–15th Amendments, freedmen, Reconstruction Acts |
+| 18 | Review & Assessment | Quarter 2 test, Civil War research paper |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | End of Reconstruction | Compromise of 1877, Jim Crow laws, sharecropping |
+| 20 | Industrial Revolution: Inventions | Steam engine, railroads, telegraph, factories |
+| 21 | Industrial Revolution: Impact | Urbanization, working conditions, child labor |
+| 22 | Industrial Revolution: Big Business | Carnegie, Rockefeller, monopolies, trusts |
+| 23 | Immigration | Push/pull factors, Ellis Island, Angel Island, nativism |
+| 24 | Immigrant Experience | Tenements, assimilation, contributions, cultural diversity |
+| 25 | Reform Movements: Labor | Labor unions, strikes, AFL, working conditions reform |
+| 26 | Reform Movements: Social | Women's suffrage, temperance, Progressive Era |
+| 27 | Review & Assessment | Quarter 3 test, immigration or reform project |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Populism & Progressivism | Farmers' struggles, muckrakers, Roosevelt & reform |
+| 29 | American Imperialism | Spanish-American War, Philippines, Hawaii, Panama Canal |
+| 30 | World War I: Causes & US Entry | Alliances, militarism, nationalism, sinking of Lusitania |
+| 31 | World War I: The War & Aftermath | Trench warfare, new weapons, Treaty of Versailles |
+| 32 | The Roaring Twenties | Jazz Age, Harlem Renaissance, consumer culture, Prohibition |
+| 33 | The Great Depression | Stock market crash, Dust Bowl, Hoovervilles |
+| 34 | The New Deal | FDR, relief/recovery/reform programs, lasting impact |
+| 35 | Review | Full year review |
+| 36 | Final Assessment | End-of-year test, 20th century timeline project |
+
+---
+
+## Geography
+
+### Quarter 1 (Weeks 1–9)
+| Week | Topic | Details |
+|------|-------|---------|
+| 1 | Europe: Physical Features | Alps, Pyrenees, Scandinavian mountains, rivers, peninsulas, islands |
+| 2 | Europe: Climate & Biomes | Maritime, Mediterranean, continental, subarctic; vegetation zones |
+| 3 | Europe: Natural Resources | Coal, oil, natural gas, farmland, fisheries, hydropower |
+| 4 | Europe: Cultural Diversity | Languages, religions, traditions, national identities |
+| 5 | Europe: Political Geography | EU, NATO, borders, sovereignty, cooperation |
+| 6 | Europe: Case Study | In-depth study of one European country (e.g., Germany, France, UK) |
+| 7 | North America: Physical Features | Rockies, Appalachians, Great Plains, Great Lakes, major rivers |
+| 8 | North America: Climate & Resources | Climate zones, agriculture, energy resources, water |
+| 9 | Review & Assessment | Quarter 1 test, Europe & North America map quiz |
+
+### Quarter 2 (Weeks 10–18)
+| Week | Topic | Details |
+|------|-------|---------|
+| 10 | Central America & Caribbean | Physical features, climate, cultures, economic challenges |
+| 11 | South America: Physical Features | Andes, Amazon Basin, Pampas, Patagonia, rivers |
+| 12 | South America: Climate, Resources & Culture | Tropical to temperate, biodiversity, diverse cultures |
+| 13 | Oceania: Australia & New Zealand | Physical features, climate, unique ecosystems, indigenous peoples |
+| 14 | Oceania: Pacific Islands | Volcanic and coral islands, climate, cultures, challenges |
+| 15 | Imperialism's Geographic Legacy | How colonialism drew borders, displaced peoples, shaped nations |
+| 16 | Colonialism in Africa & Asia | Partition of Africa, British India, lasting geographic effects |
+| 17 | Colonialism in the Americas & Oceania | European settlement, indigenous displacement, modern borders |
+| 18 | Review & Assessment | Quarter 2 test, imperialism mapping activity |
+
+### Quarter 3 (Weeks 19–27)
+| Week | Topic | Details |
+|------|-------|---------|
+| 19 | Economic Geography: What is It? | How economies are organized, sectors (primary, secondary, tertiary) |
+| 20 | Trade Routes: Historical | Silk Road, spice trade, triangular trade, maritime routes |
+| 21 | Trade Routes: Modern | Shipping lanes, air routes, digital trade, supply chains |
+| 22 | Globalization | What globalization is, cultural exchange, economic interdependence |
+| 23 | Globalization: Benefits & Challenges | Economic growth vs. inequality, cultural diffusion vs. loss |
+| 24 | World Trade Organizations | WTO, trade agreements, tariffs, free trade zones |
+| 25 | Economic Inequality | Developed vs. developing nations, measuring development (HDI, GDP) |
+| 26 | Case Study: A Global Supply Chain | Tracing a product from raw materials to consumer |
+| 27 | Review & Assessment | Quarter 3 test, trade route mapping project |
+
+### Quarter 4 (Weeks 28–36)
+| Week | Topic | Details |
+|------|-------|---------|
+| 28 | Environmental Challenges: Climate Change | Causes, evidence, geographic impacts, vulnerable regions |
+| 29 | Environmental Challenges: Deforestation | Amazon, Southeast Asia, Congo Basin; causes and effects |
+| 30 | Environmental Challenges: Water | Scarcity, pollution, access, water wars, conservation |
+| 31 | Environmental Challenges: Urbanization | Sprawl, pollution, infrastructure, sustainable cities |
+| 32 | Sustainability & Solutions | Renewable energy, conservation, international agreements |
+| 33 | Geography Project | Choose a country from Europe, Americas, or Oceania for research |
+| 34 | Geography Project | Create a presentation covering physical, economic, and environmental topics |
+| 35 | Review | Full year review |
+| 36 | Final Assessment | End-of-year test, project presentations |

@@ -4,17 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Homeschool Curriculum</title>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #0f172a;
       color: #e2e8f0;
       min-height: 100vh;
     }
-
-    /* ── Sign In Screen ── */
     #signin-screen {
       display: flex;
       flex-direction: column;
@@ -23,33 +23,28 @@
       min-height: 100vh;
       gap: 30px;
     }
-
     #signin-screen h1 {
       font-size: 2.8rem;
       font-weight: 700;
       color: #f8fafc;
       text-align: center;
     }
-
     #signin-screen p {
       font-size: 1.1rem;
       color: #94a3b8;
       margin-top: -16px;
     }
-
     .signin-form {
       display: flex;
       flex-direction: column;
       gap: 20px;
       width: 360px;
     }
-
     .form-group {
       display: flex;
       flex-direction: column;
       gap: 6px;
     }
-
     .form-group label {
       font-size: 0.85rem;
       font-weight: 600;
@@ -57,7 +52,6 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-
     .form-group input {
       padding: 12px 16px;
       border: 2px solid #334155;
@@ -69,15 +63,8 @@
       outline: none;
       transition: border-color 0.2s;
     }
-
-    .form-group input:focus {
-      border-color: #3b82f6;
-    }
-
-    .form-group input::placeholder {
-      color: #475569;
-    }
-
+    .form-group input:focus { border-color: #3b82f6; }
+    .form-group input::placeholder { color: #475569; }
     .signin-btn {
       padding: 14px;
       border: none;
@@ -90,13 +77,11 @@
       transition: all 0.2s;
       margin-top: 4px;
     }
-
     .signin-btn:hover {
       background: #2563eb;
       transform: translateY(-2px);
       box-shadow: 0 6px 20px rgba(59, 130, 246, 0.3);
     }
-
     .signin-btn:disabled {
       background: #334155;
       color: #64748b;
@@ -104,15 +89,12 @@
       transform: none;
       box-shadow: none;
     }
-
     .signin-error {
       color: #f87171;
       font-size: 0.85rem;
       text-align: center;
       min-height: 20px;
     }
-
-    /* ── Role Selection Screen ── */
     #role-screen {
       display: none;
       flex-direction: column;
@@ -121,25 +103,18 @@
       min-height: 100vh;
       gap: 40px;
     }
-
     #role-screen h1 {
       font-size: 2.8rem;
       font-weight: 700;
       color: #f8fafc;
       text-align: center;
     }
-
     #role-screen p {
       font-size: 1.1rem;
       color: #94a3b8;
       margin-top: -20px;
     }
-
-    .role-buttons {
-      display: flex;
-      gap: 30px;
-    }
-
+    .role-buttons { display: flex; gap: 30px; }
     .role-btn {
       width: 260px;
       height: 200px;
@@ -157,31 +132,15 @@
       justify-content: center;
       gap: 12px;
     }
-
     .role-btn:hover {
       border-color: #3b82f6;
       background: #1e3a5f;
       transform: translateY(-4px);
       box-shadow: 0 8px 30px rgba(59, 130, 246, 0.2);
     }
-
-    .role-btn .icon {
-      font-size: 3rem;
-    }
-
-    .role-btn .subtitle {
-      font-size: 0.85rem;
-      color: #94a3b8;
-      font-weight: 400;
-    }
-
-    /* ── App Layout ── */
-    #app-screen {
-      display: none;
-      height: 100vh;
-    }
-
-    /* ── Top Bar ── */
+    .role-btn .icon { font-size: 3rem; }
+    .role-btn .subtitle { font-size: 0.85rem; color: #94a3b8; font-weight: 400; }
+    #app-screen { display: none; height: 100vh; }
     .topbar {
       display: flex;
       align-items: center;
@@ -190,13 +149,7 @@
       background: #1e293b;
       border-bottom: 1px solid #334155;
     }
-
-    .topbar h2 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color: #f8fafc;
-    }
-
+    .topbar h2 { font-size: 1.1rem; font-weight: 600; color: #f8fafc; }
     .topbar .role-badge {
       background: #3b82f6;
       color: white;
@@ -207,11 +160,7 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-
-    .topbar .role-badge.student {
-      background: #10b981;
-    }
-
+    .topbar .role-badge.student { background: #10b981; }
     .back-btn {
       background: none;
       border: 1px solid #475569;
@@ -222,20 +171,12 @@
       font-size: 0.85rem;
       transition: all 0.15s;
     }
-
     .back-btn:hover {
       border-color: #64748b;
       color: #e2e8f0;
       background: #334155;
     }
-
-    /* ── Main Content Area ── */
-    .main-area {
-      display: flex;
-      height: calc(100vh - 53px);
-    }
-
-    /* ── Sidebar ── */
+    .main-area { display: flex; height: calc(100vh - 53px); }
     .sidebar {
       width: 260px;
       min-width: 260px;
@@ -244,11 +185,7 @@
       overflow-y: auto;
       padding: 16px 0;
     }
-
-    .sidebar-section {
-      margin-bottom: 8px;
-    }
-
+    .sidebar-section { margin-bottom: 8px; }
     .sidebar-section-title {
       padding: 8px 20px;
       font-size: 0.7rem;
@@ -257,7 +194,6 @@
       color: #64748b;
       font-weight: 700;
     }
-
     .sidebar-item {
       display: block;
       width: 100%;
@@ -270,25 +206,9 @@
       cursor: pointer;
       transition: all 0.1s;
     }
-
-    .sidebar-item:hover {
-      background: #334155;
-      color: #f8fafc;
-    }
-
-    .sidebar-item.active {
-      background: #3b82f6;
-      color: white;
-      font-weight: 600;
-    }
-
-    /* ── Content ── */
-    .content {
-      flex: 1;
-      overflow-y: auto;
-      padding: 32px 48px;
-    }
-
+    .sidebar-item:hover { background: #334155; color: #f8fafc; }
+    .sidebar-item.active { background: #3b82f6; color: white; font-weight: 600; }
+    .content { flex: 1; overflow-y: auto; padding: 32px 48px; }
     .content h1 { font-size: 2rem; color: #f8fafc; margin-bottom: 24px; border-bottom: 2px solid #334155; padding-bottom: 12px; }
     .content h2 { font-size: 1.4rem; color: #93c5fd; margin-top: 32px; margin-bottom: 12px; }
     .content h3 { font-size: 1.15rem; color: #60a5fa; margin-top: 24px; margin-bottom: 8px; }
@@ -296,34 +216,10 @@
     .content ul, .content ol { margin-left: 24px; margin-bottom: 16px; }
     .content li { line-height: 1.7; margin-bottom: 4px; color: #cbd5e1; }
     .content strong { color: #f8fafc; }
-
-    .content table {
-      width: 100%;
-      border-collapse: collapse;
-      margin: 16px 0 24px;
-      font-size: 0.9rem;
-    }
-
-    .content th {
-      background: #334155;
-      color: #f8fafc;
-      padding: 10px 14px;
-      text-align: left;
-      font-weight: 600;
-      border: 1px solid #475569;
-    }
-
-    .content td {
-      padding: 10px 14px;
-      border: 1px solid #334155;
-      color: #cbd5e1;
-    }
-
-    .content tr:hover td {
-      background: #1e293b;
-    }
-
-    /* ── Language Selection ── */
+    .content table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 0.9rem; }
+    .content th { background: #334155; color: #f8fafc; padding: 10px 14px; text-align: left; font-weight: 600; border: 1px solid #475569; }
+    .content td { padding: 10px 14px; border: 1px solid #334155; color: #cbd5e1; }
+    .content tr:hover td { background: #1e293b; }
     #language-screen {
       display: none;
       flex-direction: column;
@@ -333,24 +229,9 @@
       gap: 30px;
       padding: 40px;
     }
-
-    #language-screen h1 {
-      font-size: 2.2rem;
-      color: #f8fafc;
-      text-align: center;
-    }
-
-    #language-screen p {
-      color: #94a3b8;
-      margin-top: -16px;
-      text-align: center;
-    }
-
-    .lang-options {
-      display: flex;
-      gap: 20px;
-    }
-
+    #language-screen h1 { font-size: 2.2rem; color: #f8fafc; text-align: center; }
+    #language-screen p { color: #94a3b8; margin-top: -16px; text-align: center; }
+    .lang-options { display: flex; gap: 20px; }
     .lang-card {
       width: 200px;
       height: 160px;
@@ -368,90 +249,16 @@
       justify-content: center;
       gap: 10px;
     }
-
-    .lang-card:hover {
-      border-color: #3b82f6;
-      background: #1e3a5f;
-      transform: translateY(-3px);
-    }
-
-    .lang-card.selected {
-      border-color: #3b82f6;
-      background: #1e3a5f;
-      box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
-    }
-
-    .lang-card .lang-icon {
-      font-size: 2.5rem;
-    }
-
-    .lang-card .lang-sub {
-      font-size: 0.8rem;
-      color: #94a3b8;
-      font-weight: 400;
-    }
-
-    /* ── Student Grade Picker ── */
-    #grade-picker {
-      display: none;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      gap: 30px;
-    }
-
-    #grade-picker h1 {
-      font-size: 2.2rem;
-      color: #f8fafc;
-    }
-
-    #grade-picker p {
-      color: #94a3b8;
-      margin-top: -16px;
-    }
-
-    .grade-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-      max-width: 600px;
-    }
-
-    .grade-btn {
-      width: 120px;
-      height: 90px;
-      border: 2px solid #334155;
-      border-radius: 12px;
-      background: #1e293b;
-      color: #f8fafc;
-      font-size: 1.2rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s ease;
-    }
-
-    .grade-btn:hover {
-      border-color: #10b981;
-      background: #1e3b33;
-      transform: translateY(-3px);
-      box-shadow: 0 6px 20px rgba(16, 185, 129, 0.15);
-    }
-
-    .grade-btn .label {
-      font-size: 0.75rem;
-      color: #94a3b8;
-      font-weight: 400;
-    }
-
-    /* ── Home cards (parent dashboard) ── */
+    .lang-card:hover { border-color: #3b82f6; background: #1e3a5f; transform: translateY(-3px); }
+    .lang-card.selected { border-color: #3b82f6; background: #1e3a5f; box-shadow: 0 0 20px rgba(59, 130, 246, 0.2); }
+    .lang-card .lang-icon { font-size: 2.5rem; }
+    .lang-card .lang-sub { font-size: 0.8rem; color: #94a3b8; font-weight: 400; }
     .home-cards {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 20px;
       margin-top: 24px;
     }
-
     .home-card {
       background: #1e293b;
       border: 1px solid #334155;
@@ -460,32 +267,14 @@
       cursor: pointer;
       transition: all 0.2s;
     }
-
     .home-card:hover {
       border-color: #3b82f6;
       transform: translateY(-2px);
       box-shadow: 0 4px 20px rgba(59, 130, 246, 0.1);
     }
-
-    .home-card h3 {
-      color: #f8fafc;
-      margin-bottom: 8px;
-      font-size: 1.1rem;
-    }
-
-    .home-card p {
-      color: #94a3b8;
-      font-size: 0.9rem;
-      line-height: 1.5;
-    }
-
-    /* ── Placement Test ── */
-    #test-screen {
-      display: none;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
+    .home-card h3 { color: #f8fafc; margin-bottom: 8px; font-size: 1.1rem; }
+    .home-card p { color: #94a3b8; font-size: 0.9rem; line-height: 1.5; }
+    #test-screen { display: none; flex-direction: column; min-height: 100vh; }
     .test-topbar {
       display: flex;
       align-items: center;
@@ -494,36 +283,11 @@
       background: #1e293b;
       border-bottom: 1px solid #334155;
     }
-
     .test-topbar h2 { font-size: 1.1rem; color: #f8fafc; }
-
-    .test-progress {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .test-progress-bar {
-      width: 200px;
-      height: 8px;
-      background: #334155;
-      border-radius: 4px;
-      overflow: hidden;
-    }
-
-    .test-progress-fill {
-      height: 100%;
-      background: #3b82f6;
-      border-radius: 4px;
-      transition: width 0.3s ease;
-    }
-
-    .test-progress-text {
-      font-size: 0.85rem;
-      color: #94a3b8;
-      min-width: 60px;
-    }
-
+    .test-progress { display: flex; align-items: center; gap: 12px; }
+    .test-progress-bar { width: 200px; height: 8px; background: #334155; border-radius: 4px; overflow: hidden; }
+    .test-progress-fill { height: 100%; background: #3b82f6; border-radius: 4px; transition: width 0.3s ease; }
+    .test-progress-text { font-size: 0.85rem; color: #94a3b8; min-width: 60px; }
     .test-body {
       flex: 1;
       display: flex;
@@ -533,7 +297,6 @@
       padding: 40px;
       gap: 30px;
     }
-
     .test-subject-badge {
       padding: 4px 14px;
       border-radius: 20px;
@@ -542,11 +305,9 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-
     .test-subject-badge.math { background: #3b82f6; color: white; }
     .test-subject-badge.english { background: #8b5cf6; color: white; }
     .test-subject-badge.biology { background: #10b981; color: white; }
-
     .test-question {
       font-size: 1.3rem;
       color: #f8fafc;
@@ -554,7 +315,6 @@
       max-width: 700px;
       line-height: 1.6;
     }
-
     .test-options {
       display: flex;
       flex-direction: column;
@@ -562,7 +322,6 @@
       width: 100%;
       max-width: 500px;
     }
-
     .test-option {
       padding: 14px 20px;
       border: 2px solid #334155;
@@ -574,27 +333,10 @@
       transition: all 0.15s;
       text-align: left;
     }
-
-    .test-option:hover {
-      border-color: #3b82f6;
-      background: #1e3a5f;
-    }
-
-    .test-option.selected {
-      border-color: #3b82f6;
-      background: #1e3a5f;
-    }
-
-    .test-option.correct {
-      border-color: #10b981;
-      background: #064e3b;
-    }
-
-    .test-option.wrong {
-      border-color: #ef4444;
-      background: #450a0a;
-    }
-
+    .test-option:hover { border-color: #3b82f6; background: #1e3a5f; }
+    .test-option.selected { border-color: #3b82f6; background: #1e3a5f; }
+    .test-option.correct { border-color: #10b981; background: #064e3b; }
+    .test-option.wrong { border-color: #ef4444; background: #450a0a; }
     .test-next-btn {
       padding: 12px 40px;
       border: none;
@@ -606,42 +348,12 @@
       cursor: pointer;
       transition: all 0.2s;
     }
-
-    .test-next-btn:hover {
-      background: #2563eb;
-    }
-
-    .test-next-btn:disabled {
-      background: #334155;
-      color: #64748b;
-      cursor: not-allowed;
-    }
-
-    /* ── Test Rules Screen ── */
-    .test-rules {
-      max-width: 600px;
-      text-align: center;
-    }
-
-    .test-rules h1 {
-      font-size: 2rem;
-      color: #f8fafc;
-      margin-bottom: 24px;
-    }
-
-    .test-rules ul {
-      text-align: left;
-      margin: 20px 0 30px 20px;
-      list-style: none;
-    }
-
-    .test-rules ul li {
-      padding: 8px 0;
-      color: #cbd5e1;
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
+    .test-next-btn:hover { background: #2563eb; }
+    .test-next-btn:disabled { background: #334155; color: #64748b; cursor: not-allowed; }
+    .test-rules { max-width: 600px; text-align: center; }
+    .test-rules h1 { font-size: 2rem; color: #f8fafc; margin-bottom: 24px; }
+    .test-rules ul { text-align: left; margin: 20px 0 30px 20px; list-style: none; }
+    .test-rules ul li { padding: 8px 0; color: #cbd5e1; font-size: 1rem; line-height: 1.6; }
     .test-rules ul li::before {
       content: '\2022';
       color: #3b82f6;
@@ -649,8 +361,6 @@
       display: inline-block;
       width: 1.2em;
     }
-
-    /* ── Results Screen ── */
     #results-screen {
       display: none;
       flex-direction: column;
@@ -660,7 +370,6 @@
       gap: 30px;
       padding: 40px;
     }
-
     .results-card {
       background: #1e293b;
       border: 1px solid #334155;
@@ -669,14 +378,7 @@
       max-width: 550px;
       width: 100%;
     }
-
-    .results-card h1 {
-      font-size: 1.8rem;
-      color: #f8fafc;
-      margin-bottom: 24px;
-      text-align: center;
-    }
-
+    .results-card h1 { font-size: 1.8rem; color: #f8fafc; margin-bottom: 24px; text-align: center; }
     .result-row {
       display: flex;
       justify-content: space-between;
@@ -684,105 +386,23 @@
       padding: 14px 0;
       border-bottom: 1px solid #334155;
     }
-
     .result-row:last-child { border-bottom: none; }
-
-    .result-subject {
-      font-size: 1rem;
-      color: #cbd5e1;
-      font-weight: 600;
-    }
-
-    .result-grade {
-      font-size: 1.1rem;
-      font-weight: 700;
-      padding: 4px 16px;
-      border-radius: 20px;
-    }
-
+    .result-subject { font-size: 1rem; color: #cbd5e1; font-weight: 600; }
+    .result-grade { font-size: 1.1rem; font-weight: 700; padding: 4px 16px; border-radius: 20px; }
     .result-grade.math { background: #1e3a5f; color: #60a5fa; }
     .result-grade.english { background: #2e1065; color: #a78bfa; }
     .result-grade.biology { background: #064e3b; color: #34d399; }
-
-    .result-overall {
-      text-align: center;
-      margin-top: 20px;
-      padding-top: 20px;
-      border-top: 2px solid #334155;
-    }
-
-    .result-overall-grade {
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: #f8fafc;
-    }
-
-    .result-overall-label {
-      font-size: 0.9rem;
-      color: #94a3b8;
-      margin-top: 4px;
-    }
-
-    .result-score {
-      font-size: 0.85rem;
-      color: #64748b;
-    }
-
-    /* ── Language Menu Dropdown ── */
-    .lang-dropdown {
-      display: none;
-      position: absolute;
-      top: 100%;
-      right: 0;
-      margin-top: 6px;
-      background: #1e293b;
-      border: 1px solid #334155;
-      border-radius: 8px;
-      padding: 8px 0;
-      min-width: 150px;
-      z-index: 100;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-    }
-
-    .lang-dropdown.open {
-      display: block;
-    }
-
-    .lang-check {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 16px;
-      color: #cbd5e1;
-      font-size: 0.9rem;
-      cursor: pointer;
-      transition: background 0.1s;
-    }
-
-    .lang-check:hover {
-      background: #334155;
-    }
-
-    .lang-check input[type="checkbox"] {
-      accent-color: #3b82f6;
-      width: 16px;
-      height: 16px;
-      cursor: pointer;
-    }
-
-    /* Scrollbar */
+    .result-overall { text-align: center; margin-top: 20px; padding-top: 20px; border-top: 2px solid #334155; }
+    .result-overall-grade { font-size: 2.5rem; font-weight: 800; color: #f8fafc; }
+    .result-overall-label { font-size: 0.9rem; color: #94a3b8; margin-top: 4px; }
+    .result-score { font-size: 0.85rem; color: #64748b; }
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #0f172a; }
     ::-webkit-scrollbar-thumb { background: #334155; border-radius: 4px; }
     ::-webkit-scrollbar-thumb:hover { background: #475569; }
   </style>
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 <body>
-
-  <!-- ── AUTH SCREEN ── -->
   <div id="signin-screen">
     <h1>Homeschool Curriculum</h1>
     <p id="auth-subtitle">Sign in to get started</p>
@@ -811,11 +431,9 @@
       </p>
     </div>
   </div>
-
-  <!-- ── ROLE SELECTION ── -->
   <div id="role-screen">
     <h1 id="role-screen-title">Homeschool Curriculum</h1>
-    <p>Grades 4 – 10 &nbsp;|&nbsp; Math, English, Biology, Science, Spanish, Chinese</p>
+    <p>Grades 4 – 10 &nbsp;|&nbsp; Math, English, Biology</p>
     <div class="role-buttons">
       <button class="role-btn" onclick="selectRole('parent')">
         <span class="icon">&#128218;</span>
@@ -829,8 +447,6 @@
       </button>
     </div>
   </div>
-
-  <!-- ── PLACEMENT TEST ── -->
   <div id="test-screen">
     <div class="test-topbar">
       <h2>Placement Test</h2>
@@ -844,11 +460,7 @@
     </div>
     <div class="test-body" id="test-body"></div>
   </div>
-
-  <!-- ── TEST RESULTS ── -->
   <div id="results-screen"></div>
-
-  <!-- ── LANGUAGE SELECTION ── -->
   <div id="language-screen">
     <h1>Want to learn a language?</h1>
     <p>Pick one, both, or skip — you can always change later</p>
@@ -867,8 +479,6 @@
     <button class="test-next-btn" onclick="confirmLanguages()">Continue</button>
     <button class="back-btn" onclick="confirmLanguages()" style="margin-top:-8px;">Skip — no languages</button>
   </div>
-
-  <!-- ── MAIN APP ── -->
   <div id="app-screen">
     <div class="topbar">
       <div style="display:flex;align-items:center;gap:12px;">
@@ -878,13 +488,6 @@
       <div style="display:flex;align-items:center;gap:12px;">
         <span style="color:#94a3b8;font-size:0.85rem;" id="user-greeting"></span>
         <span class="role-badge" id="role-badge">PARENT</span>
-        <div class="lang-menu-wrapper" id="lang-menu-wrapper" style="display:none;position:relative;">
-          <button class="back-btn" onclick="toggleLangMenu()">Languages ▾</button>
-          <div class="lang-dropdown" id="lang-dropdown">
-            <label class="lang-check"><input type="checkbox" id="check-spanish" onchange="updateLanguages()"> Spanish</label>
-            <label class="lang-check"><input type="checkbox" id="check-chinese" onchange="updateLanguages()"> Chinese</label>
-          </div>
-        </div>
         <button class="back-btn" onclick="signOut()">Sign Out</button>
       </div>
     </div>
@@ -893,7 +496,6 @@
       <div class="content" id="content"></div>
     </div>
   </div>
-
   <script>
     firebase.initializeApp({
       apiKey: "AIzaSyCzigxOCPGs0WEiuQvWykPkkNjd59JBlWA",
@@ -904,40 +506,83 @@
       appId: "1:153730552434:web:2856ce40417f617d1fa8eb"
     });
     const auth = firebase.auth();
-    const CONTENT_BASE = 'https://raw.githubusercontent.com/BABAISABIGFATPOOP/homeschool-curriculum/master/';
 
-    const placementQuestions=[{id:1,subject:'Math',grade:4,question:'What is 4,208 + 3,975?',options:['7,183','8,183','8,173','7,283'],answer:1},{id:2,subject:'Math',grade:4,question:'What is the area of a rectangle that is 9 inches long and 4 inches wide?',options:['26 square inches','36 square inches','13 square inches','32 square inches'],answer:1},{id:3,subject:'Math',grade:5,question:'What is 2/5 + 1/3?',options:['3/8','3/15','11/15','7/15'],answer:2},{id:4,subject:'Math',grade:5,question:'What is the value of 4 + 3 \u00d7 2\u00b2 \u2212 1?',options:['15','27','19','23'],answer:0},{id:5,subject:'Math',grade:6,question:'What is 40% of 250?',options:['80','90','100','120'],answer:2},{id:6,subject:'Math',grade:6,question:'Simplify: \u22128 + 3 \u2212 (\u22125)',options:['\u221210','0','\u22126','6'],answer:1},{id:7,subject:'Math',grade:7,question:'Solve for x: 3x + 5 = 20',options:['x = 3','x = 5','x = 7','x = 8'],answer:1},{id:8,subject:'Math',grade:7,question:'What is the area of a triangle with base 10 and height 6?',options:['60','30','16','36'],answer:1},{id:9,subject:'Math',grade:8,question:'What is the slope of the line passing through (2, 5) and (6, 13)?',options:['1','2','3','4'],answer:1},{id:10,subject:'Math',grade:8,question:'A right triangle has legs of 6 and 8. What is the hypotenuse?',options:['12','14','10','9'],answer:2},{id:11,subject:'Math',grade:9,question:'Factor: x\u00b2 + 5x + 6',options:['(x + 1)(x + 6)','(x + 2)(x + 3)','(x + 3)(x + 3)','(x \u2212 2)(x \u2212 3)'],answer:1},{id:12,subject:'Math',grade:9,question:'Solve: x\u00b2 \u2212 9 = 0',options:['x = 3 only','x = \u22123 only','x = 3 or x = \u22123','x = 9'],answer:2},{id:13,subject:'Math',grade:10,question:'Two angles of a triangle are 45\u00b0 and 70\u00b0. What is the third angle?',options:['55\u00b0','65\u00b0','75\u00b0','85\u00b0'],answer:1},{id:14,subject:'Math',grade:10,question:'What is the area of a circle with radius 6? (in terms of \u03c0)',options:['12\u03c0','24\u03c0','36\u03c0','48\u03c0'],answer:2},{id:15,subject:'Math',grade:10,question:'Find the distance between points (1, 2) and (7, 10).',options:['8','10','12','14'],answer:1},{id:16,subject:'English',grade:4,question:'In the sentence "The small dog chased the red ball," which word is an adjective?',options:['dog','chased','small','ball'],answer:2},{id:17,subject:'English',grade:4,question:'Which of these is a complete sentence?',options:['Running quickly through the park.','The cat sat on the mat.','Because it was raining.','Very tall and green.'],answer:1},{id:18,subject:'English',grade:5,question:'What is the past tense of "swim"?',options:['swimmed','swum','swam','swimming'],answer:2},{id:19,subject:'English',grade:5,question:'What does a prefix do to a word?',options:['Changes its spelling','Adds to the end','Changes or adds meaning at the beginning','Makes it plural'],answer:2},{id:20,subject:'English',grade:6,question:'"The wind whispered through the trees" is an example of:',options:['Simile','Metaphor','Personification','Alliteration'],answer:2},{id:21,subject:'English',grade:6,question:'What is a thesis statement?',options:['The first sentence of any essay','A question you ask the reader','The main argument or point of an essay','A summary of the conclusion'],answer:2},{id:22,subject:'English',grade:7,question:'Which sentence uses the correct form?',options:['Me and my friend went to the store.','My friend and I went to the store.','My friend and me went to the store.','I and my friend went to the store.'],answer:1},{id:23,subject:'English',grade:7,question:'"Life is a highway" is an example of:',options:['Simile','Metaphor','Hyperbole','Onomatopoeia'],answer:1},{id:24,subject:'English',grade:8,question:'What is parallel structure?',options:['Using the same font throughout','Using the same grammatical form for similar ideas','Writing two paragraphs that are the same length','Using parallel lines in diagrams'],answer:1},{id:25,subject:'English',grade:8,question:'"The homework was completed by the students." This sentence is written in:',options:['Active voice','Passive voice','Future tense','Imperative mood'],answer:1},{id:26,subject:'English',grade:9,question:'"Everyone in my class has a phone, so phones must be essential for learning." This is an example of what logical fallacy?',options:['Ad hominem','Straw man','Bandwagon / appeal to popularity','Red herring'],answer:2},{id:27,subject:'English',grade:9,question:'Ethos, pathos, and logos are:',options:['Types of poetry','Greek gods','Modes of persuasion (credibility, emotion, logic)','Parts of a sentence'],answer:2},{id:28,subject:'English',grade:10,question:'In "Pride and Prejudice," Austen writes: "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife." This is an example of:',options:['Foreshadowing','Irony / satire','Flashback','Allegory'],answer:1},{id:29,subject:'English',grade:10,question:'What does it mean to analyze a text through a "critical lens"?',options:['To criticize the author','To read it with a magnifying glass','To examine it from a specific theoretical perspective','To find all the grammar errors'],answer:2},{id:30,subject:'English',grade:10,question:'In Robert Frost\'s "The Road Not Taken," the two roads most likely symbolize:',options:['Actual hiking trails','Choices in life','The difference between city and country','Two different poems'],answer:1},{id:31,subject:'Biology',grade:4,question:'Which of these is NOT something all living things need to survive?',options:['Water','Food/energy','Electricity','Air'],answer:2},{id:32,subject:'Biology',grade:4,question:'What is the job of a plant\'s roots?',options:['Make food from sunlight','Absorb water and nutrients from soil','Attract pollinators','Produce seeds'],answer:1},{id:33,subject:'Biology',grade:5,question:'What is photosynthesis?',options:['How animals breathe','How plants make food using sunlight','How rocks are formed','How water evaporates'],answer:1},{id:34,subject:'Biology',grade:5,question:'In a food chain, what is a producer?',options:['An animal that hunts other animals','An organism that makes its own food (like plants)','An animal that eats only plants','A decomposer like a mushroom'],answer:1},{id:35,subject:'Biology',grade:6,question:'What is the main difference between a plant cell and an animal cell?',options:['Plant cells have a nucleus, animal cells don\'t','Plant cells have a cell wall and chloroplasts, animal cells don\'t','Animal cells are bigger','Animal cells have DNA, plant cells don\'t'],answer:1},{id:36,subject:'Biology',grade:6,question:'The six kingdoms of life are used to:',options:['Describe the six continents','Classify all living organisms','Name the six oceans','Describe six types of rocks'],answer:1},{id:37,subject:'Biology',grade:7,question:'If both parents carry a recessive gene (Bb \u00d7 Bb), what percentage of offspring will show the recessive trait?',options:['0%','25%','50%','75%'],answer:1},{id:38,subject:'Biology',grade:7,question:'What is natural selection?',options:['Animals choosing their mates','Organisms with traits better suited to their environment survive and reproduce more','Scientists selecting which animals to study','Plants growing toward sunlight'],answer:1},{id:39,subject:'Biology',grade:8,question:'What is the main purpose of mitosis?',options:['To create sex cells','To produce energy','To grow and repair body cells','To digest food'],answer:2},{id:40,subject:'Biology',grade:8,question:'The equation 6CO\u2082 + 6H\u2082O \u2192 C\u2086H\u2081\u2082O\u2086 + 6O\u2082 represents:',options:['Cellular respiration','Photosynthesis','Fermentation','Decomposition'],answer:1},{id:41,subject:'Biology',grade:9,question:'Which macromolecule is made of amino acids?',options:['Carbohydrates','Lipids','Proteins','Nucleic acids'],answer:2},{id:42,subject:'Biology',grade:9,question:'During transcription, DNA is used as a template to make:',options:['More DNA','mRNA','Protein','Lipids'],answer:1},{id:43,subject:'Biology',grade:10,question:'What is the difference between mitosis and meiosis?',options:['Mitosis makes 4 cells, meiosis makes 2','Mitosis is for growth (2 identical cells), meiosis is for sex cells (4 unique cells)','They are the same thing','Meiosis only happens in plants'],answer:1},{id:44,subject:'Biology',grade:10,question:'In the lock-and-key model, what happens when an enzyme is denatured?',options:['It works faster','Its shape changes and it can no longer bind to its substrate','It duplicates itself','It becomes a different enzyme'],answer:1},{id:45,subject:'Biology',grade:10,question:'A mutation in a gamete (sex cell) vs. a somatic (body) cell \u2014 which can be inherited?',options:['Somatic cell mutation','Gamete mutation','Both equally','Neither'],answer:1}];
+    const placementQuestions = [
+      { id: 1, subject: 'Math', grade: 4, question: 'What is 4,208 + 3,975?', options: ['7,183', '8,183', '8,173', '7,283'], answer: 1 },
+      { id: 2, subject: 'Math', grade: 4, question: 'What is the area of a rectangle that is 9 inches long and 4 inches wide?', options: ['26 square inches', '36 square inches', '13 square inches', '32 square inches'], answer: 1 },
+      { id: 3, subject: 'Math', grade: 5, question: 'What is 2/5 + 1/3?', options: ['3/8', '3/15', '11/15', '7/15'], answer: 2 },
+      { id: 4, subject: 'Math', grade: 5, question: 'What is the value of 4 + 3 \u00d7 2\u00b2 \u2212 1?', options: ['15', '27', '19', '23'], answer: 0 },
+      { id: 5, subject: 'Math', grade: 6, question: 'What is 40% of 250?', options: ['80', '90', '100', '120'], answer: 2 },
+      { id: 6, subject: 'Math', grade: 6, question: 'Simplify: \u22128 + 3 \u2212 (\u22125)', options: ['\u221210', '0', '\u22126', '6'], answer: 1 },
+      { id: 7, subject: 'Math', grade: 7, question: 'Solve for x: 3x + 5 = 20', options: ['x = 3', 'x = 5', 'x = 7', 'x = 8'], answer: 1 },
+      { id: 8, subject: 'Math', grade: 7, question: 'What is the area of a triangle with base 10 and height 6?', options: ['60', '30', '16', '36'], answer: 1 },
+      { id: 9, subject: 'Math', grade: 8, question: 'What is the slope of the line passing through (2, 5) and (6, 13)?', options: ['1', '2', '3', '4'], answer: 1 },
+      { id: 10, subject: 'Math', grade: 8, question: 'A right triangle has legs of 6 and 8. What is the hypotenuse?', options: ['12', '14', '10', '9'], answer: 2 },
+      { id: 11, subject: 'Math', grade: 9, question: 'Factor: x\u00b2 + 5x + 6', options: ['(x + 1)(x + 6)', '(x + 2)(x + 3)', '(x + 3)(x + 3)', '(x \u2212 2)(x \u2212 3)'], answer: 1 },
+      { id: 12, subject: 'Math', grade: 9, question: 'Solve: x\u00b2 \u2212 9 = 0', options: ['x = 3 only', 'x = \u22123 only', 'x = 3 or x = \u22123', 'x = 9'], answer: 2 },
+      { id: 13, subject: 'Math', grade: 10, question: 'Two angles of a triangle are 45\u00b0 and 70\u00b0. What is the third angle?', options: ['55\u00b0', '65\u00b0', '75\u00b0', '85\u00b0'], answer: 1 },
+      { id: 14, subject: 'Math', grade: 10, question: 'What is the area of a circle with radius 6? (in terms of \u03c0)', options: ['12\u03c0', '24\u03c0', '36\u03c0', '48\u03c0'], answer: 2 },
+      { id: 15, subject: 'Math', grade: 10, question: 'Find the distance between points (1, 2) and (7, 10).', options: ['8', '10', '12', '14'], answer: 1 },
+      { id: 16, subject: 'English', grade: 4, question: 'In the sentence "The small dog chased the red ball," which word is an adjective?', options: ['dog', 'chased', 'small', 'ball'], answer: 2 },
+      { id: 17, subject: 'English', grade: 4, question: 'Which of these is a complete sentence?', options: ['Running quickly through the park.', 'The cat sat on the mat.', 'Because it was raining.', 'Very tall and green.'], answer: 1 },
+      { id: 18, subject: 'English', grade: 5, question: 'What is the past tense of "swim"?', options: ['swimmed', 'swum', 'swam', 'swimming'], answer: 2 },
+      { id: 19, subject: 'English', grade: 5, question: 'What does a prefix do to a word?', options: ['Changes its spelling', 'Adds to the end', 'Changes or adds meaning at the beginning', 'Makes it plural'], answer: 2 },
+      { id: 20, subject: 'English', grade: 6, question: '\u201cThe wind whispered through the trees\u201d is an example of:', options: ['Simile', 'Metaphor', 'Personification', 'Alliteration'], answer: 2 },
+      { id: 21, subject: 'English', grade: 6, question: 'What is a thesis statement?', options: ['The first sentence of any essay', 'A question you ask the reader', 'The main argument or point of an essay', 'A summary of the conclusion'], answer: 2 },
+      { id: 22, subject: 'English', grade: 7, question: 'Which sentence uses the correct form?', options: ['Me and my friend went to the store.', 'My friend and I went to the store.', 'My friend and me went to the store.', 'I and my friend went to the store.'], answer: 1 },
+      { id: 23, subject: 'English', grade: 7, question: '\u201cLife is a highway\u201d is an example of:', options: ['Simile', 'Metaphor', 'Hyperbole', 'Onomatopoeia'], answer: 1 },
+      { id: 24, subject: 'English', grade: 8, question: 'What is parallel structure?', options: ['Using the same font throughout', 'Using the same grammatical form for similar ideas', 'Writing two paragraphs that are the same length', 'Using parallel lines in diagrams'], answer: 1 },
+      { id: 25, subject: 'English', grade: 8, question: '\u201cThe homework was completed by the students.\u201d This sentence is written in:', options: ['Active voice', 'Passive voice', 'Future tense', 'Imperative mood'], answer: 1 },
+      { id: 26, subject: 'English', grade: 9, question: '\u201cEveryone in my class has a phone, so phones must be essential for learning.\u201d This is an example of what logical fallacy?', options: ['Ad hominem', 'Straw man', 'Bandwagon / appeal to popularity', 'Red herring'], answer: 2 },
+      { id: 27, subject: 'English', grade: 9, question: 'Ethos, pathos, and logos are:', options: ['Types of poetry', 'Greek gods', 'Modes of persuasion (credibility, emotion, logic)', 'Parts of a sentence'], answer: 2 },
+      { id: 28, subject: 'English', grade: 10, question: 'In "Pride and Prejudice," Austen writes: \u201cIt is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.\u201d This is an example of:', options: ['Foreshadowing', 'Irony / satire', 'Flashback', 'Allegory'], answer: 1 },
+      { id: 29, subject: 'English', grade: 10, question: 'What does it mean to analyze a text through a \u201ccritical lens\u201d?', options: ['To criticize the author', 'To read it with a magnifying glass', 'To examine it from a specific theoretical perspective', 'To find all the grammar errors'], answer: 2 },
+      { id: 30, subject: 'English', grade: 10, question: 'In Robert Frost\'s \u201cThe Road Not Taken,\u201d the two roads most likely symbolize:', options: ['Actual hiking trails', 'Choices in life', 'The difference between city and country', 'Two different poems'], answer: 1 },
+      { id: 31, subject: 'Biology', grade: 4, question: 'Which of these is NOT something all living things need to survive?', options: ['Water', 'Food/energy', 'Electricity', 'Air'], answer: 2 },
+      { id: 32, subject: 'Biology', grade: 4, question: 'What is the job of a plant\'s roots?', options: ['Make food from sunlight', 'Absorb water and nutrients from soil', 'Attract pollinators', 'Produce seeds'], answer: 1 },
+      { id: 33, subject: 'Biology', grade: 5, question: 'What is photosynthesis?', options: ['How animals breathe', 'How plants make food using sunlight', 'How rocks are formed', 'How water evaporates'], answer: 1 },
+      { id: 34, subject: 'Biology', grade: 5, question: 'In a food chain, what is a producer?', options: ['An animal that hunts other animals', 'An organism that makes its own food (like plants)', 'An animal that eats only plants', 'A decomposer like a mushroom'], answer: 1 },
+      { id: 35, subject: 'Biology', grade: 6, question: 'What is the main difference between a plant cell and an animal cell?', options: ['Plant cells have a nucleus, animal cells don\'t', 'Plant cells have a cell wall and chloroplasts, animal cells don\'t', 'Animal cells are bigger', 'Animal cells have DNA, plant cells don\'t'], answer: 1 },
+      { id: 36, subject: 'Biology', grade: 6, question: 'The six kingdoms of life are used to:', options: ['Describe the six continents', 'Classify all living organisms', 'Name the six oceans', 'Describe six types of rocks'], answer: 1 },
+      { id: 37, subject: 'Biology', grade: 7, question: 'If both parents carry a recessive gene (Bb \u00d7 Bb), what percentage of offspring will show the recessive trait?', options: ['0%', '25%', '50%', '75%'], answer: 1 },
+      { id: 38, subject: 'Biology', grade: 7, question: 'What is natural selection?', options: ['Animals choosing their mates', 'Organisms with traits better suited to their environment survive and reproduce more', 'Scientists selecting which animals to study', 'Plants growing toward sunlight'], answer: 1 },
+      { id: 39, subject: 'Biology', grade: 8, question: 'What is the main purpose of mitosis?', options: ['To create sex cells', 'To produce energy', 'To grow and repair body cells', 'To digest food'], answer: 2 },
+      { id: 40, subject: 'Biology', grade: 8, question: 'The equation 6CO\u2082 + 6H\u2082O \u2192 C\u2086H\u2081\u2082O\u2086 + 6O\u2082 represents:', options: ['Cellular respiration', 'Photosynthesis', 'Fermentation', 'Decomposition'], answer: 1 },
+      { id: 41, subject: 'Biology', grade: 9, question: 'Which macromolecule is made of amino acids?', options: ['Carbohydrates', 'Lipids', 'Proteins', 'Nucleic acids'], answer: 2 },
+      { id: 42, subject: 'Biology', grade: 9, question: 'During transcription, DNA is used as a template to make:', options: ['More DNA', 'mRNA', 'Protein', 'Lipids'], answer: 1 },
+      { id: 43, subject: 'Biology', grade: 10, question: 'What is the difference between mitosis and meiosis?', options: ['Mitosis makes 4 cells, meiosis makes 2', 'Mitosis is for growth (2 identical cells), meiosis is for sex cells (4 unique cells)', 'They are the same thing', 'Meiosis only happens in plants'], answer: 1 },
+      { id: 44, subject: 'Biology', grade: 10, question: 'In the lock-and-key model, what happens when an enzyme is denatured?', options: ['It works faster', 'Its shape changes and it can no longer bind to its substrate', 'It duplicates itself', 'It becomes a different enzyme'], answer: 1 },
+      { id: 45, subject: 'Biology', grade: 10, question: 'A mutation in a gamete (sex cell) vs. a somatic (body) cell \u2014 which can be inherited?', options: ['Somatic cell mutation', 'Gamete mutation', 'Both equally', 'Neither'], answer: 1 }
+    ];
 
     let currentRole = null;
     let currentGrade = null;
     let userName = '';
     let userDob = '';
     let isSignUpMode = false;
+    let testQuestions = [];
+    let testIndex = 0;
+    let testAnswers = [];
+    let testSelectedOption = null;
+    const testSubjects = ['Math', 'English', 'Biology'];
+    let currentSubjectIndex = 0;
+    let selectedLanguages = [];
 
-    // ── AUTO-LOGIN ON LAUNCH ──
-    window.addEventListener('DOMContentLoaded', async () => {
+    window.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('#signin-screen input').forEach(input => {
         input.addEventListener('keydown', (e) => { if (e.key === 'Enter') handleAuth(); });
       });
-
-      const user = await new Promise(resolve => {
-        auth.onAuthStateChanged(u => {
-          if (u) {
-            const parts = (u.displayName || '|').split('|');
-            resolve({ name: parts[0] || '', dob: parts[1] || '' });
-          } else resolve(null);
-        });
+      auth.onAuthStateChanged(user => {
+        if (user) {
+          userName = user.displayName || '';
+          userDob = '';
+          document.getElementById('signin-screen').style.display = 'none';
+          document.getElementById('role-screen').style.display = 'flex';
+          updateRoleScreenTitle();
+        }
       });
-      if (user) {
-        userName = user.name;
-        userDob = user.dob;
-        document.getElementById('signin-screen').style.display = 'none';
-        document.getElementById('role-screen').style.display = 'flex';
-        updateRoleScreenTitle();
-      }
     });
 
-    // ── TOGGLE SIGN IN / SIGN UP ──
     function toggleAuthMode(e) {
       e.preventDefault();
       isSignUpMode = !isSignUpMode;
@@ -949,7 +594,6 @@
       const toggleLink = document.getElementById('auth-toggle-link');
       const error = document.getElementById('signin-error');
       error.textContent = '';
-
       if (isSignUpMode) {
         nameGroup.style.display = 'flex';
         dobGroup.style.display = 'flex';
@@ -967,47 +611,41 @@
       }
     }
 
-    // ── HANDLE AUTH (SIGN IN OR SIGN UP) ──
     async function handleAuth() {
       const email = document.getElementById('signin-email').value.trim();
       const password = document.getElementById('signin-password').value;
       const error = document.getElementById('signin-error');
       const btn = document.getElementById('signin-btn');
-
       if (!email) { error.textContent = 'Please enter your email.'; return; }
       if (!password) { error.textContent = 'Please enter your password.'; return; }
       if (password.length < 6) { error.textContent = 'Password must be at least 6 characters.'; return; }
-
       btn.disabled = true;
       btn.textContent = isSignUpMode ? 'Signing up...' : 'Signing in...';
       error.textContent = '';
-
       try {
-        let cred;
         if (isSignUpMode) {
           const name = document.getElementById('signin-name').value.trim();
           const dob = document.getElementById('signin-dob').value;
           if (!name) { error.textContent = 'Please enter your name.'; btn.disabled = false; btn.textContent = 'Sign Up'; return; }
           if (!dob) { error.textContent = 'Please enter your date of birth.'; btn.disabled = false; btn.textContent = 'Sign Up'; return; }
-          cred = await auth.createUserWithEmailAndPassword(email, password);
-          await cred.user.updateProfile({ displayName: name + '|' + dob });
+          const cred = await auth.createUserWithEmailAndPassword(email, password);
+          await cred.user.updateProfile({ displayName: name });
           userName = name;
           userDob = dob;
         } else {
-          cred = await auth.signInWithEmailAndPassword(email, password);
-          const parts = (cred.user.displayName || '|').split('|');
-          userName = parts[0] || '';
-          userDob = parts[1] || '';
+          const cred = await auth.signInWithEmailAndPassword(email, password);
+          userName = cred.user.displayName || '';
+          userDob = '';
         }
         btn.disabled = false;
         btn.textContent = isSignUpMode ? 'Sign Up' : 'Sign In';
         document.getElementById('signin-screen').style.display = 'none';
         document.getElementById('role-screen').style.display = 'flex';
         updateRoleScreenTitle();
-      } catch (e) {
+      } catch (err) {
         btn.disabled = false;
         btn.textContent = isSignUpMode ? 'Sign Up' : 'Sign In';
-        let msg = e.message;
+        let msg = err.message;
         if (msg.includes('auth/email-already-in-use')) msg = 'An account with this email already exists.';
         else if (msg.includes('auth/invalid-email')) msg = 'Please enter a valid email address.';
         else if (msg.includes('auth/invalid-credential')) msg = 'Incorrect email or password.';
@@ -1019,7 +657,6 @@
       }
     }
 
-    // ── SIGN OUT ──
     async function signOut() {
       await auth.signOut();
       userName = '';
@@ -1027,9 +664,6 @@
       currentRole = null;
       currentGrade = null;
       document.getElementById('app-screen').style.display = 'none';
-      document.getElementById('test-screen').style.display = 'none';
-      document.getElementById('results-screen').style.display = 'none';
-      document.getElementById('language-screen').style.display = 'none';
       document.getElementById('role-screen').style.display = 'none';
       document.getElementById('signin-screen').style.display = 'flex';
       document.getElementById('signin-email').value = '';
@@ -1037,11 +671,9 @@
       document.getElementById('signin-name').value = '';
       document.getElementById('signin-dob').value = '';
       document.getElementById('signin-error').textContent = '';
-      // Reset to sign-in mode
       if (isSignUpMode) toggleAuthMode({ preventDefault: () => {} });
     }
 
-    // ── ROLE SELECTION ──
     function selectRole(role) {
       currentRole = role;
       if (role === 'student') {
@@ -1052,20 +684,13 @@
       }
     }
 
-    // Update role screen title with name whenever it's shown
     function updateRoleScreenTitle() {
       const title = document.getElementById('role-screen-title');
       if (userName) {
-        title.textContent = `Welcome, ${userName}!`;
+        title.textContent = 'Welcome, ' + userName + '!';
       } else {
         title.textContent = 'Homeschool Curriculum';
       }
-    }
-
-    function selectGrade(grade) {
-      currentGrade = grade;
-      document.getElementById('grade-picker').style.display = 'none';
-      showApp();
     }
 
     function goHome() {
@@ -1080,41 +705,31 @@
       updateRoleScreenTitle();
     }
 
-    // ── SHOW APP ──
     function showApp() {
       document.getElementById('role-screen').style.display = 'none';
-      document.getElementById('grade-picker').style.display = 'none';
       document.getElementById('app-screen').style.display = 'block';
-
-      document.getElementById('user-greeting').textContent = userName ? `Hi, ${userName}` : '';
-
+      document.getElementById('user-greeting').textContent = userName ? 'Hi, ' + userName : '';
       const badge = document.getElementById('role-badge');
-      const langMenuWrapper = document.getElementById('lang-menu-wrapper');
       if (currentRole === 'student') {
-        badge.textContent = `STUDENT — GRADE ${currentGrade}`;
+        badge.textContent = 'STUDENT \u2014 GRADE ' + currentGrade;
         badge.className = 'role-badge student';
-        langMenuWrapper.style.display = '';
-        syncLangCheckboxes();
       } else {
         badge.textContent = 'PARENT';
         badge.className = 'role-badge';
-        langMenuWrapper.style.display = 'none';
       }
-
       buildSidebar();
       showHomePage();
     }
 
-    // ── SIDEBAR ──
     function buildSidebar() {
       const sidebar = document.getElementById('sidebar');
       sidebar.innerHTML = '';
-
-      const addSection = (title, items, options = {}) => {
+      const addSection = (title, items, options) => {
+        options = options || {};
         const section = document.createElement('div');
         section.className = 'sidebar-section';
-        const attrs = options.lang ? ` data-lang="${options.lang}"` : '';
-        section.innerHTML = `<div class="sidebar-section-title"${attrs}>${title}</div>`;
+        const attrs = options.lang ? ' data-lang="' + options.lang + '"' : '';
+        section.innerHTML = '<div class="sidebar-section-title"' + attrs + '>' + title + '</div>';
         items.forEach(item => {
           const btn = document.createElement('button');
           btn.className = 'sidebar-item';
@@ -1128,163 +743,116 @@
         });
         sidebar.appendChild(section);
       };
-
-      // Home link
       addSection('Navigation', [{ label: 'Dashboard', action: showHomePage }]);
-
       if (currentRole === 'parent') {
-        // Parents see everything
         const grades = [4, 5, 6, 7, 8, 9, 10];
-
         addSection('Curriculum Overview', grades.map(g => ({
-          label: `Grade ${g}`,
-          action: () => loadMarkdown(`curriculum/grade-${String(g).padStart(2, '0')}.md`)
+          label: 'Grade ' + g,
+          action: () => loadMarkdown('curriculum/grade-' + String(g).padStart(2, '0') + '.md')
         })));
-
         addSection('Yearly Plans (36 Weeks)', grades.map(g => ({
-          label: `Grade ${g}`,
-          action: () => loadMarkdown(`yearly-plans/grade-${String(g).padStart(2, '0')}.md`)
+          label: 'Grade ' + g,
+          action: () => loadMarkdown('yearly-plans/grade-' + String(g).padStart(2, '0') + '.md')
         })));
-
         addSection('Placement Tests', [
           { label: 'Math', action: () => loadMarkdown('placement-tests/math.md') },
           { label: 'English', action: () => loadMarkdown('placement-tests/english.md') },
           { label: 'Biology', action: () => loadMarkdown('placement-tests/biology.md') },
           { label: 'Scoring Guide', action: () => loadMarkdown('placement-tests/scoring-guide.md') }
         ]);
-
         addSection('Schedule', [
           { label: 'Weekly Schedule', action: () => loadMarkdown('schedule.md') }
         ]);
-
       } else {
-        // Students see their grade only
         const g = currentGrade;
         const pad = String(g).padStart(2, '0');
-
         addSection('My Grade', [
-          { label: 'Curriculum Overview', action: () => loadMarkdown(`curriculum/grade-${pad}.md`) },
-          { label: 'Full Year Plan', action: () => loadMarkdown(`yearly-plans/grade-${pad}.md`) }
+          { label: 'Curriculum Overview', action: () => loadMarkdown('curriculum/grade-' + pad + '.md') },
+          { label: 'Full Year Plan', action: () => loadMarkdown('yearly-plans/grade-' + pad + '.md') }
         ]);
-
         addSection('Placement Tests', [
           { label: 'Math', action: () => loadMarkdown('placement-tests/math.md') },
           { label: 'English', action: () => loadMarkdown('placement-tests/english.md') },
           { label: 'Biology', action: () => loadMarkdown('placement-tests/biology.md') }
         ]);
-
-        // Add selected languages
         if (selectedLanguages.includes('spanish')) {
           addSection('Spanish', [
-            { label: 'Curriculum Overview', action: () => loadMarkdown(`curriculum/grade-${pad}.md`) },
-            { label: 'Full Year Plan', action: () => loadMarkdown(`yearly-plans/grade-${pad}.md`) }
+            { label: 'Curriculum Overview', action: () => loadMarkdown('curriculum/grade-' + pad + '.md') },
+            { label: 'Full Year Plan', action: () => loadMarkdown('yearly-plans/grade-' + pad + '.md') }
           ], { lang: 'spanish' });
         }
         if (selectedLanguages.includes('chinese')) {
           addSection('Chinese (Mandarin)', [
-            { label: 'Curriculum Overview', action: () => loadMarkdown(`curriculum/grade-${pad}.md`) },
-            { label: 'Full Year Plan', action: () => loadMarkdown(`yearly-plans/grade-${pad}.md`) }
+            { label: 'Curriculum Overview', action: () => loadMarkdown('curriculum/grade-' + pad + '.md') },
+            { label: 'Full Year Plan', action: () => loadMarkdown('yearly-plans/grade-' + pad + '.md') }
           ], { lang: 'chinese' });
         }
-
         addSection('Schedule', [
           { label: 'Weekly Schedule', action: () => loadMarkdown('schedule.md') }
         ]);
       }
     }
 
-    // ── LOAD MARKDOWN ──
     async function loadMarkdown(filePath) {
       try {
-        const res = await fetch(CONTENT_BASE + filePath);
-        const md = await res.text();
+        const resp = await fetch('https://raw.githubusercontent.com/BABAISABIGFATPOOP/homeschool-curriculum/master/' + filePath);
+        if (!resp.ok) throw new Error('Not found');
+        const md = await resp.text();
         document.getElementById('content').innerHTML = marked.parse(md);
       } catch (e) {
-        document.getElementById('content').innerHTML = `<h1>Error</h1><p>Could not load ${filePath}</p>`;
+        document.getElementById('content').innerHTML = '<h1>Error</h1><p>Could not load ' + filePath + '</p>';
       }
     }
 
-    // ── HOME / DASHBOARD ──
     function showHomePage() {
       document.querySelectorAll('.sidebar-item').forEach(b => b.classList.remove('active'));
       const firstItem = document.querySelector('.sidebar-item');
       if (firstItem) firstItem.classList.add('active');
-
       const content = document.getElementById('content');
-
       if (currentRole === 'parent') {
-        content.innerHTML = `
-          <h1>Parent Dashboard</h1>
-          <p>Welcome${userName ? ', ' + userName : ''}! You have full access to the curriculum, yearly plans, placement tests, and scheduling for all grades (4–10).</p>
-          <div class="home-cards">
-            <div class="home-card" onclick="document.querySelectorAll('.sidebar-section')[1].querySelector('.sidebar-item').click()">
-              <h3>Curriculum Overview</h3>
-              <p>See what each grade covers in Math, English, and Biology.</p>
-            </div>
-            <div class="home-card" onclick="document.querySelectorAll('.sidebar-section')[2].querySelector('.sidebar-item').click()">
-              <h3>Yearly Plans</h3>
-              <p>36-week, quarter-by-quarter breakdown for every grade.</p>
-            </div>
-            <div class="home-card" onclick="document.querySelectorAll('.sidebar-section')[3].querySelector('.sidebar-item').click()">
-              <h3>Placement Tests</h3>
-              <p>Figure out what grade level to start each subject at.</p>
-            </div>
-            <div class="home-card" onclick="document.querySelectorAll('.sidebar-section')[4].querySelector('.sidebar-item').click()">
-              <h3>Weekly Schedule</h3>
-              <p>Suggested daily time blocks for each subject.</p>
-            </div>
-          </div>
-          <h2 style="margin-top: 40px;">Getting Started</h2>
-          <ol>
-            <li><strong>Give the placement tests</strong> — have your student work through each subject's test until the questions get too hard.</li>
-            <li><strong>Check the scoring guide</strong> — it tells you what grade level to start at based on results.</li>
-            <li><strong>Open the yearly plan</strong> for the right grade and start at Week 1.</li>
-            <li>It's totally normal to be at different grade levels for different subjects!</li>
-          </ol>
-        `;
+        content.innerHTML = '<h1>Parent Dashboard</h1>' +
+          '<p>Welcome' + (userName ? ', ' + userName : '') + '! You have full access to the curriculum, yearly plans, placement tests, and scheduling for all grades (4\u201310).</p>' +
+          '<div class="home-cards">' +
+            '<div class="home-card" onclick="document.querySelectorAll(\'.sidebar-section\')[1].querySelector(\'.sidebar-item\').click()">' +
+              '<h3>Curriculum Overview</h3><p>See what each grade covers in Math, English, and Biology.</p></div>' +
+            '<div class="home-card" onclick="document.querySelectorAll(\'.sidebar-section\')[2].querySelector(\'.sidebar-item\').click()">' +
+              '<h3>Yearly Plans</h3><p>36-week, quarter-by-quarter breakdown for every grade.</p></div>' +
+            '<div class="home-card" onclick="document.querySelectorAll(\'.sidebar-section\')[3].querySelector(\'.sidebar-item\').click()">' +
+              '<h3>Placement Tests</h3><p>Figure out what grade level to start each subject at.</p></div>' +
+            '<div class="home-card" onclick="document.querySelectorAll(\'.sidebar-section\')[4].querySelector(\'.sidebar-item\').click()">' +
+              '<h3>Weekly Schedule</h3><p>Suggested daily time blocks for each subject.</p></div>' +
+          '</div>' +
+          '<h2 style="margin-top: 40px;">Getting Started</h2>' +
+          '<ol>' +
+            '<li><strong>Give the placement tests</strong> \u2014 have your student work through each subject\u2019s test until the questions get too hard.</li>' +
+            '<li><strong>Check the scoring guide</strong> \u2014 it tells you what grade level to start at based on results.</li>' +
+            '<li><strong>Open the yearly plan</strong> for the right grade and start at Week 1.</li>' +
+            '<li>It\u2019s totally normal to be at different grade levels for different subjects!</li>' +
+          '</ol>';
       } else {
-        const g = currentGrade;
-        content.innerHTML = `
-          <h1>Welcome${userName ? ', ' + userName : ''} — Grade ${g}!</h1>
-          <p>Here's everything you need for your school year.${selectedLanguages.length > 0 ? ' Languages: ' + selectedLanguages.map(l => l === 'spanish' ? 'Spanish' : 'Chinese').join(' & ') : ''}</p>
-          <div class="home-cards">
-            <div class="home-card" onclick="document.querySelectorAll('.sidebar-section')[1].querySelector('.sidebar-item').click()">
-              <h3>What You'll Learn</h3>
-              <p>See all the topics you'll cover this year in Math, English, Biology, and Science.</p>
-            </div>
-            <div class="home-card" onclick="document.querySelectorAll('.sidebar-section')[1].querySelectorAll('.sidebar-item')[1].click()">
-              <h3>Full Year Plan</h3>
-              <p>Your week-by-week schedule — see exactly what's coming up.</p>
-            </div>
-            ${selectedLanguages.includes('spanish') ? `
-            <div class="home-card" onclick="document.querySelector('.sidebar-section-title[data-lang=\\'spanish\\']').parentElement.querySelector('.sidebar-item').click()">
-              <h3>Spanish</h3>
-              <p>Your Spanish curriculum and weekly plan.</p>
-            </div>` : ''}
-            ${selectedLanguages.includes('chinese') ? `
-            <div class="home-card" onclick="document.querySelector('.sidebar-section-title[data-lang=\\'chinese\\']').parentElement.querySelector('.sidebar-item').click()">
-              <h3>Chinese (Mandarin)</h3>
-              <p>Your Chinese curriculum and weekly plan.</p>
-            </div>` : ''}
-            <div class="home-card" onclick="document.querySelectorAll('.sidebar-section')[2].querySelector('.sidebar-item').click()">
-              <h3>Placement Tests</h3>
-              <p>Take a test to make sure you're starting at the right level.</p>
-            </div>
-          </div>
-        `;
+        var g = currentGrade;
+        var langText = selectedLanguages.length > 0 ? ' Languages: ' + selectedLanguages.map(function(l) { return l === 'spanish' ? 'Spanish' : 'Chinese'; }).join(' & ') : '';
+        var html = '<h1>Welcome' + (userName ? ', ' + userName : '') + ' \u2014 Grade ' + g + '!</h1>' +
+          '<p>Here\u2019s everything you need for your school year.' + langText + '</p>' +
+          '<div class="home-cards">' +
+            '<div class="home-card" onclick="document.querySelectorAll(\'.sidebar-section\')[1].querySelector(\'.sidebar-item\').click()">' +
+              '<h3>What You\'ll Learn</h3><p>See all the topics you\'ll cover this year in Math, English, Biology, and Science.</p></div>' +
+            '<div class="home-card" onclick="document.querySelectorAll(\'.sidebar-section\')[1].querySelectorAll(\'.sidebar-item\')[1].click()">' +
+              '<h3>Full Year Plan</h3><p>Your week-by-week schedule \u2014 see exactly what\u2019s coming up.</p></div>';
+        if (selectedLanguages.includes('spanish')) {
+          html += '<div class="home-card" onclick="document.querySelector(\'.sidebar-section-title[data-lang=\\\'spanish\\\']\').parentElement.querySelector(\'.sidebar-item\').click()">' +
+            '<h3>Spanish</h3><p>Your Spanish curriculum and weekly plan.</p></div>';
+        }
+        if (selectedLanguages.includes('chinese')) {
+          html += '<div class="home-card" onclick="document.querySelector(\'.sidebar-section-title[data-lang=\\\'chinese\\\']\').parentElement.querySelector(\'.sidebar-item\').click()">' +
+            '<h3>Chinese (Mandarin)</h3><p>Your Chinese curriculum and weekly plan.</p></div>';
+        }
+        html += '<div class="home-card" onclick="document.querySelectorAll(\'.sidebar-section\')[2].querySelector(\'.sidebar-item\').click()">' +
+            '<h3>Placement Tests</h3><p>Take a test to make sure you\u2019re starting at the right level.</p></div>' +
+          '</div>';
+        content.innerHTML = html;
       }
     }
-    // ═══════════════════════════════════════
-    // PLACEMENT TEST
-    // ═══════════════════════════════════════
-
-    let testQuestions = [];
-    let testIndex = 0;
-    let testAnswers = []; // { id, subject, grade, selectedOption, correct }
-    let testSelectedOption = null;
-    const testSubjects = ['Math', 'English', 'Biology'];
-    let currentSubjectIndex = 0;
-    let selectedLanguages = []; // 'spanish', 'chinese'
 
     function startPlacementTest() {
       document.getElementById('test-screen').style.display = 'flex';
@@ -1303,271 +871,179 @@
     }
 
     function showTestRules() {
-      const body = document.getElementById('test-body');
-      body.innerHTML = `
-        <div class="test-rules">
-          <h1>Placement Test</h1>
-          <p style="color:#94a3b8;font-size:1.05rem;margin-bottom:8px;">This test will determine your grade level for each subject.</p>
-          <ul>
-            <li>There are <strong>45 questions</strong> — 15 Math, 15 English, 15 Biology</li>
-            <li>Questions start easy and get harder as you go</li>
-            <li>Pick the best answer for each question — you can <strong>change your answer</strong> before moving on</li>
-            <li><strong>No calculator</strong> allowed for math questions</li>
-            <li>It's okay to not know the answer — just pick your best guess</li>
-            <li>After each section (15 questions), you'll see your <strong>answers and corrections</strong></li>
-            <li>Take your time — there is <strong>no time limit</strong></li>
-            <li>Your results will show a recommended grade level for each subject</li>
-          </ul>
-          <button class="test-next-btn" onclick="showTestQuestion()">Start Test</button>
-        </div>
-      `;
+      document.getElementById('test-body').innerHTML =
+        '<div class="test-rules">' +
+          '<h1>Placement Test</h1>' +
+          '<p style="color:#94a3b8;font-size:1.05rem;margin-bottom:8px;">This test will determine your grade level for each subject.</p>' +
+          '<ul>' +
+            '<li>There are <strong>45 questions</strong> \u2014 15 Math, 15 English, 15 Biology</li>' +
+            '<li>Questions start easy and get harder as you go</li>' +
+            '<li>Pick the best answer for each question \u2014 you can <strong>change your answer</strong> before moving on</li>' +
+            '<li><strong>No calculator</strong> allowed for math questions</li>' +
+            '<li>It\u2019s okay to not know the answer \u2014 just pick your best guess</li>' +
+            '<li>After each section (15 questions), you\u2019ll see your <strong>answers and corrections</strong></li>' +
+            '<li>Take your time \u2014 there is <strong>no time limit</strong></li>' +
+            '<li>Your results will show a recommended grade level for each subject</li>' +
+          '</ul>' +
+          '<button class="test-next-btn" onclick="showTestQuestion()">Start Test</button>' +
+        '</div>';
     }
 
     function updateTestProgress() {
-      const total = 45;
-      const pct = (testIndex / total) * 100;
-      document.getElementById('test-progress-text').textContent = `${testIndex} / ${total}`;
+      var total = 45;
+      var pct = (testIndex / total) * 100;
+      document.getElementById('test-progress-text').textContent = testIndex + ' / ' + total;
       document.getElementById('test-progress-fill').style.width = pct + '%';
     }
 
     function getCurrentSubjectQuestions() {
-      const subject = testSubjects[currentSubjectIndex];
-      return testQuestions.filter(q => q.subject === subject);
+      var subject = testSubjects[currentSubjectIndex];
+      return testQuestions.filter(function(q) { return q.subject === subject; });
     }
 
     function getSubjectQuestionIndex() {
-      // How far into the current subject are we
-      const subject = testSubjects[currentSubjectIndex];
-      return testAnswers.filter(a => a.subject === subject).length;
+      var subject = testSubjects[currentSubjectIndex];
+      return testAnswers.filter(function(a) { return a.subject === subject; }).length;
     }
 
     function showTestQuestion() {
-      const subjectQs = getCurrentSubjectQuestions();
-      const sqIndex = getSubjectQuestionIndex();
-
-      // If we've answered all questions in this subject, show the review
-      if (sqIndex >= subjectQs.length) {
-        showSegmentReview();
-        return;
-      }
-
-      // If all subjects done
-      if (currentSubjectIndex >= testSubjects.length) {
-        showTestResults();
-        return;
-      }
-
+      var subjectQs = getCurrentSubjectQuestions();
+      var sqIndex = getSubjectQuestionIndex();
+      if (sqIndex >= subjectQs.length) { showSegmentReview(); return; }
+      if (currentSubjectIndex >= testSubjects.length) { showTestResults(); return; }
       testSelectedOption = null;
       updateTestProgress();
-
-      const q = subjectQs[sqIndex];
-      const subjectClass = q.subject.toLowerCase();
-      const body = document.getElementById('test-body');
-      const questionNum = sqIndex + 1;
-      const totalInSubject = subjectQs.length;
-
-      body.innerHTML = `
-        <span class="test-subject-badge ${subjectClass}">${q.subject} — Question ${questionNum} of ${totalInSubject}</span>
-        <div class="test-question">${q.question}</div>
-        <div class="test-options">
-          ${q.options.map((opt, i) => `
-            <button class="test-option" id="test-opt-${i}" onclick="selectTestOption(${i})">${opt}</button>
-          `).join('')}
-        </div>
-        <button class="test-next-btn" id="test-next" onclick="nextTestQuestion()" disabled>Next</button>
-      `;
+      var q = subjectQs[sqIndex];
+      var subjectClass = q.subject.toLowerCase();
+      var body = document.getElementById('test-body');
+      var questionNum = sqIndex + 1;
+      var totalInSubject = subjectQs.length;
+      var optionsHTML = '';
+      for (var i = 0; i < q.options.length; i++) {
+        optionsHTML += '<button class="test-option" id="test-opt-' + i + '" onclick="selectTestOption(' + i + ')">' + q.options[i] + '</button>';
+      }
+      body.innerHTML =
+        '<span class="test-subject-badge ' + subjectClass + '">' + q.subject + ' \u2014 Question ' + questionNum + ' of ' + totalInSubject + '</span>' +
+        '<div class="test-question">' + q.question + '</div>' +
+        '<div class="test-options">' + optionsHTML + '</div>' +
+        '<button class="test-next-btn" id="test-next" onclick="nextTestQuestion()" disabled>Next</button>';
     }
 
     function selectTestOption(index) {
       testSelectedOption = index;
-
-      const subjectQs = getCurrentSubjectQuestions();
-      const sqIndex = getSubjectQuestionIndex();
-      const q = subjectQs[sqIndex];
-
-      for (let i = 0; i < q.options.length; i++) {
-        const btn = document.getElementById(`test-opt-${i}`);
-        if (i === index) {
-          btn.classList.add('selected');
-        } else {
-          btn.classList.remove('selected');
-        }
+      var subjectQs = getCurrentSubjectQuestions();
+      var sqIndex = getSubjectQuestionIndex();
+      var q = subjectQs[sqIndex];
+      for (var i = 0; i < q.options.length; i++) {
+        var btn = document.getElementById('test-opt-' + i);
+        if (i === index) { btn.classList.add('selected'); } else { btn.classList.remove('selected'); }
       }
-
       document.getElementById('test-next').disabled = false;
     }
 
     function nextTestQuestion() {
       if (testSelectedOption === null) return;
-
-      const subjectQs = getCurrentSubjectQuestions();
-      const sqIndex = getSubjectQuestionIndex();
-      const q = subjectQs[sqIndex];
-
-      // Record answer (no reveal yet)
+      var subjectQs = getCurrentSubjectQuestions();
+      var sqIndex = getSubjectQuestionIndex();
+      var q = subjectQs[sqIndex];
       testAnswers.push({
-        id: q.id,
-        subject: q.subject,
-        grade: q.grade,
+        id: q.id, subject: q.subject, grade: q.grade,
         selectedOption: testSelectedOption,
         correct: testSelectedOption === q.answer
       });
-
       testIndex++;
       showTestQuestion();
     }
 
     function showSegmentReview() {
-      const subject = testSubjects[currentSubjectIndex];
-      const subjectClass = subject.toLowerCase();
-      const subjectQs = getCurrentSubjectQuestions();
-      const subjectAnswers = testAnswers.filter(a => a.subject === subject);
-      const correctCount = subjectAnswers.filter(a => a.correct).length;
-
-      const body = document.getElementById('test-body');
-
-      let reviewHTML = `
-        <div style="max-width:700px;width:100%;overflow-y:auto;max-height:calc(100vh - 150px);">
-          <h1 style="font-size:1.8rem;color:#f8fafc;text-align:center;margin-bottom:8px;">
-            <span class="test-subject-badge ${subjectClass}" style="font-size:0.9rem;vertical-align:middle;margin-right:8px;">${subject}</span>
-            Section Complete
-          </h1>
-          <p style="text-align:center;color:#94a3b8;margin-bottom:24px;">You got <strong style="color:#f8fafc;">${correctCount} out of ${subjectQs.length}</strong> correct</p>
-      `;
-
-      subjectQs.forEach((q, i) => {
-        const answer = subjectAnswers[i];
-        const isCorrect = answer.correct;
-        const borderColor = isCorrect ? '#10b981' : '#ef4444';
-        const icon = isCorrect ? '&#10003;' : '&#10007;';
-        const iconColor = isCorrect ? '#10b981' : '#ef4444';
-
-        reviewHTML += `
-          <div style="background:#1e293b;border:1px solid ${borderColor};border-radius:10px;padding:16px;margin-bottom:12px;">
-            <div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:8px;">
-              <strong style="color:#f8fafc;font-size:0.95rem;">Q${i + 1}: ${q.question}</strong>
-              <span style="color:${iconColor};font-size:1.2rem;min-width:24px;text-align:right;">${icon}</span>
-            </div>
-            <div style="color:#94a3b8;font-size:0.85rem;">
-              Your answer: <span style="color:${isCorrect ? '#10b981' : '#ef4444'};font-weight:600;">${q.options[answer.selectedOption]}</span>
-        `;
-
+      var subject = testSubjects[currentSubjectIndex];
+      var subjectClass = subject.toLowerCase();
+      var subjectQs = getCurrentSubjectQuestions();
+      var subjectAnswers = testAnswers.filter(function(a) { return a.subject === subject; });
+      var correctCount = subjectAnswers.filter(function(a) { return a.correct; }).length;
+      var body = document.getElementById('test-body');
+      var reviewHTML =
+        '<div style="max-width:700px;width:100%;overflow-y:auto;max-height:calc(100vh - 150px);">' +
+          '<h1 style="font-size:1.8rem;color:#f8fafc;text-align:center;margin-bottom:8px;">' +
+            '<span class="test-subject-badge ' + subjectClass + '" style="font-size:0.9rem;vertical-align:middle;margin-right:8px;">' + subject + '</span>' +
+            ' Section Complete</h1>' +
+          '<p style="text-align:center;color:#94a3b8;margin-bottom:24px;">You got <strong style="color:#f8fafc;">' + correctCount + ' out of ' + subjectQs.length + '</strong> correct</p>';
+      for (var i = 0; i < subjectQs.length; i++) {
+        var q = subjectQs[i];
+        var answer = subjectAnswers[i];
+        var isCorrect = answer.correct;
+        var borderColor = isCorrect ? '#10b981' : '#ef4444';
+        var icon = isCorrect ? '&#10003;' : '&#10007;';
+        var iconColor = isCorrect ? '#10b981' : '#ef4444';
+        reviewHTML +=
+          '<div style="background:#1e293b;border:1px solid ' + borderColor + ';border-radius:10px;padding:16px;margin-bottom:12px;">' +
+            '<div style="display:flex;justify-content:space-between;align-items:start;margin-bottom:8px;">' +
+              '<strong style="color:#f8fafc;font-size:0.95rem;">Q' + (i + 1) + ': ' + q.question + '</strong>' +
+              '<span style="color:' + iconColor + ';font-size:1.2rem;min-width:24px;text-align:right;">' + icon + '</span>' +
+            '</div>' +
+            '<div style="color:#94a3b8;font-size:0.85rem;">' +
+              'Your answer: <span style="color:' + (isCorrect ? '#10b981' : '#ef4444') + ';font-weight:600;">' + q.options[answer.selectedOption] + '</span>';
         if (!isCorrect) {
-          reviewHTML += `
-              <br>Correct answer: <span style="color:#10b981;font-weight:600;">${q.options[q.answer]}</span>
-          `;
+          reviewHTML += '<br>Correct answer: <span style="color:#10b981;font-weight:600;">' + q.options[q.answer] + '</span>';
         }
-
-        reviewHTML += `
-            </div>
-          </div>
-        `;
-      });
-
-      const nextSubject = currentSubjectIndex < testSubjects.length - 1 ? testSubjects[currentSubjectIndex + 1] : null;
-      const btnText = nextSubject ? `Continue to ${nextSubject}` : 'See Final Results';
-
-      reviewHTML += `
-        </div>
-        <button class="test-next-btn" onclick="continueToNextSubject()" style="margin-top:16px;">${btnText}</button>
-      `;
-
+        reviewHTML += '</div></div>';
+      }
+      var nextSubject = currentSubjectIndex < testSubjects.length - 1 ? testSubjects[currentSubjectIndex + 1] : null;
+      var btnText = nextSubject ? 'Continue to ' + nextSubject : 'See Final Results';
+      reviewHTML += '</div><button class="test-next-btn" onclick="continueToNextSubject()" style="margin-top:16px;">' + btnText + '</button>';
       body.innerHTML = reviewHTML;
     }
 
     function continueToNextSubject() {
       currentSubjectIndex++;
-      if (currentSubjectIndex >= testSubjects.length) {
-        showTestResults();
-      } else {
-        showTestQuestion();
-      }
+      if (currentSubjectIndex >= testSubjects.length) { showTestResults(); } else { showTestQuestion(); }
     }
 
     function showTestResults() {
       document.getElementById('test-screen').style.display = 'none';
-
-      // Calculate grade level per subject
-      const subjects = ['Math', 'English', 'Biology'];
-      const results = {};
-
-      subjects.forEach(subject => {
-        const subjectAnswers = testAnswers.filter(a => a.subject === subject);
-        const totalCorrect = subjectAnswers.filter(a => a.correct).length;
-
-        // Find the highest grade where the student got at least 1 out of 2 correct
-        // Questions are ordered by grade, ~2 per grade level
-        let placementGrade = 4; // minimum
-
-        // Group by grade
-        const byGrade = {};
-        subjectAnswers.forEach(a => {
+      var subjects = ['Math', 'English', 'Biology'];
+      var results = {};
+      subjects.forEach(function(subject) {
+        var subjectAnswers = testAnswers.filter(function(a) { return a.subject === subject; });
+        var totalCorrect = subjectAnswers.filter(function(a) { return a.correct; }).length;
+        var placementGrade = 4;
+        var byGrade = {};
+        subjectAnswers.forEach(function(a) {
           if (!byGrade[a.grade]) byGrade[a.grade] = { total: 0, correct: 0 };
           byGrade[a.grade].total++;
           if (a.correct) byGrade[a.grade].correct++;
         });
-
-        // Walk up from grade 4, stop when they get less than half right
-        for (let g = 4; g <= 10; g++) {
+        for (var g = 4; g <= 10; g++) {
           if (byGrade[g]) {
-            const pct = byGrade[g].correct / byGrade[g].total;
-            if (pct >= 0.5) {
-              placementGrade = g;
-            } else {
-              break;
-            }
+            var pct = byGrade[g].correct / byGrade[g].total;
+            if (pct >= 0.5) { placementGrade = g; } else { break; }
           }
         }
-
         results[subject] = { grade: placementGrade, correct: totalCorrect, total: subjectAnswers.length };
       });
-
-      // Overall grade = most common or average, rounded
-      const avgGrade = Math.round((results.Math.grade + results.English.grade + results.Biology.grade) / 3);
-      const overallGrade = Math.max(4, Math.min(10, avgGrade));
-
-      // Show results
-      const screen = document.getElementById('results-screen');
+      var avgGrade = Math.round((results.Math.grade + results.English.grade + results.Biology.grade) / 3);
+      var overallGrade = Math.max(4, Math.min(10, avgGrade));
+      var screen = document.getElementById('results-screen');
       screen.style.display = 'flex';
-      screen.innerHTML = `
-        <div class="results-card">
-          <h1>Your Results</h1>
-          <div class="result-row">
-            <span class="result-subject">Math</span>
-            <div>
-              <span class="result-grade math">Grade ${results.Math.grade}</span>
-              <span class="result-score">${results.Math.correct}/${results.Math.total} correct</span>
-            </div>
-          </div>
-          <div class="result-row">
-            <span class="result-subject">English</span>
-            <div>
-              <span class="result-grade english">Grade ${results.English.grade}</span>
-              <span class="result-score">${results.English.correct}/${results.English.total} correct</span>
-            </div>
-          </div>
-          <div class="result-row">
-            <span class="result-subject">Biology</span>
-            <div>
-              <span class="result-grade biology">Grade ${results.Biology.grade}</span>
-              <span class="result-score">${results.Biology.correct}/${results.Biology.total} correct</span>
-            </div>
-          </div>
-          <div class="result-overall">
-            <div class="result-overall-label">Overall Placement</div>
-            <div class="result-overall-grade">Grade ${overallGrade}</div>
-            <p style="color:#94a3b8;font-size:0.9rem;margin-top:8px;">You'll start at Grade ${overallGrade} for all subjects.<br>Your teachers can adjust individual subjects if needed.</p>
-          </div>
-        </div>
-        <button class="test-next-btn" onclick="acceptResults(${overallGrade})">Continue to My Curriculum</button>
-        <button class="back-btn" onclick="retakeTest()">Retake Test</button>
-      `;
+      screen.innerHTML =
+        '<div class="results-card">' +
+          '<h1>Your Results</h1>' +
+          '<div class="result-row"><span class="result-subject">Math</span><div><span class="result-grade math">Grade ' + results.Math.grade + '</span> <span class="result-score">' + results.Math.correct + '/' + results.Math.total + ' correct</span></div></div>' +
+          '<div class="result-row"><span class="result-subject">English</span><div><span class="result-grade english">Grade ' + results.English.grade + '</span> <span class="result-score">' + results.English.correct + '/' + results.English.total + ' correct</span></div></div>' +
+          '<div class="result-row"><span class="result-subject">Biology</span><div><span class="result-grade biology">Grade ' + results.Biology.grade + '</span> <span class="result-score">' + results.Biology.correct + '/' + results.Biology.total + ' correct</span></div></div>' +
+          '<div class="result-overall">' +
+            '<div class="result-overall-label">Overall Placement</div>' +
+            '<div class="result-overall-grade">Grade ' + overallGrade + '</div>' +
+            '<p style="color:#94a3b8;font-size:0.9rem;margin-top:8px;">You\u2019ll start at Grade ' + overallGrade + ' for all subjects.<br>Your teachers can adjust individual subjects if needed.</p>' +
+          '</div>' +
+        '</div>' +
+        '<button class="test-next-btn" onclick="acceptResults(' + overallGrade + ')">Continue to My Curriculum</button>' +
+        '<button class="back-btn" onclick="retakeTest()">Retake Test</button>';
     }
 
     function acceptResults(grade) {
       currentGrade = grade;
       document.getElementById('results-screen').style.display = 'none';
-      // Show language selection before entering app
       selectedLanguages = [];
       document.getElementById('lang-spanish').classList.remove('selected');
       document.getElementById('lang-chinese').classList.remove('selected');
@@ -1579,14 +1055,9 @@
       startPlacementTest();
     }
 
-    // ── LANGUAGE SELECTION ──
     function toggleLang(lang) {
-      const idx = selectedLanguages.indexOf(lang);
-      if (idx === -1) {
-        selectedLanguages.push(lang);
-      } else {
-        selectedLanguages.splice(idx, 1);
-      }
+      var idx = selectedLanguages.indexOf(lang);
+      if (idx === -1) { selectedLanguages.push(lang); } else { selectedLanguages.splice(idx, 1); }
       document.getElementById('lang-' + lang).classList.toggle('selected');
     }
 
@@ -1594,36 +1065,6 @@
       document.getElementById('language-screen').style.display = 'none';
       showApp();
     }
-
-    // ── LANGUAGE MENU (TOPBAR DROPDOWN) ──
-    function toggleLangMenu() {
-      document.getElementById('lang-dropdown').classList.toggle('open');
-    }
-
-    // Close dropdown when clicking outside
-    document.addEventListener('click', (e) => {
-      const wrapper = document.getElementById('lang-menu-wrapper');
-      if (wrapper && !wrapper.contains(e.target)) {
-        document.getElementById('lang-dropdown').classList.remove('open');
-      }
-    });
-
-    function updateLanguages() {
-      const spanishChecked = document.getElementById('check-spanish').checked;
-      const chineseChecked = document.getElementById('check-chinese').checked;
-      selectedLanguages = [];
-      if (spanishChecked) selectedLanguages.push('spanish');
-      if (chineseChecked) selectedLanguages.push('chinese');
-      // Rebuild sidebar with updated languages
-      buildSidebar();
-      showHomePage();
-    }
-
-    function syncLangCheckboxes() {
-      document.getElementById('check-spanish').checked = selectedLanguages.includes('spanish');
-      document.getElementById('check-chinese').checked = selectedLanguages.includes('chinese');
-    }
   </script>
-
 </body>
 </html>

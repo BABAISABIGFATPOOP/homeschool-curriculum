@@ -812,7 +812,7 @@
   <!-- ── ROLE SELECTION ── -->
   <div id="role-screen">
     <h1 id="role-screen-title">Homeschool Curriculum</h1>
-    <p>Grades 4 – 10 &nbsp;|&nbsp; Math, English, Biology, Science, Spanish, Chinese</p>
+    <p>Grades 4 – 12 &nbsp;|&nbsp; Math, English, Biology, Science, Spanish, Chinese, History, Geography</p>
     <div class="role-buttons">
       <button class="role-btn" onclick="selectRole('parent')">
         <span class="icon">&#128218;</span>
@@ -1110,7 +1110,7 @@
 
       if (currentRole === 'parent') {
         // Parents see everything
-        const grades = [4, 5, 6, 7, 8, 9, 10];
+        const grades = [4, 5, 6, 7, 8, 9, 10, 11, 12];
 
         addSection('Curriculum Overview', grades.map(g => ({
           label: `Grade ${g}`,
@@ -1127,6 +1127,35 @@
           { label: 'English', action: () => loadMarkdown('placement-tests/english.md') },
           { label: 'Biology', action: () => loadMarkdown('placement-tests/biology.md') },
           { label: 'Scoring Guide', action: () => loadMarkdown('placement-tests/scoring-guide.md') }
+        ]);
+
+        addSection('CLEP Test Prep', [
+          { label: 'Overview & Tips', action: () => loadMarkdown('clep-prep/overview.md') },
+          { label: 'College Mathematics', action: () => loadMarkdown('clep-prep/college-mathematics.md') },
+          { label: 'College Algebra', action: () => loadMarkdown('clep-prep/college-algebra.md') },
+          { label: 'College Composition', action: () => loadMarkdown('clep-prep/college-composition.md') },
+          { label: 'Literature', action: () => loadMarkdown('clep-prep/analyzing-literature.md') },
+          { label: 'Biology', action: () => loadMarkdown('clep-prep/biology.md') },
+          { label: 'Chemistry', action: () => loadMarkdown('clep-prep/chemistry.md') },
+          { label: 'US History I', action: () => loadMarkdown('clep-prep/us-history-1.md') },
+          { label: 'US History II', action: () => loadMarkdown('clep-prep/us-history-2.md') },
+          { label: 'Western Civ I', action: () => loadMarkdown('clep-prep/western-civ-1.md') },
+          { label: 'Western Civ II', action: () => loadMarkdown('clep-prep/western-civ-2.md') },
+          { label: 'Spanish', action: () => loadMarkdown('clep-prep/spanish.md') }
+        ]);
+
+        addSection('CLEP Practice Exams', [
+          { label: 'College Mathematics', action: () => loadMarkdown('clep-prep/practice-exams/college-mathematics-exam.md') },
+          { label: 'College Algebra', action: () => loadMarkdown('clep-prep/practice-exams/college-algebra-exam.md') },
+          { label: 'College Composition', action: () => loadMarkdown('clep-prep/practice-exams/college-composition-exam.md') },
+          { label: 'Literature', action: () => loadMarkdown('clep-prep/practice-exams/analyzing-literature-exam.md') },
+          { label: 'Biology', action: () => loadMarkdown('clep-prep/practice-exams/biology-exam.md') },
+          { label: 'Chemistry', action: () => loadMarkdown('clep-prep/practice-exams/chemistry-exam.md') },
+          { label: 'US History I', action: () => loadMarkdown('clep-prep/practice-exams/us-history-1-exam.md') },
+          { label: 'US History II', action: () => loadMarkdown('clep-prep/practice-exams/us-history-2-exam.md') },
+          { label: 'Western Civ I', action: () => loadMarkdown('clep-prep/practice-exams/western-civ-1-exam.md') },
+          { label: 'Western Civ II', action: () => loadMarkdown('clep-prep/practice-exams/western-civ-2-exam.md') },
+          { label: 'Spanish', action: () => loadMarkdown('clep-prep/practice-exams/spanish-exam.md') }
         ]);
 
         addSection('Schedule', [
@@ -1161,6 +1190,30 @@
             { label: 'Curriculum Overview', action: () => loadMarkdown(`curriculum/grade-${pad}.md`) },
             { label: 'Full Year Plan', action: () => loadMarkdown(`yearly-plans/grade-${pad}.md`) }
           ], { lang: 'chinese' });
+        }
+
+        // Show CLEP for grades 9-10
+        if (currentGrade >= 9) {
+          addSection('CLEP Test Prep', [
+            { label: 'Overview & Tips', action: () => loadMarkdown('clep-prep/overview.md') },
+            { label: 'College Mathematics', action: () => loadMarkdown('clep-prep/college-mathematics.md') },
+            { label: 'College Algebra', action: () => loadMarkdown('clep-prep/college-algebra.md') },
+            { label: 'College Composition', action: () => loadMarkdown('clep-prep/college-composition.md') },
+            { label: 'Biology', action: () => loadMarkdown('clep-prep/biology.md') },
+            { label: 'Chemistry', action: () => loadMarkdown('clep-prep/chemistry.md') },
+            { label: 'US History I', action: () => loadMarkdown('clep-prep/us-history-1.md') },
+            { label: 'US History II', action: () => loadMarkdown('clep-prep/us-history-2.md') }
+          ]);
+
+          addSection('CLEP Practice Exams', [
+            { label: 'College Mathematics', action: () => loadMarkdown('clep-prep/practice-exams/college-mathematics-exam.md') },
+            { label: 'College Algebra', action: () => loadMarkdown('clep-prep/practice-exams/college-algebra-exam.md') },
+            { label: 'College Composition', action: () => loadMarkdown('clep-prep/practice-exams/college-composition-exam.md') },
+            { label: 'Biology', action: () => loadMarkdown('clep-prep/practice-exams/biology-exam.md') },
+            { label: 'Chemistry', action: () => loadMarkdown('clep-prep/practice-exams/chemistry-exam.md') },
+            { label: 'US History I', action: () => loadMarkdown('clep-prep/practice-exams/us-history-1-exam.md') },
+            { label: 'US History II', action: () => loadMarkdown('clep-prep/practice-exams/us-history-2-exam.md') }
+          ]);
         }
 
         addSection('Schedule', [
@@ -1499,7 +1552,7 @@
 
       // Overall grade = most common or average, rounded
       const avgGrade = Math.round((results.Math.grade + results.English.grade + results.Biology.grade) / 3);
-      const overallGrade = Math.max(4, Math.min(10, avgGrade));
+      const overallGrade = Math.max(4, Math.min(12, avgGrade));
 
       // Show results
       const screen = document.getElementById('results-screen');
