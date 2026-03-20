@@ -796,10 +796,6 @@
         <label>Password</label>
         <input type="password" id="signin-password" placeholder="Enter your password">
       </div>
-      <div class="form-group" id="dob-group" style="display:none;">
-        <label>Date of Birth</label>
-        <input type="date" id="signin-dob">
-      </div>
       <div class="signin-error" id="signin-error"></div>
       <button class="signin-btn" id="signin-btn" onclick="handleAuth()">Sign In</button>
       <p style="text-align:center;color:#94a3b8;font-size:0.9rem;">
@@ -895,7 +891,6 @@
     let currentRole = null;
     let currentGrade = null;
     let userName = '';
-    let userDob = '';
     let isSignUpMode = false;
 
     // ── CHECK FOR UPDATES & AUTO-LOGIN ON LAUNCH ──
@@ -911,7 +906,6 @@
       const user = await window.api.authCurrentUser();
       if (user) {
         userName = user.name;
-        userDob = user.dob;
         document.getElementById('signin-screen').style.display = 'none';
         document.getElementById('role-screen').style.display = 'flex';
         updateRoleScreenTitle();
@@ -923,7 +917,6 @@
       e.preventDefault();
       isSignUpMode = !isSignUpMode;
       const nameGroup = document.getElementById('name-group');
-      const dobGroup = document.getElementById('dob-group');
       const btn = document.getElementById('signin-btn');
       const subtitle = document.getElementById('auth-subtitle');
       const toggleText = document.getElementById('auth-toggle-text');
@@ -933,14 +926,12 @@
 
       if (isSignUpMode) {
         nameGroup.style.display = 'flex';
-        dobGroup.style.display = 'flex';
         btn.textContent = 'Sign Up';
         subtitle.textContent = 'Create your account';
         toggleText.textContent = 'Already have an account?';
         toggleLink.textContent = 'Sign In';
       } else {
         nameGroup.style.display = 'none';
-        dobGroup.style.display = 'none';
         btn.textContent = 'Sign In';
         subtitle.textContent = 'Sign in to get started';
         toggleText.textContent = "Don't have an account?";
@@ -966,10 +957,8 @@
       let result;
       if (isSignUpMode) {
         const name = document.getElementById('signin-name').value.trim();
-        const dob = document.getElementById('signin-dob').value;
         if (!name) { error.textContent = 'Please enter your name.'; btn.disabled = false; btn.textContent = 'Sign Up'; return; }
-        if (!dob) { error.textContent = 'Please enter your date of birth.'; btn.disabled = false; btn.textContent = 'Sign Up'; return; }
-        result = await window.api.authSignUp(email, password, name, dob);
+        result = await window.api.authSignUp(email, password, name);
       } else {
         result = await window.api.authLogIn(email, password);
       }
@@ -979,7 +968,6 @@
 
       if (result.success) {
         userName = result.user.name;
-        userDob = result.user.dob;
         document.getElementById('signin-screen').style.display = 'none';
         document.getElementById('role-screen').style.display = 'flex';
         updateRoleScreenTitle();
@@ -1001,7 +989,6 @@
     async function signOut() {
       await window.api.authLogOut();
       userName = '';
-      userDob = '';
       currentRole = null;
       currentGrade = null;
       document.getElementById('app-screen').style.display = 'none';
@@ -1011,7 +998,6 @@
       document.getElementById('signin-email').value = '';
       document.getElementById('signin-password').value = '';
       document.getElementById('signin-name').value = '';
-      document.getElementById('signin-dob').value = '';
       document.getElementById('signin-error').textContent = '';
       // Reset to sign-in mode
       if (isSignUpMode) toggleAuthMode({ preventDefault: () => {} });

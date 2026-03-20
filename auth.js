@@ -14,16 +14,18 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-async function signUp(email, password, name, dob) {
+async function signUp(email, password, name) {
   const cred = await createUserWithEmailAndPassword(auth, email, password);
-  await updateProfile(cred.user, { displayName: `${name}|${dob}` });
-  return { uid: cred.user.uid, email: cred.user.email, name, dob };
+  await updateProfile(cred.user, { displayName: name });
+  return { uid: cred.user.uid, email: cred.user.email, name };
 }
 
 async function logIn(email, password) {
   const cred = await signInWithEmailAndPassword(auth, email, password);
-  const parts = (cred.user.displayName || '|').split('|');
-  return { uid: cred.user.uid, email: cred.user.email, name: parts[0] || '', dob: parts[1] || '' };
+  // Handle old accounts that stored name|dob
+  const displayName = cred.user.displayName || '';
+  const name = displayName.includes('|') ? displayName.split('|')[0] : displayName;
+  return { uid: cred.user.uid, email: cred.user.email, name };
 }
 
 async function logOut() {
@@ -35,8 +37,9 @@ function getCurrentUser() {
     const unsub = onAuthStateChanged(auth, (user) => {
       unsub();
       if (user) {
-        const parts = (user.displayName || '|').split('|');
-        resolve({ uid: user.uid, email: user.email, name: parts[0] || '', dob: parts[1] || '' });
+        const displayName = user.displayName || '';
+        const name = displayName.includes('|') ? displayName.split('|')[0] : displayName;
+        resolve({ uid: user.uid, email: user.email, name });
       } else {
         resolve(null);
       }

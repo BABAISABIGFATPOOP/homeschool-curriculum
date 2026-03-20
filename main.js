@@ -103,9 +103,9 @@ ipcMain.handle('check-for-update', async () => {
 });
 
 // Auth handlers
-ipcMain.handle('auth-signup', async (event, email, password, name, dob) => {
+ipcMain.handle('auth-signup', async (event, email, password, name) => {
   try {
-    const user = await auth.signUp(email, password, name, dob);
+    const user = await auth.signUp(email, password, name);
     return { success: true, user };
   } catch (e) {
     return { success: false, error: e.message };

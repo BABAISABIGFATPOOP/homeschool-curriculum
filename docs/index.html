@@ -419,10 +419,6 @@
         <label>Password</label>
         <input type="password" id="signin-password" placeholder="Enter your password">
       </div>
-      <div class="form-group" id="dob-group" style="display:none;">
-        <label>Date of Birth</label>
-        <input type="date" id="signin-dob">
-      </div>
       <div class="signin-error" id="signin-error"></div>
       <button class="signin-btn" id="signin-btn" onclick="handleAuth()">Sign In</button>
       <p style="text-align:center;color:#94a3b8;font-size:0.9rem;">
@@ -433,7 +429,7 @@
   </div>
   <div id="role-screen">
     <h1 id="role-screen-title">Homeschool Curriculum</h1>
-    <p>Grades 4 – 10 &nbsp;|&nbsp; Math, English, Biology</p>
+    <p>Grades 4 – 12 &nbsp;|&nbsp; Math, English, Biology, Science, Spanish, Chinese, History, Geography</p>
     <div class="role-buttons">
       <button class="role-btn" onclick="selectRole('parent')">
         <span class="icon">&#128218;</span>
@@ -574,7 +570,8 @@
       });
       auth.onAuthStateChanged(user => {
         if (user) {
-          userName = user.displayName || '';
+          const dn = user.displayName || '';
+          userName = dn.includes('|') ? dn.split('|')[0] : dn;
           userDob = '';
           document.getElementById('signin-screen').style.display = 'none';
           document.getElementById('role-screen').style.display = 'flex';
@@ -587,7 +584,6 @@
       e.preventDefault();
       isSignUpMode = !isSignUpMode;
       const nameGroup = document.getElementById('name-group');
-      const dobGroup = document.getElementById('dob-group');
       const btn = document.getElementById('signin-btn');
       const subtitle = document.getElementById('auth-subtitle');
       const toggleText = document.getElementById('auth-toggle-text');
@@ -596,14 +592,12 @@
       error.textContent = '';
       if (isSignUpMode) {
         nameGroup.style.display = 'flex';
-        dobGroup.style.display = 'flex';
         btn.textContent = 'Sign Up';
         subtitle.textContent = 'Create your account';
         toggleText.textContent = 'Already have an account?';
         toggleLink.textContent = 'Sign In';
       } else {
         nameGroup.style.display = 'none';
-        dobGroup.style.display = 'none';
         btn.textContent = 'Sign In';
         subtitle.textContent = 'Sign in to get started';
         toggleText.textContent = "Don't have an account?";
@@ -625,16 +619,14 @@
       try {
         if (isSignUpMode) {
           const name = document.getElementById('signin-name').value.trim();
-          const dob = document.getElementById('signin-dob').value;
           if (!name) { error.textContent = 'Please enter your name.'; btn.disabled = false; btn.textContent = 'Sign Up'; return; }
-          if (!dob) { error.textContent = 'Please enter your date of birth.'; btn.disabled = false; btn.textContent = 'Sign Up'; return; }
           const cred = await auth.createUserWithEmailAndPassword(email, password);
           await cred.user.updateProfile({ displayName: name });
           userName = name;
-          userDob = dob;
         } else {
           const cred = await auth.signInWithEmailAndPassword(email, password);
-          userName = cred.user.displayName || '';
+          const dn2 = cred.user.displayName || '';
+          userName = dn2.includes('|') ? dn2.split('|')[0] : dn2;
           userDob = '';
         }
         btn.disabled = false;
@@ -669,7 +661,6 @@
       document.getElementById('signin-email').value = '';
       document.getElementById('signin-password').value = '';
       document.getElementById('signin-name').value = '';
-      document.getElementById('signin-dob').value = '';
       document.getElementById('signin-error').textContent = '';
       if (isSignUpMode) toggleAuthMode({ preventDefault: () => {} });
     }
