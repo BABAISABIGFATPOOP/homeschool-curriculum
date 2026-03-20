@@ -821,8 +821,22 @@
       <button class="role-btn" onclick="selectRole('student')">
         <span class="icon">&#9997;&#65039;</span>
         Student
-        <span class="subtitle">Pick your grade level</span>
+        <span class="subtitle">Take placement test</span>
       </button>
+    </div>
+    <div id="role-options" style="display:flex;flex-direction:column;align-items:center;gap:16px;margin-top:-10px;">
+      <p style="color:#64748b;font-size:0.85rem;text-transform:uppercase;letter-spacing:1px;font-weight:700;">Options</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
+        <label class="lang-check" style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:8px 16px;">
+          <input type="checkbox" id="role-check-spanish" onchange="toggleRoleLang('spanish')"> Spanish
+        </label>
+        <label class="lang-check" style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:8px 16px;">
+          <input type="checkbox" id="role-check-chinese" onchange="toggleRoleLang('chinese')"> Chinese
+        </label>
+        <label class="lang-check" style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:8px 16px;">
+          <input type="checkbox" id="role-check-clep" onchange="toggleRoleClep()"> CLEP Test Prep
+        </label>
+      </div>
     </div>
   </div>
 
@@ -918,6 +932,7 @@
         document.getElementById('signin-screen').style.display = 'none';
         document.getElementById('role-screen').style.display = 'flex';
         updateRoleScreenTitle();
+        syncRoleCheckboxes();
       }
     });
 
@@ -980,6 +995,7 @@
         document.getElementById('signin-screen').style.display = 'none';
         document.getElementById('role-screen').style.display = 'flex';
         updateRoleScreenTitle();
+        syncRoleCheckboxes();
       } else {
         // Clean up Firebase error messages
         let msg = result.error;
@@ -1049,6 +1065,7 @@
       document.getElementById('signin-screen').style.display = 'none';
       document.getElementById('role-screen').style.display = 'flex';
       updateRoleScreenTitle();
+      syncRoleCheckboxes();
     }
 
     // ── SHOW APP ──
@@ -1634,11 +1651,7 @@
     function acceptResults(grade) {
       currentGrade = grade;
       document.getElementById('results-screen').style.display = 'none';
-      // Show language selection before entering app
-      selectedLanguages = [];
-      document.getElementById('lang-spanish').classList.remove('selected');
-      document.getElementById('lang-chinese').classList.remove('selected');
-      document.getElementById('language-screen').style.display = 'flex';
+      showApp();
     }
 
     function retakeTest() {
@@ -1709,6 +1722,22 @@
       showClep = document.getElementById('check-clep').checked;
       buildSidebar();
       showHomePage();
+    }
+
+    // ── ROLE SCREEN OPTIONS ──
+    function toggleRoleLang(lang) {
+      const idx = selectedLanguages.indexOf(lang);
+      if (idx === -1) { selectedLanguages.push(lang); } else { selectedLanguages.splice(idx, 1); }
+    }
+
+    function toggleRoleClep() {
+      showClep = document.getElementById('role-check-clep').checked;
+    }
+
+    function syncRoleCheckboxes() {
+      document.getElementById('role-check-spanish').checked = selectedLanguages.includes('spanish');
+      document.getElementById('role-check-chinese').checked = selectedLanguages.includes('chinese');
+      document.getElementById('role-check-clep').checked = showClep;
     }
   </script>
 
