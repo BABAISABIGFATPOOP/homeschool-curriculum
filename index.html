@@ -1845,12 +1845,12 @@
           <h1>Placement Test</h1>
           <p style="color:#94a3b8;font-size:1.05rem;margin-bottom:8px;">This test will determine your grade level for each subject.</p>
           <ul>
-            <li>There are <strong>${activeTestSubjects.length * 15} questions</strong> — 15 each for ${activeTestSubjects.join(', ')}</li>
+            <li>There are <strong>${activeTestSubjects.length * QUESTIONS_PER_SUBJECT} questions</strong> — ${QUESTIONS_PER_SUBJECT} each for ${activeTestSubjects.join(', ')}</li>
             <li>Questions <strong>adapt to your level</strong> — get one right, the next gets harder. Get one wrong, the next gets easier</li>
             <li>Pick the best answer for each question — you can <strong>change your answer</strong> before moving on</li>
             <li><strong>No calculator</strong> allowed for math questions</li>
             <li>It's okay to not know the answer — just pick your best guess</li>
-            <li>After each section (15 questions), you'll see your <strong>answers and corrections</strong></li>
+            <li>After each section (${QUESTIONS_PER_SUBJECT} questions), you'll see your <strong>answers and corrections</strong></li>
             <li>Take your time — there is <strong>no time limit</strong></li>
             <li>Your results will show a recommended grade level for each subject</li>
           </ul>
