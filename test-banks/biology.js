@@ -39,3 +39,20 @@ const biologyTestBanks = [
     { id: 29, subject: 'Biology', grade: 10, question: 'What is the substrate of an enzyme?', options: ['The product of the reaction', 'The molecule the enzyme acts upon', 'The enzyme itself', 'The cofactor'], answer: 1 },
     { id: 30, subject: 'Biology', grade: 4, question: 'What do fish use to breathe underwater?', options: ['Lungs', 'Gills', 'Skin', 'Fins'], answer: 1 }
   ],
+  [
+    { id: 31, subject: 'Biology', grade: 4, question: 'Which of these is NOT a characteristic of living things?', options: ['Growth', 'Reproduction', 'Movement caused by wind', 'Response to stimuli'], answer: 2 },
+    { id: 32, subject: 'Biology', grade: 4, question: 'What part of a plant makes seeds?', options: ['Root', 'Stem', 'Leaf', 'Flower'], answer: 3 },
+    { id: 33, subject: 'Biology', grade: 5, question: 'What is the job of white blood cells?', options: ['Carry oxygen', 'Fight infections', 'Clot blood', 'Carry nutrients'], answer: 1 },
+    { id: 34, subject: 'Biology', grade: 5, question: 'Which of these animals is an amphibian?', options: ['Snake', 'Frog', 'Eagle', 'Shark'], answer: 1 },
+    { id: 35, subject: 'Biology', grade: 6, question: 'What is the role of decomposers in an ecosystem?', options: ['They produce food', 'They hunt prey', 'They break down dead organisms', 'They photosynthesize'], answer: 2 },
+    { id: 36, subject: 'Biology', grade: 6, question: 'Which part of the cell contains genetic material?', options: ['Cell membrane', 'Cytoplasm', 'Nucleus', 'Vacuole'], answer: 2 },
+    { id: 37, subject: 'Biology', grade: 7, question: 'What is the function of the respiratory system?', options: ['To digest food', 'To exchange oxygen and carbon dioxide', 'To pump blood', 'To filter waste'], answer: 1 },
+    { id: 38, subject: 'Biology', grade: 7, question: 'What are producers in a food chain?', options: ['Animals that eat other animals', 'Organisms that make their own food', 'Animals that eat plants', 'Organisms that break down dead matter'], answer: 1 },
+    { id: 39, subject: 'Biology', grade: 8, question: 'What is an allele?', options: ['A type of cell', 'A form of a gene', 'A chromosome pair', 'A type of protein'], answer: 1 },
+    { id: 40, subject: 'Biology', grade: 8, question: 'Which molecule carries amino acids to the ribosome during translation?', options: ['mRNA', 'tRNA', 'rRNA', 'DNA'], answer: 1 },
+    { id: 41, subject: 'Biology', grade: 9, question: 'What bonds hold the two strands of DNA together?', options: ['Ionic bonds', 'Covalent bonds', 'Hydrogen bonds', 'Peptide bonds'], answer: 2 },
+    { id: 42, subject: 'Biology', grade: 9, question: 'Which process converts glucose into ATP in the absence of oxygen?', options: ['Aerobic respiration', 'Fermentation', 'Photosynthesis', 'Chemosynthesis'], answer: 1 },
+    { id: 43, subject: 'Biology', grade: 10, question: 'What is the lock-and-key model of enzyme action?', options: ['Enzymes change shape randomly', 'The substrate fits precisely into the enzyme active site', 'Enzymes lock onto any molecule', 'Keys are used to open cell membranes'], answer: 1 },
+    { id: 44, subject: 'Biology', grade: 10, question: 'During meiosis, how many daughter cells are produced?', options: ['2', '3', '4', '8'], answer: 2 },
+    { id: 45, subject: 'Biology', grade: 6, question: 'What type of organism makes its own food using sunlight?', options: ['Consumer', 'Decomposer', 'Producer', 'Scavenger'], answer: 2 }
+  ],
