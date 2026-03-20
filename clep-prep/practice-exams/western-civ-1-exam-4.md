@@ -1,495 +1,493 @@
-# CLEP U.S. History I — Practice Exam 4
+# Western Civilization I CLEP Practice Exam 4
 
 **Time Limit:** 90 minutes
 **Number of Questions:** 60
-**Format:** Multiple choice (A, B, C, D)
-**Passing Score:** Typically 50 (on CLEP's 20–80 scale); approximately 50% correct is a reasonable target, but check with your institution.
-**Covers:** Early colonization through the end of Reconstruction (1877)
+**Passing Score:** Approximately 50 (scaled score of 50 out of 80)
+
+**Instructions:** Choose the best answer (A, B, C, or D) for each question. This exam covers Western civilization from ancient times through the early modern period (approximately 1648).
 
 ---
 
-## Questions
+**1.** The development of agriculture during the Neolithic Revolution led most directly to:
 
-**1.** Which European country established the first permanent English settlement in North America at Jamestown in 1607?
+A) The decline of human population
+B) The establishment of permanent settlements and complex societies
+C) The end of all warfare
+D) The abandonment of tool-making
 
-A) Spain
-B) France
-C) England
-D) Netherlands
+**2.** Cuneiform, one of the earliest writing systems, was developed by the:
 
-**2.** The Mayflower Compact (1620) was significant because it:
+A) Egyptians
+B) Sumerians
+C) Phoenicians
+D) Greeks
 
-A) Established religious freedom in all colonies
-B) Created a framework for self-government among the Pilgrims
-C) Declared independence from England
-D) Abolished slavery in Massachusetts
+**3.** Hammurabi's Code is historically significant because it:
 
-**3.** What was the primary cash crop that saved the Jamestown colony?
+A) Established the world's first democracy
+B) Was one of the earliest known written legal codes
+C) Abolished slavery in Mesopotamia
+D) Introduced monotheism
 
-A) Cotton
-B) Rice
-C) Tobacco
-D) Indigo
+**4.** The ancient Egyptians built pyramids primarily as:
 
-**4.** The Great Awakening of the 1730s–1740s was primarily a:
+A) Astronomical observatories
+B) Tombs for pharaohs
+C) Temples for public worship
+D) Fortifications against invasion
 
-A) Political movement for colonial independence
-B) Religious revival movement
-C) Economic reform movement
-D) Military alliance
+**5.** The Phoenicians made a lasting contribution to Western civilization by developing:
 
-**5.** Which act imposed a direct tax on printed materials in the colonies?
+A) Iron weapons
+B) An alphabet that influenced Greek and Latin writing systems
+C) The first system of democracy
+D) Monumental stone architecture
 
-A) Townshend Acts
-B) Intolerable Acts
-C) Stamp Act of 1765
-D) Navigation Acts
+**6.** The Hebrew Bible is significant in the history of Western civilization primarily for:
 
-**6.** Who wrote "Common Sense" (1776), which argued for American independence?
+A) Its detailed maps of the ancient world
+B) Its development of ethical monotheism
+C) Its scientific explanations of natural phenomena
+D) Its promotion of polytheistic worship
 
-A) Benjamin Franklin
-B) Thomas Jefferson
-C) Thomas Paine
-D) John Adams
+**7.** The Greek polis was:
 
-**7.** The Battle of Saratoga (1777) was a turning point in the Revolutionary War because:
+A) A type of military formation
+B) An independent city-state that served as the fundamental political unit
+C) A religious temple
+D) A system of roads connecting Greek cities
 
-A) It was the last battle of the war.
-B) It convinced France to ally with the Americans.
-C) It ended British control of the South.
-D) George Washington was captured.
+**8.** Athenian democracy under Pericles differed from modern democracy in that:
 
-**8.** The Articles of Confederation were weak primarily because they:
+A) All residents could vote including women and slaves
+B) Only free adult male citizens could participate directly in government
+C) Leaders were chosen by hereditary succession
+D) There was no system of voting
 
-A) Gave the president too much power
-B) Lacked a national judiciary and gave Congress no power to tax
-C) Created a strong central government
-D) Abolished state governments
+**9.** The Socratic method of teaching involves:
 
-**9.** Which compromise at the Constitutional Convention resolved the dispute between large and small states over representation?
+A) Lecturing students on moral philosophy
+B) Asking probing questions to stimulate critical thinking
+C) Memorizing religious texts
+D) Physical training combined with mental exercises
 
-A) Three-Fifths Compromise
-B) Missouri Compromise
-C) Great Compromise (Connecticut Compromise)
-D) Compromise of 1850
+**10.** Plato's Republic describes:
 
-**10.** The Federalist Papers were written to:
+A) The history of the Peloponnesian War
+B) An ideal state governed by philosopher-kings
+C) The voyage of Odysseus
+D) The founding of Rome
 
-A) Oppose the ratification of the Constitution
-B) Support the ratification of the Constitution
-C) Amend the Articles of Confederation
-D) Declare war on Britain
+**11.** Aristotle's approach to knowledge differed from Plato's in that Aristotle emphasized:
 
-**11.** Who served as the first Secretary of the Treasury and advocated for a national bank?
+A) Abstract forms and ideals
+B) Empirical observation and classification of the natural world
+C) Mystical revelation
+D) Mathematical proof as the only valid knowledge
 
-A) Thomas Jefferson
-B) James Madison
-C) Alexander Hamilton
-D) John Jay
+**12.** Alexander the Great's conquests resulted in:
 
-**12.** The Louisiana Purchase of 1803 was significant because it:
+A) The isolation of Greek culture from Eastern civilizations
+B) The spread of Greek culture across a vast empire, creating the Hellenistic world
+C) The permanent unification of Greece under a single ruler
+D) The end of the Persian Empire with no cultural exchange
 
-A) Ended the War of 1812
-B) Doubled the size of the United States
-C) Acquired Florida from Spain
-D) Settled the boundary with Canada
+**13.** Hellenistic culture is best described as:
 
-**13.** What was the primary cause of the War of 1812?
+A) Purely Greek with no outside influences
+B) A blend of Greek, Egyptian, Persian, and other Eastern cultures
+C) A rejection of all Greek values
+D) Identical to Classical Greek culture
 
-A) The acquisition of Louisiana
-B) British impressment of American sailors and interference with American trade
-C) The annexation of Texas
-D) Disputes over the Oregon Territory
+**14.** The Roman Republic's government was characterized by:
 
-**14.** The Monroe Doctrine (1823) stated that:
+A) Rule by a single king
+B) A system of checks and balances with elected officials including consuls and a senate
+C) Direct democracy identical to Athens
+D) Theocratic rule by priests
 
-A) The U.S. would help European nations colonize the Americas
-B) The Western Hemisphere was closed to further European colonization
-C) The U.S. would remain neutral in all wars
-D) European nations could trade freely with the Americas
+**15.** The Punic Wars were fought between Rome and:
 
-**15.** Which Supreme Court case established the principle of judicial review?
+A) Greece
+B) Carthage
+C) Egypt
+D) Persia
 
-A) McCulloch v. Maryland
-B) Gibbons v. Ogden
-C) Marbury v. Madison (1803)
-D) Dred Scott v. Sandford
+**16.** Julius Caesar's assassination in 44 BCE was motivated by:
 
-**16.** The Indian Removal Act of 1830 led to:
+A) His military failures in Gaul
+B) Fear among senators that he was destroying the Republic by concentrating too much power
+C) A foreign conspiracy against Rome
+D) His attempt to free enslaved people
 
-A) The Trail of Tears
-B) The establishment of reservations in the West
-C) Peace treaties with all Native American tribes
-D) The integration of Native Americans into colonial society
+**17.** The Pax Romana refers to:
 
-**17.** What was the significance of the Erie Canal, completed in 1825?
+A) The period of civil wars following Caesar's death
+B) Approximately 200 years of relative peace and stability in the Roman Empire
+C) The Roman peace treaty with Carthage
+D) The Roman policy of religious tolerance
 
-A) It connected the Mississippi River to the Gulf of Mexico.
-B) It connected the Great Lakes to the Atlantic Ocean, boosting trade.
-C) It served as a defensive fortification.
-D) It provided irrigation for Southern plantations.
+**18.** Roman law's lasting contribution to Western civilization includes:
 
-**18.** Which reform movement in the early 19th century sought to ban the consumption of alcohol?
+A) The concept of trial by combat
+B) Principles of legal rights, evidence, and justice that influenced later legal systems
+C) The abolition of all forms of punishment
+D) The creation of religious courts
 
-A) Abolitionism
-B) Temperance movement
-C) Women's suffrage
-D) Transcendentalism
+**19.** The spread of Christianity in the Roman Empire was facilitated by:
 
-**19.** The Seneca Falls Convention of 1848 was primarily focused on:
+A) Immediate acceptance by Roman emperors
+B) Roman roads, a common language, and the appeal of its message to the poor and marginalized
+C) A military conquest by Christian armies
+D) The destruction of all pagan temples
 
-A) Abolition of slavery
-B) Women's rights
-C) Labor reform
-D) Temperance
+**20.** The Edict of Milan (313 CE) issued by Constantine:
 
-**20.** What principle did the doctrine of "Manifest Destiny" promote?
+A) Banned Christianity throughout the empire
+B) Granted religious tolerance and ended the persecution of Christians
+C) Declared Christianity the only legal religion
+D) Established the pope as head of the Roman state
 
-A) That the U.S. should remain within its original boundaries
-B) That the U.S. was destined to expand across the North American continent
-C) That European nations should control the Americas
-D) That slavery should be abolished
+**21.** The fall of the Western Roman Empire in 476 CE is attributed to:
 
-**21.** The Missouri Compromise of 1820 dealt with the issue of:
+A) A single decisive battle
+B) A combination of factors including barbarian invasions, economic decline, and military overextension
+C) A volcanic eruption that destroyed Rome
+D) A peaceful transition to democratic government
 
-A) Trade tariffs
-B) The extension of slavery into new states
-C) Presidential term limits
-D) Native American land rights
+**22.** The Byzantine Empire preserved and transmitted:
 
-**22.** Who led the slave rebellion in Virginia in 1831?
+A) Only Roman military traditions
+B) Greek and Roman knowledge, culture, and law to later civilizations
+C) Exclusively religious texts
+D) Egyptian mathematical systems
 
-A) Frederick Douglass
-B) Nat Turner
-C) Harriet Tubman
-D) John Brown
+**23.** Justinian's Code was significant because it:
 
-**23.** The Mexican-American War (1846–1848) resulted in the U.S. acquiring:
+A) Established the feudal system
+B) Systematized and preserved Roman law, influencing European legal traditions for centuries
+C) Created the first parliament
+D) Abolished slavery in the Byzantine Empire
 
-A) The Louisiana Territory
-B) Alaska
-C) California and the Southwest (Mexican Cession)
-D) Oregon Country
+**24.** The rise of Islam in the 7th century CE was significant for Western civilization because:
 
-**24.** The Compromise of 1850 included which controversial provision?
+A) It had no interaction with European cultures
+B) Islamic scholars preserved and transmitted Greek and Roman knowledge and made advances in science and mathematics
+C) It immediately conquered all of Europe
+D) It was confined to the Arabian Peninsula
 
-A) The abolition of slavery in all territories
-B) The Fugitive Slave Act
-C) The annexation of Cuba
-D) Women's right to vote
+**25.** The feudal system in medieval Europe was primarily based on:
 
-**25.** What did the Kansas-Nebraska Act of 1854 establish?
+A) Democratic elections
+B) The exchange of land for military service and loyalty
+C) Free market capitalism
+D) Religious authority alone
 
-A) A permanent boundary between free and slave states
-B) Popular sovereignty to determine slavery in new territories
-C) The immediate abolition of slavery in Kansas
-D) The admission of California as a slave state
+**26.** Charlemagne is significant in Western history because he:
 
-**26.** The Dred Scott decision (1857) ruled that:
+A) Discovered the Americas
+B) United much of Western Europe under a single rule and promoted learning and Christianity
+C) Invented the printing press
+D) Led the First Crusade
 
-A) Enslaved people had the right to sue for freedom
-B) Enslaved people were not citizens and had no right to sue in federal court
-C) Slavery was illegal in all territories
-D) The Missouri Compromise was constitutional
+**27.** The investiture controversy between the papacy and the Holy Roman Empire was fundamentally a dispute over:
 
-**27.** Who was the leader of the abolitionist newspaper "The Liberator"?
+A) The boundaries of the empire
+B) The power to appoint church officials
+C) The taxation of peasants
+D) The right to wage war
 
-A) Frederick Douglass
-B) William Lloyd Garrison
-C) Harriet Beecher Stowe
-D) Sojourner Truth
+**28.** The Crusades (1095-1291) had which of the following effects on Europe?
 
-**28.** What novel by Harriet Beecher Stowe intensified the debate over slavery?
+A) They had no lasting impact
+B) They increased trade and cultural exchange between Europe and the Middle East
+C) They permanently conquered the Holy Land for Christianity
+D) They ended all conflict between Christians and Muslims
 
-A) The Scarlet Letter
-B) Uncle Tom's Cabin
-C) Moby-Dick
-D) The Last of the Mohicans
+**29.** The Magna Carta of 1215 is significant because it:
 
-**29.** What event in 1859 involved John Brown's raid on a federal arsenal?
+A) Established a republic in England
+B) Limited the power of the English king and established the principle that rulers were subject to law
+C) Granted independence to Scotland
+D) Created the English Parliament
 
-A) Fort Sumter
-B) Harpers Ferry
-C) Bleeding Kansas
-D) The Alamo
+**30.** Medieval universities, such as those in Paris and Bologna, were important because they:
 
-**30.** Which state was the first to secede from the Union in December 1860?
+A) Were open to all regardless of social class
+B) Became centers of learning that preserved and advanced knowledge in theology, law, and the liberal arts
+C) Focused exclusively on military training
+D) Were controlled entirely by monarchs
 
-A) Virginia
-B) Texas
-C) South Carolina
-D) Georgia
+**31.** Thomas Aquinas is best known for:
 
-**31.** The Emancipation Proclamation (1863) declared:
+A) Leading a religious crusade
+B) Synthesizing Aristotelian philosophy with Christian theology
+C) Painting the ceiling of the Sistine Chapel
+D) Writing the first European novel
 
-A) All enslaved people everywhere were free
-B) Enslaved people in Confederate states were free
-C) Slavery was permanently abolished
-D) The war was over
+**32.** The Black Death (1347-1351) had which significant impact on European society?
 
-**32.** Which battle is considered the turning point of the Civil War?
+A) It strengthened the feudal system
+B) It killed roughly one-third of Europe's population, leading to labor shortages and social upheaval
+C) It affected only the wealthy classes
+D) It was limited to Italy
 
-A) Battle of Antietam
-B) Battle of Gettysburg (1863)
-C) Battle of Bull Run
-D) Battle of Shiloh
+**33.** The Hundred Years' War (1337-1453) between England and France contributed to:
 
-**33.** What was the purpose of the Freedmen's Bureau, established in 1865?
+A) The unification of England and France
+B) The rise of national identity and the decline of feudalism
+C) The permanent English conquest of France
+D) The spread of the Black Death
 
-A) To help formerly enslaved people transition to freedom with education, food, and legal assistance
-B) To return freed people to Africa
-C) To provide land to Confederate veterans
-D) To establish new slave codes
+**34.** Joan of Arc's significance lies in her:
 
-**34.** The 13th Amendment to the Constitution:
+A) Founding of a new religious order
+B) Leadership that helped turn the tide of the Hundred Years' War in France's favor
+C) Writing of influential philosophical works
+D) Discovery of a new sea route to Asia
 
-A) Granted citizenship to all persons born in the U.S.
-B) Abolished slavery
-C) Gave African American men the right to vote
-D) Established equal protection under the law
+**35.** The Italian Renaissance began in:
 
-**35.** What were "Black Codes" in the post-Civil War South?
+A) Rome in the 12th century
+B) Florence in the 14th century
+C) Venice in the 16th century
+D) Naples in the 11th century
 
-A) Military regulations for African American soldiers
-B) Laws that restricted the rights and freedoms of formerly enslaved people
-C) Educational standards for Black schools
-D) Codes of conduct for Freedmen's Bureau agents
+**36.** Renaissance humanism emphasized:
 
-**36.** The 14th Amendment (1868) primarily:
+A) The rejection of all classical learning
+B) The study of classical texts and the potential of human achievement
+C) Strict religious conformity
+D) The superiority of medieval scholasticism
 
-A) Abolished slavery
-B) Granted citizenship to all persons born in the U.S. and guaranteed equal protection
-C) Prohibited denying the vote based on race
-D) Established women's suffrage
+**37.** Niccolò Machiavelli's *The Prince* is notable for:
 
-**37.** Which plan for Reconstruction required Southern states to ratify the 14th Amendment?
+A) Its defense of democratic government
+B) Its pragmatic and often ruthless advice on political power
+C) Its promotion of religious authority in government
+D) Its detailed history of the Roman Empire
 
-A) Lincoln's Ten Percent Plan
-B) Johnson's Restoration Plan
-C) Congressional (Radical) Reconstruction
-D) The Wade-Davis Bill
+**38.** Leonardo da Vinci exemplified the Renaissance ideal because he:
 
-**38.** The impeachment of President Andrew Johnson in 1868 was primarily related to:
+A) Focused exclusively on religious painting
+B) Was a polymath whose talents spanned art, science, engineering, and anatomy
+C) Was primarily a military leader
+D) Rejected classical influences in his work
 
-A) His involvement in Lincoln's assassination
-B) His violation of the Tenure of Office Act
-C) Financial corruption
-D) His refusal to enforce the 13th Amendment
+**39.** The invention of the printing press by Johannes Gutenberg around 1440 was revolutionary because it:
 
-**39.** What was the primary purpose of the Ku Klux Klan during Reconstruction?
+A) Was used only for printing Bibles
+B) Made books widely available, accelerating the spread of knowledge and ideas
+C) Replaced all handwritten manuscripts immediately
+D) Was immediately adopted throughout the world
 
-A) To support Reconstruction policies
-B) To intimidate and terrorize African Americans and their allies
-C) To promote education for freed people
-D) To help integrate Southern society
+**40.** The Protestant Reformation was initiated by Martin Luther in 1517 when he:
 
-**40.** The 15th Amendment (1870) stated that:
+A) Translated the Bible into German
+B) Posted his Ninety-Five Theses criticizing the sale of indulgences
+C) Was excommunicated by the Pope
+D) Led an army against the Catholic Church
 
-A) Slavery was abolished
-B) All citizens had equal protection under the law
-C) The right to vote could not be denied based on race
-D) Women had the right to vote
+**41.** John Calvin's theology emphasized:
 
-**41.** What was the system of "sharecropping"?
+A) The authority of the Pope
+B) Predestination and the idea that God had already chosen those who would be saved
+C) Free will and human merit
+D) The rejection of all religious authority
 
-A) A form of land ownership by freed people
-B) A system where workers farmed land in exchange for a share of the crop, often keeping them in poverty
-C) A government program to distribute land
-D) A Northern industrial practice
+**42.** The English Reformation under Henry VIII was primarily motivated by:
 
-**42.** The Compromise of 1877 effectively ended Reconstruction by:
+A) Deep theological disagreements with Catholic doctrine
+B) Henry's desire for an annulment of his marriage, which the Pope refused to grant
+C) Popular demand for religious reform
+D) A military alliance with Lutheran princes
 
-A) Abolishing the 14th Amendment
-B) Removing federal troops from the South in exchange for Republican Rutherford B. Hayes becoming president
-C) Restoring the Confederacy
-D) Granting all freedmen 40 acres and a mule
+**43.** The Council of Trent (1545-1563) was the Catholic Church's response to the Reformation and resulted in:
 
-**43.** Which colonial region was known for its large plantations and cash-crop economy?
+A) The acceptance of Protestant doctrines
+B) Reforms within the Catholic Church including clarification of doctrine and elimination of some abuses
+C) The dissolution of the papacy
+D) A permanent alliance with Protestant churches
 
-A) New England colonies
-B) Middle colonies
-C) Southern colonies
-D) Frontier settlements
+**44.** The Spanish Inquisition was primarily directed against:
 
-**44.** The Proclamation of 1763 prohibited colonists from settling west of:
+A) Protestants in Northern Europe
+B) Suspected heretics, conversos, and moriscos in Spain
+C) Scientists and philosophers
+D) The Ottoman Empire
 
-A) The Mississippi River
-B) The Appalachian Mountains
-C) The Ohio River
-D) The Rocky Mountains
+**45.** The voyages of Christopher Columbus in 1492 were funded by:
 
-**45.** The Boston Tea Party (1773) was a protest against:
+A) The Portuguese crown
+B) Ferdinand and Isabella of Spain
+C) The Republic of Venice
+D) The Pope
 
-A) Taxation without representation, specifically the Tea Act
-B) The quartering of British soldiers
-C) The Stamp Act
-D) The ban on colonial manufacturing
+**46.** The Columbian Exchange refers to:
 
-**46.** Which document, drafted primarily by Thomas Jefferson, declared American independence?
+A) A diplomatic agreement between Spain and Portugal
+B) The widespread transfer of plants, animals, diseases, and ideas between the Americas and the Old World
+C) A system of currency used in colonial trade
+D) The exchange of prisoners between European powers
 
-A) The Constitution
-B) The Bill of Rights
-C) The Declaration of Independence
-D) The Federalist Papers
+**47.** The Treaty of Tordesillas (1494) divided the newly discovered lands between:
 
-**47.** What was the significance of the Battle of Yorktown (1781)?
+A) England and France
+B) Spain and Portugal
+C) The Ottoman Empire and Venice
+D) The Pope and the Holy Roman Emperor
 
-A) It was the first battle of the Revolution.
-B) It was the decisive battle leading to British surrender.
-C) It was a major British victory.
-D) It established American naval dominance.
+**48.** The encomienda system in Spanish America was:
 
-**48.** The Northwest Ordinance of 1787 was significant because it:
+A) A form of representative government
+B) A system granting Spanish settlers the right to demand labor from indigenous peoples
+C) A trade agreement with indigenous nations
+D) A missionary organization
 
-A) Established slavery in the Northwest Territory
-B) Provided a method for admitting new states and banned slavery in the territory
-C) Created the first national bank
-D) Established the Mississippi River as the western boundary
+**49.** The Scientific Revolution challenged existing knowledge by emphasizing:
 
-**49.** Which political party did Andrew Jackson help found?
+A) Religious authority over empirical evidence
+B) Observation, experimentation, and the use of reason to understand the natural world
+C) A return to ancient superstitions
+D) The infallibility of Aristotle's teachings
 
-A) Whig Party
-B) Republican Party
-C) Democratic Party
-D) Federalist Party
+**50.** Nicolaus Copernicus challenged the prevailing worldview by proposing:
 
-**50.** The doctrine of nullification, championed by John C. Calhoun, argued that:
+A) That the Earth was flat
+B) A heliocentric model in which the Earth and planets revolved around the Sun
+C) That the Moon was the center of the universe
+D) That the stars were fixed and unchanging
 
-A) States could declare federal laws unconstitutional and refuse to enforce them
-B) The federal government could override state laws
-C) Only the Supreme Court could interpret the Constitution
-D) Territories could not become states
+**51.** Galileo Galilei's conflict with the Catholic Church arose primarily from:
 
-**51.** What was the significance of the California Gold Rush of 1849?
+A) His invention of the telescope
+B) His support for Copernican heliocentrism, which contradicted Church teachings
+C) His rejection of mathematics
+D) His political opposition to the Pope
 
-A) It led to the discovery of oil in California.
-B) It brought a massive influx of settlers to California and accelerated its statehood.
-C) It resolved the slavery debate.
-D) It led to war with Mexico.
+**52.** The Thirty Years' War (1618-1648) began primarily as:
 
-**52.** Which technology dramatically expanded westward migration in the mid-19th century?
+A) A conflict between England and Spain
+B) A religious conflict between Catholics and Protestants in the Holy Roman Empire
+C) An economic trade war
+D) A colonial dispute in the Americas
 
-A) The cotton gin
-B) The telegraph
-C) The railroad
-D) The steamship
+**53.** The Peace of Westphalia (1648) is significant because it:
 
-**53.** Abraham Lincoln won the presidential election of 1860 primarily because:
+A) Unified Germany under one ruler
+B) Established the principle of state sovereignty and ended the Thirty Years' War
+C) Created the first European parliament
+D) Permanently ended religious conflict in Europe
 
-A) He had strong Southern support.
-B) The opposition was divided among multiple candidates.
-C) He promised to abolish slavery immediately.
-D) He was the incumbent president.
+**54.** The development of perspective in Renaissance art was pioneered by:
 
-**54.** What strategy did General Ulysses S. Grant employ against the Confederacy?
+A) Michelangelo
+B) Brunelleschi and later refined by artists like Masaccio
+C) Leonardo da Vinci alone
+D) Medieval icon painters
 
-A) Defensive warfare and avoiding major battles
-B) A war of attrition, using the Union's superior resources to wear down the South
-C) Naval blockade only
-D) Diplomacy and negotiation
+**55.** The Edict of Nantes (1598) issued by Henry IV of France:
 
-**55.** General William Tecumseh Sherman's "March to the Sea" (1864) was significant because:
+A) Banned Protestantism in France
+B) Granted religious toleration to French Huguenots
+C) Declared France a Protestant nation
+D) Established the French Inquisition
 
-A) It was a retreat from Confederate forces.
-B) It demonstrated total war, destroying infrastructure across Georgia to break Southern morale.
-C) It was a diplomatic mission.
-D) It resulted in the capture of Richmond.
+**56.** The Dutch Republic in the 17th century was notable for its:
 
-**56.** What was the primary economic system of the New England colonies?
+A) Absolute monarchy
+B) Religious tolerance, commercial prosperity, and cultural achievements
+C) Military aggression against all neighbors
+D) Rejection of international trade
 
-A) Plantation agriculture
-B) Fur trading exclusively
-C) Fishing, shipbuilding, and small-scale farming
-D) Gold mining
+**57.** Sir Isaac Newton's *Principia Mathematica* (1687) is significant for:
 
-**57.** The Alien and Sedition Acts of 1798 were controversial because they:
+A) Proving that the Sun revolves around the Earth
+B) Formulating the laws of motion and universal gravitation
+C) Disproving Copernican theory
+D) Establishing the theory of evolution
 
-A) Promoted immigration
-B) Restricted free speech and allowed deportation of "dangerous" foreigners
-C) Expanded voting rights
-D) Created the national bank
+**58.** The concept of "divine right of kings" asserted that:
 
-**58.** Who explored the Louisiana Territory after its purchase?
+A) Kings were elected by the people
+B) A monarch's authority came directly from God and could not be questioned
+C) Religious leaders were superior to kings
+D) All monarchs must be members of the clergy
 
-A) Daniel Boone
-B) Lewis and Clark
-C) Kit Carson
-D) John C. Fremont
+**59.** The Ottoman capture of Constantinople in 1453 was significant because:
 
-**59.** The Whig Party was formed primarily in opposition to:
+A) It strengthened the Byzantine Empire
+B) It marked the end of the Byzantine Empire and shifted trade routes, indirectly encouraging European exploration
+C) It had no effect on European history
+D) It led to the immediate collapse of the Ottoman Empire
 
-A) Thomas Jefferson
-B) Andrew Jackson and his policies
-C) Abraham Lincoln
-D) James Buchanan
+**60.** The Renaissance concept of the "universal man" (l'uomo universale) referred to:
 
-**60.** What was the primary goal of the Underground Railroad?
-
-A) To build actual railroads in the South
-B) To help enslaved people escape to freedom in the North or Canada
-C) To transport goods during the Civil War
-D) To create underground fortifications
+A) A religious leader who served all people
+B) An individual who excelled in multiple fields of knowledge and accomplishment
+C) A merchant who traded with all nations
+D) A soldier who fought in every European war
 
 ---
 
 ## Answer Key
 
-1. C
+1. B
 2. B
-3. C
+3. B
 4. B
-5. C
-6. C
+5. B
+6. B
 7. B
 8. B
-9. C
+9. B
 10. B
-11. C
+11. B
 12. B
 13. B
 14. B
-15. C
-16. A
+15. B
+16. B
 17. B
 18. B
 19. B
 20. B
 21. B
 22. B
-23. C
+23. B
 24. B
 25. B
 26. B
 27. B
 28. B
 29. B
-30. C
+30. B
 31. B
 32. B
-33. A
+33. B
 34. B
 35. B
 36. B
-37. C
+37. B
 38. B
 39. B
-40. C
+40. B
 41. B
 42. B
-43. C
+43. B
 44. B
-45. A
-46. C
+45. B
+46. B
 47. B
 48. B
-49. C
-50. A
+49. B
+50. B
 51. B
-52. C
+52. B
 53. B
 54. B
 55. B
-56. C
+56. B
 57. B
 58. B
 59. B

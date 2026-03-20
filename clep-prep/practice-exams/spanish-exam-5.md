@@ -1,680 +1,655 @@
-# Spanish CLEP Practice Exam 5
+# CLEP Spanish Language — Practice Exam 5
 
 **Time Limit:** 90 minutes
 **Number of Questions:** 80
-**Passing Score:** Approximately 50 (scaled score of 50 out of 80)
-
-**Instructions:** Choose the best answer (A, B, C, or D) for each question. This exam covers listening comprehension (simulated through written dialogue), reading comprehension, vocabulary, and grammar.
+**Format:** Multiple choice (A, B, C, D)
+**Passing Score:** Typically 50 (on CLEP's 20–80 scale); approximately 50% correct is a reasonable target, but check with your institution.
 
 ---
 
-**Section I: Grammar and Sentence Completion**
+## Questions
 
-**1.** Nosotros _______ a la playa el verano pasado.
+**1.** Choose the correct translation: "I am thirsty."
 
-A) fuimos
-B) íbamos
-C) vamos
-D) iremos
+A) Yo soy sed.
+B) Yo tengo sed.
+C) Yo estoy sed.
+D) Yo hago sed.
 
-**2.** Es importante que los estudiantes _______ a clase a tiempo.
+**2.** Which is the correct conjugation of "estar" for "tu" in the present tense?
 
-A) llegan
-B) lleguen
-C) llegarán
-D) llegaron
+A) esta
+B) eres
+C) estas
+D) estamos
 
-**3.** Mi madre _______ la cena cuando yo llegué a casa.
+**3.** What does "el periodico" mean?
 
-A) preparaba
-B) preparó
-C) prepara
-D) preparará
+A) Period
+B) Newspaper
+C) Periodic table
+D) Magazine
 
-**4.** ¿Cuánto tiempo hace que tú _______ español?
+**4.** Choose the correct form: "Los ninos ___ (comer) el almuerzo."
 
-A) estudias
-B) estudiaste
-C) estudiarás
-D) estudies
+A) come
+B) comes
+C) comen
+D) comemos
 
-**5.** Si yo _______ tú, aceptaría esa oferta de trabajo.
+**5.** What is the meaning of "derecho"?
 
-A) soy
-B) sea
-C) fuera
-D) sería
+A) Left
+B) Right / straight / law
+C) Back
+D) Down
 
-**6.** Ellos no _______ que el examen fuera tan difícil.
+**6.** Complete: "Yo ___ (ir) a la tienda manana."
 
-A) sabían
-B) saben
-C) supieron
-D) sabrán
+A) fui
+B) iba
+C) voy
+D) ire
 
-**7.** La profesora nos dijo que _______ el capítulo cinco para el viernes.
+**7.** Which sentence uses "estar" correctly?
 
-A) leemos
-B) leyéramos
-C) leeremos
-D) leímos
+A) Mi hermana esta doctora.
+B) Mi hermana esta enferma.
+C) Mi hermana esta de Mexico.
+D) Mi hermana esta inteligente.
 
-**8.** _______ dos años que vivo en esta ciudad.
+**8.** Translate: "How old are you?"
 
-A) Hacen
-B) Hace
-C) Hice
-D) Hacía
+A) Como eres tu?
+B) Cuantos anos tienes?
+C) Cuantos eres?
+D) Como estas tu?
 
-**9.** Me encanta que mi abuela _______ galletas los domingos.
+**9.** What is the correct plural of "la ciudad"?
 
-A) hace
-B) haga
-C) hará
-D) hacía
+A) las ciudads
+B) las ciudades
+C) los ciudades
+D) las ciudad
 
-**10.** Todos los días ella _______ a las seis de la mañana.
+**10.** Choose the correct preposition: "El regalo es ___ ti."
 
-A) se levanta
-B) se levantó
-C) se levantaba
-D) se levantará
+A) por
+B) para
+C) de
+D) en
 
-**11.** No creo que _______ posible terminar el proyecto hoy.
+**11.** What does "el acontecimiento" mean?
 
-A) es
-B) sea
-C) será
-D) fue
+A) An account
+B) An event/happening
+C) An accomplishment
+D) An appointment
 
-**12.** Los invitados ya _______ cuando empezó la música.
+**12.** Complete with the correct preterite form: "Ella ___ (poner) los libros en la mesa."
 
-A) habían llegado
-B) llegaron
-C) llegan
-D) llegarán
+A) puso
+B) ponio
+C) pone
+D) poniendo
 
-**13.** El coche de mi padre es más grande _______ el mío.
+**13.** Which word means "suddenly"?
 
-A) de
-B) que
-C) como
-D) tan
+A) Lentamente
+B) Rapidamente
+C) De repente
+D) Finalmente
 
-**14.** _______ María _______ Pedro pueden venir a la reunión.
+**14.** Translate: "I have just eaten."
 
-A) Ni ... ni
-B) O ... o
-C) No ... sino
-D) Tanto ... como
+A) Acabo de comer.
+B) Tengo de comer.
+C) Estoy comido.
+D) He comiendo.
 
-**15.** Ella dijo que _______ al médico al día siguiente.
+**15.** Choose the correct form: "A ella ___ duele la cabeza."
 
-A) va
-B) fue
-C) iría
-D) vaya
+A) la
+B) le
+C) se
+D) lo
 
-**16.** ¿_______ de estos libros prefieres?
+**16.** What is the imperfect subjunctive of "poder" for "yo"?
 
-A) Qué
-B) Cuál
-C) Quién
-D) Cómo
+A) pueda
+B) podria
+C) pudiera
+D) podia
 
-**17.** Necesitamos buscar un hotel que _______ cerca de la estación.
+**17.** Which is correct for expressing "ago"? "Yo llegue hace dos ___."
 
-A) está
-B) esté
-C) estará
-D) estaba
+A) horas
+B) hora
+C) horarios
+D) tiempos
 
-**18.** Los pájaros _______ cantando cuando salió el sol.
+**18.** What does "comportarse" mean?
 
-A) empezaron
-B) empezaban
-C) empiecen
-D) empezarán
+A) To compete
+B) To behave
+C) To compose
+D) To compare
 
-**19.** A mis hermanos les _______ mucho los deportes.
+**19.** Complete: "___ (Hacer) mucho calor en el verano."
 
-A) gusta
-B) gustan
-C) gustamos
-D) gusto
+A) Hace
+B) Hay
+C) Es
+D) Esta
 
-**20.** Yo _______ contento con los resultados del examen.
+**20.** Choose the correct form of the present progressive: "Ellos ___ (dormir)."
 
-A) soy
-B) estoy
-C) ser
-D) estar
+A) estan dormiendo
+B) estan durmiendo
+C) son durmiendo
+D) estan dormando
 
-**Section II: Vocabulary in Context**
+**21.** What is "la madrastra"?
 
-**21.** El _______ del avión está previsto para las tres de la tarde.
+A) Godmother
+B) Stepmother
+C) Grandmother
+D) Mother-in-law
 
-A) aterrizaje
-B) despegue
-C) vuelo
-D) viaje
+**22.** Translate: "He runs faster than me."
 
-**22.** Mi hermano acaba de _______ de la universidad con un título en ingeniería.
+A) El corre mas rapido que yo.
+B) El corre mas rapido como yo.
+C) El corre tan rapido que yo.
+D) El corre menos rapido que yo.
 
-A) graduarse
-B) matricularse
-C) inscribirse
-D) retirarse
+**23.** Which verb is irregular in the "yo" form of the present tense?
 
-**23.** La _______ de la película fue muy emocionante; no esperaba ese final.
+A) Comer
+B) Vivir
+C) Hacer (hago)
+D) Hablar
 
-A) escena
-B) trama
-C) actuación
-D) pantalla
+**24.** What does "el presupuesto" mean?
 
-**24.** En invierno, me gusta tomar una taza de chocolate _______.
+A) Pressure
+B) Budget
+C) President
+D) Presumption
 
-A) frío
-B) caliente
-C) dulce
-D) amargo
+**25.** Complete: "No creo que ella ___ (tener) razon."
 
-**25.** El _______ de la empresa decidió contratar a diez empleados nuevos.
+A) tiene
+B) tenga
+C) tendria
+D) tuviera
 
-A) cliente
-B) gerente
-C) empleado
-D) vendedor
+**26.** Choose the correct translation: "I fell asleep."
 
-**26.** Para proteger el medio ambiente, debemos _______ los residuos.
+A) Me cai dormido.
+B) Me dormi.
+C) Me quede dormido.
+D) Both B and C are acceptable.
 
-A) aumentar
-B) reciclar
-C) desperdiciar
-D) contaminar
+**27.** What is the formal "you" command (usted) for "cerrar"?
 
-**27.** La _______ de autobuses está a dos cuadras de aquí.
+A) Cierre
+B) Cierra
+C) Cierres
+D) Cerrara
 
-A) biblioteca
-B) parada
-C) farmacia
-D) esquina
+**28.** What does "caber" mean?
 
-**28.** El _______ de este hotel incluye desayuno y acceso a la piscina.
+A) To carry
+B) To fit (in a space)
+C) To cable
+D) To capture
 
-A) precio
-B) horario
-C) servicio
-D) descuento
+**29.** Translate: "We must leave now."
 
-**29.** Mi vecina es muy _______ ; siempre me ayuda cuando lo necesito.
+A) Debemos salir ahora.
+B) Debamos salir ahora.
+C) Debimos salir ahora.
+D) Debiamos salir ahora.
 
-A) egoísta
-B) amable
-C) tímida
-D) perezosa
+**30.** Which sentence uses "por" correctly to mean "because of"?
 
-**30.** Los estudiantes hicieron una _______ sobre los efectos del cambio climático.
+A) No fuimos para la lluvia.
+B) No fuimos por la lluvia.
+C) No fuimos de la lluvia.
+D) No fuimos en la lluvia.
 
-A) fiesta
-B) investigación
-C) queja
-D) compra
+**31.** What is the past participle of "abrir"?
 
-**31.** El doctor me recomendó hacer _______ regularmente para mantenerme saludable.
+A) abrido
+B) abriendo
+C) abierto
+D) abrido
 
-A) dieta
-B) ejercicio
-C) descanso
-D) viajes
-
-**32.** La _______ de este restaurante es famosa por sus platos de mariscos.
-
-A) cocina
-B) terraza
-C) entrada
-D) salida
-
-**33.** Después del terremoto, muchas personas perdieron sus _______.
-
-A) trabajos
-B) hogares
-C) amigos
-D) mascotas
-
-**34.** El _______ de la escuela organizó una reunión con los padres de familia.
-
-A) estudiante
-B) director
-C) conserje
-D) chofer
-
-**35.** En la _______ puedes comprar frutas, verduras y carne fresca.
-
-A) librería
-B) ferretería
-C) carnicería
-D) feria
-
-**Section III: Reading Comprehension**
-
-*Read the following passage and answer questions 36-40.*
-
-El turismo sostenible se ha convertido en una tendencia importante en la industria de viajes. A diferencia del turismo tradicional, que a menudo causa daños ambientales y culturales, el turismo sostenible busca minimizar el impacto negativo en los destinos visitados. Los viajeros responsables eligen alojamientos ecológicos, respetan las costumbres locales y contribuyen a la economía de las comunidades que visitan. Algunos ejemplos incluyen el ecoturismo en Costa Rica, el turismo comunitario en Perú y las rutas de senderismo sostenible en España.
-
-**36.** ¿Cuál es el objetivo principal del turismo sostenible?
-
-A) Aumentar el número de turistas en cada destino
-B) Minimizar el impacto negativo en los destinos visitados
-C) Ofrecer viajes más baratos
-D) Construir más hoteles de lujo
-
-**37.** Según el pasaje, ¿qué hacen los viajeros responsables?
-
-A) Buscan los hoteles más lujosos
-B) Eligen alojamientos ecológicos y respetan las costumbres locales
-C) Evitan gastar dinero en las comunidades locales
-D) Viajan solo a destinos famosos
-
-**38.** ¿Cuál de los siguientes países se menciona como ejemplo de ecoturismo?
-
-A) México
-B) Costa Rica
-C) Argentina
-D) Chile
-
-**39.** El turismo tradicional, según el pasaje:
-
-A) Es siempre mejor que el turismo sostenible
-B) A menudo causa daños ambientales y culturales
-C) No tiene ningún impacto negativo
-D) Es más caro que el turismo sostenible
-
-**40.** La palabra "alojamientos" en el contexto del pasaje se refiere a:
-
-A) Restaurantes
-B) Lugares donde hospedarse
-C) Medios de transporte
-D) Actividades turísticas
-
-*Read the following passage and answer questions 41-45.*
-
-La siesta es una tradición arraigada en muchos países hispanohablantes, especialmente en España. Tradicionalmente, las tiendas y oficinas cerraban durante las horas más calurosas del día, generalmente entre las dos y las cinco de la tarde, para que la gente pudiera descansar después del almuerzo. Sin embargo, en las últimas décadas, esta costumbre ha ido desapareciendo en las grandes ciudades debido a los horarios laborales modernos y la influencia de las prácticas empresariales internacionales. A pesar de esto, muchos científicos argumentan que una breve siesta de 20 a 30 minutos puede mejorar la productividad, la memoria y el estado de ánimo.
-
-**41.** ¿En qué país es especialmente tradicional la siesta?
-
-A) México
-B) España
-C) Argentina
-D) Colombia
-
-**42.** ¿A qué horas se tomaba tradicionalmente la siesta?
-
-A) De las diez a las doce de la mañana
-B) De las dos a las cinco de la tarde
-C) De las seis a las ocho de la noche
-D) De las doce a la una de la tarde
-
-**43.** ¿Por qué ha disminuido la práctica de la siesta en las grandes ciudades?
-
-A) Porque los médicos la consideran perjudicial
-B) Por los horarios laborales modernos y la influencia internacional
-C) Porque la gente prefiere dormir más por la noche
-D) Porque el clima ha cambiado
-
-**44.** Según los científicos mencionados, ¿cuánto debería durar una siesta ideal?
-
-A) Una hora
-B) De 20 a 30 minutos
-C) Dos horas
-D) Cinco minutos
-
-**45.** ¿Cuál de los siguientes beneficios de la siesta se menciona en el pasaje?
-
-A) Pérdida de peso
-B) Mejora de la productividad, la memoria y el estado de ánimo
-C) Reducción del dolor de espalda
-D) Mejor digestión
-
-*Read the following passage and answer questions 46-50.*
-
-Gabriel García Márquez, nacido en Aracataca, Colombia, en 1927, es uno de los escritores más influyentes del siglo XX. Su novela más famosa, Cien años de soledad, publicada en 1967, narra la historia de la familia Buendía a lo largo de varias generaciones en el pueblo ficticio de Macondo. García Márquez es conocido como uno de los máximos exponentes del realismo mágico, un estilo literario que mezcla elementos fantásticos con la realidad cotidiana. Recibió el Premio Nobel de Literatura en 1982. Falleció en Ciudad de México en 2014, dejando un legado literario incomparable.
-
-**46.** ¿Dónde nació Gabriel García Márquez?
-
-A) En Ciudad de México
-B) En Aracataca, Colombia
-C) En Buenos Aires, Argentina
-D) En Madrid, España
-
-**47.** ¿Cómo se llama su novela más famosa?
-
-A) El amor en los tiempos del cólera
-B) Cien años de soledad
-C) Crónica de una muerte anunciada
-D) El otoño del patriarca
-
-**48.** ¿Qué es el realismo mágico?
-
-A) Un movimiento político latinoamericano
-B) Un estilo literario que mezcla elementos fantásticos con la realidad cotidiana
-C) Un tipo de pintura surrealista
-D) Una técnica cinematográfica
-
-**49.** ¿En qué año recibió García Márquez el Premio Nobel de Literatura?
-
-A) 1967
-B) 1982
-C) 2014
-D) 1927
-
-**50.** El pueblo ficticio donde se desarrolla Cien años de soledad se llama:
-
-A) Aracataca
-B) Macondo
-C) Comala
-D) Santa María
-
-*Read the following passage and answer questions 51-55.*
-
-Las fiestas de San Fermín, celebradas del 6 al 14 de julio en Pamplona, España, son conocidas mundialmente por los encierros, en los que los participantes corren delante de toros por las calles de la ciudad. La fiesta comienza con el "chupinazo," un cohete lanzado desde el balcón del ayuntamiento. Además de los encierros, las fiestas incluyen procesiones religiosas, conciertos, fuegos artificiales y bailes tradicionales. Aunque los encierros atraen a miles de turistas internacionales cada año, también son objeto de crítica por parte de los defensores de los derechos de los animales, quienes consideran que los toros sufren durante los eventos.
-
-**51.** ¿Cuándo se celebran las fiestas de San Fermín?
-
-A) En agosto
-B) Del 6 al 14 de julio
-C) En diciembre
-D) En marzo
-
-**52.** ¿Qué es el "chupinazo"?
-
-A) Una corrida de toros
-B) Un cohete que marca el inicio de las fiestas
-C) Una procesión religiosa
-D) Un baile tradicional
-
-**53.** ¿Por qué son famosas internacionalmente estas fiestas?
-
-A) Por sus conciertos de música clásica
-B) Por los encierros donde la gente corre delante de toros
-C) Por sus procesiones religiosas
-D) Por sus fuegos artificiales
-
-**54.** ¿Quiénes critican los encierros?
-
-A) Los turistas internacionales
-B) Los defensores de los derechos de los animales
-C) El gobierno de Pamplona
-D) Los organizadores de las fiestas
-
-**55.** ¿Cuál de las siguientes actividades NO se menciona como parte de las fiestas?
-
-A) Procesiones religiosas
-B) Conciertos
-C) Competencias deportivas
-D) Fuegos artificiales
-
-**Section IV: Advanced Grammar and Usage**
-
-**56.** Por mucho que _______, no logro entender esta lección.
-
-A) estudio
-B) estudie
-C) estudié
-D) estudiaré
-
-**57.** Habríamos ido a la playa si no _______ llovido.
-
-A) ha
-B) hubiera
-C) había
-D) haya
-
-**58.** _______ salgas de casa, apaga todas las luces.
-
-A) Después
-B) Cuando
-C) Antes de que
-D) Porque
-
-**59.** Este es el restaurante _______ comimos el año pasado.
+**32.** Choose the correct relative pronoun: "El hombre ___ hijos son doctores vive aqui."
 
 A) que
-B) donde
-C) cual
-D) quien
-
-**60.** Ella se comporta _______ si no le importara nada.
-
-A) como
-B) tan
-C) mientras
-D) aunque
-
-**61.** A pesar de _______ enfermo, fue a trabajar.
-
-A) ser
-B) estar
-C) siendo
-D) estado
-
-**62.** No solo habla español, _______ también habla portugués y francés.
-
-A) pero
-B) sino que
-C) aunque
-D) sin embargo
-
-**63.** El regalo fue _______ por todos los compañeros de clase.
-
-A) comprado
-B) comprando
-C) comprar
-D) compra
-
-**64.** Cuanto más estudio, _______ aprendo.
-
-A) menos
-B) más
-C) poco
-D) mucho
-
-**65.** Llevo tres horas _______ este informe.
-
-A) escribir
-B) escribiendo
-C) escrito
-D) escribo
-
-**66.** Es probable que el vuelo _______ retrasado por la tormenta.
-
-A) está
-B) esté
-C) estará
-D) estaba
-
-**67.** Nos quedaremos aquí hasta que _______ de llover.
-
-A) para
-B) pare
-C) parará
-D) paraba
-
-**68.** ¿De _______ es este abrigo que está en la silla?
-
-A) quien
-B) quién
-C) que
+B) quien
+C) cuyos
 D) cual
 
-**69.** Yo ya había _______ la tarea cuando me llamaste.
+**33.** What does "tardar" mean?
 
-A) terminando
-B) terminar
-C) terminado
-D) termino
+A) To be late (in a permanent sense)
+B) To take time / to be long in doing something
+C) To be tired
+D) To have a task
 
-**70.** El museo, _______ exposiciones son famosas, abre a las nueve.
+**34.** Complete: "Si hubiera sabido, ___ (venir)."
 
-A) que
-B) cuyas
-C) donde
-D) cual
+A) habria venido
+B) hubiera venido
+C) habria venir
+D) Both A and B are correct.
 
-**Section V: Dialogue and Situational Questions**
+**35.** Translate: "The more I study, the more I learn."
 
-**71.** Llegas tarde a una cita con un amigo. ¿Qué dices primero?
+A) Mientras mas estudio, mas aprendo.
+B) Cuanto mas estudio, mas aprendo.
+C) Mas estudio, mas aprendo.
+D) Both A and B are acceptable.
 
-A) "Hola, ¿qué tal?"
-B) "Perdona por llegar tarde, había mucho tráfico."
-C) "No es mi culpa."
-D) "¿Llevas mucho tiempo esperando? No importa."
+**36.** What is "el hecho"?
 
-**72.** En una farmacia, necesitas algo para el dolor de cabeza. ¿Qué dirías?
+A) The hook
+B) The fact / the deed
+C) The hate
+D) The spell
 
-A) "¿Tiene algo para el dolor de estómago?"
-B) "¿Me puede dar algo para el dolor de cabeza, por favor?"
-C) "Necesito una receta médica."
-D) "¿Dónde está el hospital más cercano?"
+**37.** Choose the correct form: "Ojala que ___ (llover) manana."
 
-**73.** Un compañero te invita a cenar pero no puedes ir. ¿Cuál es la respuesta más cortés?
+A) llueve
+B) llueva
+C) lloviera
+D) llovera
 
-A) "No quiero ir."
-B) "Me encantaría, pero ya tengo planes. ¿Podemos quedar otro día?"
-C) "Eso suena aburrido."
-D) "Nunca ceno fuera."
+**38.** What does "merecer" mean?
 
-**74.** Estás en un taxi y quieres que el conductor te lleve al aeropuerto. ¿Qué dirías?
+A) To merchandise
+B) To deserve
+C) To market
+D) To merge
 
-A) "¿Cuánto cuesta el metro?"
-B) "Al aeropuerto, por favor."
-C) "Lléveme al hospital."
-D) "¿Dónde está la estación de tren?"
+**39.** Which is the correct use of "lo que"?
 
-**75.** Alguien te pregunta: "¿Podrías prestarme tu bolígrafo?" ¿Cuál es una respuesta afirmativa?
+A) Lo que me dijo es verdad. (What he told me is true.)
+B) Que lo me dijo es verdad.
+C) Lo cual me dijo es verdad.
+D) Que me dijo es lo verdad.
 
-A) "No tengo bolígrafo."
-B) "Claro, aquí tienes."
-C) "Cómprate uno."
-D) "No me gusta prestar mis cosas."
+**40.** Translate: "Please sit down." (formal)
 
-**76.** En un hotel, quieres pedir una habitación con vista al mar. ¿Qué dirías?
+A) Sientate, por favor.
+B) Sientese, por favor.
+C) Sentarse, por favor.
+D) Sientas, por favor.
 
-A) "Quiero una habitación interior."
-B) "¿Tienen habitaciones con vista al mar?"
-C) "¿A qué hora es el desayuno?"
-D) "Necesito una habitación sin ventanas."
+**41.** What is the present subjunctive of "haber" for "there is/there are"?
 
-**77.** Tu amigo acaba de perder a un familiar. ¿Qué le dirías?
+A) hay
+B) haya
+C) habra
+D) habia
 
-A) "No te preocupes, la vida sigue."
-B) "Lo siento mucho. Te acompaño en el sentimiento."
-C) "Eso es muy común."
-D) "¿Y cuándo es la fiesta?"
+**42.** What does "disponible" mean?
 
-**78.** Quieres saber la hora. ¿Cuál es la forma correcta de preguntarla a un desconocido?
+A) Disposable
+B) Available
+C) Capable
+D) Unpleasant
 
-A) "Dime la hora."
-B) "Disculpe, ¿podría decirme qué hora es?"
-C) "¿Tienes reloj?"
-D) "Es tarde, ¿no?"
+**43.** Complete: "Cuando ___ (llegar) a casa, te llamare."
 
-**79.** En un mercado, quieres regatear el precio de un artículo. ¿Qué dirías?
+A) llego
+B) llegue (preterite)
+C) llegue (subjunctive)
+D) llegare
 
-A) "Este precio es ridículo."
-B) "¿Me podría hacer un descuento?"
-C) "Lo voy a robar."
-D) "No me importa el precio."
+**44.** Choose the correct translation of "each other": "Ellos ___ abrazan."
 
-**80.** Al despedirte de alguien que vas a ver pronto, ¿cuál es la expresión más adecuada?
+A) les
+B) se
+C) los
+D) nos
 
-A) "Adiós para siempre."
-B) "¡Hasta pronto! Nos vemos."
-C) "No quiero verte más."
-D) "Que te vaya mal."
+**45.** What is "la esperanza"?
+
+A) Espionage
+B) Hope
+C) Spice
+D) Experience
+
+**46.** Which form is correct? "El ___ (saber) la respuesta ayer."
+
+A) sabia
+B) supo
+C) sapo
+D) supia
+
+**47.** Translate: "He asked me to help him."
+
+A) El me pidio que lo ayudara.
+B) El me pregunto que lo ayudara.
+C) El me pidio que lo ayudo.
+D) El me pregunto que lo ayudo.
+
+**48.** What does "desarrollar" mean?
+
+A) To destroy
+B) To develop
+C) To roll
+D) To discover
+
+**49.** Choose the correct expression: "To be in a hurry."
+
+A) Tener hambre
+B) Tener prisa
+C) Tener suerte
+D) Tener razon
+
+**50.** Complete: "Es mejor que tu ___ (ir) al doctor."
+
+A) vas
+B) vayas
+C) fueras
+D) iras
+
+**51.** What is "el apodo"?
+
+A) An apology
+B) A nickname
+C) A support
+D) An apostle
+
+**52.** Translate: "I have been studying for three hours."
+
+A) He estado estudiando por tres horas.
+B) Llevo tres horas estudiando.
+C) Estudio por tres horas.
+D) Both A and B are correct.
+
+**53.** Choose the correct word: "Ella es muy ___ (hardworking)."
+
+A) trabajosa
+B) trabajadora
+C) trabajante
+D) trabajable
+
+**54.** What does "destacar" mean?
+
+A) To detach
+B) To stand out / to highlight
+C) To stack
+D) To destroy
+
+**55.** Complete with the correct form: "Tan pronto como ___ (terminar), saldremos."
+
+A) terminamos
+B) terminemos
+C) terminaremos
+D) terminabamos
+
+**56.** What is "el papel"?
+
+A) A pal
+B) Paper / role
+C) A papal decree
+D) A paddle
+
+**57.** Translate: "I told him not to do it."
+
+A) Le dije que no lo hiciera.
+B) Le dije que no lo hace.
+C) Le decia que no lo hizo.
+D) Le digo que no lo haga.
+
+**58.** What does "to get along with" mean in Spanish?
+
+A) Ponerse con
+B) Llevarse bien con
+C) Salir con
+D) Irse con
+
+**59.** Choose the correct form: "No hay nadie que ___ (saber) la respuesta."
+
+A) sabe
+B) sepa
+C) supiera
+D) sabria
+
+**60.** What is "la advertencia"?
+
+A) An advertisement
+B) A warning
+C) An adventure
+D) An adversary
+
+**61.** Complete: "Ella se ___ (poner) el abrigo porque hacia frio."
+
+A) puso
+B) ponia
+C) pone
+D) pondria
+
+**62.** Translate: "It doesn't matter."
+
+A) No importa.
+B) No materia.
+C) No cuenta.
+D) No vale.
+
+**63.** What is the difference between "pero" and "sino"?
+
+A) They are identical.
+B) "Pero" means "but" in general; "sino" means "but rather" after a negative statement.
+C) "Sino" is more formal.
+D) "Pero" is only used in questions.
+
+**64.** Choose the correct form: "Dudo que ___ (haber) suficiente tiempo."
+
+A) hay
+B) haya
+C) habra
+D) habia
+
+**65.** What does "la cosecha" mean?
+
+A) A cost
+B) A harvest/crop
+C) A cushion
+D) A coast
+
+**66.** Translate: "I wish I had more time."
+
+A) Deseo que tengo mas tiempo.
+B) Ojala tuviera mas tiempo.
+C) Quiero tener mas tiempo.
+D) Espero tener mas tiempo.
+
+**67.** What is "el ayuntamiento"?
+
+A) A helper
+B) A city hall
+C) An assistant
+D) A fasting
+
+**68.** Complete: "Por mucho que ___ (intentar), no puedo."
+
+A) intento
+B) intente
+C) intentara
+D) intentaria
+
+**69.** Which expression means "to be about to"?
+
+A) Tener que
+B) Estar a punto de
+C) Acabar de
+D) Ir a
+
+**70.** What does "alcanzar" mean?
+
+A) To reach / to achieve
+B) To rest
+C) To announce
+D) To advance
+
+**71.** Choose the correct form: "Le pedi que me ___ (traer) el libro."
+
+A) trae
+B) trajera
+C) traiga
+D) traia
+
+**72.** Translate: "We would have gone if we had known."
+
+A) Habriamos ido si hubieramos sabido.
+B) Iriamos si supieramos.
+C) Fuimos si sabiamos.
+D) Iremos si sabemos.
+
+**73.** What is "la butaca"?
+
+A) A bucket
+B) An armchair / theater seat
+C) A boot
+D) A boutique
+
+**74.** What does "invernadero" mean?
+
+A) An inventor
+B) A greenhouse
+C) Winter time
+D) An investment
+
+**75.** Complete: "A menos que ___ (llover), iremos al parque."
+
+A) llueve
+B) llueva
+C) lloviera
+D) llovera
+
+**76.** What is the difference between "pedir" and "preguntar"?
+
+A) They are identical.
+B) "Pedir" means to request/ask for something; "preguntar" means to ask a question.
+C) "Preguntar" is more formal.
+D) "Pedir" is only for food.
+
+**77.** Translate: "He pretended to be sick."
+
+A) El pretendio estar enfermo.
+B) El fingio estar enfermo.
+C) El intento estar enfermo.
+D) El simulo estar enfermo.
+
+**78.** What does "el estante" mean?
+
+A) A stamp
+B) A shelf
+C) An estate
+D) A standard
+
+**79.** Choose the correct expression: "I dropped the glass."
+
+A) Deje caer el vaso.
+B) Se me cayo el vaso.
+C) Cai el vaso.
+D) Both A and B are acceptable.
+
+**80.** What does "tener en cuenta" mean?
+
+A) To have an account
+B) To keep in mind / to take into account
+C) To count
+D) To tell a story
 
 ---
 
 ## Answer Key
 
-1. A
-2. B
-3. A
-4. A
-5. C
-6. A
+1. B
+2. C
+3. B
+4. C
+5. B
+6. C
 7. B
 8. B
 9. B
-10. A
+10. B
 11. B
 12. A
-13. B
+13. C
 14. A
-15. C
-16. B
-17. B
-18. A
-19. B
+15. B
+16. C
+17. A
+18. B
+19. A
 20. B
 21. B
 22. A
-23. B
+23. C
 24. B
 25. B
-26. B
-27. B
-28. A
-29. B
+26. D
+27. A
+28. B
+29. A
 30. B
-31. B
-32. A
+31. C
+32. C
 33. B
-34. B
+34. D
 35. D
 36. B
 37. B
 38. B
-39. B
+39. A
 40. B
 41. B
 42. B
-43. B
+43. C
 44. B
 45. B
 46. B
-47. B
+47. A
 48. B
 49. B
 50. B
 51. B
-52. B
+52. D
 53. B
 54. B
-55. C
+55. B
 56. B
-57. B
-58. C
+57. A
+58. B
 59. B
-60. A
-61. B
-62. B
-63. A
+60. B
+61. A
+62. A
+63. B
 64. B
 65. B
 66. B
 67. B
 68. B
-69. C
-70. B
+69. B
+70. A
 71. B
-72. B
+72. A
 73. B
 74. B
 75. B
 76. B
 77. B
 78. B
-79. B
+79. D
 80. B
