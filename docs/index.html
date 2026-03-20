@@ -881,6 +881,104 @@
       transform-origin: top center;
     }
 
+    /* ── Scratchpad ── */
+    #scratchpad-overlay {
+      display: none;
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      z-index: 1000;
+      background: rgba(0,0,0,0.6);
+      backdrop-filter: blur(4px);
+    }
+
+    #scratchpad-overlay.open { display: flex; align-items: center; justify-content: center; }
+
+    .scratchpad-container {
+      background: #1e293b;
+      border: 2px solid #475569;
+      border-radius: 16px;
+      width: 90vw;
+      max-width: 900px;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+    }
+
+    .scratchpad-toolbar {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      background: #0f172a;
+      border-bottom: 1px solid #334155;
+      flex-wrap: wrap;
+    }
+
+    .scratchpad-toolbar button {
+      padding: 6px 12px;
+      border: 1px solid #475569;
+      border-radius: 6px;
+      background: #1e293b;
+      color: #cbd5e1;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .scratchpad-toolbar button:hover { border-color: #3b82f6; color: #f8fafc; }
+    .scratchpad-toolbar button.active { border-color: #3b82f6; background: #1e3a5f; color: #f8fafc; }
+
+    .scratchpad-toolbar .color-btn {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 2px solid #475569;
+      padding: 0;
+      min-width: 24px;
+    }
+
+    .scratchpad-toolbar .color-btn.active { border-color: #f8fafc; box-shadow: 0 0 8px rgba(255,255,255,0.3); }
+
+    .scratchpad-toolbar .size-label {
+      color: #94a3b8;
+      font-size: 0.75rem;
+      margin-left: 8px;
+    }
+
+    #scratchpad-canvas {
+      flex: 1;
+      cursor: crosshair;
+      background: #f8fafc;
+    }
+
+    .scratch-open-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      border: 2px solid #475569;
+      background: #1e293b;
+      color: #cbd5e1;
+      font-size: 1.3rem;
+      cursor: pointer;
+      z-index: 500;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+      transition: all 0.2s;
+    }
+
+    .scratch-open-btn:hover {
+      border-color: #3b82f6;
+      color: #f8fafc;
+      transform: scale(1.1);
+    }
+
     /* Scrollbar */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: #0f172a; }
@@ -1512,6 +1610,7 @@
 
     function startPlacementTest() {
       document.getElementById('test-screen').style.display = 'flex';
+      showScratchButton();
       testQuestions = placementQuestions;
       testIndex = 0;
       testAnswers = [];
@@ -1523,6 +1622,7 @@
 
     function quitTest() {
       document.getElementById('test-screen').style.display = 'none';
+      hideScratchButton();
       goHome();
     }
 
@@ -1710,6 +1810,7 @@
 
     function showTestResults() {
       document.getElementById('test-screen').style.display = 'none';
+      hideScratchButton();
 
       // Calculate grade level per subject
       const subjects = ['Math', 'English', 'Biology', 'Science', 'History', 'Geography'];
@@ -2042,6 +2143,7 @@
     let clepSelected = null;
 
     function startClepExam(parsed, filePath) {
+      showScratchButton();
       clepExamData = parsed;
       clepIndex = 0;
       clepAnswers = [];
@@ -2117,6 +2219,7 @@
     }
 
     function showClepResults() {
+      hideScratchButton();
       const content = document.getElementById('clep-browser-content');
       const correctCount = clepAnswers.filter(a => a.isCorrect).length;
       const total = clepAnswers.length;
@@ -2156,8 +2259,169 @@
       html += '</div>';
       content.innerHTML = html;
     }
-    if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js');
+
+    // ── SCRATCHPAD / DRAWING TOOL ──
+    let scratchCanvas, scratchCtx;
+    let isDrawing = false;
+    let scratchColor = '#000000';
+    let scratchSize = 3;
+    let scratchTool = 'pen'; // pen, eraser
+    let scratchHistory = [];
+
+    function initScratchpad() {
+      scratchCanvas = document.getElementById('scratchpad-canvas');
+      scratchCtx = scratchCanvas.getContext('2d');
+      resizeScratchCanvas();
+
+      scratchCanvas.addEventListener('mousedown', startDraw);
+      scratchCanvas.addEventListener('mousemove', draw);
+      scratchCanvas.addEventListener('mouseup', stopDraw);
+      scratchCanvas.addEventListener('mouseleave', stopDraw);
+      // Touch support
+      scratchCanvas.addEventListener('touchstart', (e) => { e.preventDefault(); startDraw(touchToMouse(e)); });
+      scratchCanvas.addEventListener('touchmove', (e) => { e.preventDefault(); draw(touchToMouse(e)); });
+      scratchCanvas.addEventListener('touchend', (e) => { e.preventDefault(); stopDraw(); });
+    }
+
+    function touchToMouse(e) {
+      const rect = scratchCanvas.getBoundingClientRect();
+      const t = e.touches[0];
+      return { offsetX: t.clientX - rect.left, offsetY: t.clientY - rect.top };
+    }
+
+    function resizeScratchCanvas() {
+      const container = scratchCanvas.parentElement;
+      const rect = scratchCanvas.getBoundingClientRect();
+      // Save current drawing
+      const imgData = scratchCtx.getImageData(0, 0, scratchCanvas.width, scratchCanvas.height);
+      scratchCanvas.width = rect.width;
+      scratchCanvas.height = rect.height;
+      // Fill white
+      scratchCtx.fillStyle = '#f8fafc';
+      scratchCtx.fillRect(0, 0, scratchCanvas.width, scratchCanvas.height);
+      // Restore drawing
+      scratchCtx.putImageData(imgData, 0, 0);
+    }
+
+    function startDraw(e) {
+      isDrawing = true;
+      scratchCtx.beginPath();
+      scratchCtx.moveTo(e.offsetX, e.offsetY);
+    }
+
+    function draw(e) {
+      if (!isDrawing) return;
+      scratchCtx.lineWidth = scratchTool === 'eraser' ? scratchSize * 4 : scratchSize;
+      scratchCtx.lineCap = 'round';
+      scratchCtx.lineJoin = 'round';
+      scratchCtx.strokeStyle = scratchTool === 'eraser' ? '#f8fafc' : scratchColor;
+      scratchCtx.lineTo(e.offsetX, e.offsetY);
+      scratchCtx.stroke();
+    }
+
+    function stopDraw() {
+      if (isDrawing) {
+        isDrawing = false;
+        scratchCtx.closePath();
+        // Save state for undo
+        scratchHistory.push(scratchCanvas.toDataURL());
+        if (scratchHistory.length > 50) scratchHistory.shift();
+      }
+    }
+
+    function openScratchpad() {
+      document.getElementById('scratchpad-overlay').classList.add('open');
+      if (!scratchCanvas) {
+        setTimeout(() => {
+          initScratchpad();
+          clearScratchpad();
+        }, 50);
+      }
+    }
+
+    function closeScratchpad() {
+      document.getElementById('scratchpad-overlay').classList.remove('open');
+    }
+
+    function setScratchColor(color) {
+      scratchColor = color;
+      scratchTool = 'pen';
+      document.querySelectorAll('.color-btn').forEach(b => b.classList.remove('active'));
+      event.target.classList.add('active');
+      document.getElementById('scratch-eraser').classList.remove('active');
+      document.getElementById('scratch-pen').classList.add('active');
+    }
+
+    function setScratchTool(tool) {
+      scratchTool = tool;
+      document.getElementById('scratch-pen').classList.toggle('active', tool === 'pen');
+      document.getElementById('scratch-eraser').classList.toggle('active', tool === 'eraser');
+    }
+
+    function setScratchSize(size) {
+      scratchSize = size;
+      document.querySelectorAll('[data-size]').forEach(b => b.classList.remove('active'));
+      document.querySelector('[data-size="' + size + '"]').classList.add('active');
+    }
+
+    function clearScratchpad() {
+      if (!scratchCtx) return;
+      scratchCtx.fillStyle = '#f8fafc';
+      scratchCtx.fillRect(0, 0, scratchCanvas.width, scratchCanvas.height);
+      scratchHistory = [];
+    }
+
+    function undoScratch() {
+      if (scratchHistory.length < 2) { clearScratchpad(); return; }
+      scratchHistory.pop();
+      const img = new Image();
+      img.onload = () => {
+        scratchCtx.clearRect(0, 0, scratchCanvas.width, scratchCanvas.height);
+        scratchCtx.drawImage(img, 0, 0);
+      };
+      img.src = scratchHistory[scratchHistory.length - 1];
+    }
+
+    // Show scratchpad button during tests
+    function showScratchButton() {
+      document.getElementById('scratch-open-btn').style.display = 'flex';
+    }
+    function hideScratchButton() {
+      document.getElementById('scratch-open-btn').style.display = 'none';
+    }
   </script>
+
+  <!-- ── SCRATCHPAD OVERLAY ── -->
+  <div id="scratchpad-overlay">
+    <div class="scratchpad-container">
+      <div class="scratchpad-toolbar">
+        <button id="scratch-pen" class="active" onclick="setScratchTool('pen')">Pen</button>
+        <button id="scratch-eraser" onclick="setScratchTool('eraser')">Eraser</button>
+        <span style="color:#334155;">|</span>
+        <button class="color-btn active" style="background:#000000;" onclick="setScratchColor('#000000')"></button>
+        <button class="color-btn" style="background:#3b82f6;" onclick="setScratchColor('#3b82f6')"></button>
+        <button class="color-btn" style="background:#ef4444;" onclick="setScratchColor('#ef4444')"></button>
+        <button class="color-btn" style="background:#10b981;" onclick="setScratchColor('#10b981')"></button>
+        <button class="color-btn" style="background:#f59e0b;" onclick="setScratchColor('#f59e0b')"></button>
+        <button class="color-btn" style="background:#8b5cf6;" onclick="setScratchColor('#8b5cf6')"></button>
+        <span style="color:#334155;">|</span>
+        <span class="size-label">Size:</span>
+        <button data-size="2" onclick="setScratchSize(2)">S</button>
+        <button data-size="3" class="active" onclick="setScratchSize(3)">M</button>
+        <button data-size="6" onclick="setScratchSize(6)">L</button>
+        <button data-size="10" onclick="setScratchSize(10)">XL</button>
+        <span style="color:#334155;">|</span>
+        <button onclick="undoScratch()">Undo</button>
+        <button onclick="clearScratchpad()">Clear</button>
+        <div style="flex:1;"></div>
+        <button onclick="closeScratchpad()" style="background:#ef4444;border-color:#ef4444;color:white;">Close</button>
+      </div>
+      <canvas id="scratchpad-canvas"></canvas>
+    </div>
+  </div>
+
+  <!-- ── SCRATCHPAD FLOATING BUTTON ── -->
+  <button class="scratch-open-btn" id="scratch-open-btn" onclick="openScratchpad()" title="Open Scratchpad">&#9998;</button>
 
 </body>
 </html>
