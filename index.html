@@ -323,6 +323,74 @@
       background: #1e293b;
     }
 
+    /* ── Language Selection ── */
+    #language-screen {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      gap: 30px;
+      padding: 40px;
+    }
+
+    #language-screen h1 {
+      font-size: 2.2rem;
+      color: #f8fafc;
+      text-align: center;
+    }
+
+    #language-screen p {
+      color: #94a3b8;
+      margin-top: -16px;
+      text-align: center;
+    }
+
+    .lang-options {
+      display: flex;
+      gap: 20px;
+    }
+
+    .lang-card {
+      width: 200px;
+      height: 160px;
+      border: 2px solid #334155;
+      border-radius: 14px;
+      background: #1e293b;
+      color: #f8fafc;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .lang-card:hover {
+      border-color: #3b82f6;
+      background: #1e3a5f;
+      transform: translateY(-3px);
+    }
+
+    .lang-card.selected {
+      border-color: #3b82f6;
+      background: #1e3a5f;
+      box-shadow: 0 0 20px rgba(59, 130, 246, 0.2);
+    }
+
+    .lang-card .lang-icon {
+      font-size: 2.5rem;
+    }
+
+    .lang-card .lang-sub {
+      font-size: 0.8rem;
+      color: #94a3b8;
+      font-weight: 400;
+    }
+
     /* ── Student Grade Picker ── */
     #grade-picker {
       display: none;
@@ -735,6 +803,26 @@
   <!-- ── TEST RESULTS ── -->
   <div id="results-screen"></div>
 
+  <!-- ── LANGUAGE SELECTION ── -->
+  <div id="language-screen">
+    <h1>Want to learn a language?</h1>
+    <p>Pick one, both, or skip — you can always change later</p>
+    <div class="lang-options">
+      <button class="lang-card" id="lang-spanish" onclick="toggleLang('spanish')">
+        <span class="lang-icon">&#127466;&#127480;</span>
+        Spanish
+        <span class="lang-sub">Beginner to Advanced</span>
+      </button>
+      <button class="lang-card" id="lang-chinese" onclick="toggleLang('chinese')">
+        <span class="lang-icon">&#127464;&#127475;</span>
+        Chinese
+        <span class="lang-sub">Pinyin to 1000+ Characters</span>
+      </button>
+    </div>
+    <button class="test-next-btn" onclick="confirmLanguages()">Continue</button>
+    <button class="back-btn" onclick="confirmLanguages()" style="margin-top:-8px;">Skip — no languages</button>
+  </div>
+
   <!-- ── MAIN APP ── -->
   <div id="app-screen">
     <div class="topbar">
@@ -913,6 +1001,7 @@
       document.getElementById('app-screen').style.display = 'none';
       document.getElementById('test-screen').style.display = 'none';
       document.getElementById('results-screen').style.display = 'none';
+      document.getElementById('language-screen').style.display = 'none';
       document.getElementById('signin-screen').style.display = 'none';
       document.getElementById('role-screen').style.display = 'flex';
       updateRoleScreenTitle();
@@ -944,10 +1033,11 @@
       const sidebar = document.getElementById('sidebar');
       sidebar.innerHTML = '';
 
-      const addSection = (title, items) => {
+      const addSection = (title, items, options = {}) => {
         const section = document.createElement('div');
         section.className = 'sidebar-section';
-        section.innerHTML = `<div class="sidebar-section-title">${title}</div>`;
+        const attrs = options.lang ? ` data-lang="${options.lang}"` : '';
+        section.innerHTML = `<div class="sidebar-section-title"${attrs}>${title}</div>`;
         items.forEach(item => {
           const btn = document.createElement('button');
           btn.className = 'sidebar-item';
@@ -1005,6 +1095,20 @@
           { label: 'English', action: () => loadMarkdown('placement-tests/english.md') },
           { label: 'Biology', action: () => loadMarkdown('placement-tests/biology.md') }
         ]);
+
+        // Add selected languages
+        if (selectedLanguages.includes('spanish')) {
+          addSection('Spanish', [
+            { label: 'Curriculum Overview', action: () => loadMarkdown(`curriculum/grade-${pad}.md`) },
+            { label: 'Full Year Plan', action: () => loadMarkdown(`yearly-plans/grade-${pad}.md`) }
+          ], { lang: 'spanish' });
+        }
+        if (selectedLanguages.includes('chinese')) {
+          addSection('Chinese (Mandarin)', [
+            { label: 'Curriculum Overview', action: () => loadMarkdown(`curriculum/grade-${pad}.md`) },
+            { label: 'Full Year Plan', action: () => loadMarkdown(`yearly-plans/grade-${pad}.md`) }
+          ], { lang: 'chinese' });
+        }
 
         addSection('Schedule', [
           { label: 'Weekly Schedule', action: () => loadMarkdown('schedule.md') }
@@ -1064,23 +1168,29 @@
         const g = currentGrade;
         content.innerHTML = `
           <h1>Welcome${userName ? ', ' + userName : ''} — Grade ${g}!</h1>
-          <p>Here's everything you need for your school year.</p>
+          <p>Here's everything you need for your school year.${selectedLanguages.length > 0 ? ' Languages: ' + selectedLanguages.map(l => l === 'spanish' ? 'Spanish' : 'Chinese').join(' & ') : ''}</p>
           <div class="home-cards">
             <div class="home-card" onclick="document.querySelectorAll('.sidebar-section')[1].querySelector('.sidebar-item').click()">
               <h3>What You'll Learn</h3>
-              <p>See all the topics you'll cover this year in Math, English, and Biology.</p>
+              <p>See all the topics you'll cover this year in Math, English, Biology, and Science.</p>
             </div>
             <div class="home-card" onclick="document.querySelectorAll('.sidebar-section')[1].querySelectorAll('.sidebar-item')[1].click()">
               <h3>Full Year Plan</h3>
               <p>Your week-by-week schedule — see exactly what's coming up.</p>
             </div>
+            ${selectedLanguages.includes('spanish') ? `
+            <div class="home-card" onclick="document.querySelector('.sidebar-section-title[data-lang=\\'spanish\\']').parentElement.querySelector('.sidebar-item').click()">
+              <h3>Spanish</h3>
+              <p>Your Spanish curriculum and weekly plan.</p>
+            </div>` : ''}
+            ${selectedLanguages.includes('chinese') ? `
+            <div class="home-card" onclick="document.querySelector('.sidebar-section-title[data-lang=\\'chinese\\']').parentElement.querySelector('.sidebar-item').click()">
+              <h3>Chinese (Mandarin)</h3>
+              <p>Your Chinese curriculum and weekly plan.</p>
+            </div>` : ''}
             <div class="home-card" onclick="document.querySelectorAll('.sidebar-section')[2].querySelector('.sidebar-item').click()">
               <h3>Placement Tests</h3>
               <p>Take a test to make sure you're starting at the right level.</p>
-            </div>
-            <div class="home-card" onclick="document.querySelectorAll('.sidebar-section')[3].querySelector('.sidebar-item').click()">
-              <h3>Weekly Schedule</h3>
-              <p>See how your school week is laid out.</p>
             </div>
           </div>
         `;
@@ -1096,6 +1206,7 @@
     let testSelectedOption = null;
     const testSubjects = ['Math', 'English', 'Biology'];
     let currentSubjectIndex = 0;
+    let selectedLanguages = []; // 'spanish', 'chinese'
 
     function startPlacementTest() {
       document.getElementById('test-screen').style.display = 'flex';
@@ -1378,12 +1489,32 @@
     function acceptResults(grade) {
       currentGrade = grade;
       document.getElementById('results-screen').style.display = 'none';
-      showApp();
+      // Show language selection before entering app
+      selectedLanguages = [];
+      document.getElementById('lang-spanish').classList.remove('selected');
+      document.getElementById('lang-chinese').classList.remove('selected');
+      document.getElementById('language-screen').style.display = 'flex';
     }
 
     function retakeTest() {
       document.getElementById('results-screen').style.display = 'none';
       startPlacementTest();
+    }
+
+    // ── LANGUAGE SELECTION ──
+    function toggleLang(lang) {
+      const idx = selectedLanguages.indexOf(lang);
+      if (idx === -1) {
+        selectedLanguages.push(lang);
+      } else {
+        selectedLanguages.splice(idx, 1);
+      }
+      document.getElementById('lang-' + lang).classList.toggle('selected');
+    }
+
+    function confirmLanguages() {
+      document.getElementById('language-screen').style.display = 'none';
+      showApp();
     }
   </script>
 
