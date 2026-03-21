@@ -1136,6 +1136,11 @@
         Student
         <span class="subtitle">Take placement test</span>
       </button>
+      <button class="role-btn" onclick="selectRole('teacher')">
+        <span class="icon">&#128104;&#8205;&#127979;</span>
+        Teacher
+        <span class="subtitle">Manage students</span>
+      </button>
     </div>
     <div style="display:flex;gap:24px;margin-top:-10px;">
       <div class="sign-wrapper" id="role-lang-sign">
@@ -1181,6 +1186,22 @@
       </div>
     </div>
     <div style="flex:1;overflow-y:auto;padding:32px 48px;" id="settings-content"></div>
+  </div>
+
+  <!-- ── TEACHER DASHBOARD ── -->
+  <div id="teacher-screen" style="display:none;height:100vh;flex-direction:column;">
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <button class="back-btn" onclick="closeTeacherDashboard()">Home</button>
+        <h2>Teacher Dashboard</h2>
+      </div>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <span style="color:#94a3b8;font-size:0.85rem;" id="teacher-greeting"></span>
+        <span class="role-badge" style="background:#f59e0b;">TEACHER</span>
+        <button class="back-btn" onclick="signOut()">Sign Out</button>
+      </div>
+    </div>
+    <div style="flex:1;overflow-y:auto;padding:32px 48px;" id="teacher-content"></div>
   </div>
 
   <!-- ── CLEP BROWSER ── -->
@@ -1466,11 +1487,45 @@
     function selectRole(role) {
       currentRole = role;
       if (role === 'student') {
+        const savedGrade = localStorage.getItem('placement-grade');
+        const savedDate = localStorage.getItem('placement-date');
+        if (savedGrade) {
+          // Show option to use saved placement or retake
+          document.getElementById('role-screen').style.display = 'none';
+          document.getElementById('test-picker').style.display = 'flex';
+          // Add saved placement banner at top of test picker
+          const picker = document.getElementById('test-picker');
+          const existing = document.getElementById('saved-placement');
+          if (existing) existing.remove();
+          const banner = document.createElement('div');
+          banner.id = 'saved-placement';
+          banner.style.cssText = 'background:#1e293b;border:2px solid #10b981;border-radius:12px;padding:16px 24px;max-width:500px;width:100%;text-align:center;margin-bottom:8px;';
+          const dateStr = savedDate ? new Date(savedDate).toLocaleDateString() : '';
+          banner.innerHTML = `
+            <p style="color:#10b981;font-weight:700;font-size:1.1rem;margin-bottom:8px;">Previous Placement: Grade ${savedGrade}</p>
+            <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:12px;">${dateStr ? 'Taken on ' + dateStr : ''}</p>
+            <div style="display:flex;gap:12px;justify-content:center;">
+              <button class="test-next-btn" style="font-size:0.9rem;padding:8px 20px;" onclick="useSavedPlacement(${savedGrade})">Continue with Grade ${savedGrade}</button>
+              <button class="back-btn" style="font-size:0.9rem;" onclick="document.getElementById('saved-placement').remove()">Retake Test</button>
+            </div>
+          `;
+          picker.insertBefore(banner, picker.children[2]);
+        } else {
+          document.getElementById('role-screen').style.display = 'none';
+          document.getElementById('test-picker').style.display = 'flex';
+        }
+      } else if (role === 'teacher') {
         document.getElementById('role-screen').style.display = 'none';
-        document.getElementById('test-picker').style.display = 'flex';
+        showTeacherDashboard();
       } else {
         showApp();
       }
+    }
+
+    function useSavedPlacement(grade) {
+      currentGrade = grade;
+      document.getElementById('test-picker').style.display = 'none';
+      showApp();
     }
 
     function closeTestPicker() {
@@ -1521,6 +1576,7 @@
       document.getElementById('clep-browser').style.display = 'none';
       document.getElementById('settings-screen').style.display = 'none';
       document.getElementById('achievements-screen').style.display = 'none';
+      document.getElementById('teacher-screen').style.display = 'none';
       document.getElementById('signin-screen').style.display = 'none';
       document.getElementById('role-screen').style.display = 'flex';
       updateRoleScreenTitle();
@@ -2308,6 +2364,9 @@
 
     function acceptResults(grade) {
       currentGrade = grade;
+      // Save placement results
+      localStorage.setItem('placement-grade', grade);
+      localStorage.setItem('placement-date', new Date().toISOString());
       document.getElementById('results-screen').style.display = 'none';
       showApp();
     }
@@ -3235,6 +3294,107 @@
       } catch (e) {
         error.textContent = 'Invalid challenge code. Check and try again.';
       }
+    }
+
+    // ── TEACHER / TUTOR SYSTEM ──
+    function showTeacherDashboard() {
+      document.getElementById('teacher-screen').style.display = 'flex';
+      document.getElementById('teacher-greeting').textContent = userName ? 'Hi, ' + userName : '';
+
+      // Get or create class code
+      let classCode = localStorage.getItem('teacher-class-code');
+      if (!classCode) {
+        classCode = Math.random().toString(36).substring(2, 8).toUpperCase();
+        localStorage.setItem('teacher-class-code', classCode);
+      }
+
+      const students = JSON.parse(localStorage.getItem('teacher-students') || '[]');
+      const content = document.getElementById('teacher-content');
+
+      let html = `
+        <h1 style="font-size:2rem;color:#f8fafc;border-bottom:2px solid #334155;padding-bottom:12px;">Teacher Dashboard</h1>
+
+        <div style="background:#1e293b;border:2px solid #f59e0b;border-radius:12px;padding:24px;max-width:500px;margin:20px 0;">
+          <h2 style="color:#f59e0b;margin-top:0;">Your Class Code</h2>
+          <div style="background:#0f172a;border:1px solid #475569;border-radius:8px;padding:16px;text-align:center;cursor:pointer;margin:12px 0;"
+               onclick="navigator.clipboard.writeText('${classCode}');this.querySelector('span').textContent='Copied!';">
+            <span style="font-size:2rem;font-weight:800;color:#f59e0b;letter-spacing:6px;font-family:monospace;">${classCode}</span>
+          </div>
+          <p style="color:#94a3b8;font-size:0.85rem;">Share this code with your students. They enter it when signing up to join your class.</p>
+        </div>
+
+        <h2 style="margin-top:24px;">Add Student Manually</h2>
+        <div style="display:flex;gap:8px;margin-bottom:20px;">
+          <input type="text" id="add-student-name" placeholder="Student name" class="gpa-input" style="width:200px;padding:10px;">
+          <input type="text" id="add-student-grade" placeholder="Grade (4-12)" class="gpa-input" style="width:100px;padding:10px;">
+          <button class="test-next-btn" style="font-size:0.9rem;padding:8px 16px;" onclick="addStudent()">Add</button>
+        </div>
+
+        <h2>Your Students (${students.length})</h2>
+      `;
+
+      if (students.length === 0) {
+        html += '<p style="color:#94a3b8;">No students yet. Share your class code or add students manually.</p>';
+      } else {
+        html += `<table style="width:100%;max-width:800px;">
+          <tr><th>Name</th><th>Grade</th><th>Tests Taken</th><th>Avg Score</th><th>Last Active</th><th></th></tr>`;
+        students.forEach((s, i) => {
+          const avgScore = s.scores && s.scores.length > 0
+            ? Math.round(s.scores.reduce((a,b) => a + b, 0) / s.scores.length) + '%'
+            : 'N/A';
+          html += `<tr>
+            <td style="font-weight:600;color:#f8fafc;">${s.name}</td>
+            <td>Grade ${s.grade || '?'}</td>
+            <td>${s.testCount || 0}</td>
+            <td>${avgScore}</td>
+            <td style="color:#94a3b8;font-size:0.85rem;">${s.lastActive || 'Never'}</td>
+            <td><button class="back-btn" style="font-size:0.75rem;padding:4px 8px;color:#ef4444;border-color:#ef4444;" onclick="removeStudent(${i})">Remove</button></td>
+          </tr>`;
+        });
+        html += '</table>';
+      }
+
+      // Student join code section
+      html += `
+        <h2 style="margin-top:32px;">Student View</h2>
+        <p style="color:#94a3b8;">Students can join your class by entering your code on the Welcome screen.</p>
+        <div style="background:#1e293b;border:1px solid #334155;border-radius:8px;padding:16px;max-width:500px;margin-top:12px;">
+          <p style="color:#cbd5e1;font-size:0.9rem;">To join: Welcome screen → Student → enter class code <strong style="color:#f59e0b;">${classCode}</strong> when prompted.</p>
+        </div>
+      `;
+
+      content.innerHTML = html;
+    }
+
+    function closeTeacherDashboard() {
+      document.getElementById('teacher-screen').style.display = 'none';
+      document.getElementById('role-screen').style.display = 'flex';
+      updateRoleScreenTitle();
+      syncRoleCheckboxes();
+    }
+
+    function addStudent() {
+      const name = document.getElementById('add-student-name').value.trim();
+      const grade = document.getElementById('add-student-grade').value.trim();
+      if (!name) return;
+      const students = JSON.parse(localStorage.getItem('teacher-students') || '[]');
+      students.push({
+        name,
+        grade: parseInt(grade) || null,
+        testCount: 0,
+        scores: [],
+        lastActive: new Date().toLocaleDateString()
+      });
+      localStorage.setItem('teacher-students', JSON.stringify(students));
+      showTeacherDashboard();
+    }
+
+    function removeStudent(index) {
+      if (!confirm('Remove this student?')) return;
+      const students = JSON.parse(localStorage.getItem('teacher-students') || '[]');
+      students.splice(index, 1);
+      localStorage.setItem('teacher-students', JSON.stringify(students));
+      showTeacherDashboard();
     }
 
     // ── CLEP BROWSER (pre-login) ──
