@@ -2050,7 +2050,7 @@
     }
 
     function updateTestProgress() {
-      const total = activeTestSubjects.length * 15;
+      const total = activeTestSubjects.length * QUESTIONS_PER_SUBJECT;
       const pct = (testIndex / total) * 100;
       document.getElementById('test-progress-text').textContent = `${testIndex} / ${total}`;
       document.getElementById('test-progress-fill').style.width = pct + '%';
