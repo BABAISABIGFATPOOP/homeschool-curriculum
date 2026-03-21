@@ -2695,16 +2695,70 @@
     function showAchievements() {
       const content = document.getElementById('content');
       const earned = JSON.parse(localStorage.getItem('achievements') || '[]');
-
-      let html = '<h1>Achievements</h1><p>Earn badges by studying and taking tests!</p><div style="margin-top:16px;">';
-      ACHIEVEMENTS.forEach(a => {
-        const isEarned = earned.includes(a.id);
-        html += `<span class="badge ${isEarned ? 'earned' : 'locked'}">${a.icon} ${a.name}${isEarned ? '' : ' — ' + a.desc}</span>`;
-      });
-      html += '</div>';
-
       const earnedCount = earned.length;
-      html += `<p style="margin-top:20px;color:#f59e0b;font-weight:600;">${earnedCount} / ${ACHIEVEMENTS.length} earned</p>`;
+      const pct = Math.round((earnedCount / ACHIEVEMENTS.length) * 100);
+
+      // Group achievements by category
+      const categories = [
+        { name: 'Getting Started', ids: ['first-test', 'signed-up', 'first-login'] },
+        { name: 'Test Milestones', ids: ['5-tests', '10-tests', '25-tests', '50-tests', '100-tests'] },
+        { name: 'Subject Mastery', ids: ['all-subjects', 'math-master', 'english-master', 'bio-master', 'science-master', 'history-master', 'geo-master', 'all-90'] },
+        { name: 'Scores', ids: ['perfect-section', '90-percent', '80-percent', '70-percent', 'improve', 'no-wrong'] },
+        { name: 'Streaks', ids: ['streak-5', 'streak-10', 'streak-15', 'streak-20', 'comeback'] },
+        { name: 'Weekly Progress', ids: ['week-1', 'week-4', 'week-9', 'week-18', 'week-27', 'week-36'] },
+        { name: 'Time-Based', ids: ['night-owl', 'early-bird', 'weekend-warrior', 'monday-motivation', 'lunch-learner'] },
+        { name: 'Multiplayer', ids: ['first-challenge', 'first-win', '5-wins', 'perfect-challenge', 'challenge-accepted'] },
+        { name: 'CLEP & SAT', ids: ['clep-starter', 'clep-pass', 'sat-starter'] },
+        { name: 'GPA', ids: ['gpa-4', 'gpa-3'] },
+        { name: 'Secret', ids: ['speed-demon', 'persistent', 'theme-switch', 'planner-done', 'explorer'] }
+      ];
+
+      const achMap = {};
+      ACHIEVEMENTS.forEach(a => achMap[a.id] = a);
+
+      let html = `
+        <div style="text-align:center;margin-bottom:32px;">
+          <h1 style="font-size:2.5rem;border:none;margin-bottom:8px;">Achievement Wall</h1>
+          <p style="color:#94a3b8;font-size:1.1rem;">${earnedCount} of ${ACHIEVEMENTS.length} earned</p>
+          <div style="width:300px;height:12px;background:#334155;border-radius:6px;margin:16px auto;overflow:hidden;">
+            <div style="height:100%;width:${pct}%;background:linear-gradient(90deg,#f59e0b,#ef4444);border-radius:6px;transition:width 0.5s;"></div>
+          </div>
+          <span style="color:#f59e0b;font-weight:700;font-size:1.2rem;">${pct}%</span>
+        </div>
+      `;
+
+      categories.forEach(cat => {
+        const catAchs = cat.ids.map(id => achMap[id]).filter(Boolean);
+        const catEarned = catAchs.filter(a => earned.includes(a.id)).length;
+
+        html += `
+          <div style="margin-bottom:28px;">
+            <h2 style="font-size:1.2rem;margin-bottom:4px;">${cat.name} <span style="color:#64748b;font-size:0.85rem;font-weight:400;">${catEarned}/${catAchs.length}</span></h2>
+            <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;margin-top:12px;">
+        `;
+
+        catAchs.forEach(a => {
+          const isEarned = earned.includes(a.id);
+          const bg = isEarned ? 'linear-gradient(135deg, #1e293b, #0f172a)' : '#1e293b';
+          const border = isEarned ? '#f59e0b' : '#334155';
+          const glow = isEarned ? 'box-shadow:0 0 20px rgba(245,158,11,0.2);' : '';
+          const opacity = isEarned ? '1' : '0.4';
+          const iconSize = isEarned ? '2.5rem' : '2rem';
+
+          html += `
+            <div style="background:${bg};border:2px solid ${border};border-radius:12px;padding:16px;text-align:center;${glow}opacity:${opacity};transition:all 0.2s;"
+                 ${isEarned ? '' : 'title="' + a.desc + '"'}>
+              <div style="font-size:${iconSize};line-height:1;margin-bottom:8px;${isEarned ? 'filter:drop-shadow(0 0 8px rgba(245,158,11,0.5));' : 'filter:grayscale(1);'}">${a.icon}</div>
+              <div style="font-size:0.85rem;font-weight:700;color:${isEarned ? '#f8fafc' : '#64748b'};margin-bottom:4px;">${a.name}</div>
+              <div style="font-size:0.7rem;color:${isEarned ? '#f59e0b' : '#475569'};">${isEarned ? 'Earned!' : a.desc}</div>
+              ${isEarned ? '<div style="margin-top:6px;"><svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="none" stroke="#f59e0b" stroke-width="2"/><path d="M6 10l3 3 5-6" fill="none" stroke="#f59e0b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>' : '<div style="margin-top:6px;"><svg width="20" height="20" viewBox="0 0 20 20"><circle cx="10" cy="10" r="9" fill="none" stroke="#475569" stroke-width="1.5"/><text x="10" y="14" text-anchor="middle" fill="#475569" font-size="12">?</text></svg></div>'}
+            </div>
+          `;
+        });
+
+        html += '</div></div>';
+      });
+
       content.innerHTML = html;
     }
 
