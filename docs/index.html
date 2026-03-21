@@ -1163,7 +1163,21 @@
         </div>
       </div>
     </div>
-    <button class="back-btn" onclick="showSettingsFromWelcome()" style="margin-top:4px;font-size:0.9rem;padding:8px 20px;">&#9881; Settings</button>
+    <div style="display:flex;gap:12px;margin-top:4px;">
+      <button class="back-btn" onclick="showAchievementsFromWelcome()" style="font-size:0.9rem;padding:8px 20px;">&#127942; Your Achievements</button>
+      <button class="back-btn" onclick="showSettingsFromWelcome()" style="font-size:0.9rem;padding:8px 20px;">&#9881; Settings</button>
+    </div>
+  </div>
+
+  <!-- ── ACHIEVEMENTS SCREEN (pre-app) ── -->
+  <div id="achievements-screen" style="display:none;height:100vh;flex-direction:column;">
+    <div class="topbar">
+      <div style="display:flex;align-items:center;gap:12px;">
+        <button class="back-btn" onclick="closeAchievementsScreen()">Back</button>
+        <h2>Your Achievements</h2>
+      </div>
+    </div>
+    <div class="content" id="achievements-content" style="flex:1;overflow-y:auto;"></div>
   </div>
 
   <!-- ── SETTINGS SCREEN (pre-app) ── -->
@@ -1516,6 +1530,7 @@
       document.getElementById('language-screen').style.display = 'none';
       document.getElementById('clep-browser').style.display = 'none';
       document.getElementById('settings-screen').style.display = 'none';
+      document.getElementById('achievements-screen').style.display = 'none';
       document.getElementById('signin-screen').style.display = 'none';
       document.getElementById('role-screen').style.display = 'flex';
       updateRoleScreenTitle();
@@ -2389,6 +2404,29 @@
     // ── SETTINGS PAGE ──
     function showSettings() {
       renderSettingsContent('content');
+    }
+
+    function showAchievementsFromWelcome() {
+      document.getElementById('role-screen').style.display = 'none';
+      document.getElementById('achievements-screen').style.display = 'flex';
+      renderAchievementsContent('achievements-content');
+    }
+
+    function closeAchievementsScreen() {
+      document.getElementById('achievements-screen').style.display = 'none';
+      document.getElementById('role-screen').style.display = 'flex';
+      updateRoleScreenTitle();
+      syncRoleCheckboxes();
+    }
+
+    function renderAchievementsContent(targetId) {
+      const el = document.getElementById(targetId);
+      // Temporarily swap content id so showAchievements renders there
+      const origContent = document.getElementById('content');
+      el.id = 'content';
+      showAchievements();
+      el.id = targetId;
+      if (origContent) origContent.id = 'content';
     }
 
     function showSettingsFromWelcome() {
