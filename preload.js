@@ -28,5 +28,10 @@ contextBridge.exposeInMainWorld('api', {
   authLogOut: () => ipcRenderer.invoke('auth-logout'),
   authCurrentUser: () => ipcRenderer.invoke('auth-current-user'),
   getQuestions: () => placementQuestions,
-  getAllQuestions: () => allQuestionsBySubject
+  getAllQuestions: () => allQuestionsBySubject,
+  createClass: (uid, name) => ipcRenderer.invoke('create-class', uid, name),
+  joinClass: (uid, name, code) => ipcRenderer.invoke('join-class', uid, name, code),
+  getStudents: (code) => ipcRenderer.invoke('get-students', code),
+  saveTestScore: (uid, subj, score, total, grade) => ipcRenderer.invoke('save-test-score', uid, subj, score, total, grade),
+  getTeacherClass: (uid) => ipcRenderer.invoke('get-teacher-class', uid)
 });

@@ -10,6 +10,7 @@
   <link rel="apple-touch-icon" href="icon-192.svg">
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore-compat.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="questions-data.js" defer></script>
   <style>
@@ -1371,7 +1372,9 @@
   <script>
     firebase.initializeApp({apiKey:"AIzaSyCzigxOCPGs0WEiuQvWykPkkNjd59JBlWA",authDomain:"school-sign-in-project.firebaseapp.com",projectId:"school-sign-in-project",storageBucket:"school-sign-in-project.firebasestorage.app",messagingSenderId:"153730552434",appId:"1:153730552434:web:2856ce40417f617d1fa8eb"});
     const fbAuth = firebase.auth();
+    const fbDb = firebase.firestore();
     const CONTENT_BASE = 'https://raw.githubusercontent.com/BABAISABIGFATPOOP/homeschool-curriculum/master/';
+    let currentUserUid = null;
     let currentRole = null;
     let currentGrade = null;
     let userName = '';
@@ -1385,7 +1388,7 @@
       });
 
       // Check if already logged in via Firebase
-      const user = await new Promise(resolve => { fbAuth.onAuthStateChanged(u => { if (u) { const dn = u.displayName || ''; resolve({ name: dn.includes('|') ? dn.split('|')[0] : dn }); } else resolve(null); }); });
+      const user = await new Promise(resolve => { fbAuth.onAuthStateChanged(u => { if (u) { const dn = u.displayName || ''; currentUserUid = u.uid; resolve({ uid: u.uid, name: dn.includes('|') ? dn.split('|')[0] : dn }); } else resolve(null); }); });
       document.getElementById('loading-screen').style.display = 'none';
       if (user) {
         userName = user.name;
@@ -1447,9 +1450,9 @@
       if (isSignUpMode) {
         const name = document.getElementById('signin-name').value.trim();
         if (!name) { error.textContent = 'Please enter your name.'; btn.disabled = false; btn.textContent = 'Sign Up'; return; }
-        const cred = await fbAuth.createUserWithEmailAndPassword(email, password); await cred.user.updateProfile({displayName:name}); result = {success:true, user:{name}};
+        const cred = await fbAuth.createUserWithEmailAndPassword(email, password); await cred.user.updateProfile({displayName:name}); currentUserUid = cred.user.uid; await fbDb.collection('users').doc(cred.user.uid).set({name,email,role:'student',createdAt:new Date().toISOString(),classCode:null,testHistory:[]}); result = {success:true, user:{uid:cred.user.uid, name}};
       } else {
-        const cred = await fbAuth.signInWithEmailAndPassword(email, password); const dn=cred.user.displayName||''; result = {success:true, user:{name:dn.includes('|')?dn.split('|')[0]:dn}};
+        const cred = await fbAuth.signInWithEmailAndPassword(email, password); const dn=cred.user.displayName||''; currentUserUid = cred.user.uid; result = {success:true, user:{uid:cred.user.uid, name:dn.includes('|')?dn.split('|')[0]:dn}};
       }
 
       btn.disabled = false;

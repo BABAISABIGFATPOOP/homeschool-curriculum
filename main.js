@@ -131,6 +131,32 @@ ipcMain.handle('auth-current-user', async () => {
   return user;
 });
 
+// Firestore handlers
+ipcMain.handle('create-class', async (event, teacherUid, teacherName) => {
+  try { return { success: true, code: await auth.createClass(teacherUid, teacherName) }; }
+  catch (e) { return { success: false, error: e.message }; }
+});
+
+ipcMain.handle('join-class', async (event, studentUid, studentName, code) => {
+  try { await auth.joinClass(studentUid, studentName, code); return { success: true }; }
+  catch (e) { return { success: false, error: e.message }; }
+});
+
+ipcMain.handle('get-students', async (event, code) => {
+  try { return { success: true, students: await auth.getStudents(code) }; }
+  catch (e) { return { success: false, error: e.message }; }
+});
+
+ipcMain.handle('save-test-score', async (event, uid, subject, score, total, grade) => {
+  try { await auth.saveTestScore(uid, subject, score, total, grade); return { success: true }; }
+  catch (e) { return { success: false, error: e.message }; }
+});
+
+ipcMain.handle('get-teacher-class', async (event, teacherUid) => {
+  try { return { success: true, data: await auth.getTeacherClass(teacherUid) }; }
+  catch (e) { return { success: false, error: e.message }; }
+});
+
 app.whenReady().then(createWindow);
 
 app.on('window-all-closed', () => {
